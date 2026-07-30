@@ -1,0 +1,24 @@
+# Secrets
+.env
+kaggle.json
+access_token
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Large outputs and models
+outputs/*
+!outputs/.gitkeep
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.h5
+
+# Temporary files
+*.log
+tmp/
