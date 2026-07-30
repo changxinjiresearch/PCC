@@ -232,9 +232,12 @@ Verification
 
 Metrics agree with notebook.
 
-Status
+Migration: Completed
 
-Pending
+Scientific verification: Pending
+
+Regression against the 40 formal fixed-baseline prediction maps and locked
+cohort is still required to confirm that metrics agree with the notebook.
 
 ---
 
