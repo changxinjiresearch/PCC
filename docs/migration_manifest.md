@@ -107,9 +107,12 @@ Verification
 
 Locked dataset returns identical patient list.
 
-Status
+Migration: Completed
 
-In Progress
+Scientific verification: Pending
+
+The canonical locked cohort is still required to confirm that the patient
+list is identical.
 
 ---
 
@@ -135,9 +138,12 @@ Verification
 
 Loaded case count equals notebook.
 
-Status
+Migration: Completed
 
-Pending
+Scientific verification: Pending
+
+The authoritative cohort is still required to confirm that the loaded case
+count equals the notebook.
 
 ---
 
@@ -163,9 +169,12 @@ Verification
 
 Pixel-wise comparison against notebook outputs.
 
-Status
+Migration: Completed
 
-Pending
+Scientific verification: Pending
+
+Pixel-wise comparison against outputs from the canonical locked cohort is
+still required.
 
 ---
 
@@ -191,9 +200,13 @@ Verification
 
 Dice and IoU reproduce notebook.
 
-Status
+Migration: Completed
 
-Pending
+Scientific verification: Pending
+
+Regression against the real five-fold checkpoints and canonical locked
+cohort is still required. Synthetic checkpoint tests do not complete this
+scientific verification.
 
 ---
 
