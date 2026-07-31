@@ -210,6 +210,46 @@ scientific verification.
 
 ---
 
+## Order 4R
+
+Module
+
+Formal Layer 2R Case-Specific Baseline Training
+
+Scientific Layer
+
+Layer 2R
+
+Purpose
+
+Reproduce the final formal per-case two-channel baseline-training lifecycle,
+including the 12-epoch optimization, best-model selection, checkpoint, and
+fixed-baseline probability map used by authoritative notebook cells 109--110.
+
+Dependencies
+
+Orders 1--3
+
+Destination
+
+src/models/formal_layer2r_baseline.py
+
+Verification
+
+CPU-compatible synthetic lifecycle and checkpoint regression, followed by an
+approved real-case GPU regression against the formal notebook training
+history, best checkpoint, and baseline probability map.
+
+Migration: In Progress
+
+Scientific verification: Pending
+
+The canonical locked case, formal GPU environment, checkpoint, training
+history, and float32 baseline map are still required for scientific
+verification.
+
+---
+
 ## Order 5
 
 Module
