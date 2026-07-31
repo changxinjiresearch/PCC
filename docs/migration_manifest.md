@@ -381,9 +381,14 @@ Verification
 
 Statistics equal notebook.
 
-Status
+Migration: Completed
 
-Pending
+Scientific verification: Pending
+
+Regression against the real 40-case stored Layer 2R metric and pairwise
+tables is still required to confirm that all descriptive statistics equal
+the notebook. Synthetic literal-reference tests do not complete this
+scientific verification.
 
 ---
 
