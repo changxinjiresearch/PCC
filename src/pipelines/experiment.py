@@ -4,7 +4,7 @@ Purpose
 -------
 Compose the already migrated Orders 1--10 without implementing any of their
 scientific operations.  Baseline prediction is supplied by an injected
-Order 4 provider; this module never constructs, trains, checkpoints, or
+provider; this module never constructs, trains, checkpoints, or
 persists a model.
 
 Inputs and outputs
@@ -23,9 +23,8 @@ empty future-change target fails the case before baseline prediction.
 
 Known limitations
 -----------------
-The historical formal notebook trained a case-specific baseline.  By explicit
-migration decision, this pipeline instead treats migrated Order 4 as an
-injected baseline provider.  Locked-cohort numerical regression remains
+The baseline provider may train Order 4R, load an Order 4R checkpoint, or load
+an existing probability map.  Locked-cohort numerical regression remains
 required and belongs outside this CPU-only orchestration smoke path.
 """
 
@@ -68,7 +67,7 @@ class CaseRecord:
 
 
 class BaselineProvider(Protocol):
-    """Injected Order 4 probability-map provider."""
+    """Injected probability-map provider independent of baseline origin."""
 
     def __call__(
         self,
