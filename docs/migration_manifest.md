@@ -350,9 +350,12 @@ Verification
 
 Figures regenerated from saved predictions.
 
-Status
+Migration: Completed
 
-Pending
+Scientific verification: Pending
+
+Regression against the 40 formal Layer 2R saved prediction maps and
+notebook-generated PNG figures is still required.
 
 ---
 
