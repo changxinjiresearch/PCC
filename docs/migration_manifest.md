@@ -263,9 +263,12 @@ Verification
 
 Locked-case regression.
 
-Status
+Migration: Completed
 
-Pending
+Scientific verification: Pending
+
+Regression against the 40 formal Layer 2R baseline maps, future-change
+targets, and PCC output maps from the locked cohort is still required.
 
 ---
 

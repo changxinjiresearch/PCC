@@ -1,7 +1,6 @@
 import ast
 import inspect
 import unittest
-from pathlib import Path
 
 import numpy as np
 
@@ -207,11 +206,6 @@ class NaiveSelfTighteningRegressionTests(unittest.TestCase):
         for term in forbidden:
             with self.subTest(term=term):
                 self.assertNotIn(term, executable_source)
-
-    def test_no_order_6_module_created(self):
-        repository_root = Path(__file__).resolve().parents[1]
-        self.assertFalse((repository_root / "src/models/pcc.py").exists())
-
 
 if __name__ == "__main__":
     unittest.main()
