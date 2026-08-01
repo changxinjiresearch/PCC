@@ -33,6 +33,25 @@ class KaggleOneCaseWrapperTests(unittest.TestCase):
             self.source.index("execution = subprocess.run"),
         )
 
+    def test_wrapper_establishes_repository_import_path_before_src_import(self):
+        path_insertion = "sys.path.insert(0, str(REPOSITORY_ROOT))"
+        src_import = "from src.pipelines.formal_layer2r import load_formal_config"
+
+        self.assertLess(self.source.index(path_insertion), self.source.index(src_import))
+        self.assertIn('REPOSITORY_MARKERS = ("src", "experiments", "configs")', self.source)
+        self.assertIn("current_directory = Path.cwd().resolve()", self.source)
+        self.assertIn('kaggle_working = Path("/kaggle/working")', self.source)
+        self.assertIn("if not repository_roots:", self.source)
+        self.assertIn("if len(repository_roots) != 1:", self.source)
+        self.assertIn(
+            'CONFIG_PATH = REPOSITORY_ROOT / "configs/layer2r_kaggle_one_case.json"',
+            self.source,
+        )
+        self.assertIn(
+            'RUNNER_PATH = REPOSITORY_ROOT / "experiments/run_formal_layer2r.py"',
+            self.source,
+        )
+
     def test_config_and_wrapper_enforce_one_case_limit(self):
         self.assertEqual(self.config["max_new_cases"], 1)
         self.assertIn('max_new_cases") != 1', self.source)
