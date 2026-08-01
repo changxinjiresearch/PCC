@@ -27,22 +27,21 @@ class KaggleOneCaseWrapperTests(unittest.TestCase):
     def test_wrapper_invokes_only_formal_one_case_runner(self):
         self.assertIn("experiments/run_formal_layer2r.py", self.source)
         self.assertIn('"--preflight"', self.source)
-        self.assertEqual(self.source.count("subprocess.run"), 2)
         self.assertLess(
             self.source.index("preflight = subprocess.run"),
             self.source.index("execution = subprocess.run"),
         )
 
-    def test_wrapper_establishes_repository_import_path_before_src_import(self):
+    def test_repository_bootstrap_precedes_src_import(self):
         path_insertion = "sys.path.insert(0, str(REPOSITORY_ROOT))"
         src_import = "from src.pipelines.formal_layer2r import load_formal_config"
 
+        self.assertLess(self.source.index("run_git([\"clone\""), self.source.index(src_import))
+        self.assertLess(self.source.index("verify_kaggle_checkout"), self.source.index(src_import))
         self.assertLess(self.source.index(path_insertion), self.source.index(src_import))
         self.assertIn('REPOSITORY_MARKERS = ("src", "experiments", "configs")', self.source)
         self.assertIn("current_directory = Path.cwd().resolve()", self.source)
-        self.assertIn('kaggle_working = Path("/kaggle/working")', self.source)
-        self.assertIn("if not repository_roots:", self.source)
-        self.assertIn("if len(repository_roots) != 1:", self.source)
+        self.assertIn('KAGGLE_REPOSITORY_ROOT = Path("/kaggle/working/PCC")', self.source)
         self.assertIn(
             'CONFIG_PATH = REPOSITORY_ROOT / "configs/layer2r_kaggle_one_case.json"',
             self.source,
@@ -50,6 +49,30 @@ class KaggleOneCaseWrapperTests(unittest.TestCase):
         self.assertIn(
             'RUNNER_PATH = REPOSITORY_ROOT / "experiments/run_formal_layer2r.py"',
             self.source,
+        )
+
+    def test_bootstrap_pins_public_repository_and_commit(self):
+        self.assertIn(
+            'REPOSITORY_URL = "https://github.com/changxinjiresearch/PCC.git"',
+            self.source,
+        )
+        self.assertIn('APPROVED_COMMIT = "906b39f"', self.source)
+        self.assertIn('["clone", REPOSITORY_URL, str(KAGGLE_REPOSITORY_ROOT)]', self.source)
+        self.assertIn('["checkout", "--detach", APPROVED_COMMIT]', self.source)
+
+    def test_bootstrap_uses_checked_subprocess_without_shell(self):
+        self.assertIn('return subprocess.run(', self.source)
+        self.assertIn('check=True', self.source)
+        self.assertNotIn('shell=True', self.source)
+
+    def test_existing_kaggle_checkout_requires_remote_and_commit_verification(self):
+        self.assertIn('["remote", "get-url", "origin"]', self.source)
+        self.assertIn('["rev-parse", f"{APPROVED_COMMIT}^{{commit}}"]', self.source)
+        self.assertIn('["rev-parse", "HEAD"]', self.source)
+        self.assertIn('if actual_commit != expected_commit:', self.source)
+        self.assertLess(
+            self.source.index("verify_kaggle_checkout(KAGGLE_REPOSITORY_ROOT)"),
+            self.source.index("sys.path.insert(0, str(REPOSITORY_ROOT))"),
         )
 
     def test_config_and_wrapper_enforce_one_case_limit(self):
