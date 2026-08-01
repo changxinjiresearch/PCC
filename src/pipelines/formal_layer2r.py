@@ -65,6 +65,7 @@ from src.visualization.figures import save_layer2r_formal_figure
 
 
 BaselineSource = Literal["training", "checkpoint", "saved_map"]
+KAGGLE_INPUT_ROOT = Path("/kaggle/input")
 
 
 @dataclass(frozen=True)
@@ -104,12 +105,40 @@ class FormalPreflightResult:
         return not self.errors
 
 
+def _resolve_raw_root(
+    configured_root: str | Path,
+    *,
+    kaggle_input_root: Path = KAGGLE_INPUT_ROOT,
+) -> Path:
+    """Resolve a relocated Kaggle dataset mount without changing case paths."""
+    configured = Path(configured_root)
+    if configured.is_dir():
+        return configured
+    if not kaggle_input_root.is_dir():
+        return configured
+
+    candidates = sorted(
+        candidate
+        for candidate in kaggle_input_root.rglob("MU-Glioma-Post")
+        if candidate.is_dir()
+        and any(candidate.glob("PatientID_*"))
+    )
+    if not candidates:
+        return configured
+    if len(candidates) > 1:
+        raise ValueError(
+            "Ambiguous MU-Glioma-Post dataset roots: "
+            + ", ".join(str(candidate) for candidate in candidates)
+        )
+    return candidates[0]
+
+
 def load_formal_config(path: str | Path) -> FormalRunConfig:
     """Load the intentionally small JSON configuration used by Kaggle."""
     with Path(path).open() as stream:
         values = json.load(stream)
     return FormalRunConfig(
-        raw_root=Path(values["raw_root"]),
+        raw_root=_resolve_raw_root(values["raw_root"]),
         case_metrics_csv=Path(values["case_metrics_csv"]),
         output_dir=Path(values["output_dir"]),
         baseline_source=values.get("baseline_source", "training"),

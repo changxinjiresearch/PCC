@@ -21,6 +21,7 @@ try:
         FormalPreflightResult,
         FormalTrainingProvider,
         SavedBaselineMapProvider,
+        _resolve_raw_root,
         _selected_case_ids,
         build_baseline_provider,
         load_formal_config,
@@ -85,6 +86,57 @@ class FormalLayer2RExecutionTests(unittest.TestCase):
         self.assertEqual(config.baseline_source, "training")
         self.assertEqual(config.device, "cuda")
         self.assertEqual(config.max_new_cases, 1)
+
+    def test_raw_root_resolver_preserves_existing_configured_directory(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            configured = root / "configured"
+            configured.mkdir()
+            discovered = root / "datasets" / "owner" / "MU-Glioma-Post"
+            (discovered / "PatientID_0001").mkdir(parents=True)
+
+            actual = _resolve_raw_root(
+                configured,
+                kaggle_input_root=root,
+            )
+
+        self.assertEqual(actual, configured)
+
+    def test_raw_root_resolver_discovers_nested_kaggle_dataset(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            discovered = (
+                root
+                / "datasets"
+                / "stacyvangepuram"
+                / "mu-glioma-post"
+                / "PKG - MU-Glioma-Post"
+                / "MU-Glioma-Post"
+            )
+            (discovered / "PatientID_0001").mkdir(parents=True)
+
+            actual = _resolve_raw_root(
+                root / "mu-glioma-post",
+                kaggle_input_root=root,
+            )
+
+        self.assertEqual(actual, discovered)
+
+    def test_raw_root_resolver_rejects_ambiguous_dataset_mounts(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            for owner in ("owner_a", "owner_b"):
+                candidate = root / owner / "MU-Glioma-Post"
+                (candidate / "PatientID_0001").mkdir(parents=True)
+
+            with self.assertRaisesRegex(
+                ValueError,
+                "Ambiguous MU-Glioma-Post dataset roots",
+            ):
+                _resolve_raw_root(
+                    root / "missing",
+                    kaggle_input_root=root,
+                )
 
     def test_provider_factory_requires_source_specific_roots(self):
         with tempfile.TemporaryDirectory() as temporary:
