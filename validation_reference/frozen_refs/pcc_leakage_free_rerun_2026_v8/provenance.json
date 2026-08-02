@@ -1,0 +1,43 @@
+{
+  "experiment": "PCC_LEAKAGE_FREE_RERUN_2026",
+  "kaggle_kernel": "jeechangxin/pcc-leakage-free-rerun-2026",
+  "kaggle_version": 8,
+  "run_git_commit": "936a239d913a61533025c02918eeaf8b961d467f",
+  "config_sha256": "29111a4d9cb16a2981eec5cbaa193346f9715630a6e81aaf9734805f789a14b6",
+  "case_manifest_sha256": "e5ad65359280e002d9bcc4c89211f48840d535b602821ad22db863b88e4656f8",
+  "fold_manifest_sha256": "880bd3b2c87c571d5df10342357a8b67c7d6069a2b68a99df0f5dccb783154ec",
+  "analysis_seed": 20260803,
+  "bootstrap_resamples": 10000,
+  "source_hashes": [
+    {
+      "file": "ALL_CASE_METHOD_METRICS.csv",
+      "sha256": "65db1d0056b510f778e085c5cc8b5150c8db1e5488b7e3d62fb0a745f6cbd2b5",
+      "bytes": 81498
+    },
+    {
+      "file": "ALL_PCC_ROUND_TRAJECTORIES.csv",
+      "sha256": "c8cd3a730cb8350426ab0bcdd2dae48ab99d7ee684e6ca5a0ed27a015295ebec",
+      "bytes": 61953
+    },
+    {
+      "file": "FAILED_CASES.csv",
+      "sha256": "bc1d9c3273c2db7e9c0c184877452417fbb1631f975fd497d8890e6585200148",
+      "bytes": 20
+    },
+    {
+      "file": "FULL_RUN_STATUS.json",
+      "sha256": "b76307987ef93e7b184fc6cd610756d918c2c90c685363588f8611fce3f22284",
+      "bytes": 545
+    },
+    {
+      "file": "LOCKED_CASE_MANIFEST.csv",
+      "sha256": "e5ad65359280e002d9bcc4c89211f48840d535b602821ad22db863b88e4656f8",
+      "bytes": 21787
+    },
+    {
+      "file": "LOCKED_FOLD_MANIFEST.csv",
+      "sha256": "880bd3b2c87c571d5df10342357a8b67c7d6069a2b68a99df0f5dccb783154ec",
+      "bytes": 10391
+    }
+  ]
+}

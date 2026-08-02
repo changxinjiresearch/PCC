@@ -1,0 +1,46 @@
+experiment_id: PCC_LEAKAGE_FREE_RERUN_2026_DOWNSTREAM
+source_kernel: jeechangxin/pcc-leakage-free-rerun-2026
+source_kernel_version: 8
+source_run_commit: 936a239d913a61533025c02918eeaf8b961d467f
+canonical_config_sha256: 29111a4d9cb16a2981eec5cbaa193346f9715630a6e81aaf9734805f789a14b6
+case_manifest_sha256: e5ad65359280e002d9bcc4c89211f48840d535b602821ad22db863b88e4656f8
+fold_manifest_sha256: 880bd3b2c87c571d5df10342357a8b67c7d6069a2b68a99df0f5dccb783154ec
+predictor_retraining: forbidden
+input_contract:
+  p0_filename: P0_float32.npy
+  target_filename: target.npy
+  case_count: 40
+  p0_dtype: float32
+evaluation:
+  primary: topk
+  target: clean_future_change_target
+canonical_pcc:
+  rounds: 10
+  eta: 0.30
+  dilation_radius: 26
+  sigma: 2.0
+locked_experiments:
+  one_round:
+    status: RECOVERED_AND_LOCKED
+    source: saved_P1
+  sensitivity:
+    status: RECOVERED_AND_LOCKED
+    grid:
+      rounds: [5, 15]
+      eta: [0.20, 0.40]
+      dilation_radius: [18, 34]
+      sigma: [1.0, 3.0]
+    rule: change_exactly_one_parameter_from_canonical
+    seed: deterministic_no_rng
+  imperfect_clean:
+    status: RECOVERED_AND_LOCKED
+    source: frozen_clean_guidance_result
+  target_A_original:
+    status: RECOVERED_AND_LOCKED
+    source: frozen_clean_target_result
+blocked_experiments:
+  mechanism_terms: PARTIALLY_RECOVERED
+  counterfactual: PARTIALLY_RECOVERED
+  imperfect_degraded: PARTIALLY_RECOVERED
+  target_B_C_D: PARTIALLY_RECOVERED
+  independent_strengths: NOT_RECOVERABLE

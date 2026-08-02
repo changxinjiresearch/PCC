@@ -1,0 +1,2 @@
+# Frozen external CSV evidence must retain its source bytes and SHA-256.
+validation_reference/frozen_refs/**/*.csv -text -diff
