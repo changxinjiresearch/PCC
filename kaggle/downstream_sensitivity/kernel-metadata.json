@@ -1,0 +1,17 @@
+{
+  "id": "jeechangxin/pcc-v8-downstream-sensitivity",
+  "title": "PCC V8 Downstream Sensitivity",
+  "code_file": "pcc-v8-downstream-sensitivity.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "kernel_sources": [
+    "jeechangxin/pcc-leakage-free-rerun-2026"
+  ],
+  "competition_sources": [],
+  "model_sources": []
+}
