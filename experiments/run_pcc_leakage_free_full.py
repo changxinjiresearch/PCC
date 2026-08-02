@@ -19,6 +19,7 @@ def main() -> int:
     parser.add_argument("--case-manifest")
     parser.add_argument("--preflight", action="store_true")
     parser.add_argument("--smoke", action="store_true")
+    parser.add_argument("--gpu-required", action="store_true")
     args = parser.parse_args()
     command = [sys.executable, "experiments/run_leakage_free_p0.py", "--config", args.config]
     if args.case_manifest:
@@ -27,6 +28,8 @@ def main() -> int:
         command.append("--preflight")
     if args.smoke:
         command.extend(("--smoke", "--fold", "1"))
+    if args.gpu_required:
+        command.append("--gpu-required")
     status = subprocess.run(command, check=False).returncode
     if status:
         return status

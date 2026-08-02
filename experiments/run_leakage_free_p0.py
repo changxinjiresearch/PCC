@@ -58,6 +58,7 @@ def main() -> int:
     parser.add_argument("--preflight", action="store_true")
     parser.add_argument("--smoke", action="store_true")
     parser.add_argument("--fold", type=int)
+    parser.add_argument("--gpu-required", action="store_true")
     args = parser.parse_args()
     config = load_config(Path(args.config))
     errors = []
@@ -102,7 +103,9 @@ def main() -> int:
     with fold_path.open(newline="", encoding="utf-8") as stream:
         fold_rows = [{**row, "fold": int(row["fold"])} for row in csv.DictReader(stream)]
     folds = [args.fold] if args.fold else list(range(1, 6))
-    device = select_execution_device(allow_smoke_cpu_fallback=args.smoke)
+    device = select_execution_device(
+        allow_smoke_cpu_fallback=args.smoke and not args.gpu_required
+    )
     for fold in folds:
         run_fold_training(
             case_rows, fold_rows, fold, output_root,

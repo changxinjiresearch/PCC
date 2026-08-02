@@ -7,7 +7,8 @@ One-fold/one-case smoke command:
 ```bash
 python3 experiments/run_pcc_leakage_free_full.py \
   --config configs/pcc_leakage_free_canonical.yaml \
-  --smoke
+  --smoke \
+  --gpu-required
 ```
 
 After inspection of the smoke completion marker, full P0 command:
