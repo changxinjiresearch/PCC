@@ -1,7 +1,7 @@
 {
   "id": "jeechangxin/pcc-leakage-free-rerun-2026",
   "title": "PCC Leakage-Free Rerun 2026",
-  "code_file": "pcc-leakage-free-smoke.ipynb",
+  "code_file": "pcc-leakage-free-full.ipynb",
   "language": "python",
   "kernel_type": "notebook",
   "is_private": true,
