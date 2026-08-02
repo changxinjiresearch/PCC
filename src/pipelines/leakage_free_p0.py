@@ -193,29 +193,30 @@ def run_fold_training(
     fold_root = output_root / "folds" / f"fold_{fold}"
     fold_root.mkdir(parents=True, exist_ok=True)
     checkpoint = fold_root / "best_training_loss.pt"
-    dataset = TrainingSlices()
-    loader = DataLoader(dataset, batch_size=batch_size, shuffle=True, num_workers=0, pin_memory=torch.cuda.is_available())
     model = CrossCaseSmallUNet().to(device)
-    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
-    pos_weight = calculate_pos_weight(dataset.y)
-    bce = torch.nn.BCEWithLogitsLoss(pos_weight=torch.tensor([pos_weight], device=device))
-    best_loss = float("inf")
-    history = []
-    for epoch in range(1, epochs + 1):
-        model.train(); losses = []
-        for inputs, labels in loader:
-            inputs, labels = inputs.to(device), labels.to(device)
-            optimizer.zero_grad(); logits = model(inputs)
-            loss = 0.5 * bce(logits, labels) + 0.5 * dice_loss(logits, labels)
-            loss.backward(); optimizer.step(); losses.append(float(loss.item()))
-        mean_loss = float(np.mean(losses))
-        history.append((fold, epoch, mean_loss, pos_weight, len(train_ids), len(dataset)))
-        if mean_loss < best_loss:
-            best_loss = mean_loss
-            torch.save(model.state_dict(), checkpoint)
     history_path = fold_root / "training_history.csv"
-    with history_path.open("w", newline="", encoding="utf-8") as stream:
-        writer = csv.writer(stream); writer.writerow(("fold", "epoch", "mean_loss", "pos_weight", "train_cases", "train_slices")); writer.writerows(history)
+    if not (checkpoint.exists() and history_path.exists()):
+        dataset = TrainingSlices()
+        loader = DataLoader(dataset, batch_size=batch_size, shuffle=True, num_workers=0, pin_memory=torch.cuda.is_available())
+        optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+        pos_weight = calculate_pos_weight(dataset.y)
+        bce = torch.nn.BCEWithLogitsLoss(pos_weight=torch.tensor([pos_weight], device=device))
+        best_loss = float("inf")
+        history = []
+        for epoch in range(1, epochs + 1):
+            model.train(); losses = []
+            for inputs, labels in loader:
+                inputs, labels = inputs.to(device), labels.to(device)
+                optimizer.zero_grad(); logits = model(inputs)
+                loss = 0.5 * bce(logits, labels) + 0.5 * dice_loss(logits, labels)
+                loss.backward(); optimizer.step(); losses.append(float(loss.item()))
+            mean_loss = float(np.mean(losses))
+            history.append((fold, epoch, mean_loss, pos_weight, len(train_ids), len(dataset)))
+            if mean_loss < best_loss:
+                best_loss = mean_loss
+                torch.save(model.state_dict(), checkpoint)
+        with history_path.open("w", newline="", encoding="utf-8") as stream:
+            writer = csv.writer(stream); writer.writerow(("fold", "epoch", "mean_loss", "pos_weight", "train_cases", "train_slices")); writer.writerows(history)
     model.load_state_dict(torch.load(checkpoint, map_location=device)); model.eval()
     for case_id in test_ids:
         case_root = output_root / "held_out_p0" / case_id
@@ -237,4 +238,11 @@ def run_fold_training(
         complete.write_text(
             '{"status":"complete","future_information_used":false}',
             encoding="utf-8",
+        )
+    if all(
+        (output_root / "held_out_p0" / case_id / "P0_COMPLETE.json").exists()
+        for case_id in test_ids
+    ):
+        (fold_root / "FOLD_COMPLETE.json").write_text(
+            '{"status":"complete"}', encoding="utf-8"
         )

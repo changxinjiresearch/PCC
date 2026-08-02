@@ -36,6 +36,12 @@ class FoldIsolationTests(unittest.TestCase):
             with self.assertRaises(FileExistsError):
                 write_locked_fold_manifest(path, build_group_folds(self.cases))
 
+    def test_resume_contract_uses_checkpoint_and_completion_markers(self):
+        source = Path("src/pipelines/leakage_free_p0.py").read_text()
+        self.assertIn("checkpoint.exists() and history_path.exists()", source)
+        self.assertIn('P0_COMPLETE.json', source)
+        self.assertIn('FOLD_COMPLETE.json', source)
+
 
 if __name__ == "__main__":
     unittest.main()
