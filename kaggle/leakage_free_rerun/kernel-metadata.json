@@ -1,7 +1,7 @@
 {
   "id": "jeechangxin/pcc-leakage-free-rerun-2026",
   "title": "PCC Leakage-Free Rerun 2026",
-  "code_file": "pcc-leakage-free-smoke.ipynb",
+  "code_file": "gpu-compatibility-probe.ipynb",
   "language": "python",
   "kernel_type": "notebook",
   "is_private": true,
@@ -13,5 +13,6 @@
   ],
   "kernel_sources": [],
   "competition_sources": [],
-  "model_sources": []
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:c370a5ff133d162d17c2dca332b50f3e85c0b0ed1471ee18e98e3009eee80b08"
 }
