@@ -32,4 +32,6 @@ subprocess.run([
 
 The entry discovers a unique `MU-Glioma-Post` tree below `/kaggle/input`, locks the earliest usable consecutive pair for the first 40 sorted patients, writes the case manifest, writes a patient-group five-fold manifest exactly once, and hashes both. Existing manifests cannot be overwritten. The engineering smoke route uses fold 1, two train cases, two epochs, and one held-out case. It may fall back to CPU only when an actual CUDA Conv2d compatibility probe fails; the full run requires a working CUDA device and never silently falls back.
 
+For output-volume safety, P0 and final P10 remain float32. Intermediate P1–P9 and noncanonical comparator maps are persisted as float16 after all metrics and the next-round state have been computed in float32. PCC final uses a hard link to P10, and Fixed uses an explicit reference to the immutable held-out P0, avoiding scientific duplicates without dropping required states.
+
 Historical fold assignments were not found as a surviving file or Git object. Although notebook cell 14 specifies its deterministic KFold algorithm, this rerun labels the newly generated patient-group assignment as new and does not claim original-fold reproduction.

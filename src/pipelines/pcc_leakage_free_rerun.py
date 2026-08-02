@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import csv
+import json
+import os
 from dataclasses import dataclass
 from pathlib import Path
 import numpy as np
@@ -51,16 +53,31 @@ def run_retrospective_methods(p0: np.ndarray, target: np.ndarray) -> Retrospecti
     )
 
 
-def persist_retrospective_case(root: Path, case_id: str, result: RetrospectiveCaseResult) -> None:
+def persist_retrospective_case(
+    root: Path,
+    case_id: str,
+    result: RetrospectiveCaseResult,
+    *,
+    p0_source: Path | None = None,
+) -> None:
     """Persist P0, P1..PR, method maps, and atomic per-round statistics."""
     case = root / "cases" / case_id
     case.mkdir(parents=True, exist_ok=True)
-    np.save(case / "P0.npy", result.p0.astype(np.float32))
+    (case / "P0_REFERENCE.json").write_text(
+        json.dumps({"path": str(p0_source) if p0_source else None, "dtype": "float32"}, indent=2),
+        encoding="utf-8",
+    )
     np.save(case / "target.npy", result.target.astype(np.uint8))
     for index, probability in enumerate(result.trajectory, start=1):
-        np.save(case / f"P{index}.npy", probability.astype(np.float32))
+        dtype = np.float32 if index == len(result.trajectory) else np.float16
+        np.save(case / f"P{index}.npy", probability.astype(dtype))
     for method, probability in result.method_maps.items():
-        np.save(case / f"{method}.npy", probability.astype(np.float32))
+        if method in {"fixed_baseline", "pcc_correction"}:
+            continue
+        np.save(case / f"{method}.npy", probability.astype(np.float16))
+    pcc_path = case / "pcc_correction.npy"
+    if not pcc_path.exists():
+        os.link(case / f"P{len(result.trajectory)}.npy", pcc_path)
     path = case / "pcc_round_trajectory.csv"
     temporary = path.with_suffix(".csv.tmp")
     with temporary.open("w", newline="", encoding="utf-8") as stream:
@@ -77,6 +94,6 @@ def persist_retrospective_case(root: Path, case_id: str, result: RetrospectiveCa
         writer.writeheader(); writer.writerows(result.method_rows)
     metrics_temporary.replace(metrics_path)
     (case / "RETROSPECTIVE_COMPLETE.json").write_text(
-        '{"status":"complete","shared_p0":true,"shared_clean_target":true}',
+        '{"status":"complete","shared_p0":true,"shared_clean_target":true,"trajectory_intermediate_dtype":"float16","trajectory_final_dtype":"float32"}',
         encoding="utf-8",
     )

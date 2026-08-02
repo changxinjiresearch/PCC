@@ -60,12 +60,15 @@ def main() -> int:
         retrospective_case = output_root / "retrospective" / "cases" / case_id
         if (retrospective_case / "RETROSPECTIVE_COMPLETE.json").exists():
             continue
-        p0 = np.load(output_root / "held_out_p0" / case_id / "P0_float32.npy").astype(np.float32)
+        p0_path = output_root / "held_out_p0" / case_id / "P0_float32.npy"
+        p0 = np.load(p0_path).astype(np.float32)
         current_mask = nib.load(row["current_mask_path"]).get_fdata()
         future_mask = nib.load(row["future_mask_path"]).get_fdata()
         target = np.moveaxis(construct_future_change_label(current_mask, future_mask), -1, 0).astype(np.uint8)
         result = run_retrospective_methods(p0, target)
-        persist_retrospective_case(output_root / "retrospective", case_id, result)
+        persist_retrospective_case(
+            output_root / "retrospective", case_id, result, p0_source=p0_path
+        )
     return 0
 
 

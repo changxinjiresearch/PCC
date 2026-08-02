@@ -21,6 +21,12 @@ class RetrospectiveContractStaticTests(unittest.TestCase):
         capture = source.index("if capture_trajectory:", update)
         self.assertLess(update, capture)
 
+    def test_storage_keeps_final_float32_and_avoids_duplicate_pcc_map(self):
+        from pathlib import Path
+        source = Path("src/pipelines/pcc_leakage_free_rerun.py").read_text()
+        self.assertIn("np.float32 if index == len(result.trajectory) else np.float16", source)
+        self.assertIn("os.link(case / f\"P{len(result.trajectory)}.npy\", pcc_path)", source)
+
 
 @unittest.skipUnless(SCIPY_AVAILABLE, "SciPy is required for canonical PCC")
 class PCCTrajectoryTests(unittest.TestCase):

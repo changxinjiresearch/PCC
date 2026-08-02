@@ -32,6 +32,8 @@ pcc:
   sigma: 2.0
   dilation_radius: 26
   trajectory_persistence: true
+  trajectory_intermediate_storage_dtype: float16
+  trajectory_final_storage_dtype: float32
 evaluation:
   primary: topk_equal_to_clean_target_voxel_count
   clean_target: future_mask AND NOT current_mask
