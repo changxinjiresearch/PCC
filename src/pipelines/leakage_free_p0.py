@@ -147,6 +147,7 @@ def run_fold_training(
     learning_rate: float = 1e-3,
     device: str = "cuda",
     max_test_cases: int | None = None,
+    max_train_cases: int | None = None,
 ) -> None:
     """Train on fold-train targets and persist current-only held-out P0 maps."""
     import random
@@ -166,6 +167,8 @@ def run_fold_training(
     test_ids = [str(row["case_id"]) for row in fold_rows if row["fold"] == fold and row["split"] == "test"]
     if max_test_cases is not None:
         test_ids = test_ids[:max_test_cases]
+    if max_train_cases is not None:
+        train_ids = train_ids[:max_train_cases]
     if set(train_ids) & set(test_ids):
         raise RuntimeError("Train/test case leakage")
 

@@ -33,6 +33,24 @@ def load_cases(path: Path) -> list[CaseIdentity]:
     return [CaseIdentity(row["case_id"], row["patient_id"]) for row in rows]
 
 
+def select_execution_device(*, allow_smoke_cpu_fallback: bool) -> str:
+    import torch
+    if not torch.cuda.is_available():
+        if allow_smoke_cpu_fallback:
+            return "cpu"
+        raise RuntimeError("CUDA is required for the full five-fold run")
+    try:
+        probe = torch.nn.Conv2d(1, 1, 1).cuda()
+        probe(torch.zeros((1, 1, 2, 2), device="cuda"))
+        torch.cuda.synchronize()
+        return "cuda"
+    except Exception as error:
+        if not allow_smoke_cpu_fallback:
+            raise RuntimeError(f"Kaggle CUDA compatibility probe failed: {error}") from error
+        print(f"CUDA probe failed; smoke-only CPU fallback: {error}")
+        return "cpu"
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default="configs/pcc_leakage_free_canonical.yaml")
@@ -84,6 +102,7 @@ def main() -> int:
     with fold_path.open(newline="", encoding="utf-8") as stream:
         fold_rows = [{**row, "fold": int(row["fold"])} for row in csv.DictReader(stream)]
     folds = [args.fold] if args.fold else list(range(1, 6))
+    device = select_execution_device(allow_smoke_cpu_fallback=args.smoke)
     for fold in folds:
         run_fold_training(
             case_rows, fold_rows, fold, output_root,
@@ -91,6 +110,8 @@ def main() -> int:
             batch_size=config["predictor"]["batch_size"],
             learning_rate=config["predictor"]["learning_rate"],
             max_test_cases=1 if args.smoke else None,
+            max_train_cases=2 if args.smoke else None,
+            device=device,
         )
     return 0
 
