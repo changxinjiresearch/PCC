@@ -54,6 +54,8 @@ class PCCResult:
     corrected_probability: np.ndarray
     correction_region: np.ndarray
     target_signal: np.ndarray
+    round_probabilities: tuple[np.ndarray, ...] = ()
+    round_statistics: tuple[dict[str, float | int], ...] = ()
 
 
 def safe_clip_prob(x: np.ndarray) -> np.ndarray:
@@ -119,6 +121,7 @@ def apply_pcc(
     sigma: float = SIGMA,
     dilation_radius: float = DILATION_RADIUS,
     iterations: int = PCC_ROUNDS,
+    capture_trajectory: bool = False,
 ) -> PCCResult:
     """Run the final authoritative Layer 2R PCC update sequence."""
     target_bool = future_change_target.astype(bool)
@@ -132,6 +135,8 @@ def apply_pcc(
     target_signal = smooth_mask(target_bool, sigma=sigma)
 
     pcc = fixed_baseline.copy()
+    round_probabilities: list[np.ndarray] = []
+    round_statistics: list[dict[str, float | int]] = []
 
     for _ in range(1, iterations + 1):
         p = safe_clip_prob(pcc)
@@ -155,8 +160,25 @@ def apply_pcc(
         )
         pcc = safe_clip_prob(sigmoid(logits))
 
+        if capture_trajectory:
+            round_probabilities.append(pcc.copy())
+            target_float = target_bool.astype(np.float32)
+            outside_target = (~target_bool).astype(np.float32)
+            round_statistics.append(
+                {
+                    "round": len(round_probabilities),
+                    "residual_mean": float(np.mean(residual)),
+                    "residual_abs_mass": float(np.abs(residual).sum()),
+                    "correction_mass": float(np.abs(pcc - p).sum()),
+                    "target_mass": float((pcc * target_float).sum()),
+                    "outside_target_mass": float((pcc * outside_target).sum()),
+                }
+            )
+
     return PCCResult(
         corrected_probability=pcc,
         correction_region=correction_region,
         target_signal=target_signal,
+        round_probabilities=tuple(round_probabilities),
+        round_statistics=tuple(round_statistics),
     )

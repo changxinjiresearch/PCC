@@ -2,6 +2,7 @@
   "raw_root": "/kaggle/input/datasets/stacyvangepuram/mu-glioma-post/PKG - MU-Glioma-Post/MU-Glioma-Post",
   "case_metrics_csv": "/kaggle/input/datasets/jeechangxin/model-a-backup-final/direct_target_case_metrics.csv",
   "output_dir": "/kaggle/working/Layer2R_publication_rebuild_EIA_v1",
+  "experiment_variant": "HISTORICAL_CASE_SPECIFIC_TARGET_TRAINED_VARIANT",
   "baseline_source": "training",
   "device": "cuda",
   "max_new_cases": 1,

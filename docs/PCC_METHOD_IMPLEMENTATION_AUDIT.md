@@ -25,7 +25,7 @@ Audit basis: Git `a31ee5e05ad20cd26def91ba5b9e74c36c9050a5`, dirty worktree, aut
 
 For reproducing the **historical Formal EIA rebuild**, notebook cells 109–110 and their literal migrated modules are canonical. Tests transcribe their operation order and constants. The Patient 0003 saved package validates the artifact contract but cannot prove pixel/checkpoint equivalence.
 
-For the **new leakage-free longitudinal specification**, no canonical end-to-end implementation is currently executable locally. The historical case-specific baseline cannot serve as P0. The notebook contains independent five-fold/cross-case experiments, but the corresponding complete migration, fold checkpoints/maps, dataset, and locked manifest are absent. Selection or reconstruction without those authorities would create a new scientific variant.
+For the **new leakage-free longitudinal specification**, the user has authorized `PCC_LEAKAGE_FREE_RERUN_2026`. Its predictor architecture, training loss, optimizer, epochs, batch size, learning rate, training-loss checkpoint criterion, preprocessing, and top-k evaluation were migrated from notebook cells 14–17. The original fold CSV is absent; a new deterministic patient-group split is locked before training and is explicitly a new run.
 
 ## Alignment classification
 

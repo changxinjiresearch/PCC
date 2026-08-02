@@ -66,6 +66,7 @@ from src.visualization.figures import save_layer2r_formal_figure
 
 BaselineSource = Literal["training", "checkpoint", "saved_map"]
 KAGGLE_INPUT_ROOT = Path("/kaggle/input")
+HISTORICAL_VARIANT_ID = "HISTORICAL_CASE_SPECIFIC_TARGET_TRAINED_VARIANT"
 
 
 @dataclass(frozen=True)

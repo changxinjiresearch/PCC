@@ -26,7 +26,7 @@ Fixed evaluates unchanged P0. Naive may transform P0 but must not receive T. PCC
 
 The historical Formal EIA rebuild's so-called case-specific baseline is trained on every slice of the evaluated case using T as its supervised label, and T is also used for best-epoch selection. Its network inputs are only current T1c and current mask, but its fitted parameters are future-target-conditioned. Consequently that map is not a leakage-free P0 under this rerun specification.
 
-This conflict must not be repaired by relabeling, tuning, or silently substituting another starting map. A leakage-free cross-case held-out predictor exists as historical notebook work, but its complete executable migration, locked fold artifacts, and dataset are not locally available. Until that route is recovered, the full longitudinal rerun has a hard scientific/data blocker.
+This conflict must not be repaired by relabeling or tuning. The newly authorized canonical main route is `PCC_LEAKAGE_FREE_RERUN_2026`: a patient-group five-fold held-out predictor faithfully based on notebook cells 14–17, followed by immutable-P0 retrospective correction. Historical fold files did not survive locally, so the run will create a new deterministic group split and will not claim original-fold reproduction. Dataset/GPU execution remains external.
 
 ## Reporting boundary
 

@@ -2,7 +2,7 @@
 
 | Experiment | Scientific question | Repository entry/evidence | Dependency and status |
 |---|---|---|---|
-| Formal Layer2R historical EIA | Does target-conditioned iterative correction differ from controls? | `experiments/run_formal_layer2r.py`; `src/pipelines/formal_layer2r.py`; notebook 109–110 | Historical pipeline READY on Kaggle, but P0 is target-trained and therefore incompatible with the new leakage-free definition. |
+| Formal Layer2R historical EIA (`HISTORICAL_CASE_SPECIFIC_TARGET_TRAINED_VARIANT`) | Does target-conditioned iterative correction differ from controls? | `experiments/run_formal_layer2r.py`; `src/pipelines/formal_layer2r.py`; notebook 109–110 | Historical pipeline retained, but P0 is target-trained and therefore incompatible with the new leakage-free definition. |
 | Fixed | Performance of supplied starting map | `run_case` / `eval_prob_map` | READY once a scientifically admissible P0 exists. |
 | Naive | Target-free self-tightening control | `src/models/naive_self_tightening.py` | READY. |
 | PCC | Multi-round target-conditioned map refinement | `src/models/pcc.py::apply_pcc` | READY; final state only, trajectory persistence missing. |

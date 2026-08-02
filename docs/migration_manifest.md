@@ -1,4 +1,17 @@
 # PCC Scientific Migration Manifest
+
+## PCC Full Rerun Authorization 2026-08-03
+
+For the current full-rerun branch, the leakage-free five-fold cross-case
+held-out P0 route and its reproduction/validation infrastructure are expressly
+authorized. Codex may migrate the notebook's independent predictor, implement
+current-only preprocessing, trajectory persistence, tests, configurations,
+execution preparation, commits, pushes, and Kaggle preparation without waiting
+for per-module approval. The historical rules below remain in force for other
+migration work. This authorization does not permit invention of missing
+scientific algorithms or alteration of historical implementations to improve
+reported results. Work stops only for genuine scientific, data-access,
+authentication, destructive-action, or external-platform blockers.
 Version: 2.0
 
 ---
