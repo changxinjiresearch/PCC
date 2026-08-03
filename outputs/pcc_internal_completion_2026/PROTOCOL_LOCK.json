@@ -1,0 +1,15 @@
+{
+  "experiment_name": "PCC_INTERNAL_COMPLETION_2026",
+  "status": "LOCKED_BEFORE_RESULTS",
+  "protocol_commit": "3ed97f2",
+  "protocol_commit_full": "3ed97f2",
+  "config_path": "configs/pcc_internal_completion_2026.yaml",
+  "config_sha256": "7a36fe0689abae5552395da84b69260e081764c13bd540a2454b2e74494697c4",
+  "protocol_path": "docs/PCC_INTERNAL_COMPLETION_PROTOCOL_2026.md",
+  "locked_utc": "2026-08-03",
+  "new_prespecified_2026_analyses": true,
+  "historical_reproduction_claim": false,
+  "predictor_retraining_forbidden": true,
+  "p0_regeneration_forbidden": true,
+  "external_dataset_execution_forbidden_this_stage": true
+}

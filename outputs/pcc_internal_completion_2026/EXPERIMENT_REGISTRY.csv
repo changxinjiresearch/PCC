@@ -1,0 +1,20 @@
+experiment_id,family,status,input_authority,predictor_retraining,primary_comparison,notes
+A1_FULL_PCC,mechanism,LOCKED_REUSE,v8 frozen,no,reference,Frozen P10
+A2_ONE_ROUND,mechanism,LOCKED_REUSE,v8 frozen,no,P1 vs P10,Frozen P1
+A3_NO_ERROR_GUIDED_TERM,mechanism,PRESPECIFIED_NOT_RUN,v8 P0 and target,no,vs FULL_PCC,New 2026 analysis
+A4_NO_OUTSIDE_SUPPRESSION,mechanism,PRESPECIFIED_NOT_RUN,v8 P0 and target,no,vs FULL_PCC,New 2026 analysis
+A5_NO_SMOOTHING,mechanism,PRESPECIFIED_NOT_RUN,v8 P0 and target,no,vs FULL_PCC,New 2026 analysis
+A6_GLOBAL_DISCREPANCY,mechanism,PRESPECIFIED_NOT_RUN,v8 P0 and target,no,vs FULL_PCC,New 2026 analysis
+A7_TERM_FACTORIAL,mechanism,PRESPECIFIED_NOT_RUN,v8 P0 and target,no,vs FULL_PCC,2x2 identity control included
+S1_SHUFFLED_TARGET,counterfactual,PRESPECIFIED_NOT_RUN,v8 P0 and targets,no,vs FULL_PCC,Seed 20260803 derangement
+B1_CLEAN,imperfect_guidance,LOCKED_REUSE,v8 frozen,no,reference,Frozen P10
+B2_PARTIAL_50,imperfect_guidance,PRESPECIFIED_NOT_RUN,v8 P0 and target,no,vs CLEAN,Deterministic component interior
+B3_PARTIAL_25,imperfect_guidance,PRESPECIFIED_NOT_RUN,v8 P0 and target,no,vs CLEAN,Deterministic component interior
+B4_FP_25,imperfect_guidance,PRESPECIFIED_NOT_RUN,v8 P0 and target,no,vs CLEAN,Five seeds aggregated within case
+B5_SHIFT_3,imperfect_guidance,PRESPECIFIED_NOT_RUN,v8 P0 and target,no,vs CLEAN,Six directions aggregated within case
+B6_MIXED,imperfect_guidance,PRESPECIFIED_NOT_RUN,v8 P0 and target,no,vs CLEAN,Thirty repeats aggregated within case
+C1_ORIGINAL,target_construction,LOCKED_REUSE,v8 frozen,no,reference,Original target
+C2_BOUNDARY_TOLERANT,target_construction,PRESPECIFIED_NOT_RUN,v8 P0 plus raw masks,no,vs ORIGINAL,Physical 2 mm dilation
+C3_ERODED_CURRENT,target_construction,PRESPECIFIED_NOT_RUN,v8 P0 plus raw masks,no,vs ORIGINAL,Physical 2 mm erosion
+C4_LARGE_CHANGE_ONLY,target_construction,PRESPECIFIED_NOT_RUN,v8 P0 plus raw masks,no,vs ORIGINAL,Components >=100 mm3
+D1_DIFFERENCE_MAP,difference_control,CONDITIONAL_GATE,v8 cases plus raw images,no,vs Fixed,Retrospective future-image control only if grids match
