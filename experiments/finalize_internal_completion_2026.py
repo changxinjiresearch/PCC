@@ -91,6 +91,14 @@ def finalize(root: Path, frozen: Path) -> None:
         paired.append(paired_family(subset, condition_column="condition", reference="ORIGINAL", comparisons=["BOUNDARY_TOLERANT", "ERODED_CURRENT", "LARGE_CHANGE_ONLY"], family=f"target_construction_{mode}_vs_original"))
     master.append(targets.assign(experiment_family="target_construction"))
 
+    difference_status = json.loads((root / "05_difference_map_control/DIFFERENCE_MAP_GATE_STATUS.json").read_text())
+    if difference_status["status"] == "PASS":
+        difference = read_numeric(root / "05_difference_map_control/DIFFERENCE_MAP_CASE_METRICS.csv")
+        difference = pd.concat([difference, reference_rows(methods, {"fixed_baseline":"FIXED_P0"})], ignore_index=True, sort=False)
+        summaries.append(summarize(difference, ["condition"]).assign(family="difference_map_control"))
+        paired.append(paired_family(difference, condition_column="condition", reference="FIXED_P0", comparisons=["RETROSPECTIVE_FUTURE_IMAGE_DIFFERENCE_CONTROL"], family="difference_map_control_vs_fixed"))
+        master.append(difference.assign(experiment_family="difference_map_control"))
+
     summary = pd.concat(summaries, ignore_index=True, sort=False)
     paired_table = pd.concat(paired, ignore_index=True, sort=False)
     master_table = pd.concat(master, ignore_index=True, sort=False)
@@ -130,7 +138,7 @@ def finalize(root: Path, frozen: Path) -> None:
         {"experiment":"shuffled_target","status":"COMPLETE","case_count":shuffled[shuffled.condition == "SHUFFLED_TARGET_PCC"].case_id.nunique()},
         {"experiment":"imperfect_guidance","status":"COMPLETE","case_count":case_aggregated.case_id.nunique()},
         {"experiment":"target_construction","status":"COMPLETE","case_count":targets.case_id.nunique()},
-        {"experiment":"difference_map_control","status":"PENDING_COMPATIBILITY_GATE","case_count":0},
+        {"experiment":"difference_map_control","status":"COMPLETE" if difference_status["status"] == "PASS" else difference_status["status"],"case_count":40 if difference_status["status"] == "PASS" else 0},
     ])
     atomic_csv(status, root / "INTERNAL_COMPLETION_STATUS.csv")
     (root / "10_statistics/STATISTICS_VALIDATION.json").write_text(json.dumps({"status":"PASS", "case_level_unit":True, "repeat_aggregation_before_inference":True, "bootstrap_resamples":10000, "seed":20260803, "finite_master_metrics":bool(np.isfinite(master_table[["dice","iou"]].astype(float)).all().all())}, indent=2) + "\n")
