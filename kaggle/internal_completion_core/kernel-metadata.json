@@ -1,0 +1,15 @@
+{
+  "id": "jeechangxin/pcc-internal-completion-2026-core",
+  "title": "PCC Internal Completion 2026 Core",
+  "code_file": "pcc-internal-completion-2026-core.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": ["stacyvangepuram/mu-glioma-post"],
+  "kernel_sources": ["jeechangxin/pcc-leakage-free-rerun-2026"],
+  "competition_sources": [],
+  "model_sources": []
+}

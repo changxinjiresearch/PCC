@@ -1,0 +1,15 @@
+{
+  "id": "jeechangxin/pcc-internal-completion-2026-imperfect-1",
+  "title": "PCC Internal Completion 2026 Imperfect Shard 1",
+  "code_file": "pcc-internal-completion-2026-imperfect-1.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": ["stacyvangepuram/mu-glioma-post"],
+  "kernel_sources": ["jeechangxin/pcc-leakage-free-rerun-2026"],
+  "competition_sources": [],
+  "model_sources": []
+}
