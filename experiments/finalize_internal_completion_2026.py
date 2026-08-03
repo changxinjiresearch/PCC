@@ -119,6 +119,8 @@ def finalize(root: Path, frozen: Path) -> None:
     failure["shuffled_gain_vs_p0"] = shuffled_case.dice.astype(float) - failure.p0_dice
     retention = case_aggregated[(case_aggregated.method == "PCC") & (case_aggregated.condition != "CLEAN")].groupby("case_id").retention_relative_to_clean_pcc.min()
     failure["smallest_imperfect_retention"] = retention
+    imperfect_pcc_rows = case_aggregated[(case_aggregated.method == "PCC") & (case_aggregated.condition != "CLEAN")].sort_values(["case_id", "retention_relative_to_clean_pcc", "condition"])
+    failure["worst_imperfect_condition"] = imperfect_pcc_rows.groupby("case_id").first().condition
     original_target = targets[(targets.condition == "ORIGINAL") & (targets.evaluation_mode == "same_definition")].set_index("case_id")
     failure["target_voxels"] = original_target.evaluation_target_voxels
     failure["target_components"] = original_target.target_components
