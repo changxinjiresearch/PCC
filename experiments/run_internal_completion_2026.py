@@ -37,7 +37,14 @@ def sha256(path: Path) -> str:
 def atomic_csv(path: Path, rows: list[dict[str, object]], fields: list[str] | None = None) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_suffix(path.suffix + ".tmp")
-    columns = fields or list(rows[0])
+    if fields is None:
+        columns = []
+        for row in rows:
+            for key in row:
+                if key not in columns:
+                    columns.append(key)
+    else:
+        columns = fields
     with temporary.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=columns, extrasaction="ignore")
         writer.writeheader(); writer.writerows(rows)

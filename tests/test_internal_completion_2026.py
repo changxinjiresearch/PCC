@@ -1,6 +1,9 @@
 import unittest
 
 import numpy as np
+import csv
+import tempfile
+from pathlib import Path
 
 try:
     from src.analysis.internal_completion import (
@@ -76,6 +79,16 @@ class InternalCompletionProtocolTests(unittest.TestCase):
         for recipient, donor in first.items():
             self.assertNotEqual(recipient, donor)
             self.assertNotEqual(patients[recipient], patients[donor])
+
+    def test_atomic_csv_preserves_union_schema(self):
+        from experiments.run_internal_completion_2026 import atomic_csv
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / "result.csv"
+            atomic_csv(path, [{"case_id": "a", "dice": 0.1}, {"case_id": "b", "dice": 0.2, "target_mass": 3.0}])
+            with path.open(newline="") as handle:
+                rows = list(csv.DictReader(handle))
+        self.assertIn("target_mass", rows[0])
+        self.assertEqual(rows[1]["target_mass"], "3.0")
 
 
 if __name__ == "__main__":
