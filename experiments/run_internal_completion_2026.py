@@ -229,10 +229,15 @@ def write_failures(path: Path, failures: list[dict[str,str]]) -> None:
 
 
 def main() -> None:
-    parser=argparse.ArgumentParser(); parser.add_argument("--family",choices=["mechanism","shuffled","imperfect","targets","identity"],required=True); parser.add_argument("--frozen-root",type=Path,required=True); parser.add_argument("--output-root",type=Path,required=True); parser.add_argument("--config",type=Path,required=True); args=parser.parse_args()
-    manifest=validate(args.frozen_root,args.config); args.output_root.mkdir(parents=True,exist_ok=True)
+    parser=argparse.ArgumentParser(); parser.add_argument("--family",choices=["mechanism","shuffled","imperfect","targets","identity"],required=True); parser.add_argument("--frozen-root",type=Path,required=True); parser.add_argument("--output-root",type=Path,required=True); parser.add_argument("--config",type=Path,required=True); parser.add_argument("--shard-index",type=int,default=0); parser.add_argument("--shard-count",type=int,default=1); parser.add_argument("--case-limit",type=int); args=parser.parse_args()
+    manifest=validate(args.frozen_root,args.config)
+    if args.shard_count < 1 or not 0 <= args.shard_index < args.shard_count:
+        raise ValueError("Invalid deterministic shard specification")
+    manifest=[row for index,row in enumerate(sorted(manifest,key=lambda item:item["case_id"])) if index % args.shard_count == args.shard_index]
+    if args.case_limit is not None: manifest=manifest[:args.case_limit]
+    args.output_root.mkdir(parents=True,exist_ok=True)
     {"mechanism":run_mechanism,"shuffled":run_shuffled,"imperfect":run_imperfect,"targets":run_targets,"identity":run_identity}[args.family](args.frozen_root,manifest,args.output_root)
-    print(json.dumps({"status":"COMPLETE","family":args.family,"predictor_retrained":False,"p0_regenerated":False}))
+    print(json.dumps({"status":"COMPLETE","family":args.family,"cases":len(manifest),"shard_index":args.shard_index,"shard_count":args.shard_count,"predictor_retrained":False,"p0_regenerated":False}))
 
 
 if __name__ == "__main__": main()
