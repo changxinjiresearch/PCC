@@ -1,0 +1,9 @@
+{
+  "status": "LOCKED",
+  "owner_slug": "stacyvangepuram/mu-glioma-post",
+  "cases": 40,
+  "file_rows": 120,
+  "file_map_sha256": "65523b12cea69b499d7cfd65746aa2c4b86f3281e77603f6fcd90275da1fc6fd",
+  "case_manifest_modified": false,
+  "fold_manifest_modified": false
+}
