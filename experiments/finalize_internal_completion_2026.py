@@ -21,7 +21,10 @@ def read_numeric(path: Path) -> pd.DataFrame:
     frame = pd.read_csv(path)
     for column in frame.columns:
         if column not in {"case_id", "condition", "method", "repeat", "source", "displacement", "evaluation_mode", "donor_case_id"}:
-            frame[column] = pd.to_numeric(frame[column], errors="ignore")
+            try:
+                frame[column] = pd.to_numeric(frame[column])
+            except (TypeError, ValueError):
+                pass
     return frame
 
 

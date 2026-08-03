@@ -1,7 +1,10 @@
 import numpy as np
 import pandas as pd
+import tempfile
+from pathlib import Path
 
 from src.analysis.internal_statistics import aggregate_repeats, holm_adjust, paired_family
+from experiments.finalize_internal_completion_2026 import read_numeric
 
 
 def test_holm_is_monotone_in_rank_and_bounded():
@@ -23,3 +26,12 @@ def test_paired_statistics_never_treat_repeats_as_cases():
     assert set(result.N) == {2}
     assert set(result.wins) == {0}
     assert set(result.losses) == {2}
+
+
+def test_reporting_numeric_conversion_preserves_text_columns():
+    with tempfile.TemporaryDirectory() as temporary:
+        path = Path(temporary) / "rows.csv"
+        path.write_text("case_id,dice,note\na,0.5,locked\n")
+        frame = read_numeric(path)
+    assert frame.dice.dtype.kind == "f"
+    assert frame.note.iloc[0] == "locked"
