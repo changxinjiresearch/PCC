@@ -1,0 +1,3 @@
+category,case_id,fold,dice_gain,slice_z,baseline_checkpoint,pcc_checkpoint,protocol,training_performed
+layer1_improvement,PatientID_0014_T1_to_T2_t1c,2,0.2713023407079576,107,baseline_seg_fold_2_FORMAL_v1.pt,pcc_seg_corrector_fold_2_FORMAL_v1.pt,Layer 1 Formal v1,False
+layer1_decline,PatientID_0019_T4_to_T5_t1c,3,-0.0230510963837445,54,baseline_seg_fold_3_FORMAL_v1.pt,pcc_seg_corrector_fold_3_FORMAL_v1.pt,Layer 1 Formal v1,False
