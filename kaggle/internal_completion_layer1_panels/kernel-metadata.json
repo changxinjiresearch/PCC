@@ -1,0 +1,15 @@
+{
+  "id": "jeechangxin/pcc-internal-completion-2026-layer1-panels",
+  "title": "PCC Internal Completion 2026 Layer1 Panels",
+  "code_file": "pcc-internal-completion-2026-layer1-panels.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "kernel_sources": ["jeechangxin/pcc-layer1-formal-v1-rerun-2026"],
+  "competition_sources": [],
+  "model_sources": []
+}
