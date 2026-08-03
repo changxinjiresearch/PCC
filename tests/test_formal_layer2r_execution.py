@@ -211,8 +211,6 @@ class FormalLayer2RExecutionTests(unittest.TestCase):
             )
             self.make_raw_case(config, case_id)
             with mock.patch(
-                "src.pipelines.formal_layer2r.importlib.import_module"
-            ), mock.patch(
                 "src.pipelines.formal_layer2r.torch.cuda.is_available",
                 return_value=True,
             ), mock.patch(
@@ -248,8 +246,6 @@ class FormalLayer2RExecutionTests(unittest.TestCase):
             for case_id in cases:
                 self.make_raw_case(config, case_id)
             with mock.patch(
-                "src.pipelines.formal_layer2r.importlib.import_module"
-            ), mock.patch(
                 "src.pipelines.formal_layer2r.torch.cuda.is_available",
                 return_value=True,
             ):
@@ -277,8 +273,6 @@ class FormalLayer2RExecutionTests(unittest.TestCase):
             )
             config.output_dir.touch()
             with mock.patch(
-                "src.pipelines.formal_layer2r.importlib.import_module"
-            ), mock.patch(
                 "src.pipelines.formal_layer2r.torch.cuda.is_available",
                 return_value=False,
             ):
@@ -295,7 +289,7 @@ class FormalLayer2RExecutionTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             config = self.config(root)
-            pd.DataFrame({"case_id": ["case_a"]}).to_csv(
+            pd.DataFrame({"case_id": ["PatientID_001_T1_to_T2_t1c"]}).to_csv(
                 config.case_metrics_csv,
                 index=False,
             )
@@ -357,7 +351,7 @@ class FormalLayer2RExecutionTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             config = self.config(root)
-            pd.DataFrame({"case_id": ["case_a"]}).to_csv(
+            pd.DataFrame({"case_id": ["PatientID_001_T1_to_T2_t1c"]}).to_csv(
                 config.case_metrics_csv,
                 index=False,
             )
