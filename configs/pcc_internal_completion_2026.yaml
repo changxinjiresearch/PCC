@@ -1,0 +1,124 @@
+experiment_name: PCC_INTERNAL_COMPLETION_2026
+analysis_type: new_prespecified_2026_internal_analyses
+historical_reproduction_claim: false
+protocol_date: 2026-08-03
+frozen_authority:
+  kaggle_kernel: jeechangxin/pcc-leakage-free-rerun-2026
+  kaggle_version: 8
+  expected_status: COMPLETE
+  expected_cases: 40
+  expected_p0_cases: 40
+  expected_config_sha256: 29111a4d9cb16a2981eec5cbaa193346f9715630a6e81aaf9734805f789a14b6
+  expected_case_manifest_sha256: e5ad65359280e002d9bcc4c89211f48840d535b602821ad22db863b88e4656f8
+  expected_fold_manifest_sha256: 880bd3b2c87c571d5df10342357a8b67c7d6069a2b68a99df0f5dccb783154ec
+  predictor_retraining: forbidden
+  p0_regeneration: forbidden
+canonical_pcc:
+  rounds: 10
+  eta: 0.30
+  dilation_radius_voxels: 26
+  sigma_voxels: 2.0
+  probability_clip: [0.0, 1.0]
+  logit_epsilon: 0.00001
+  discrepancy: (T - P_r) * R
+  smoothed_discrepancy: GaussianSmooth(discrepancy, sigma)
+  outside_suppression: P_r * (1 - R)
+  update: logit(P_r) + eta * smoothed_discrepancy - eta * outside_suppression
+  state_propagation: true
+evaluation:
+  primary: target_volume_matched_topk
+  threshold_secondary: 0.5
+  clean_target: future_mask AND NOT current_mask
+  empty_target_primary_overlap: not_applicable
+  empty_target_mass_metrics: retained
+mechanism_ablation:
+  family: 1
+  variants:
+    - FULL_PCC
+    - ONE_ROUND
+    - NO_ERROR_GUIDED_TERM
+    - NO_OUTSIDE_SUPPRESSION
+    - NO_SMOOTHING
+    - GLOBAL_DISCREPANCY
+    - FACTORIAL_ERROR_ON_SUPPRESSION_ON
+    - FACTORIAL_ERROR_ON_SUPPRESSION_OFF
+    - FACTORIAL_ERROR_OFF_SUPPRESSION_ON
+    - FACTORIAL_ERROR_OFF_SUPPRESSION_OFF
+  identity_tolerance: 0.0
+shuffled_target:
+  family: 2
+  seed: 20260803
+  volume_quartiles: 4
+  patient_disjoint: true
+  self_match: forbidden
+  mapping_algorithm: deterministic_minimum_cost_derangement
+  cost_order: [same_quartile, adjacent_quartile_distance, absolute_log_target_volume_difference, seeded_hash_tie_break]
+  correction_target: donor_clean_target
+  evaluation_target: recipient_clean_target
+imperfect_guidance:
+  family: 3
+  connected_component_connectivity: 26
+  partial:
+    fractions: [0.50, 0.25]
+    distance_metric: euclidean_voxel_distance_to_component_boundary
+    selection: greatest_interior_distance_first
+    tie_break: lexicographic_zyx
+    per_component_minimum_if_nonempty: 1
+  false_positive_25:
+    volume_fraction: 0.25
+    annulus_mm: [5.0, 15.0]
+    seeds: [20260803, 20260804, 20260805, 20260806, 20260807]
+    selection: seeded_without_replacement_from_lexicographic_candidate_order
+    insufficient_candidates: take_all_and_record_shortfall
+  shift_3:
+    voxels: 3
+    directions: [+x, -x, +y, -y, +z, -z]
+    wrap_around: false
+  mixed:
+    order: [PARTIAL_50, FP_25, SHIFT_3]
+    fp_seeds: [20260803, 20260804, 20260805, 20260806, 20260807]
+    shift_directions: [+x, -x, +y, -y, +z, -z]
+    primary_aggregation: within_case_mean_over_30_repeats
+    retain_best_worst: true
+target_construction:
+  family: 4
+  connected_component_connectivity: 26
+  variants:
+    ORIGINAL:
+      definition: future_mask AND NOT current_mask
+    BOUNDARY_TOLERANT:
+      definition: future_mask AND NOT dilate_physical(current_mask, 2 mm)
+    ERODED_CURRENT:
+      definition: future_mask AND NOT erode_physical(current_mask, 2 mm)
+    LARGE_CHANGE_ONLY:
+      definition: components(original_target) with physical volume >= 100 mm3
+  physical_distance_method: scipy_distance_transform_edt_with_sampling_equal_to_nifti_spacing_zyx
+  evaluation_modes: [same_definition_target, original_clean_target]
+difference_map_control:
+  status_rule: execute_only_if_current_future_grid_affine_orientation_spacing_match
+  method_name: RETROSPECTIVE_FUTURE_IMAGE_DIFFERENCE_CONTROL
+  registration_tolerance_affine_abs: 0.00001
+  normalization: each_image_positive_voxels_p1_p99_independently
+  map: absolute_normalized_current_future_difference
+  gaussian_sigma_voxels: 2.0
+  binarization: topk_equal_to_original_clean_target_voxel_count
+statistics:
+  unit: case
+  bootstrap_resamples: 10000
+  bootstrap_seed: 20260803
+  wilcoxon: paired_two_sided
+  effect_size: paired_cohens_dz
+  holm_families:
+    1: mechanism_ablation_vs_FULL_PCC
+    2: counterfactual_vs_FULL_PCC
+    3: imperfect_guidance_vs_CLEAN_PCC
+    4: target_construction_vs_ORIGINAL
+  stochastic_repeats: aggregate_within_case_before_inference
+qualitative_selection:
+  deterministic_rankings: [median_layer2_gain, maximum_layer2_gain, minimum_layer2_gain, smallest_target, most_fragmented_target, worst_imperfect_retention, layer1_improvement, layer1_decline]
+  tie_break: case_id_ascending
+output_root: /kaggle/working/PCC_INTERNAL_COMPLETION_2026
+resume:
+  case_completion_markers: true
+  atomic_csv: true
+  overwrite_completed: false
