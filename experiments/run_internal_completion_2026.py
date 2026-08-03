@@ -13,6 +13,7 @@ from pathlib import Path
 
 import nibabel as nib
 import numpy as np
+from scipy.ndimage import gaussian_filter
 
 from src.analysis.internal_completion import (
     FP_SEEDS, SHIFT_DIRECTIONS, component_count, deranged_donors,
@@ -224,6 +225,41 @@ def run_identity(frozen: Path, manifest: list[dict[str,str]], out: Path) -> None
     (family/"DATASET_IDENTITY_LOCK.json").write_text(json.dumps({"status":"LOCKED","owner_slug":"stacyvangepuram/mu-glioma-post","cases":40,"file_rows":len(rows),"file_map_sha256":sha256(family/'LOCKED_CASE_FILE_MAP.csv'),"case_manifest_modified":False,"fold_manifest_modified":False},indent=2)+"\n")
 
 
+def future_t1c_path(record: dict[str, str]) -> Path:
+    mask = Path(record["future_mask_path"])
+    return mask.with_name(mask.name.replace("_tumorMask.nii", "_brain_t1c.nii"))
+
+
+def normalized_intensity(image: nib.Nifti1Image) -> np.ndarray:
+    volume = image.get_fdata(dtype=np.float32); support = volume > 0
+    result = np.zeros_like(volume, dtype=np.float32)
+    if support.any():
+        low, high = np.percentile(volume[support], [1, 99])
+        if high > low: result[support] = np.clip((volume[support] - low) / (high - low), 0, 1)
+    return np.moveaxis(result, -1, 0)
+
+
+def run_difference(frozen: Path, manifest: list[dict[str, str]], out: Path) -> None:
+    """Run the optional control only after its all-case spatial gate passes."""
+    family = out / "05_difference_map_control"; family.mkdir(parents=True, exist_ok=True); gate_rows=[]
+    for record in manifest:
+        current_path=Path(record["current_t1c_path"]); future_path=future_t1c_path(record)
+        current=nib.load(current_path); future=nib.load(future_path) if future_path.exists() else None
+        gate_rows.append({"case_id":record["case_id"],"current_t1c_path":str(current_path),"future_t1c_path":str(future_path),"future_exists":future is not None,"shape_match":future is not None and current.shape==future.shape,"affine_match":future is not None and bool(np.allclose(current.affine,future.affine,atol=1e-5,rtol=0)),"orientation_match":future is not None and nib.aff2axcodes(current.affine)==nib.aff2axcodes(future.affine),"spacing_match":future is not None and bool(np.allclose(current.header.get_zooms()[:3],future.header.get_zooms()[:3],atol=1e-5,rtol=0))})
+    atomic_csv(family/"DIFFERENCE_MAP_COMPATIBILITY_GATE.csv",gate_rows)
+    passed=all(all(row[key] for key in ["future_exists","shape_match","affine_match","orientation_match","spacing_match"]) for row in gate_rows)
+    (family/"DIFFERENCE_MAP_GATE_STATUS.json").write_text(json.dumps({"status":"PASS" if passed else "DATA_REGISTRATION_BLOCKED","cases_checked":len(gate_rows),"all_case_gate_required":True},indent=2)+"\n")
+    if not passed: return
+    rows=[]
+    for record in manifest:
+        case=record["case_id"]; _,target=arrays(frozen,case)
+        current=normalized_intensity(nib.load(record["current_t1c_path"])); future=normalized_intensity(nib.load(future_t1c_path(record)))
+        difference=gaussian_filter(np.abs(future-current),sigma=2.0).astype(np.float32)
+        if difference.shape!=target.shape or not np.isfinite(difference).all(): raise RuntimeError(f"Difference-map contract failed: {case}")
+        rows.append(metric_row(case,"RETROSPECTIVE_FUTURE_IMAGE_DIFFERENCE_CONTROL",difference,target,target,method="DIFFERENCE_MAP",retrospective_future_image_access=True))
+    atomic_csv(family/"DIFFERENCE_MAP_CASE_METRICS.csv",rows)
+
+
 def combine_case_csvs(cases_dir: Path, destination: Path, filename: str="metrics.csv") -> None:
     rows=[]
     for path in sorted(cases_dir.glob(f"*/{filename}")):
@@ -236,14 +272,14 @@ def write_failures(path: Path, failures: list[dict[str,str]]) -> None:
 
 
 def main() -> None:
-    parser=argparse.ArgumentParser(); parser.add_argument("--family",choices=["mechanism","shuffled","imperfect","targets","identity"],required=True); parser.add_argument("--frozen-root",type=Path,required=True); parser.add_argument("--output-root",type=Path,required=True); parser.add_argument("--config",type=Path,required=True); parser.add_argument("--shard-index",type=int,default=0); parser.add_argument("--shard-count",type=int,default=1); parser.add_argument("--case-limit",type=int); args=parser.parse_args()
+    parser=argparse.ArgumentParser(); parser.add_argument("--family",choices=["mechanism","shuffled","imperfect","targets","identity","difference"],required=True); parser.add_argument("--frozen-root",type=Path,required=True); parser.add_argument("--output-root",type=Path,required=True); parser.add_argument("--config",type=Path,required=True); parser.add_argument("--shard-index",type=int,default=0); parser.add_argument("--shard-count",type=int,default=1); parser.add_argument("--case-limit",type=int); args=parser.parse_args()
     manifest=validate(args.frozen_root,args.config)
     if args.shard_count < 1 or not 0 <= args.shard_index < args.shard_count:
         raise ValueError("Invalid deterministic shard specification")
     manifest=[row for index,row in enumerate(sorted(manifest,key=lambda item:item["case_id"])) if index % args.shard_count == args.shard_index]
     if args.case_limit is not None: manifest=manifest[:args.case_limit]
     args.output_root.mkdir(parents=True,exist_ok=True)
-    {"mechanism":run_mechanism,"shuffled":run_shuffled,"imperfect":run_imperfect,"targets":run_targets,"identity":run_identity}[args.family](args.frozen_root,manifest,args.output_root)
+    {"mechanism":run_mechanism,"shuffled":run_shuffled,"imperfect":run_imperfect,"targets":run_targets,"identity":run_identity,"difference":run_difference}[args.family](args.frozen_root,manifest,args.output_root)
     print(json.dumps({"status":"COMPLETE","family":args.family,"cases":len(manifest),"shard_index":args.shard_index,"shard_count":args.shard_count,"predictor_retrained":False,"p0_regenerated":False}))
 
 

@@ -90,6 +90,15 @@ class InternalCompletionProtocolTests(unittest.TestCase):
         self.assertIn("target_mass", rows[0])
         self.assertEqual(rows[1]["target_mass"], "3.0")
 
+    def test_difference_normalization_is_independent_per_image(self):
+        import nibabel as nib
+        from experiments.run_internal_completion_2026 import normalized_intensity
+        affine = np.eye(4)
+        values = np.arange(27, dtype=np.float32).reshape(3, 3, 3)
+        first = nib.Nifti1Image(values, affine)
+        second = nib.Nifti1Image(values * 10, affine)
+        np.testing.assert_allclose(normalized_intensity(first), normalized_intensity(second))
+
 
 if __name__ == "__main__":
     unittest.main()
