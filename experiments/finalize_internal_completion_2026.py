@@ -109,13 +109,37 @@ def finalize(root: Path, frozen: Path) -> None:
 
     baseline = methods[methods.method == "fixed_baseline"].set_index("case_id")
     pcc = methods[methods.method == "pcc_correction"].set_index("case_id")
-    failure = pd.DataFrame({"case_id": baseline.index, "p0_dice": baseline.dice.astype(float), "pcc_dice": pcc.dice.astype(float)})
+    failure = pd.DataFrame({"p0_dice": baseline.dice.astype(float), "pcc_dice": pcc.dice.astype(float)}, index=baseline.index)
+    failure.index.name = "case_id"
     failure["pcc_gain"] = failure.pcc_dice - failure.p0_dice
     shuffled_case = shuffled[shuffled.condition == "SHUFFLED_TARGET_PCC"].set_index("case_id")
     failure["shuffled_gain_vs_p0"] = shuffled_case.dice.astype(float) - failure.p0_dice
     retention = case_aggregated[(case_aggregated.method == "PCC") & (case_aggregated.condition != "CLEAN")].groupby("case_id").retention_relative_to_clean_pcc.min()
     failure["smallest_imperfect_retention"] = retention
-    atomic_csv(failure.sort_values("pcc_gain"), root / "06_failure_analysis/INTERNAL_FAILURE_BOUNDARY_CASES.csv")
+    original_target = targets[(targets.condition == "ORIGINAL") & (targets.evaluation_mode == "same_definition")].set_index("case_id")
+    failure["target_voxels"] = original_target.evaluation_target_voxels
+    failure["target_components"] = original_target.target_components
+    trajectories = read_numeric(frozen / "ALL_PCC_ROUND_TRAJECTORIES.csv")
+    p1 = trajectories[trajectories["round"] == 1].set_index("case_id")
+    p10 = trajectories[trajectories["round"] == 10].set_index("case_id")
+    failure["p1_dice"] = p1.dice
+    failure["p10_minus_p1_dice"] = p10.dice - p1.dice
+    failure["p10_correction_mass"] = p10.correction_mass
+    atomic_csv(failure.sort_values("pcc_gain").reset_index(), root / "06_failure_analysis/INTERNAL_FAILURE_BOUNDARY_CASES.csv")
+    project_root = Path(__file__).resolve().parents[1]
+    completed_root = project_root / "outputs/pcc_leakage_free_rerun_2026_v8"
+    layer1_path = completed_root / "14_layer1/LAYER1_CASE_METRICS.csv"
+    if layer1_path.exists():
+        layer1 = read_numeric(layer1_path).sort_values(["dice_gain", "case_id"])
+        atomic_csv(layer1, root / "06_failure_analysis/LAYER1_GAIN_RANKING.csv")
+    layer3a_path = completed_root / "15_layer3_occlusion/Layer3_FORMAL_v1_case_metrics.csv"
+    layer3b_path = completed_root / "16_layer3_localization/Layer3B_FORMAL_v1_case_metrics.csv"
+    if layer3a_path.exists():
+        layer3a = read_numeric(layer3a_path).sort_values(["pcc_minus_baseline_boundary_PRI", "case_id"])
+        atomic_csv(layer3a, root / "06_failure_analysis/LAYER3A_WEAK_ENRICHMENT_RANKING.csv")
+    if layer3b_path.exists():
+        layer3b = read_numeric(layer3b_path).sort_values(["boundary_vs_control_abs_mean_enrichment", "case_id"])
+        atomic_csv(layer3b, root / "06_failure_analysis/LAYER3B_WEAK_LOCALIZATION_RANKING.csv")
 
     plot = summary[(summary.metric == "dice") & summary.family.isin(["mechanism", "imperfect_guidance"])]
     for family, group in plot.groupby("family"):
