@@ -67,6 +67,11 @@ def finalize(root: Path, frozen: Path) -> None:
 
     repeats = read_numeric(root / "03_imperfect_guidance/IMPERFECT_GUIDANCE_REPEAT_METRICS.csv")
     case_aggregated = aggregate_repeats(repeats)
+    extrema = repeats.groupby(["case_id", "condition", "method"], as_index=False).agg(
+        repeats=("dice", "size"), mean_dice=("dice", "mean"), worst_dice=("dice", "min"), best_dice=("dice", "max"),
+        mean_iou=("iou", "mean"), worst_iou=("iou", "min"), best_iou=("iou", "max"),
+    )
+    atomic_csv(extrema, root / "03_imperfect_guidance/IMPERFECT_GUIDANCE_CASE_EXTREMA.csv")
     clean = methods[methods.method.isin(["pcc_correction", "eia_linear", "eia_blend075"])][["case_id", "method", "dice", "iou"]].copy()
     clean["condition"] = "CLEAN"
     clean.method = clean.method.map({"pcc_correction":"PCC", "eia_linear":"EIA_LINEAR", "eia_blend075":"EIA_BLEND_075"})
