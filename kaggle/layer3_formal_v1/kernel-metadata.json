@@ -1,0 +1,15 @@
+{
+  "id": "jeechangxin/pcc-layer3-formal-v1-rerun-2026",
+  "title": "PCC Layer3 Formal V1 Rerun 2026",
+  "code_file": "pcc-layer3-formal-v1-rerun-2026.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": ["stacyvangepuram/mu-glioma-post"],
+  "kernel_sources": ["jeechangxin/pcc-layer1-formal-v1-rerun-2026"],
+  "competition_sources": [],
+  "model_sources": []
+}
