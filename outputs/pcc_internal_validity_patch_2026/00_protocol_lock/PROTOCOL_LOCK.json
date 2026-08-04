@@ -1,0 +1,17 @@
+{
+  "experiment_id": "PCC_INTERNAL_VALIDITY_PATCH_2026",
+  "analysis_classification": "posthoc_internal_validity_audit_and_prospectively_locked_followup",
+  "protocol_date": "2026-08-05",
+  "repository_commit_at_lock": "a11deb5c80203fbbcd1584ad76a3ef97e3712ced",
+  "protocol_commit": "SELF_COMMIT_RECORDED_IN_GIT_HISTORY",
+  "config_path": "configs/pcc_internal_validity_patch_2026.yaml",
+  "config_sha256": "d49043609de3507ec334dcca42f878b1c621300eca17790287e9504bf7313752",
+  "case_manifest_sha256": "e5ad65359280e002d9bcc4c89211f48840d535b602821ad22db863b88e4656f8",
+  "fold_manifest_sha256": "880bd3b2c87c571d5df10342357a8b67c7d6069a2b68a99df0f5dccb783154ec",
+  "canonical_config_sha256": "29111a4d9cb16a2981eec5cbaa193346f9715630a6e81aaf9734805f789a14b6",
+  "new_results_read_before_lock": false,
+  "predictor_retraining_permitted": false,
+  "p0_regeneration_permitted": false,
+  "lumiere_permitted": false,
+  "manuscript_word_modification_permitted": false
+}
