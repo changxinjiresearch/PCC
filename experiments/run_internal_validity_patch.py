@@ -50,10 +50,25 @@ def guidance_specs(clean: np.ndarray, spacing: tuple[float,float,float], case: s
             guide,metadata=mixed_guidance(clean,spacing,case,seed,direction); yield "MIXED",f"seed_{seed}_{direction}",guide,metadata
 
 
+def resolve_record_paths(record: dict[str, object], search_root: Path = Path("/kaggle/input")) -> dict[str, object]:
+    """Resolve immutable manifest basenames when Kaggle changes mount prefixes."""
+    resolved=dict(record)
+    for column in ("current_t1c_path","current_mask_path","future_mask_path"):
+        source=Path(str(resolved[column]))
+        if source.exists():
+            continue
+        matches=list(search_root.rglob(source.name))
+        if len(matches)!=1:
+            raise FileNotFoundError(f"Expected one mounted match for {source.name}, found {len(matches)}")
+        resolved[column]=str(matches[0])
+    return resolved
+
+
 def run_no_smoothing(frozen: Path, original_repeats: Path, output: Path, shard_index: int, shard_count: int) -> None:
     manifest=pd.read_csv(frozen/"LOCKED_CASE_MANIFEST.csv").sort_values("case_id"); manifest=manifest.iloc[shard_index::shard_count]
     original=pd.read_csv(original_repeats); rows=[]; failures=[]
     for record in manifest.to_dict("records"):
+        record=resolve_record_paths(record)
         case=record["case_id"]
         try:
             p0,clean=arrays(frozen,case); spacing,*_=spacing_and_masks(record)

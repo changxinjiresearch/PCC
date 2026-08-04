@@ -1,5 +1,6 @@
 import numpy as np
 
+from experiments.run_internal_validity_patch import resolve_record_paths
 from src.analysis.validity_patch import average_precision_binary, select_crossfit_threshold, target_independent_metrics
 
 
@@ -17,3 +18,10 @@ def test_average_precision_and_empty_target_are_explicit():
 def test_crossfit_threshold_tie_uses_smallest_value():
     grid=np.array([.01,.02,.03]); curves=np.array([[.5,.5,.1],[.5,.5,.2]])
     assert select_crossfit_threshold(curves,grid)==.01
+
+
+def test_manifest_mount_prefix_resolution_is_basename_exact(tmp_path):
+    mounted=tmp_path/"dataset"; mounted.mkdir(); source=mounted/"case_mask.nii"; source.write_bytes(b"x")
+    record={"current_t1c_path":str(source),"current_mask_path":"/old/case_mask.nii","future_mask_path":str(source)}
+    result=resolve_record_paths(record,tmp_path)
+    assert result["current_mask_path"]==str(source)
