@@ -30,14 +30,36 @@ def build(root: Path) -> pd.DataFrame:
     return frame
 
 
+def finalize_package(root: Path) -> tuple[pd.DataFrame, dict[str, object]]:
+    """Write the validation record before hashing it into the final manifest.
+
+    The manifest excludes itself.  Writing validation after the manifest would
+    invalidate the recorded validation-file hash, so determine its stable
+    payload first and build the manifest second.
+    """
+    manifest_path = root / "INTERNAL_COMPLETION_ARTIFACT_MANIFEST.csv"
+    validation_path = root / "14_reproducibility/PACKAGE_VALIDATION.json"
+    status_path = root / "INTERNAL_COMPLETION_STATUS.csv"
+    status = pd.read_csv(status_path) if status_path.exists() else pd.DataFrame()
+    existing = [path for path in root.rglob("*") if path.is_file() and path not in {manifest_path, validation_path}]
+    payload: dict[str, object] = {
+        "status": "COMPLETE" if len(status) and set(status.status) == {"COMPLETE"} else "COMPLETE_WITH_DOCUMENTED_BLOCKERS",
+        "files_hashed": len(existing) + 1,
+        "total_small_bytes": 0,
+        "large_artifacts_downloaded": False,
+    }
+    validation_path.parent.mkdir(parents=True, exist_ok=True)
+    # Size is deliberately not embedded because doing so would be self-referential.
+    validation_path.write_text(json.dumps(payload, indent=2) + "\n")
+    frame = build(root)
+    payload["total_small_bytes"] = int(frame.size_bytes.sum())
+    # Keep the hashed JSON stable; total bytes are emitted to stdout and manifest.
+    return frame, payload
+
+
 def main() -> None:
     parser=argparse.ArgumentParser(); parser.add_argument("--output-root",type=Path,required=True); args=parser.parse_args()
-    frame=build(args.output_root)
-    status_path=args.output_root/"INTERNAL_COMPLETION_STATUS.csv"
-    status=pd.read_csv(status_path) if status_path.exists() else pd.DataFrame()
-    payload={"status":"COMPLETE" if len(status) and set(status.status)=={"COMPLETE"} else "COMPLETE_WITH_DOCUMENTED_BLOCKERS","files_hashed":len(frame),"total_small_bytes":int(frame.size_bytes.sum()),"large_artifacts_downloaded":False}
-    (args.output_root/"14_reproducibility/PACKAGE_VALIDATION.json").parent.mkdir(parents=True,exist_ok=True)
-    (args.output_root/"14_reproducibility/PACKAGE_VALIDATION.json").write_text(json.dumps(payload,indent=2)+"\n")
+    _, payload = finalize_package(args.output_root)
     print(json.dumps(payload))
 
 
