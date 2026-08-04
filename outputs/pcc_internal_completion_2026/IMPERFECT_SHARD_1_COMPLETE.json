@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETE",
+  "family": "imperfect",
+  "shard_index": 1,
+  "shard_count": 2,
+  "cases": 20,
+  "predictor_retrained": false,
+  "p0_regenerated": false
+}

@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETE",
+  "families": [
+    "identity",
+    "mechanism",
+    "shuffled",
+    "targets"
+  ],
+  "cases": 40,
+  "predictor_retrained": false,
+  "p0_regenerated": false
+}

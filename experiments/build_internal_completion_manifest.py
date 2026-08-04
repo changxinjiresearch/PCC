@@ -45,7 +45,6 @@ def finalize_package(root: Path) -> tuple[pd.DataFrame, dict[str, object]]:
     payload: dict[str, object] = {
         "status": "COMPLETE" if len(status) and set(status.status) == {"COMPLETE"} else "COMPLETE_WITH_DOCUMENTED_BLOCKERS",
         "files_hashed": len(existing) + 1,
-        "total_small_bytes": 0,
         "large_artifacts_downloaded": False,
     }
     validation_path.parent.mkdir(parents=True, exist_ok=True)

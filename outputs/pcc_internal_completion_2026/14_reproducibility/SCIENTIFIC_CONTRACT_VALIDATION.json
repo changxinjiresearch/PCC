@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "mechanism_rows": 480,
+  "identity_rows": 120,
+  "shuffled_rows": 40,
+  "imperfect_repeat_rows": 5160,
+  "target_rows": 320,
+  "difference_rows": 40,
+  "unique_cases": 40,
+  "case_level_finite": true,
+  "predictor_retrained": false,
+  "p0_regenerated": false
+}

@@ -1,0 +1,6 @@
+experiment,status,case_count
+mechanism_ablation,COMPLETE,40
+shuffled_target,COMPLETE,40
+imperfect_guidance,COMPLETE,40
+target_construction,COMPLETE,40
+difference_map_control,COMPLETE,40

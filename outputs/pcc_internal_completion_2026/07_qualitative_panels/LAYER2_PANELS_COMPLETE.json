@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETE",
+  "panels": 6,
+  "selection": "prespecified deterministic case-level ranks",
+  "training_performed": false,
+  "predictor_retrained": false,
+  "p0_regenerated": false
+}

@@ -1,2 +1,6 @@
 # Frozen external CSV evidence must retain its source bytes and SHA-256.
 validation_reference/frozen_refs/**/*.csv -text -diff
+
+# Preserve generated internal-completion tables and vector figures byte-for-byte.
+outputs/pcc_internal_completion_2026/**/*.csv -text -diff
+outputs/pcc_internal_completion_2026/**/*.svg -text -diff
