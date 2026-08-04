@@ -29,10 +29,14 @@ def average_precision_binary(target: np.ndarray, probability: np.ndarray) -> flo
     if positives == 0:
         return float("nan")
     order = np.argsort(-score, kind="stable")
-    sorted_y = y[order]
+    sorted_y = y[order]; sorted_score = score[order]
     cumulative = np.cumsum(sorted_y)
-    ranks = np.arange(1, len(y) + 1)
-    return float((cumulative[sorted_y] / ranks[sorted_y]).sum() / positives)
+    group_ends = np.flatnonzero(np.r_[sorted_score[1:] != sorted_score[:-1], True])
+    true_positive = cumulative[group_ends].astype(float)
+    precision = true_positive / (group_ends + 1)
+    recall = true_positive / positives
+    recall_increment = np.diff(np.r_[0.0, recall])
+    return float(np.sum(recall_increment * precision))
 
 
 def target_independent_metrics(probability: np.ndarray, target: np.ndarray, threshold: float = 0.5) -> dict[str, float | int | str]:

@@ -13,6 +13,7 @@ def test_target_independent_metrics_known_confusion():
 def test_average_precision_and_empty_target_are_explicit():
     assert average_precision_binary(np.array([1,0,1]),np.array([.9,.8,.7]))==(1+2/3)/2
     assert np.isnan(average_precision_binary(np.zeros(3,dtype=bool),np.arange(3)))
+    assert average_precision_binary(np.array([1,0]),np.array([.5,.5]))==.5
 
 
 def test_crossfit_threshold_tie_uses_smallest_value():
