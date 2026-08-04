@@ -1,7 +1,7 @@
 import numpy as np
 
 from experiments.run_internal_validity_patch import resolve_record_paths
-from src.analysis.validity_patch import average_precision_binary, select_crossfit_threshold, target_independent_metrics
+from src.analysis.validity_patch import average_precision_binary, select_crossfit_threshold, target_independent_metrics, threshold_grid_case_dice
 
 
 def test_target_independent_metrics_known_confusion():
@@ -25,3 +25,11 @@ def test_manifest_mount_prefix_resolution_is_basename_exact(tmp_path):
     record={"current_t1c_path":str(source),"current_mask_path":"/old/case_mask.nii","future_mask_path":str(source)}
     result=resolve_record_paths(record,tmp_path)
     assert result["current_mask_path"]==str(source)
+
+
+def test_sorted_threshold_counts_equal_direct_voxel_scans():
+    p=np.array([.9,.8,.4,.1,.01]); y=np.array([1,0,1,0,0],dtype=bool); grid=np.array([.01,.4,.5,.9,.99])
+    expected=[]
+    for threshold in grid:
+        pred=p>=threshold; tp=(pred&y).sum(); fp=(pred&~y).sum(); fn=(~pred&y).sum(); expected.append(2*tp/(2*tp+fp+fn))
+    assert np.allclose(threshold_grid_case_dice(p,y,grid),expected)

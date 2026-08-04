@@ -61,12 +61,12 @@ def target_independent_metrics(probability: np.ndarray, target: np.ndarray, thre
 
 
 def threshold_grid_case_dice(probability: np.ndarray, target: np.ndarray, grid: np.ndarray) -> np.ndarray:
-    p = np.asarray(probability); y = np.asarray(target, dtype=bool)
-    result=[]
-    for threshold in grid:
-        pred=p >= threshold; tp=(pred & y).sum(); fp=(pred & ~y).sum(); fn=(~pred & y).sum()
-        denominator=2*tp+fp+fn; result.append(float(2*tp/denominator) if denominator else 1.0)
-    return np.asarray(result)
+    p = np.asarray(probability).ravel(); y = np.asarray(target, dtype=bool).ravel()
+    positive=np.sort(p[y]); negative=np.sort(p[~y]); positives=len(positive)
+    tp=positives-np.searchsorted(positive,grid,side="left")
+    fp=len(negative)-np.searchsorted(negative,grid,side="left")
+    fn=positives-tp; denominator=2*tp+fp+fn
+    return np.divide(2*tp,denominator,out=np.ones_like(denominator,dtype=float),where=denominator!=0)
 
 
 def select_crossfit_threshold(training_case_curves: np.ndarray, grid: np.ndarray) -> float:
@@ -88,4 +88,3 @@ def apply_holm_by_family(frame: pd.DataFrame, family_column: str = "family") -> 
         positions=list(indices); adjusted=holm_adjust(result.loc[positions,"wilcoxon_p_two_sided"].astype(float).tolist())
         result.loc[positions,"holm_adjusted_p"]=adjusted
     return result
-
