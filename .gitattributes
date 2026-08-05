@@ -4,3 +4,7 @@ validation_reference/frozen_refs/**/*.csv -text -diff
 # Preserve generated internal-completion tables and vector figures byte-for-byte.
 outputs/pcc_internal_completion_2026/**/*.csv -text -diff
 outputs/pcc_internal_completion_2026/**/*.svg -text -diff
+
+# Preserve the locked internal-validity audit tables and cohort-flow vector.
+outputs/pcc_internal_validity_patch_2026/**/*.csv -text -diff
+outputs/pcc_internal_validity_patch_2026/**/*.svg -text -diff

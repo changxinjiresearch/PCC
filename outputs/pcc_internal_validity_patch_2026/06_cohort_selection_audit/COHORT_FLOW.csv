@@ -1,0 +1,10 @@
+stage,count,evidence
+dataset_patient_directories,203,direct dataset scan
+timepoint_directories,596,direct dataset scan
+adjacent_pairs_among_usable_timepoints,391,"direct dataset scan; descriptive, discovery selects only first pair"
+patients_with_at_least_two_usable_timepoints,155,exact discovery eligibility
+locked_first_40_pairs,40,authoritative locked manifest
+locked_grid_compatible,40,NIfTI header audit
+locked_nonempty_current_mask,40,mask audit
+locked_nonempty_future_mask,40,mask audit
+locked_nonempty_future_change_target,40,mask audit

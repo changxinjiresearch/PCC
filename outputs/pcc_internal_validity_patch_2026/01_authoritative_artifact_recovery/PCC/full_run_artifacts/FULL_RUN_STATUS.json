@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETE",
+  "gpu_required": true,
+  "git_commit": "936a239d913a61533025c02918eeaf8b961d467f",
+  "config_sha256": "29111a4d9cb16a2981eec5cbaa193346f9715630a6e81aaf9734805f789a14b6",
+  "case_manifest_sha256": "e5ad65359280e002d9bcc4c89211f48840d535b602821ad22db863b88e4656f8",
+  "fold_manifest_sha256": "880bd3b2c87c571d5df10342357a8b67c7d6069a2b68a99df0f5dccb783154ec",
+  "completed_folds": 5,
+  "completed_p0_cases": 40,
+  "completed_retrospective_cases": 40,
+  "method_rows": 280,
+  "trajectory_rows": 400,
+  "failed_cases": 0
+}

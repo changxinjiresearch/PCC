@@ -1,0 +1,42 @@
+experiment_name: PCC_LEAKAGE_FREE_RERUN_2026
+authority: archive/pcc-experiments-original.ipynb cells 14-17
+output_root: /kaggle/working/PCC_LEAKAGE_FREE_RERUN_2026
+dataset_discovery_root: /kaggle/input
+folds: 5
+group_key: patient_id
+split_algorithm: deterministic_group_shuffle_array_split
+seed: 42
+predictor:
+  architecture: SmallUNet
+  input_channels: 2
+  input_order: [current_t1c_normalized, current_mask]
+  base_channels: 16
+  epochs: 20
+  batch_size: 8
+  learning_rate: 0.001
+  optimizer: Adam
+  loss: 0.5 * weighted_BCEWithLogits + 0.5 * soft_Dice
+  positive_weight_cap: 50.0
+  slice_filter_training: current_tumour_or_future_change_positive
+  checkpoint_criterion: minimum_training_epoch_mean_loss
+  validation: none_in_historical_cells_16_17
+  test_future_information_access: forbidden
+preprocessing:
+  normalization: current_T1c_positive_voxels_p1_p99
+  current_mask_threshold: 0.5
+  storage_input_dtype: float16
+  prediction_dtype: float32
+pcc:
+  rounds: 10
+  eta: 0.30
+  sigma: 2.0
+  dilation_radius: 26
+  trajectory_persistence: true
+  trajectory_intermediate_storage_dtype: float16
+  trajectory_final_storage_dtype: float32
+evaluation:
+  primary: topk_equal_to_clean_target_voxel_count
+  clean_target: future_mask AND NOT current_mask
+resume:
+  completion_scope: case
+  overwrite_completed: false

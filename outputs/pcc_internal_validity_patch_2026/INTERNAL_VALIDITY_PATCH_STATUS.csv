@@ -1,0 +1,10 @@
+task,status,evidence_or_note
+protocol_lock,COMPLETE,bbcdd52; config d49043609de3507ec334dcca42f878b1c621300eca17790287e9504bf7313752
+authoritative_artifact_recovery,COMPLETE,Direct Kaggle v8 recovery; four required CSVs plus status/config
+target_independent_evaluation,COMPLETE,"8 methods x 40 cases; fixed 0.5, probability, and cross-fitted threshold"
+no_smoothing_robustness,COMPLETE,1720 repeats aggregated to n=40 before inference
+layer1_statistical_reaudit,COMPLETE,No model rerun; v1 primary candidate and v1.1 sensitivity
+layer3_statistical_reaudit,COMPLETE,No model rerun; prespecified Holm families
+cohort_selection_audit,COMPLETE_WITH_DOCUMENTED_UNKNOWNS,Historical pre-2026 discovery stages not fully recoverable
+identity_cross_validation,COMPLETE,40 unique patients; manifests and Layer 1/2/3 case sets consistent
+LUMIERE,NOT_STARTED_BY_CONTRACT,External validation expressly excluded

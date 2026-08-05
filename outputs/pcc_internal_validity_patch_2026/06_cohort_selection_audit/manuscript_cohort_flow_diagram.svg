@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650">
+  <style>text{font-family:Arial,sans-serif;fill:#172033}.box{fill:#f5f7fb;stroke:#46618a;stroke-width:2}.arrow{stroke:#46618a;stroke-width:2;marker-end:url(#a)}.note{font-size:14px}.main{font-size:18px;font-weight:bold}</style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#46618a"/></marker></defs>
+  <rect class="box" x="250" y="30" width="400" height="70" rx="8"/><text class="main" x="450" y="60" text-anchor="middle">MU-Glioma-Post</text><text x="450" y="85" text-anchor="middle">203 patients; 596 timepoint directories</text>
+  <line class="arrow" x1="450" y1="100" x2="450" y2="145"/>
+  <rect class="box" x="250" y="150" width="400" height="80" rx="8"/><text class="main" x="450" y="180" text-anchor="middle">155 eligible patients</text><text x="450" y="205" text-anchor="middle">≥2 timepoints with exactly one T1c and mask</text>
+  <rect class="box" x="680" y="150" width="190" height="80" rx="8"/><text x="775" y="180" text-anchor="middle">48 excluded</text><text class="note" x="775" y="205" text-anchor="middle">fewer than 2 usable TPs</text>
+  <line class="arrow" x1="650" y1="190" x2="675" y2="190"/>
+  <line class="arrow" x1="450" y1="230" x2="450" y2="275"/>
+  <rect class="box" x="250" y="280" width="400" height="80" rx="8"/><text class="main" x="450" y="310" text-anchor="middle">Earliest two usable timepoints</text><text x="450" y="335" text-anchor="middle">one deterministic candidate per eligible patient</text>
+  <line class="arrow" x1="450" y1="360" x2="450" y2="405"/>
+  <rect class="box" x="250" y="410" width="400" height="80" rx="8"/><text class="main" x="450" y="440" text-anchor="middle">First 40 sorted eligible patients locked</text><text x="450" y="465" text-anchor="middle">40 patients; 40 longitudinal pairs</text>
+  <rect class="box" x="680" y="410" width="190" height="80" rx="8"/><text x="775" y="440" text-anchor="middle">115 excluded</text><text class="note" x="775" y="465" text-anchor="middle">after fixed limit reached</text>
+  <line class="arrow" x1="650" y1="450" x2="675" y2="450"/>
+  <line class="arrow" x1="450" y1="490" x2="450" y2="535"/>
+  <rect class="box" x="200" y="540" width="500" height="85" rx="8"/><text class="main" x="450" y="570" text-anchor="middle">40/40 passed locked-pair validity audit</text><text x="450" y="595" text-anchor="middle">grid compatible; masks and future-change target non-empty</text>
+</svg>
