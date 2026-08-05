@@ -1,0 +1,22 @@
+PCC INTERNAL VALIDITY PATCH 2026 RELEASE SUMMARY
+
+ZIP absolute path: /home/changxinjiresearch/Research/Projects/PCC/PCC_INTERNAL_VALIDITY_PATCH_2026_COMPLETE.zip
+ZIP size bytes: 1502556
+ZIP SHA-256: 6ddd196396bac7753f1e4cbd256c709df9b15335ee4f876636c5d45be74f03fd
+ZIP file entries: 115
+Creation time: 2026-08-06T03:02:20+09:30
+Archive Git commit: afc621d5b114109f15e0422bb239a78f1fcdb49b
+
+Formal pytest: /tmp/pcc_internal_test_env/bin/python -m pytest -q tests; 208 passed, 1 skipped, 0 failed, 0 errors, 27 subtests; exit code 0.
+Focused pytest: 15 passed, 0 skipped, 0 failed, 0 errors; exit code 0.
+Compileall: PASS, exit code 0.
+git diff --check: PASS, exit code 0.
+SHIFT-3 audit: PASS; Full PCC 240 rows; No-smoothing 240 rows; missing 0; extra 0; duplicate 0; guidance voxel mismatch 0; direction mismatch 0; seed mismatch 0; actual execution code found and guidance identity supported.
+Metadata correction: derived file created; 480 authorized metadata cells changed; scientific result cells changed 0; original No-smoothing CSV preserved.
+Original scientific files: 37; hash changes 0; deleted 0; overwritten 0; unauthorized changes 0.
+Artifact manifest: 112 scoped files; missing 0; size mismatch 0; hash mismatch 0; duplicate 0.
+Package contents: 114 listed files; missing 0; extra 0; hash mismatch 0; duplicate 0.
+Unresolved blockers: 0.
+Release gate: PASS.
+115-person and LUMIERE validation: NOT STARTED.
+ZIP sidecar: /home/changxinjiresearch/Research/Projects/PCC/PCC_INTERNAL_VALIDITY_PATCH_2026_COMPLETE.zip.sha256
