@@ -1,116 +1,204 @@
-patient_id,status,reason
-PatientID_0064,ELIGIBLE,not excluded
-PatientID_0065,ELIGIBLE,not excluded
-PatientID_0066,ELIGIBLE,not excluded
-PatientID_0067,ELIGIBLE,not excluded
-PatientID_0068,ELIGIBLE,not excluded
-PatientID_0069,ELIGIBLE,not excluded
-PatientID_0070,ELIGIBLE,not excluded
-PatientID_0072,ELIGIBLE,not excluded
-PatientID_0073,ELIGIBLE,not excluded
-PatientID_0074,ELIGIBLE,not excluded
-PatientID_0076,ELIGIBLE,not excluded
-PatientID_0078,ELIGIBLE,not excluded
-PatientID_0079,ELIGIBLE,not excluded
-PatientID_0080,ELIGIBLE,not excluded
-PatientID_0081,ELIGIBLE,not excluded
-PatientID_0082,ELIGIBLE,not excluded
-PatientID_0083,ELIGIBLE,not excluded
-PatientID_0084,ELIGIBLE,not excluded
-PatientID_0085,ELIGIBLE,not excluded
-PatientID_0087,ELIGIBLE,not excluded
-PatientID_0088,ELIGIBLE,not excluded
-PatientID_0089,ELIGIBLE,not excluded
-PatientID_0090,ELIGIBLE,not excluded
-PatientID_0091,ELIGIBLE,not excluded
-PatientID_0092,ELIGIBLE,not excluded
-PatientID_0093,ELIGIBLE,not excluded
-PatientID_0094,ELIGIBLE,not excluded
-PatientID_0095,ELIGIBLE,not excluded
-PatientID_0097,ELIGIBLE,not excluded
-PatientID_0099,ELIGIBLE,not excluded
-PatientID_0103,ELIGIBLE,not excluded
-PatientID_0105,ELIGIBLE,not excluded
-PatientID_0109,ELIGIBLE,not excluded
-PatientID_0110,ELIGIBLE,not excluded
-PatientID_0113,ELIGIBLE,not excluded
-PatientID_0114,ELIGIBLE,not excluded
-PatientID_0116,ELIGIBLE,not excluded
-PatientID_0117,ELIGIBLE,not excluded
-PatientID_0118,ELIGIBLE,not excluded
-PatientID_0121,ELIGIBLE,not excluded
-PatientID_0123,ELIGIBLE,not excluded
-PatientID_0125,ELIGIBLE,not excluded
-PatientID_0132,ELIGIBLE,not excluded
-PatientID_0135,ELIGIBLE,not excluded
-PatientID_0136,ELIGIBLE,not excluded
-PatientID_0138,ELIGIBLE,not excluded
-PatientID_0140,ELIGIBLE,not excluded
-PatientID_0142,ELIGIBLE,not excluded
-PatientID_0145,ELIGIBLE,not excluded
-PatientID_0147,ELIGIBLE,not excluded
-PatientID_0148,ELIGIBLE,not excluded
-PatientID_0149,ELIGIBLE,not excluded
-PatientID_0150,ELIGIBLE,not excluded
-PatientID_0151,ELIGIBLE,not excluded
-PatientID_0152,ELIGIBLE,not excluded
-PatientID_0156,ELIGIBLE,not excluded
-PatientID_0157,ELIGIBLE,not excluded
-PatientID_0159,ELIGIBLE,not excluded
-PatientID_0160,ELIGIBLE,not excluded
-PatientID_0162,ELIGIBLE,not excluded
-PatientID_0164,ELIGIBLE,not excluded
-PatientID_0169,ELIGIBLE,not excluded
-PatientID_0170,ELIGIBLE,not excluded
-PatientID_0171,ELIGIBLE,not excluded
-PatientID_0173,ELIGIBLE,not excluded
-PatientID_0186,ELIGIBLE,not excluded
-PatientID_0187,ELIGIBLE,not excluded
-PatientID_0188,ELIGIBLE,not excluded
-PatientID_0189,ELIGIBLE,not excluded
-PatientID_0191,ELIGIBLE,not excluded
-PatientID_0192,ELIGIBLE,not excluded
-PatientID_0195,ELIGIBLE,not excluded
-PatientID_0196,ELIGIBLE,not excluded
-PatientID_0197,ELIGIBLE,not excluded
-PatientID_0198,ELIGIBLE,not excluded
-PatientID_0199,ELIGIBLE,not excluded
-PatientID_0201,ELIGIBLE,not excluded
-PatientID_0202,ELIGIBLE,not excluded
-PatientID_0204,ELIGIBLE,not excluded
-PatientID_0205,ELIGIBLE,not excluded
-PatientID_0207,ELIGIBLE,not excluded
-PatientID_0208,ELIGIBLE,not excluded
-PatientID_0209,ELIGIBLE,not excluded
-PatientID_0210,ELIGIBLE,not excluded
-PatientID_0211,ELIGIBLE,not excluded
-PatientID_0212,ELIGIBLE,not excluded
-PatientID_0213,ELIGIBLE,not excluded
-PatientID_0214,ELIGIBLE,not excluded
-PatientID_0215,ELIGIBLE,not excluded
-PatientID_0220,ELIGIBLE,not excluded
-PatientID_0235,ELIGIBLE,not excluded
-PatientID_0236,ELIGIBLE,not excluded
-PatientID_0237,ELIGIBLE,not excluded
-PatientID_0238,ELIGIBLE,not excluded
-PatientID_0239,ELIGIBLE,not excluded
-PatientID_0240,ELIGIBLE,not excluded
-PatientID_0242,ELIGIBLE,not excluded
-PatientID_0249,ELIGIBLE,not excluded
-PatientID_0250,ELIGIBLE,not excluded
-PatientID_0251,ELIGIBLE,not excluded
-PatientID_0252,ELIGIBLE,not excluded
-PatientID_0254,ELIGIBLE,not excluded
-PatientID_0255,ELIGIBLE,not excluded
-PatientID_0256,ELIGIBLE,not excluded
-PatientID_0259,ELIGIBLE,not excluded
-PatientID_0260,ELIGIBLE,not excluded
-PatientID_0264,ELIGIBLE,not excluded
-PatientID_0265,ELIGIBLE,not excluded
-PatientID_0267,ELIGIBLE,not excluded
-PatientID_0268,ELIGIBLE,not excluded
-PatientID_0270,ELIGIBLE,not excluded
-PatientID_0271,ELIGIBLE,not excluded
-PatientID_0272,ELIGIBLE,not excluded
-PatientID_0274,ELIGIBLE,not excluded
-PatientID_0275,ELIGIBLE,not excluded
+patient_id,source_timepoint_count,usable_timepoint_count,cohort_status,reason
+PatientID_0003,3,3,locked_40,first 40 eligible patients
+PatientID_0004,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0005,2,2,locked_40,first 40 eligible patients
+PatientID_0006,4,4,locked_40,first 40 eligible patients
+PatientID_0007,5,5,locked_40,first 40 eligible patients
+PatientID_0008,2,2,locked_40,first 40 eligible patients
+PatientID_0009,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0010,3,3,locked_40,first 40 eligible patients
+PatientID_0011,2,2,locked_40,first 40 eligible patients
+PatientID_0012,2,2,locked_40,first 40 eligible patients
+PatientID_0013,5,5,locked_40,first 40 eligible patients
+PatientID_0014,6,6,locked_40,first 40 eligible patients
+PatientID_0015,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0018,5,5,locked_40,first 40 eligible patients
+PatientID_0019,3,3,locked_40,first 40 eligible patients
+PatientID_0020,4,4,locked_40,first 40 eligible patients
+PatientID_0021,5,5,locked_40,first 40 eligible patients
+PatientID_0022,3,3,locked_40,first 40 eligible patients
+PatientID_0023,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0024,2,2,locked_40,first 40 eligible patients
+PatientID_0025,3,3,locked_40,first 40 eligible patients
+PatientID_0026,2,2,locked_40,first 40 eligible patients
+PatientID_0027,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0029,3,3,locked_40,first 40 eligible patients
+PatientID_0030,3,3,locked_40,first 40 eligible patients
+PatientID_0031,4,4,locked_40,first 40 eligible patients
+PatientID_0032,6,6,locked_40,first 40 eligible patients
+PatientID_0033,5,5,locked_40,first 40 eligible patients
+PatientID_0034,6,6,locked_40,first 40 eligible patients
+PatientID_0035,3,3,locked_40,first 40 eligible patients
+PatientID_0036,6,6,locked_40,first 40 eligible patients
+PatientID_0037,4,4,locked_40,first 40 eligible patients
+PatientID_0038,6,6,locked_40,first 40 eligible patients
+PatientID_0039,5,5,locked_40,first 40 eligible patients
+PatientID_0040,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0041,2,2,locked_40,first 40 eligible patients
+PatientID_0042,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0043,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0044,6,6,locked_40,first 40 eligible patients
+PatientID_0045,4,4,locked_40,first 40 eligible patients
+PatientID_0046,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0047,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0049,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0051,3,3,locked_40,first 40 eligible patients
+PatientID_0052,2,2,locked_40,first 40 eligible patients
+PatientID_0053,5,5,locked_40,first 40 eligible patients
+PatientID_0054,2,2,locked_40,first 40 eligible patients
+PatientID_0055,4,4,locked_40,first 40 eligible patients
+PatientID_0056,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0057,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0058,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0059,3,3,locked_40,first 40 eligible patients
+PatientID_0060,2,2,locked_40,first 40 eligible patients
+PatientID_0061,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0062,2,2,locked_40,first 40 eligible patients
+PatientID_0063,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0064,2,2,locked_115,remaining eligible patient
+PatientID_0065,5,5,locked_115,remaining eligible patient
+PatientID_0066,5,5,locked_115,remaining eligible patient
+PatientID_0067,2,2,locked_115,remaining eligible patient
+PatientID_0068,5,5,locked_115,remaining eligible patient
+PatientID_0069,5,5,locked_115,remaining eligible patient
+PatientID_0070,4,4,locked_115,remaining eligible patient
+PatientID_0071,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0072,3,3,locked_115,remaining eligible patient
+PatientID_0073,4,4,locked_115,remaining eligible patient
+PatientID_0074,6,6,locked_115,remaining eligible patient
+PatientID_0076,2,2,locked_115,remaining eligible patient
+PatientID_0077,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0078,3,3,locked_115,remaining eligible patient
+PatientID_0079,6,6,locked_115,remaining eligible patient
+PatientID_0080,2,2,locked_115,remaining eligible patient
+PatientID_0081,2,2,locked_115,remaining eligible patient
+PatientID_0082,2,2,locked_115,remaining eligible patient
+PatientID_0083,6,6,locked_115,remaining eligible patient
+PatientID_0084,6,6,locked_115,remaining eligible patient
+PatientID_0085,4,4,locked_115,remaining eligible patient
+PatientID_0086,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0087,3,3,locked_115,remaining eligible patient
+PatientID_0088,2,2,locked_115,remaining eligible patient
+PatientID_0089,6,6,locked_115,remaining eligible patient
+PatientID_0090,2,2,locked_115,remaining eligible patient
+PatientID_0091,2,2,locked_115,remaining eligible patient
+PatientID_0092,2,2,locked_115,remaining eligible patient
+PatientID_0093,4,4,locked_115,remaining eligible patient
+PatientID_0094,6,6,locked_115,remaining eligible patient
+PatientID_0095,5,5,locked_115,remaining eligible patient
+PatientID_0097,6,6,locked_115,remaining eligible patient
+PatientID_0099,2,2,locked_115,remaining eligible patient
+PatientID_0101,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0103,6,6,locked_115,remaining eligible patient
+PatientID_0105,6,6,locked_115,remaining eligible patient
+PatientID_0106,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0108,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0109,4,4,locked_115,remaining eligible patient
+PatientID_0110,3,3,locked_115,remaining eligible patient
+PatientID_0111,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0112,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0113,3,3,locked_115,remaining eligible patient
+PatientID_0114,2,2,locked_115,remaining eligible patient
+PatientID_0115,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0116,2,2,locked_115,remaining eligible patient
+PatientID_0117,3,3,locked_115,remaining eligible patient
+PatientID_0118,3,3,locked_115,remaining eligible patient
+PatientID_0120,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0121,3,3,locked_115,remaining eligible patient
+PatientID_0123,2,2,locked_115,remaining eligible patient
+PatientID_0124,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0125,2,2,locked_115,remaining eligible patient
+PatientID_0126,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0130,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0132,3,3,locked_115,remaining eligible patient
+PatientID_0133,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0135,3,3,locked_115,remaining eligible patient
+PatientID_0136,3,3,locked_115,remaining eligible patient
+PatientID_0138,3,3,locked_115,remaining eligible patient
+PatientID_0139,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0140,3,3,locked_115,remaining eligible patient
+PatientID_0141,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0142,2,2,locked_115,remaining eligible patient
+PatientID_0143,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0144,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0145,2,2,locked_115,remaining eligible patient
+PatientID_0147,3,3,locked_115,remaining eligible patient
+PatientID_0148,2,2,locked_115,remaining eligible patient
+PatientID_0149,4,4,locked_115,remaining eligible patient
+PatientID_0150,5,5,locked_115,remaining eligible patient
+PatientID_0151,2,2,locked_115,remaining eligible patient
+PatientID_0152,3,3,locked_115,remaining eligible patient
+PatientID_0155,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0156,3,3,locked_115,remaining eligible patient
+PatientID_0157,6,6,locked_115,remaining eligible patient
+PatientID_0158,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0159,4,4,locked_115,remaining eligible patient
+PatientID_0160,2,2,locked_115,remaining eligible patient
+PatientID_0161,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0162,6,6,locked_115,remaining eligible patient
+PatientID_0164,5,5,locked_115,remaining eligible patient
+PatientID_0165,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0168,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0169,4,4,locked_115,remaining eligible patient
+PatientID_0170,2,2,locked_115,remaining eligible patient
+PatientID_0171,3,3,locked_115,remaining eligible patient
+PatientID_0173,2,2,locked_115,remaining eligible patient
+PatientID_0174,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0186,6,6,locked_115,remaining eligible patient
+PatientID_0187,3,2,locked_115,remaining eligible patient
+PatientID_0188,2,2,locked_115,remaining eligible patient
+PatientID_0189,6,6,locked_115,remaining eligible patient
+PatientID_0191,4,3,locked_115,remaining eligible patient
+PatientID_0192,3,3,locked_115,remaining eligible patient
+PatientID_0195,3,3,locked_115,remaining eligible patient
+PatientID_0196,3,3,locked_115,remaining eligible patient
+PatientID_0197,3,3,locked_115,remaining eligible patient
+PatientID_0198,4,4,locked_115,remaining eligible patient
+PatientID_0199,3,3,locked_115,remaining eligible patient
+PatientID_0200,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0201,6,6,locked_115,remaining eligible patient
+PatientID_0202,3,3,locked_115,remaining eligible patient
+PatientID_0203,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0204,6,6,locked_115,remaining eligible patient
+PatientID_0205,5,5,locked_115,remaining eligible patient
+PatientID_0206,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0207,6,6,locked_115,remaining eligible patient
+PatientID_0208,2,2,locked_115,remaining eligible patient
+PatientID_0209,6,6,locked_115,remaining eligible patient
+PatientID_0210,5,5,locked_115,remaining eligible patient
+PatientID_0211,3,3,locked_115,remaining eligible patient
+PatientID_0212,3,3,locked_115,remaining eligible patient
+PatientID_0213,5,5,locked_115,remaining eligible patient
+PatientID_0214,6,6,locked_115,remaining eligible patient
+PatientID_0215,6,6,locked_115,remaining eligible patient
+PatientID_0216,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0220,2,2,locked_115,remaining eligible patient
+PatientID_0235,3,3,locked_115,remaining eligible patient
+PatientID_0236,3,3,locked_115,remaining eligible patient
+PatientID_0237,2,2,locked_115,remaining eligible patient
+PatientID_0238,3,3,locked_115,remaining eligible patient
+PatientID_0239,3,3,locked_115,remaining eligible patient
+PatientID_0240,3,3,locked_115,remaining eligible patient
+PatientID_0242,3,3,locked_115,remaining eligible patient
+PatientID_0244,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0249,2,2,locked_115,remaining eligible patient
+PatientID_0250,3,3,locked_115,remaining eligible patient
+PatientID_0251,3,3,locked_115,remaining eligible patient
+PatientID_0252,3,3,locked_115,remaining eligible patient
+PatientID_0254,4,4,locked_115,remaining eligible patient
+PatientID_0255,2,2,locked_115,remaining eligible patient
+PatientID_0256,5,5,locked_115,remaining eligible patient
+PatientID_0258,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0259,2,2,locked_115,remaining eligible patient
+PatientID_0260,2,2,locked_115,remaining eligible patient
+PatientID_0261,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0264,2,2,locked_115,remaining eligible patient
+PatientID_0265,2,2,locked_115,remaining eligible patient
+PatientID_0267,2,2,locked_115,remaining eligible patient
+PatientID_0268,3,3,locked_115,remaining eligible patient
+PatientID_0270,3,3,locked_115,remaining eligible patient
+PatientID_0271,3,3,locked_115,remaining eligible patient
+PatientID_0272,3,3,locked_115,remaining eligible patient
+PatientID_0273,1,1,insufficient_usable_timepoints,fewer than two usable timepoints
+PatientID_0274,2,2,locked_115,remaining eligible patient
+PatientID_0275,3,3,locked_115,remaining eligible patient

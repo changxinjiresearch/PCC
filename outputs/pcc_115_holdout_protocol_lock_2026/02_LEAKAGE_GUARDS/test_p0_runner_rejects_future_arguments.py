@@ -1,5 +1,10 @@
-import inspect
-from src.preprocessing.current_only_preprocessing import prepare_current_only_inputs
+import pytest
+from experiments.run_115_stage_a_p0 import parser, validate_current_only_record
 
-def test_current_only_api_has_no_future_argument():
- assert 'future' not in inspect.signature(prepare_current_only_inputs).parameters
+def test_real_stage_a_runner_rejects_future_record():
+ with pytest.raises(ValueError):
+  validate_current_only_record({"future_mask_path": "forbidden.nii"})
+
+def test_real_stage_a_cli_rejects_future_argument():
+ with pytest.raises(SystemExit):
+  parser().parse_args(["--future-mask", "forbidden.nii"])

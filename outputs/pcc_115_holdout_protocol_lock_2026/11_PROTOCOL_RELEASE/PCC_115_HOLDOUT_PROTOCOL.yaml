@@ -1,5 +1,12 @@
 protocol: PCC_115_HOLDOUT_PROTOCOL_LOCK_2026
-status: PRELOCKED
-patients: 115
-model_forward: false
-performance_computation: false
+status: PASS
+cohort: {source: 203, eligible: 155, development: 40, holdout: 115, overlap: 0, pairs_per_patient: 1}
+stage_a: {authorized: false, future_access: false, shards: 4, real_forward_executed: false, p0_generated: false}
+stage_b: {authorized: false, shards: 4, performance_computed: false}
+predictor: {architecture: CrossCaseSmallUNet, input_channels: 2, base_channels: 16, folds: 5, weights: [0.2, 0.2, 0.2, 0.2, 0.2]}
+primary_endpoint: patient_level_Dice_at_fixed_0.5
+confirmatory_family: [Full_PCC_vs_Fixed, No_smoothing_vs_Full_PCC]
+development_locked_threshold_analysis: NOT_AVAILABLE
+statistics: {test: paired_two_sided_Wilcoxon, zero_method: wilcox, correction: Holm_two_tests, bootstrap_replicates: 10000, seed: 20260803}
+failure_denominator: 115
+LUMIERE_started: false

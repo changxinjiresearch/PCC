@@ -1,0 +1,7 @@
+field,authority_value,locked_115_value,status
+rounds,10,10,MATCH
+eta,0.30,0.30,MATCH
+dilation_radius_voxels,26,26,MATCH
+sigma_voxels,2.0,2.0,MATCH
+logit_epsilon,1e-5,1e-5,MATCH
+state_propagation,true,true,MATCH

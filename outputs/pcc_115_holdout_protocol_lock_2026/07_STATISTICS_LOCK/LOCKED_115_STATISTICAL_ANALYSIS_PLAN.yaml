@@ -1,8 +1,22 @@
 unit: patient
-confirmatory_family: [Full PCC vs Fixed Dice@0.5, No-smoothing PCC vs Full PCC Dice@0.5]
-test: paired two-sided Wilcoxon signed-rank
-adjustment: Holm across two confirmatory comparisons
+alternative: two-sided
+wilcoxon_zero_method: wilcox
+all_differences_zero: p_value_1.0_with_ALL_ZERO_status
+ties: average_ranks_for_equal_absolute_nonzero_differences
+holm_family_exactly: [Full_PCC_vs_Fixed_Dice_0.5, No_smoothing_PCC_vs_Full_PCC_Dice_0.5]
+alpha: 0.05
+primary_success: mean_paired_difference_gt_0_AND_Holm_adjusted_p_lt_0.05
+no_smoothing_replication: mean_paired_difference_gt_0_AND_Holm_adjusted_p_lt_0.05
+rank_biserial: (positive_rank_sum - negative_rank_sum) / (positive_rank_sum + negative_rank_sum), zeros excluded
+cohens_dz: mean_difference / sample_SD_difference
+cohens_dz_sd_zero: NA_with_SD_ZERO_status
+bootstrap_unit: patient_pair
 bootstrap_replicates: 10000
 bootstrap_seed: 20260803
-confidence_interval: 0.95
-alpha: 0.05
+bootstrap_interval: percentile_95_percent
+bootstrap_failure: analysis_failure_no_substitution
+empty_prediction_nonempty_target: Dice_0_IoU_0
+empty_target: protocol_failure_not_metric_imputation
+non_finite: metric_failure_no_silent_filtering
+secondary_family: all_other_methods_metrics_and_nonconfirmatory_comparisons_with_separate_Holm_adjustment
+one_sided_testing: forbidden

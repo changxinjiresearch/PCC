@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "source_patients": 203,
+  "longitudinal_patients": 155,
+  "counts": {
+    "locked_40": 40,
+    "locked_115": 115,
+    "insufficient_usable_timepoints": 48,
+    "geometry_failure": 0,
+    "empty_target": 0,
+    "other_authoritative_exclusion": 0
+  },
+  "locked_115_sidecar_rows": 115,
+  "model_forward_executed": false,
+  "p0_generated": false,
+  "method_metrics_computed": false
+}

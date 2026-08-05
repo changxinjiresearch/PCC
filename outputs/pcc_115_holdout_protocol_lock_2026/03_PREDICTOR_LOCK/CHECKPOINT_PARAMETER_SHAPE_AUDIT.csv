@@ -1,0 +1,531 @@
+fold,parameter,expected_shape,checkpoint_shape,shape_match
+fold_1,dec1.net.0.bias,"(16,)","(16,)",True
+fold_1,dec1.net.0.weight,"(16, 32, 3, 3)","(16, 32, 3, 3)",True
+fold_1,dec1.net.1.bias,"(16,)","(16,)",True
+fold_1,dec1.net.1.num_batches_tracked,(),(),True
+fold_1,dec1.net.1.running_mean,"(16,)","(16,)",True
+fold_1,dec1.net.1.running_var,"(16,)","(16,)",True
+fold_1,dec1.net.1.weight,"(16,)","(16,)",True
+fold_1,dec1.net.3.bias,"(16,)","(16,)",True
+fold_1,dec1.net.3.weight,"(16, 16, 3, 3)","(16, 16, 3, 3)",True
+fold_1,dec1.net.4.bias,"(16,)","(16,)",True
+fold_1,dec1.net.4.num_batches_tracked,(),(),True
+fold_1,dec1.net.4.running_mean,"(16,)","(16,)",True
+fold_1,dec1.net.4.running_var,"(16,)","(16,)",True
+fold_1,dec1.net.4.weight,"(16,)","(16,)",True
+fold_1,dec2.net.0.bias,"(32,)","(32,)",True
+fold_1,dec2.net.0.weight,"(32, 64, 3, 3)","(32, 64, 3, 3)",True
+fold_1,dec2.net.1.bias,"(32,)","(32,)",True
+fold_1,dec2.net.1.num_batches_tracked,(),(),True
+fold_1,dec2.net.1.running_mean,"(32,)","(32,)",True
+fold_1,dec2.net.1.running_var,"(32,)","(32,)",True
+fold_1,dec2.net.1.weight,"(32,)","(32,)",True
+fold_1,dec2.net.3.bias,"(32,)","(32,)",True
+fold_1,dec2.net.3.weight,"(32, 32, 3, 3)","(32, 32, 3, 3)",True
+fold_1,dec2.net.4.bias,"(32,)","(32,)",True
+fold_1,dec2.net.4.num_batches_tracked,(),(),True
+fold_1,dec2.net.4.running_mean,"(32,)","(32,)",True
+fold_1,dec2.net.4.running_var,"(32,)","(32,)",True
+fold_1,dec2.net.4.weight,"(32,)","(32,)",True
+fold_1,dec3.net.0.bias,"(64,)","(64,)",True
+fold_1,dec3.net.0.weight,"(64, 128, 3, 3)","(64, 128, 3, 3)",True
+fold_1,dec3.net.1.bias,"(64,)","(64,)",True
+fold_1,dec3.net.1.num_batches_tracked,(),(),True
+fold_1,dec3.net.1.running_mean,"(64,)","(64,)",True
+fold_1,dec3.net.1.running_var,"(64,)","(64,)",True
+fold_1,dec3.net.1.weight,"(64,)","(64,)",True
+fold_1,dec3.net.3.bias,"(64,)","(64,)",True
+fold_1,dec3.net.3.weight,"(64, 64, 3, 3)","(64, 64, 3, 3)",True
+fold_1,dec3.net.4.bias,"(64,)","(64,)",True
+fold_1,dec3.net.4.num_batches_tracked,(),(),True
+fold_1,dec3.net.4.running_mean,"(64,)","(64,)",True
+fold_1,dec3.net.4.running_var,"(64,)","(64,)",True
+fold_1,dec3.net.4.weight,"(64,)","(64,)",True
+fold_1,enc1.net.0.bias,"(16,)","(16,)",True
+fold_1,enc1.net.0.weight,"(16, 2, 3, 3)","(16, 2, 3, 3)",True
+fold_1,enc1.net.1.bias,"(16,)","(16,)",True
+fold_1,enc1.net.1.num_batches_tracked,(),(),True
+fold_1,enc1.net.1.running_mean,"(16,)","(16,)",True
+fold_1,enc1.net.1.running_var,"(16,)","(16,)",True
+fold_1,enc1.net.1.weight,"(16,)","(16,)",True
+fold_1,enc1.net.3.bias,"(16,)","(16,)",True
+fold_1,enc1.net.3.weight,"(16, 16, 3, 3)","(16, 16, 3, 3)",True
+fold_1,enc1.net.4.bias,"(16,)","(16,)",True
+fold_1,enc1.net.4.num_batches_tracked,(),(),True
+fold_1,enc1.net.4.running_mean,"(16,)","(16,)",True
+fold_1,enc1.net.4.running_var,"(16,)","(16,)",True
+fold_1,enc1.net.4.weight,"(16,)","(16,)",True
+fold_1,enc2.net.0.bias,"(32,)","(32,)",True
+fold_1,enc2.net.0.weight,"(32, 16, 3, 3)","(32, 16, 3, 3)",True
+fold_1,enc2.net.1.bias,"(32,)","(32,)",True
+fold_1,enc2.net.1.num_batches_tracked,(),(),True
+fold_1,enc2.net.1.running_mean,"(32,)","(32,)",True
+fold_1,enc2.net.1.running_var,"(32,)","(32,)",True
+fold_1,enc2.net.1.weight,"(32,)","(32,)",True
+fold_1,enc2.net.3.bias,"(32,)","(32,)",True
+fold_1,enc2.net.3.weight,"(32, 32, 3, 3)","(32, 32, 3, 3)",True
+fold_1,enc2.net.4.bias,"(32,)","(32,)",True
+fold_1,enc2.net.4.num_batches_tracked,(),(),True
+fold_1,enc2.net.4.running_mean,"(32,)","(32,)",True
+fold_1,enc2.net.4.running_var,"(32,)","(32,)",True
+fold_1,enc2.net.4.weight,"(32,)","(32,)",True
+fold_1,enc3.net.0.bias,"(64,)","(64,)",True
+fold_1,enc3.net.0.weight,"(64, 32, 3, 3)","(64, 32, 3, 3)",True
+fold_1,enc3.net.1.bias,"(64,)","(64,)",True
+fold_1,enc3.net.1.num_batches_tracked,(),(),True
+fold_1,enc3.net.1.running_mean,"(64,)","(64,)",True
+fold_1,enc3.net.1.running_var,"(64,)","(64,)",True
+fold_1,enc3.net.1.weight,"(64,)","(64,)",True
+fold_1,enc3.net.3.bias,"(64,)","(64,)",True
+fold_1,enc3.net.3.weight,"(64, 64, 3, 3)","(64, 64, 3, 3)",True
+fold_1,enc3.net.4.bias,"(64,)","(64,)",True
+fold_1,enc3.net.4.num_batches_tracked,(),(),True
+fold_1,enc3.net.4.running_mean,"(64,)","(64,)",True
+fold_1,enc3.net.4.running_var,"(64,)","(64,)",True
+fold_1,enc3.net.4.weight,"(64,)","(64,)",True
+fold_1,mid.net.0.bias,"(128,)","(128,)",True
+fold_1,mid.net.0.weight,"(128, 64, 3, 3)","(128, 64, 3, 3)",True
+fold_1,mid.net.1.bias,"(128,)","(128,)",True
+fold_1,mid.net.1.num_batches_tracked,(),(),True
+fold_1,mid.net.1.running_mean,"(128,)","(128,)",True
+fold_1,mid.net.1.running_var,"(128,)","(128,)",True
+fold_1,mid.net.1.weight,"(128,)","(128,)",True
+fold_1,mid.net.3.bias,"(128,)","(128,)",True
+fold_1,mid.net.3.weight,"(128, 128, 3, 3)","(128, 128, 3, 3)",True
+fold_1,mid.net.4.bias,"(128,)","(128,)",True
+fold_1,mid.net.4.num_batches_tracked,(),(),True
+fold_1,mid.net.4.running_mean,"(128,)","(128,)",True
+fold_1,mid.net.4.running_var,"(128,)","(128,)",True
+fold_1,mid.net.4.weight,"(128,)","(128,)",True
+fold_1,out.bias,"(1,)","(1,)",True
+fold_1,out.weight,"(1, 16, 1, 1)","(1, 16, 1, 1)",True
+fold_1,up1.bias,"(16,)","(16,)",True
+fold_1,up1.weight,"(32, 16, 2, 2)","(32, 16, 2, 2)",True
+fold_1,up2.bias,"(32,)","(32,)",True
+fold_1,up2.weight,"(64, 32, 2, 2)","(64, 32, 2, 2)",True
+fold_1,up3.bias,"(64,)","(64,)",True
+fold_1,up3.weight,"(128, 64, 2, 2)","(128, 64, 2, 2)",True
+fold_2,dec1.net.0.bias,"(16,)","(16,)",True
+fold_2,dec1.net.0.weight,"(16, 32, 3, 3)","(16, 32, 3, 3)",True
+fold_2,dec1.net.1.bias,"(16,)","(16,)",True
+fold_2,dec1.net.1.num_batches_tracked,(),(),True
+fold_2,dec1.net.1.running_mean,"(16,)","(16,)",True
+fold_2,dec1.net.1.running_var,"(16,)","(16,)",True
+fold_2,dec1.net.1.weight,"(16,)","(16,)",True
+fold_2,dec1.net.3.bias,"(16,)","(16,)",True
+fold_2,dec1.net.3.weight,"(16, 16, 3, 3)","(16, 16, 3, 3)",True
+fold_2,dec1.net.4.bias,"(16,)","(16,)",True
+fold_2,dec1.net.4.num_batches_tracked,(),(),True
+fold_2,dec1.net.4.running_mean,"(16,)","(16,)",True
+fold_2,dec1.net.4.running_var,"(16,)","(16,)",True
+fold_2,dec1.net.4.weight,"(16,)","(16,)",True
+fold_2,dec2.net.0.bias,"(32,)","(32,)",True
+fold_2,dec2.net.0.weight,"(32, 64, 3, 3)","(32, 64, 3, 3)",True
+fold_2,dec2.net.1.bias,"(32,)","(32,)",True
+fold_2,dec2.net.1.num_batches_tracked,(),(),True
+fold_2,dec2.net.1.running_mean,"(32,)","(32,)",True
+fold_2,dec2.net.1.running_var,"(32,)","(32,)",True
+fold_2,dec2.net.1.weight,"(32,)","(32,)",True
+fold_2,dec2.net.3.bias,"(32,)","(32,)",True
+fold_2,dec2.net.3.weight,"(32, 32, 3, 3)","(32, 32, 3, 3)",True
+fold_2,dec2.net.4.bias,"(32,)","(32,)",True
+fold_2,dec2.net.4.num_batches_tracked,(),(),True
+fold_2,dec2.net.4.running_mean,"(32,)","(32,)",True
+fold_2,dec2.net.4.running_var,"(32,)","(32,)",True
+fold_2,dec2.net.4.weight,"(32,)","(32,)",True
+fold_2,dec3.net.0.bias,"(64,)","(64,)",True
+fold_2,dec3.net.0.weight,"(64, 128, 3, 3)","(64, 128, 3, 3)",True
+fold_2,dec3.net.1.bias,"(64,)","(64,)",True
+fold_2,dec3.net.1.num_batches_tracked,(),(),True
+fold_2,dec3.net.1.running_mean,"(64,)","(64,)",True
+fold_2,dec3.net.1.running_var,"(64,)","(64,)",True
+fold_2,dec3.net.1.weight,"(64,)","(64,)",True
+fold_2,dec3.net.3.bias,"(64,)","(64,)",True
+fold_2,dec3.net.3.weight,"(64, 64, 3, 3)","(64, 64, 3, 3)",True
+fold_2,dec3.net.4.bias,"(64,)","(64,)",True
+fold_2,dec3.net.4.num_batches_tracked,(),(),True
+fold_2,dec3.net.4.running_mean,"(64,)","(64,)",True
+fold_2,dec3.net.4.running_var,"(64,)","(64,)",True
+fold_2,dec3.net.4.weight,"(64,)","(64,)",True
+fold_2,enc1.net.0.bias,"(16,)","(16,)",True
+fold_2,enc1.net.0.weight,"(16, 2, 3, 3)","(16, 2, 3, 3)",True
+fold_2,enc1.net.1.bias,"(16,)","(16,)",True
+fold_2,enc1.net.1.num_batches_tracked,(),(),True
+fold_2,enc1.net.1.running_mean,"(16,)","(16,)",True
+fold_2,enc1.net.1.running_var,"(16,)","(16,)",True
+fold_2,enc1.net.1.weight,"(16,)","(16,)",True
+fold_2,enc1.net.3.bias,"(16,)","(16,)",True
+fold_2,enc1.net.3.weight,"(16, 16, 3, 3)","(16, 16, 3, 3)",True
+fold_2,enc1.net.4.bias,"(16,)","(16,)",True
+fold_2,enc1.net.4.num_batches_tracked,(),(),True
+fold_2,enc1.net.4.running_mean,"(16,)","(16,)",True
+fold_2,enc1.net.4.running_var,"(16,)","(16,)",True
+fold_2,enc1.net.4.weight,"(16,)","(16,)",True
+fold_2,enc2.net.0.bias,"(32,)","(32,)",True
+fold_2,enc2.net.0.weight,"(32, 16, 3, 3)","(32, 16, 3, 3)",True
+fold_2,enc2.net.1.bias,"(32,)","(32,)",True
+fold_2,enc2.net.1.num_batches_tracked,(),(),True
+fold_2,enc2.net.1.running_mean,"(32,)","(32,)",True
+fold_2,enc2.net.1.running_var,"(32,)","(32,)",True
+fold_2,enc2.net.1.weight,"(32,)","(32,)",True
+fold_2,enc2.net.3.bias,"(32,)","(32,)",True
+fold_2,enc2.net.3.weight,"(32, 32, 3, 3)","(32, 32, 3, 3)",True
+fold_2,enc2.net.4.bias,"(32,)","(32,)",True
+fold_2,enc2.net.4.num_batches_tracked,(),(),True
+fold_2,enc2.net.4.running_mean,"(32,)","(32,)",True
+fold_2,enc2.net.4.running_var,"(32,)","(32,)",True
+fold_2,enc2.net.4.weight,"(32,)","(32,)",True
+fold_2,enc3.net.0.bias,"(64,)","(64,)",True
+fold_2,enc3.net.0.weight,"(64, 32, 3, 3)","(64, 32, 3, 3)",True
+fold_2,enc3.net.1.bias,"(64,)","(64,)",True
+fold_2,enc3.net.1.num_batches_tracked,(),(),True
+fold_2,enc3.net.1.running_mean,"(64,)","(64,)",True
+fold_2,enc3.net.1.running_var,"(64,)","(64,)",True
+fold_2,enc3.net.1.weight,"(64,)","(64,)",True
+fold_2,enc3.net.3.bias,"(64,)","(64,)",True
+fold_2,enc3.net.3.weight,"(64, 64, 3, 3)","(64, 64, 3, 3)",True
+fold_2,enc3.net.4.bias,"(64,)","(64,)",True
+fold_2,enc3.net.4.num_batches_tracked,(),(),True
+fold_2,enc3.net.4.running_mean,"(64,)","(64,)",True
+fold_2,enc3.net.4.running_var,"(64,)","(64,)",True
+fold_2,enc3.net.4.weight,"(64,)","(64,)",True
+fold_2,mid.net.0.bias,"(128,)","(128,)",True
+fold_2,mid.net.0.weight,"(128, 64, 3, 3)","(128, 64, 3, 3)",True
+fold_2,mid.net.1.bias,"(128,)","(128,)",True
+fold_2,mid.net.1.num_batches_tracked,(),(),True
+fold_2,mid.net.1.running_mean,"(128,)","(128,)",True
+fold_2,mid.net.1.running_var,"(128,)","(128,)",True
+fold_2,mid.net.1.weight,"(128,)","(128,)",True
+fold_2,mid.net.3.bias,"(128,)","(128,)",True
+fold_2,mid.net.3.weight,"(128, 128, 3, 3)","(128, 128, 3, 3)",True
+fold_2,mid.net.4.bias,"(128,)","(128,)",True
+fold_2,mid.net.4.num_batches_tracked,(),(),True
+fold_2,mid.net.4.running_mean,"(128,)","(128,)",True
+fold_2,mid.net.4.running_var,"(128,)","(128,)",True
+fold_2,mid.net.4.weight,"(128,)","(128,)",True
+fold_2,out.bias,"(1,)","(1,)",True
+fold_2,out.weight,"(1, 16, 1, 1)","(1, 16, 1, 1)",True
+fold_2,up1.bias,"(16,)","(16,)",True
+fold_2,up1.weight,"(32, 16, 2, 2)","(32, 16, 2, 2)",True
+fold_2,up2.bias,"(32,)","(32,)",True
+fold_2,up2.weight,"(64, 32, 2, 2)","(64, 32, 2, 2)",True
+fold_2,up3.bias,"(64,)","(64,)",True
+fold_2,up3.weight,"(128, 64, 2, 2)","(128, 64, 2, 2)",True
+fold_3,dec1.net.0.bias,"(16,)","(16,)",True
+fold_3,dec1.net.0.weight,"(16, 32, 3, 3)","(16, 32, 3, 3)",True
+fold_3,dec1.net.1.bias,"(16,)","(16,)",True
+fold_3,dec1.net.1.num_batches_tracked,(),(),True
+fold_3,dec1.net.1.running_mean,"(16,)","(16,)",True
+fold_3,dec1.net.1.running_var,"(16,)","(16,)",True
+fold_3,dec1.net.1.weight,"(16,)","(16,)",True
+fold_3,dec1.net.3.bias,"(16,)","(16,)",True
+fold_3,dec1.net.3.weight,"(16, 16, 3, 3)","(16, 16, 3, 3)",True
+fold_3,dec1.net.4.bias,"(16,)","(16,)",True
+fold_3,dec1.net.4.num_batches_tracked,(),(),True
+fold_3,dec1.net.4.running_mean,"(16,)","(16,)",True
+fold_3,dec1.net.4.running_var,"(16,)","(16,)",True
+fold_3,dec1.net.4.weight,"(16,)","(16,)",True
+fold_3,dec2.net.0.bias,"(32,)","(32,)",True
+fold_3,dec2.net.0.weight,"(32, 64, 3, 3)","(32, 64, 3, 3)",True
+fold_3,dec2.net.1.bias,"(32,)","(32,)",True
+fold_3,dec2.net.1.num_batches_tracked,(),(),True
+fold_3,dec2.net.1.running_mean,"(32,)","(32,)",True
+fold_3,dec2.net.1.running_var,"(32,)","(32,)",True
+fold_3,dec2.net.1.weight,"(32,)","(32,)",True
+fold_3,dec2.net.3.bias,"(32,)","(32,)",True
+fold_3,dec2.net.3.weight,"(32, 32, 3, 3)","(32, 32, 3, 3)",True
+fold_3,dec2.net.4.bias,"(32,)","(32,)",True
+fold_3,dec2.net.4.num_batches_tracked,(),(),True
+fold_3,dec2.net.4.running_mean,"(32,)","(32,)",True
+fold_3,dec2.net.4.running_var,"(32,)","(32,)",True
+fold_3,dec2.net.4.weight,"(32,)","(32,)",True
+fold_3,dec3.net.0.bias,"(64,)","(64,)",True
+fold_3,dec3.net.0.weight,"(64, 128, 3, 3)","(64, 128, 3, 3)",True
+fold_3,dec3.net.1.bias,"(64,)","(64,)",True
+fold_3,dec3.net.1.num_batches_tracked,(),(),True
+fold_3,dec3.net.1.running_mean,"(64,)","(64,)",True
+fold_3,dec3.net.1.running_var,"(64,)","(64,)",True
+fold_3,dec3.net.1.weight,"(64,)","(64,)",True
+fold_3,dec3.net.3.bias,"(64,)","(64,)",True
+fold_3,dec3.net.3.weight,"(64, 64, 3, 3)","(64, 64, 3, 3)",True
+fold_3,dec3.net.4.bias,"(64,)","(64,)",True
+fold_3,dec3.net.4.num_batches_tracked,(),(),True
+fold_3,dec3.net.4.running_mean,"(64,)","(64,)",True
+fold_3,dec3.net.4.running_var,"(64,)","(64,)",True
+fold_3,dec3.net.4.weight,"(64,)","(64,)",True
+fold_3,enc1.net.0.bias,"(16,)","(16,)",True
+fold_3,enc1.net.0.weight,"(16, 2, 3, 3)","(16, 2, 3, 3)",True
+fold_3,enc1.net.1.bias,"(16,)","(16,)",True
+fold_3,enc1.net.1.num_batches_tracked,(),(),True
+fold_3,enc1.net.1.running_mean,"(16,)","(16,)",True
+fold_3,enc1.net.1.running_var,"(16,)","(16,)",True
+fold_3,enc1.net.1.weight,"(16,)","(16,)",True
+fold_3,enc1.net.3.bias,"(16,)","(16,)",True
+fold_3,enc1.net.3.weight,"(16, 16, 3, 3)","(16, 16, 3, 3)",True
+fold_3,enc1.net.4.bias,"(16,)","(16,)",True
+fold_3,enc1.net.4.num_batches_tracked,(),(),True
+fold_3,enc1.net.4.running_mean,"(16,)","(16,)",True
+fold_3,enc1.net.4.running_var,"(16,)","(16,)",True
+fold_3,enc1.net.4.weight,"(16,)","(16,)",True
+fold_3,enc2.net.0.bias,"(32,)","(32,)",True
+fold_3,enc2.net.0.weight,"(32, 16, 3, 3)","(32, 16, 3, 3)",True
+fold_3,enc2.net.1.bias,"(32,)","(32,)",True
+fold_3,enc2.net.1.num_batches_tracked,(),(),True
+fold_3,enc2.net.1.running_mean,"(32,)","(32,)",True
+fold_3,enc2.net.1.running_var,"(32,)","(32,)",True
+fold_3,enc2.net.1.weight,"(32,)","(32,)",True
+fold_3,enc2.net.3.bias,"(32,)","(32,)",True
+fold_3,enc2.net.3.weight,"(32, 32, 3, 3)","(32, 32, 3, 3)",True
+fold_3,enc2.net.4.bias,"(32,)","(32,)",True
+fold_3,enc2.net.4.num_batches_tracked,(),(),True
+fold_3,enc2.net.4.running_mean,"(32,)","(32,)",True
+fold_3,enc2.net.4.running_var,"(32,)","(32,)",True
+fold_3,enc2.net.4.weight,"(32,)","(32,)",True
+fold_3,enc3.net.0.bias,"(64,)","(64,)",True
+fold_3,enc3.net.0.weight,"(64, 32, 3, 3)","(64, 32, 3, 3)",True
+fold_3,enc3.net.1.bias,"(64,)","(64,)",True
+fold_3,enc3.net.1.num_batches_tracked,(),(),True
+fold_3,enc3.net.1.running_mean,"(64,)","(64,)",True
+fold_3,enc3.net.1.running_var,"(64,)","(64,)",True
+fold_3,enc3.net.1.weight,"(64,)","(64,)",True
+fold_3,enc3.net.3.bias,"(64,)","(64,)",True
+fold_3,enc3.net.3.weight,"(64, 64, 3, 3)","(64, 64, 3, 3)",True
+fold_3,enc3.net.4.bias,"(64,)","(64,)",True
+fold_3,enc3.net.4.num_batches_tracked,(),(),True
+fold_3,enc3.net.4.running_mean,"(64,)","(64,)",True
+fold_3,enc3.net.4.running_var,"(64,)","(64,)",True
+fold_3,enc3.net.4.weight,"(64,)","(64,)",True
+fold_3,mid.net.0.bias,"(128,)","(128,)",True
+fold_3,mid.net.0.weight,"(128, 64, 3, 3)","(128, 64, 3, 3)",True
+fold_3,mid.net.1.bias,"(128,)","(128,)",True
+fold_3,mid.net.1.num_batches_tracked,(),(),True
+fold_3,mid.net.1.running_mean,"(128,)","(128,)",True
+fold_3,mid.net.1.running_var,"(128,)","(128,)",True
+fold_3,mid.net.1.weight,"(128,)","(128,)",True
+fold_3,mid.net.3.bias,"(128,)","(128,)",True
+fold_3,mid.net.3.weight,"(128, 128, 3, 3)","(128, 128, 3, 3)",True
+fold_3,mid.net.4.bias,"(128,)","(128,)",True
+fold_3,mid.net.4.num_batches_tracked,(),(),True
+fold_3,mid.net.4.running_mean,"(128,)","(128,)",True
+fold_3,mid.net.4.running_var,"(128,)","(128,)",True
+fold_3,mid.net.4.weight,"(128,)","(128,)",True
+fold_3,out.bias,"(1,)","(1,)",True
+fold_3,out.weight,"(1, 16, 1, 1)","(1, 16, 1, 1)",True
+fold_3,up1.bias,"(16,)","(16,)",True
+fold_3,up1.weight,"(32, 16, 2, 2)","(32, 16, 2, 2)",True
+fold_3,up2.bias,"(32,)","(32,)",True
+fold_3,up2.weight,"(64, 32, 2, 2)","(64, 32, 2, 2)",True
+fold_3,up3.bias,"(64,)","(64,)",True
+fold_3,up3.weight,"(128, 64, 2, 2)","(128, 64, 2, 2)",True
+fold_4,dec1.net.0.bias,"(16,)","(16,)",True
+fold_4,dec1.net.0.weight,"(16, 32, 3, 3)","(16, 32, 3, 3)",True
+fold_4,dec1.net.1.bias,"(16,)","(16,)",True
+fold_4,dec1.net.1.num_batches_tracked,(),(),True
+fold_4,dec1.net.1.running_mean,"(16,)","(16,)",True
+fold_4,dec1.net.1.running_var,"(16,)","(16,)",True
+fold_4,dec1.net.1.weight,"(16,)","(16,)",True
+fold_4,dec1.net.3.bias,"(16,)","(16,)",True
+fold_4,dec1.net.3.weight,"(16, 16, 3, 3)","(16, 16, 3, 3)",True
+fold_4,dec1.net.4.bias,"(16,)","(16,)",True
+fold_4,dec1.net.4.num_batches_tracked,(),(),True
+fold_4,dec1.net.4.running_mean,"(16,)","(16,)",True
+fold_4,dec1.net.4.running_var,"(16,)","(16,)",True
+fold_4,dec1.net.4.weight,"(16,)","(16,)",True
+fold_4,dec2.net.0.bias,"(32,)","(32,)",True
+fold_4,dec2.net.0.weight,"(32, 64, 3, 3)","(32, 64, 3, 3)",True
+fold_4,dec2.net.1.bias,"(32,)","(32,)",True
+fold_4,dec2.net.1.num_batches_tracked,(),(),True
+fold_4,dec2.net.1.running_mean,"(32,)","(32,)",True
+fold_4,dec2.net.1.running_var,"(32,)","(32,)",True
+fold_4,dec2.net.1.weight,"(32,)","(32,)",True
+fold_4,dec2.net.3.bias,"(32,)","(32,)",True
+fold_4,dec2.net.3.weight,"(32, 32, 3, 3)","(32, 32, 3, 3)",True
+fold_4,dec2.net.4.bias,"(32,)","(32,)",True
+fold_4,dec2.net.4.num_batches_tracked,(),(),True
+fold_4,dec2.net.4.running_mean,"(32,)","(32,)",True
+fold_4,dec2.net.4.running_var,"(32,)","(32,)",True
+fold_4,dec2.net.4.weight,"(32,)","(32,)",True
+fold_4,dec3.net.0.bias,"(64,)","(64,)",True
+fold_4,dec3.net.0.weight,"(64, 128, 3, 3)","(64, 128, 3, 3)",True
+fold_4,dec3.net.1.bias,"(64,)","(64,)",True
+fold_4,dec3.net.1.num_batches_tracked,(),(),True
+fold_4,dec3.net.1.running_mean,"(64,)","(64,)",True
+fold_4,dec3.net.1.running_var,"(64,)","(64,)",True
+fold_4,dec3.net.1.weight,"(64,)","(64,)",True
+fold_4,dec3.net.3.bias,"(64,)","(64,)",True
+fold_4,dec3.net.3.weight,"(64, 64, 3, 3)","(64, 64, 3, 3)",True
+fold_4,dec3.net.4.bias,"(64,)","(64,)",True
+fold_4,dec3.net.4.num_batches_tracked,(),(),True
+fold_4,dec3.net.4.running_mean,"(64,)","(64,)",True
+fold_4,dec3.net.4.running_var,"(64,)","(64,)",True
+fold_4,dec3.net.4.weight,"(64,)","(64,)",True
+fold_4,enc1.net.0.bias,"(16,)","(16,)",True
+fold_4,enc1.net.0.weight,"(16, 2, 3, 3)","(16, 2, 3, 3)",True
+fold_4,enc1.net.1.bias,"(16,)","(16,)",True
+fold_4,enc1.net.1.num_batches_tracked,(),(),True
+fold_4,enc1.net.1.running_mean,"(16,)","(16,)",True
+fold_4,enc1.net.1.running_var,"(16,)","(16,)",True
+fold_4,enc1.net.1.weight,"(16,)","(16,)",True
+fold_4,enc1.net.3.bias,"(16,)","(16,)",True
+fold_4,enc1.net.3.weight,"(16, 16, 3, 3)","(16, 16, 3, 3)",True
+fold_4,enc1.net.4.bias,"(16,)","(16,)",True
+fold_4,enc1.net.4.num_batches_tracked,(),(),True
+fold_4,enc1.net.4.running_mean,"(16,)","(16,)",True
+fold_4,enc1.net.4.running_var,"(16,)","(16,)",True
+fold_4,enc1.net.4.weight,"(16,)","(16,)",True
+fold_4,enc2.net.0.bias,"(32,)","(32,)",True
+fold_4,enc2.net.0.weight,"(32, 16, 3, 3)","(32, 16, 3, 3)",True
+fold_4,enc2.net.1.bias,"(32,)","(32,)",True
+fold_4,enc2.net.1.num_batches_tracked,(),(),True
+fold_4,enc2.net.1.running_mean,"(32,)","(32,)",True
+fold_4,enc2.net.1.running_var,"(32,)","(32,)",True
+fold_4,enc2.net.1.weight,"(32,)","(32,)",True
+fold_4,enc2.net.3.bias,"(32,)","(32,)",True
+fold_4,enc2.net.3.weight,"(32, 32, 3, 3)","(32, 32, 3, 3)",True
+fold_4,enc2.net.4.bias,"(32,)","(32,)",True
+fold_4,enc2.net.4.num_batches_tracked,(),(),True
+fold_4,enc2.net.4.running_mean,"(32,)","(32,)",True
+fold_4,enc2.net.4.running_var,"(32,)","(32,)",True
+fold_4,enc2.net.4.weight,"(32,)","(32,)",True
+fold_4,enc3.net.0.bias,"(64,)","(64,)",True
+fold_4,enc3.net.0.weight,"(64, 32, 3, 3)","(64, 32, 3, 3)",True
+fold_4,enc3.net.1.bias,"(64,)","(64,)",True
+fold_4,enc3.net.1.num_batches_tracked,(),(),True
+fold_4,enc3.net.1.running_mean,"(64,)","(64,)",True
+fold_4,enc3.net.1.running_var,"(64,)","(64,)",True
+fold_4,enc3.net.1.weight,"(64,)","(64,)",True
+fold_4,enc3.net.3.bias,"(64,)","(64,)",True
+fold_4,enc3.net.3.weight,"(64, 64, 3, 3)","(64, 64, 3, 3)",True
+fold_4,enc3.net.4.bias,"(64,)","(64,)",True
+fold_4,enc3.net.4.num_batches_tracked,(),(),True
+fold_4,enc3.net.4.running_mean,"(64,)","(64,)",True
+fold_4,enc3.net.4.running_var,"(64,)","(64,)",True
+fold_4,enc3.net.4.weight,"(64,)","(64,)",True
+fold_4,mid.net.0.bias,"(128,)","(128,)",True
+fold_4,mid.net.0.weight,"(128, 64, 3, 3)","(128, 64, 3, 3)",True
+fold_4,mid.net.1.bias,"(128,)","(128,)",True
+fold_4,mid.net.1.num_batches_tracked,(),(),True
+fold_4,mid.net.1.running_mean,"(128,)","(128,)",True
+fold_4,mid.net.1.running_var,"(128,)","(128,)",True
+fold_4,mid.net.1.weight,"(128,)","(128,)",True
+fold_4,mid.net.3.bias,"(128,)","(128,)",True
+fold_4,mid.net.3.weight,"(128, 128, 3, 3)","(128, 128, 3, 3)",True
+fold_4,mid.net.4.bias,"(128,)","(128,)",True
+fold_4,mid.net.4.num_batches_tracked,(),(),True
+fold_4,mid.net.4.running_mean,"(128,)","(128,)",True
+fold_4,mid.net.4.running_var,"(128,)","(128,)",True
+fold_4,mid.net.4.weight,"(128,)","(128,)",True
+fold_4,out.bias,"(1,)","(1,)",True
+fold_4,out.weight,"(1, 16, 1, 1)","(1, 16, 1, 1)",True
+fold_4,up1.bias,"(16,)","(16,)",True
+fold_4,up1.weight,"(32, 16, 2, 2)","(32, 16, 2, 2)",True
+fold_4,up2.bias,"(32,)","(32,)",True
+fold_4,up2.weight,"(64, 32, 2, 2)","(64, 32, 2, 2)",True
+fold_4,up3.bias,"(64,)","(64,)",True
+fold_4,up3.weight,"(128, 64, 2, 2)","(128, 64, 2, 2)",True
+fold_5,dec1.net.0.bias,"(16,)","(16,)",True
+fold_5,dec1.net.0.weight,"(16, 32, 3, 3)","(16, 32, 3, 3)",True
+fold_5,dec1.net.1.bias,"(16,)","(16,)",True
+fold_5,dec1.net.1.num_batches_tracked,(),(),True
+fold_5,dec1.net.1.running_mean,"(16,)","(16,)",True
+fold_5,dec1.net.1.running_var,"(16,)","(16,)",True
+fold_5,dec1.net.1.weight,"(16,)","(16,)",True
+fold_5,dec1.net.3.bias,"(16,)","(16,)",True
+fold_5,dec1.net.3.weight,"(16, 16, 3, 3)","(16, 16, 3, 3)",True
+fold_5,dec1.net.4.bias,"(16,)","(16,)",True
+fold_5,dec1.net.4.num_batches_tracked,(),(),True
+fold_5,dec1.net.4.running_mean,"(16,)","(16,)",True
+fold_5,dec1.net.4.running_var,"(16,)","(16,)",True
+fold_5,dec1.net.4.weight,"(16,)","(16,)",True
+fold_5,dec2.net.0.bias,"(32,)","(32,)",True
+fold_5,dec2.net.0.weight,"(32, 64, 3, 3)","(32, 64, 3, 3)",True
+fold_5,dec2.net.1.bias,"(32,)","(32,)",True
+fold_5,dec2.net.1.num_batches_tracked,(),(),True
+fold_5,dec2.net.1.running_mean,"(32,)","(32,)",True
+fold_5,dec2.net.1.running_var,"(32,)","(32,)",True
+fold_5,dec2.net.1.weight,"(32,)","(32,)",True
+fold_5,dec2.net.3.bias,"(32,)","(32,)",True
+fold_5,dec2.net.3.weight,"(32, 32, 3, 3)","(32, 32, 3, 3)",True
+fold_5,dec2.net.4.bias,"(32,)","(32,)",True
+fold_5,dec2.net.4.num_batches_tracked,(),(),True
+fold_5,dec2.net.4.running_mean,"(32,)","(32,)",True
+fold_5,dec2.net.4.running_var,"(32,)","(32,)",True
+fold_5,dec2.net.4.weight,"(32,)","(32,)",True
+fold_5,dec3.net.0.bias,"(64,)","(64,)",True
+fold_5,dec3.net.0.weight,"(64, 128, 3, 3)","(64, 128, 3, 3)",True
+fold_5,dec3.net.1.bias,"(64,)","(64,)",True
+fold_5,dec3.net.1.num_batches_tracked,(),(),True
+fold_5,dec3.net.1.running_mean,"(64,)","(64,)",True
+fold_5,dec3.net.1.running_var,"(64,)","(64,)",True
+fold_5,dec3.net.1.weight,"(64,)","(64,)",True
+fold_5,dec3.net.3.bias,"(64,)","(64,)",True
+fold_5,dec3.net.3.weight,"(64, 64, 3, 3)","(64, 64, 3, 3)",True
+fold_5,dec3.net.4.bias,"(64,)","(64,)",True
+fold_5,dec3.net.4.num_batches_tracked,(),(),True
+fold_5,dec3.net.4.running_mean,"(64,)","(64,)",True
+fold_5,dec3.net.4.running_var,"(64,)","(64,)",True
+fold_5,dec3.net.4.weight,"(64,)","(64,)",True
+fold_5,enc1.net.0.bias,"(16,)","(16,)",True
+fold_5,enc1.net.0.weight,"(16, 2, 3, 3)","(16, 2, 3, 3)",True
+fold_5,enc1.net.1.bias,"(16,)","(16,)",True
+fold_5,enc1.net.1.num_batches_tracked,(),(),True
+fold_5,enc1.net.1.running_mean,"(16,)","(16,)",True
+fold_5,enc1.net.1.running_var,"(16,)","(16,)",True
+fold_5,enc1.net.1.weight,"(16,)","(16,)",True
+fold_5,enc1.net.3.bias,"(16,)","(16,)",True
+fold_5,enc1.net.3.weight,"(16, 16, 3, 3)","(16, 16, 3, 3)",True
+fold_5,enc1.net.4.bias,"(16,)","(16,)",True
+fold_5,enc1.net.4.num_batches_tracked,(),(),True
+fold_5,enc1.net.4.running_mean,"(16,)","(16,)",True
+fold_5,enc1.net.4.running_var,"(16,)","(16,)",True
+fold_5,enc1.net.4.weight,"(16,)","(16,)",True
+fold_5,enc2.net.0.bias,"(32,)","(32,)",True
+fold_5,enc2.net.0.weight,"(32, 16, 3, 3)","(32, 16, 3, 3)",True
+fold_5,enc2.net.1.bias,"(32,)","(32,)",True
+fold_5,enc2.net.1.num_batches_tracked,(),(),True
+fold_5,enc2.net.1.running_mean,"(32,)","(32,)",True
+fold_5,enc2.net.1.running_var,"(32,)","(32,)",True
+fold_5,enc2.net.1.weight,"(32,)","(32,)",True
+fold_5,enc2.net.3.bias,"(32,)","(32,)",True
+fold_5,enc2.net.3.weight,"(32, 32, 3, 3)","(32, 32, 3, 3)",True
+fold_5,enc2.net.4.bias,"(32,)","(32,)",True
+fold_5,enc2.net.4.num_batches_tracked,(),(),True
+fold_5,enc2.net.4.running_mean,"(32,)","(32,)",True
+fold_5,enc2.net.4.running_var,"(32,)","(32,)",True
+fold_5,enc2.net.4.weight,"(32,)","(32,)",True
+fold_5,enc3.net.0.bias,"(64,)","(64,)",True
+fold_5,enc3.net.0.weight,"(64, 32, 3, 3)","(64, 32, 3, 3)",True
+fold_5,enc3.net.1.bias,"(64,)","(64,)",True
+fold_5,enc3.net.1.num_batches_tracked,(),(),True
+fold_5,enc3.net.1.running_mean,"(64,)","(64,)",True
+fold_5,enc3.net.1.running_var,"(64,)","(64,)",True
+fold_5,enc3.net.1.weight,"(64,)","(64,)",True
+fold_5,enc3.net.3.bias,"(64,)","(64,)",True
+fold_5,enc3.net.3.weight,"(64, 64, 3, 3)","(64, 64, 3, 3)",True
+fold_5,enc3.net.4.bias,"(64,)","(64,)",True
+fold_5,enc3.net.4.num_batches_tracked,(),(),True
+fold_5,enc3.net.4.running_mean,"(64,)","(64,)",True
+fold_5,enc3.net.4.running_var,"(64,)","(64,)",True
+fold_5,enc3.net.4.weight,"(64,)","(64,)",True
+fold_5,mid.net.0.bias,"(128,)","(128,)",True
+fold_5,mid.net.0.weight,"(128, 64, 3, 3)","(128, 64, 3, 3)",True
+fold_5,mid.net.1.bias,"(128,)","(128,)",True
+fold_5,mid.net.1.num_batches_tracked,(),(),True
+fold_5,mid.net.1.running_mean,"(128,)","(128,)",True
+fold_5,mid.net.1.running_var,"(128,)","(128,)",True
+fold_5,mid.net.1.weight,"(128,)","(128,)",True
+fold_5,mid.net.3.bias,"(128,)","(128,)",True
+fold_5,mid.net.3.weight,"(128, 128, 3, 3)","(128, 128, 3, 3)",True
+fold_5,mid.net.4.bias,"(128,)","(128,)",True
+fold_5,mid.net.4.num_batches_tracked,(),(),True
+fold_5,mid.net.4.running_mean,"(128,)","(128,)",True
+fold_5,mid.net.4.running_var,"(128,)","(128,)",True
+fold_5,mid.net.4.weight,"(128,)","(128,)",True
+fold_5,out.bias,"(1,)","(1,)",True
+fold_5,out.weight,"(1, 16, 1, 1)","(1, 16, 1, 1)",True
+fold_5,up1.bias,"(16,)","(16,)",True
+fold_5,up1.weight,"(32, 16, 2, 2)","(32, 16, 2, 2)",True
+fold_5,up2.bias,"(32,)","(32,)",True
+fold_5,up2.weight,"(64, 32, 2, 2)","(64, 32, 2, 2)",True
+fold_5,up3.bias,"(64,)","(64,)",True
+fold_5,up3.weight,"(128, 64, 2, 2)","(128, 64, 2, 2)",True

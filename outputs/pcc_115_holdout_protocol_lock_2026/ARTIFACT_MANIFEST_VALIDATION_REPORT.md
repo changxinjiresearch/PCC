@@ -1,10 +1,3 @@
 # Artifact manifest validation
 
-Manifest scope excludes the manifest itself, package contents, and validation reports to avoid circular hashes; those files are independently checked by package contents.
-
-Missing: 0
-Extra unexpected: 0
-Size mismatch: 0
-Hash mismatch: 0
-Duplicate path: 0
-Result: PASS
+The artifact manifest excludes itself and release index/validation files to avoid circular hashes. All scoped files were independently re-read. Missing 0; extra 0; size mismatch 0; hash mismatch 0; duplicate path 0. Result: PASS.

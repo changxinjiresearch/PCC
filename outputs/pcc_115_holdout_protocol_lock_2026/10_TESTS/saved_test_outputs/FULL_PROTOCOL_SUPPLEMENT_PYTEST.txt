@@ -1,0 +1,6 @@
+command=PYTHONPATH=. /tmp/pcc_internal_test_env/bin/pytest -q outputs/pcc_115_holdout_protocol_lock_2026/02_LEAKAGE_GUARDS outputs/pcc_115_holdout_protocol_lock_2026/10_TESTS/test_protocol_supplement.py
+started_at=2026-08-06T05:28:44+09:30
+...............................................                          [100%]
+47 passed in 3.37s
+ended_at=2026-08-06T05:28:49+09:30
+exit_code=0

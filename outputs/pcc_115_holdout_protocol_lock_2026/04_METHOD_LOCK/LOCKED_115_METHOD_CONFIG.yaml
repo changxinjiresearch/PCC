@@ -1,12 +1,52 @@
-methods: [Fixed, Naive, EIA-linear, EIA-blend-0.90, EIA-blend-0.75, EIA-morph, Full PCC, No-smoothing PCC]
-full_pcc:
-  rounds: 10
-  eta: 0.30
-  dilation_radius_voxels: 26
-  gaussian_sigma_voxels: 2.0
-  logit_epsilon: 1.0e-5
-  state_propagation: true
-no_smoothing:
-  definition: locked posthoc candidate; only the discrepancy smoothing operation differs from Full PCC
-  primary_status: independent-validation prelocked candidate variant
-execution_in_this_stage: false
+protocol_status: prelocked_before_115_results
+methods:
+  Fixed:
+    operation: safe_clip_prob(P0)
+    dtype: float32
+    clip: nan_to_num_then_[0,1]
+  Naive:
+    operation: sigmoid(2.5 * safe_logit(safe_clip_prob(P0)))
+    gamma: 2.5
+    logit_epsilon: 1.0e-5
+    sigmoid_logit_clip: [-30, 30]
+    dtype: float32
+  EIA-linear:
+    alpha: 0.30
+    beta: 0.30
+    support_radius_voxels: 26
+    target_signal_gaussian_sigma_voxels: 2.0
+  EIA-blend-0.90:
+    baseline_weight: 0.90
+    target_signal_weight: 0.10
+  EIA-blend-0.75:
+    baseline_weight: 0.75
+    target_signal_weight: 0.25
+  EIA-morph:
+    baseline_threshold: 0.5
+    support_radius_voxels: 26
+    binary_closing_iterations: 1
+    fill_holes: true
+    minimum_component_voxels: 20
+  Full_PCC:
+    rounds: 10
+    eta: 0.30
+    dilation_radius_voxels: 26
+    gaussian_sigma_voxels: 2.0
+    logit_epsilon: 1.0e-5
+    sigmoid_logit_clip: [-30, 30]
+    state_propagation: true
+    dtype: float32
+    boundary_handling: scipy_ndimage_defaults
+    trajectory: P1_to_P10_when_capture_enabled
+  No_smoothing_PCC:
+    candidate_status: independent-validation_prelocked_candidate_variant
+    rounds: 10
+    eta: 0.30
+    dilation_radius_voxels: 26
+    gaussian_filter_applied_to_discrepancy: false
+    logit_epsilon: 1.0e-5
+    sigmoid_logit_clip: [-30, 30]
+    state_propagation: true
+    dtype: float32
+only_allowed_difference: discrepancy_signal = D_r instead of gaussian_filter(D_r, sigma=2.0)
+real_115_execution_in_protocol_lock: false

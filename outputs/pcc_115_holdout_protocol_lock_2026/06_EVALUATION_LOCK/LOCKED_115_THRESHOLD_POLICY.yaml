@@ -1,3 +1,6 @@
 fixed_primary_threshold: 0.5
-development_locked_thresholds: threshold grid 0.01..0.99; 40-case development data only; mean patient Dice; tie-break nearest 0.5 then lower
-115_case_threshold_reselection: forbidden
+development_locked_threshold_analysis: NOT_AVAILABLE
+reason: frozen_40_case_probability_maps_for_all_eight_methods_are_not_present_in_the_local_sealed_protocol_inputs
+115_case_threshold_selection: forbidden
+post_result_threshold_sensitivity_addition: forbidden
+analysis_plan_action: development_locked_threshold_sensitivity_removed

@@ -1,0 +1,55 @@
+[{"stream_name":"stderr","time":9.544220719,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.544283299,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.544290559,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.544295665,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":10.357235932,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.357271794,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.357277384,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.357282809,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":17.765568372,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":17.765606387,"data":"  File \"/tmp/PCC/experiments/pcc_115_protocol_supplement_cpu_audit.py\", line 15, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":17.765626285,"data":"    from src.models.crosscase_future_predictor import CrossCaseSmallUNet\n"}
+,{"stream_name":"stderr","time":17.765632434,"data":"ModuleNotFoundError: No module named 'src'\n"}
+,{"stream_name":"stderr","time":17.968685532,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":17.968727817,"data":"  File \"/tmp/PCC/experiments/pcc_115_protocol_supplement_cpu_audit.py\", line 15, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":17.968735701,"data":"    from src.models.crosscase_future_predictor import CrossCaseSmallUNet\n"}
+,{"stream_name":"stderr","time":17.968741262,"data":"ModuleNotFoundError: No module named 'src'\n"}
+,{"stream_name":"stderr","time":17.968747366,"data":"\n"}
+,{"stream_name":"stderr","time":17.968752369,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":17.968789487,"data":"  File \"/tmp/PCC/experiments/pcc_115_protocol_supplement_cpu_audit.py\", line 15, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":17.968809526,"data":"    from src.models.crosscase_future_predictor import CrossCaseSmallUNet\n"}
+,{"stream_name":"stderr","time":17.968816046,"data":"ModuleNotFoundError: No module named 'src'\n"}
+,{"stream_name":"stderr","time":18.569487668,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":18.569520668,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":18.569571264,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":18.569641201,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":18.569754584000002,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":18.569986431,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":18.570112873,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":18.570123828,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":18.57013005,"data":"Exception encountered at \"In [1]\":\n"}
+,{"stream_name":"stderr","time":18.5701358,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":18.570155781,"data":"CalledProcessError                        Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":18.570160805,"data":"/tmp/ipykernel_16/4126841419.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":18.57016591,"data":"      5 subprocess.run(['git','-C',str(repo),'checkout','--quiet','310c2763316ff3d785eaa01a33891e93b202b877'],check=True)\n"}
+,{"stream_name":"stderr","time":18.570170867,"data":"      6 out=Path('/kaggle/working/pcc_115_protocol_lock_supplement_2026')\n"}
+,{"stream_name":"stderr","time":18.570175011,"data":"----\u003e 7 subprocess.run([sys.executable,str(repo/'experiments/pcc_115_protocol_supplement_cpu_audit.py'),'--input-root','/kaggle/input','--output-root',str(out),'--repo',str(repo)],cwd=repo,check=True)\n"}
+,{"stream_name":"stderr","time":18.57018151,"data":"\n"}
+,{"stream_name":"stderr","time":18.57018603,"data":"/usr/lib/python3.12/subprocess.py in run(input, capture_output, timeout, check, *popenargs, **kwargs)\n"}
+,{"stream_name":"stderr","time":18.57019092,"data":"    569         retcode = process.poll()\n"}
+,{"stream_name":"stderr","time":18.570195803,"data":"    570         if check and retcode:\n"}
+,{"stream_name":"stderr","time":18.570200321,"data":"--\u003e 571             raise CalledProcessError(retcode, process.args,\n"}
+,{"stream_name":"stderr","time":18.570205431,"data":"    572                                      output=stdout, stderr=stderr)\n"}
+,{"stream_name":"stderr","time":18.570210288,"data":"    573     return CompletedProcess(process.args, retcode, stdout, stderr)\n"}
+,{"stream_name":"stderr","time":18.570214607,"data":"\n"}
+,{"stream_name":"stderr","time":18.570219458,"data":"CalledProcessError: Command '['/usr/bin/python3', '/tmp/PCC/experiments/pcc_115_protocol_supplement_cpu_audit.py', '--input-root', '/kaggle/input', '--output-root', '/kaggle/working/pcc_115_protocol_lock_supplement_2026', '--repo', '/tmp/PCC']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":18.570225097,"data":"\n"}
+,{"stream_name":"stderr","time":21.527831542,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":21.527869991,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":21.740112387,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":21.740144457,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":22.511084945,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":22.915861567,"data":"[NbConvertApp] Writing 6808 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":26.041262128,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":27.107525996,"data":"[NbConvertApp] Writing 280715 bytes to __results__.html\n"}
+]
