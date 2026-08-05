@@ -1,0 +1,5 @@
+protocol: PCC_115_HOLDOUT_PROTOCOL_LOCK_2026
+status: PRELOCKED
+patients: 115
+model_forward: false
+performance_computation: false

@@ -1,0 +1,8 @@
+unit: patient
+confirmatory_family: [Full PCC vs Fixed Dice@0.5, No-smoothing PCC vs Full PCC Dice@0.5]
+test: paired two-sided Wilcoxon signed-rank
+adjustment: Holm across two confirmatory comparisons
+bootstrap_replicates: 10000
+bootstrap_seed: 20260803
+confidence_interval: 0.95
+alpha: 0.05

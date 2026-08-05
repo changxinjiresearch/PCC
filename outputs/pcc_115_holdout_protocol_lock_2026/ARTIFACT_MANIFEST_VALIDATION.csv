@@ -1,0 +1,7 @@
+metric,value
+missing,0
+extra_unexpected,0
+size_mismatch,0
+hash_mismatch,0
+duplicate_path,0
+result,PASS

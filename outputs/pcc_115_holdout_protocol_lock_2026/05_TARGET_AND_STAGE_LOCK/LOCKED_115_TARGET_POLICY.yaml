@@ -1,0 +1,5 @@
+target: future_mask AND NOT current_mask
+construction_stage: Stage B only
+current_mask_threshold: 0.5
+no_registration_or_resampling: true
+stage_a_future_access: forbidden

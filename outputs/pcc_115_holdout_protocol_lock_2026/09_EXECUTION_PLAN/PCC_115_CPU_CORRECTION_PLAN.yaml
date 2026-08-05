@@ -1,0 +1,3 @@
+stage: B
+input: frozen_P0_only_after_stage_A
+execution_now: false

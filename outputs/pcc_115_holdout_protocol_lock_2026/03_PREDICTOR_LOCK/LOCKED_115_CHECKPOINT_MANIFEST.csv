@@ -1,0 +1,6 @@
+fold,checkpoint_path,sha256,source,status
+fold_1,/kaggle/input/notebooks/jeechangxin/pcc-leakage-free-rerun-2026/PCC/full_run_artifacts/folds/fold_1/best_training_loss.pt,bb86bcdbde7e0e4a41f5700efd8c532f2a06d3a3d9bde183f0090238a277b18c,Kaggle CPU preflight,PASS
+fold_2,/kaggle/input/notebooks/jeechangxin/pcc-leakage-free-rerun-2026/PCC/full_run_artifacts/folds/fold_2/best_training_loss.pt,fb75fc2dc1d6703e22ca7ef260a54a0563a184c5a295c0890279c51cb054e759,Kaggle CPU preflight,PASS
+fold_3,/kaggle/input/notebooks/jeechangxin/pcc-leakage-free-rerun-2026/PCC/full_run_artifacts/folds/fold_3/best_training_loss.pt,3e2cb75c84fb861b82789d2bf87517ee494c3435e1b06d64c739437dce547107,Kaggle CPU preflight,PASS
+fold_4,/kaggle/input/notebooks/jeechangxin/pcc-leakage-free-rerun-2026/PCC/full_run_artifacts/folds/fold_4/best_training_loss.pt,28656b1d282fc66e054887166a990810b25d7e6a66d9c21e8f3951868f7291c3,Kaggle CPU preflight,PASS
+fold_5,/kaggle/input/notebooks/jeechangxin/pcc-leakage-free-rerun-2026/PCC/full_run_artifacts/folds/fold_5/best_training_loss.pt,69250135d3eef595b9244426f511c165f10635e1a56241f8fa372959d874c1f3,Kaggle CPU preflight,PASS

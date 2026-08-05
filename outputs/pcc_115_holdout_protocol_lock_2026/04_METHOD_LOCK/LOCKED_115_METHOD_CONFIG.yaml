@@ -1,0 +1,12 @@
+methods: [Fixed, Naive, EIA-linear, EIA-blend-0.90, EIA-blend-0.75, EIA-morph, Full PCC, No-smoothing PCC]
+full_pcc:
+  rounds: 10
+  eta: 0.30
+  dilation_radius_voxels: 26
+  gaussian_sigma_voxels: 2.0
+  logit_epsilon: 1.0e-5
+  state_propagation: true
+no_smoothing:
+  definition: locked posthoc candidate; only the discrepancy smoothing operation differs from Full PCC
+  primary_status: independent-validation prelocked candidate variant
+execution_in_this_stage: false

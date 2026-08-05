@@ -1,0 +1,6 @@
+relative_path,source,role
+PCC_INTERNAL_VALIDITY_PATCH_2026_COMPLETE.zip,repository root,frozen archive
+archive/pcc-experiments.ipynb,repository,read-only scientific authority
+outputs/pcc_internal_validity_patch_2026/06_cohort_selection_audit/COHORT_SELECTION_AUDIT.md,repository,cohort evidence
+experiments/audit_cohort_selection.py,repository,selection implementation
+configs/pcc_leakage_free_canonical.yaml,repository,40-case configuration

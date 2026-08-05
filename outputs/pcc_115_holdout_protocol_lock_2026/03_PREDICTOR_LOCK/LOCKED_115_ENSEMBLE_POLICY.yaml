@@ -1,0 +1,4 @@
+policy: fixed_equal_weight_ensemble
+weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+selection_or_tuning_on_115: forbidden
+checkpoint_selection_on_115: forbidden

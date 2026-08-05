@@ -1,0 +1,4 @@
+primary_endpoint: patient-level Dice at fixed threshold 0.5
+confirmatory_comparisons: [Full PCC vs Fixed P0, No-smoothing PCC vs Full PCC]
+secondary_metrics: [IoU, precision, recall, soft Dice, Brier, PR-AUC, predicted positive volume, target/predicted volume ratio]
+oracle_assisted: [target-volume-matched top-k Dice, target-volume-matched top-k IoU]

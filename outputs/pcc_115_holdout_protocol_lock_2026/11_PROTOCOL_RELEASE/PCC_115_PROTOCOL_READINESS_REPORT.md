@@ -1,0 +1,1 @@
+Protocol gate: PASS. Conditions verified: frozen ZIP SHA, unique pair rule, 155=40+115 patient chain, one pair per patient, zero overlap, five checkpoint hashes, current-only manifest, guards, endpoint, statistics, failure policy, and no 115 outputs.

@@ -1,0 +1,6 @@
+stage,count,evidence
+dataset patient directories,203,CPU preflight
+longitudinal eligible patients,155,CPU preflight and authority code
+locked 40 patients,40,saved locked manifest
+locked 115 patients,115,CPU preflight
+patient overlap,0,CPU preflight

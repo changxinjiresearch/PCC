@@ -1,0 +1,4 @@
+denominator: all 115 locked patients
+classes: [source_file_missing, geometry_mismatch, checkpoint_load_failure, P0_inference_failure, P0_persistence_hash_failure, target_construction_failure, correction_failure, metric_failure, non_finite_output, shard_merge_identity_failure]
+exclude_by_performance: false
+retain_first_attempt_logs: true

@@ -1,0 +1,4 @@
+stage: A
+allowed_inputs: [current_t1c, current_mask, frozen_checkpoints]
+future_access: forbidden
+execution_now: false
