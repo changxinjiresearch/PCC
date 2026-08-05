@@ -1,0 +1,13 @@
+{
+  "id": "jeechangxin/pcc-115-protocol-lock-supplement-2026",
+  "title": "PCC 115 Protocol Lock Supplement 2026",
+  "code_file": "run.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": ["stacyvangepuram/mu-glioma-post"],
+  "kernel_sources": ["jeechangxin/pcc-leakage-free-rerun-2026"]
+}
