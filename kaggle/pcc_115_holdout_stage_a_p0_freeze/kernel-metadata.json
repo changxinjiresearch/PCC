@@ -1,0 +1,13 @@
+{
+  "id": "jeechangxin/pcc-115-holdout-stage-a-p0-freeze-2026",
+  "title": "PCC 115 Holdout Stage A P0 Freeze 2026",
+  "code_file": "run.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": ["stacyvangepuram/mu-glioma-post"],
+  "kernel_sources": ["jeechangxin/pcc-leakage-free-rerun-2026"]
+}
