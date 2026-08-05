@@ -1,0 +1,4 @@
+command=/tmp/pcc_internal_test_env/bin/python -m compileall -q src experiments/finalize_validity_map_analyses.py experiments/finalize_internal_validity_patch.py experiments/build_internal_validity_patch_package.py experiments/run_internal_validity_patch.py experiments/run_internal_completion_2026.py
+start=2026-08-06T02:50:23+09:30
+end=2026-08-06T02:50:23+09:30
+exit_code=0

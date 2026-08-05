@@ -1,6 +1,6 @@
 # PCC internal validity patch 2026 — final report
 
-Status: **INTERNAL VALIDITY PATCH COMPLETE WITH DOCUMENTED BLOCKERS**
+Status: **INTERNAL VALIDITY PATCH ARCHIVE RELEASE AUDITED**
 
 ## Identity and immutability
 
@@ -14,7 +14,11 @@ All eight evaluated methods (seven frozen methods plus the locked No-smoothing v
 
 ## No-smoothing follow-up
 
-The 1,720 locked repeat results completed without failed cases and were aggregated within each of 40 cases. No-smoothing's clean advantage was substantially reduced by partial and shifted guidance. It had lower outside-target mass, so increased outside mass was not the explanation. It remains a candidate for pre-locked external testing, not a replacement canonical method.
+The 1,720 locked repeat results completed without failed cases and were aggregated within each of 40 cases. No-smoothing did not perform significantly worse than Full PCC under any tested guidance condition; it was significantly better under Clean, Partial-50, FP-25 and Shift-3, with no significant difference under Partial-25 and Mixed. The magnitude of the clean-guidance advantage was substantially attenuated under partial, shifted, and mixed guidance. It had lower outside-target mass, so increased outside mass was not the explanation. It remains a posthoc candidate for pre-locked external testing, not a replacement canonical method. The SHIFT-3 metadata audit is PASS; the original repeat-level CSV is unchanged and the metadata-corrected file is an independent derivative.
+
+## Release evidence
+
+The current formal suite recorded 208 passed, 1 skipped, 0 failed, 0 errors and 27 subtests; the focused validity-patch suite recorded 15 passed and exit code 0. Compileall, `git diff --check`, data-format parsing, finite critical-value checks, duplicate checks and identity checks passed. The complete evidence is in `11_tests/` and `12_final_release_audit/`.
 
 ## Layer 1
 

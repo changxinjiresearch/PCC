@@ -6,7 +6,7 @@ Both Kaggle shards completed: 20 cases and 860 repeat rows each, zero failed cas
 
 ## Findings
 
-No-smoothing was higher than Full PCC under clean guidance (top-k Dice 0.500140 versus 0.388421; fixed-0.5 Dice 0.326306 versus 0.275815). This advantage was not robustly retained under missing or spatially displaced guidance.
+No-smoothing was higher than Full PCC under clean guidance (top-k Dice 0.500140 versus 0.388421; fixed-0.5 Dice 0.326306 versus 0.275815). Across the tested conditions, No-smoothing was not significantly worse than Full PCC: it was significantly better under Clean, Partial-50, FP-25 and Shift-3, with no significant difference under Partial-25 and Mixed. The magnitude of the clean-guidance advantage was substantially attenuated under partial, shifted, and mixed guidance, although No-smoothing did not perform significantly worse than Full PCC in any tested condition.
 
 - PARTIAL_50 top-k robustness difference-in-differences: -0.072309 (95% bootstrap CI -0.085454 to -0.060149; Holm p=9.09e-12).
 - PARTIAL_25: -0.103200 (-0.123477 to -0.084504; Holm p=9.09e-12).
@@ -18,4 +18,4 @@ No-smoothing had *lower*, not higher, mean outside-clean-target probability mass
 
 ## Decision boundary
 
-No-smoothing is not automatically promoted to the primary method. The results support carrying it into external validation only as an explicitly pre-locked candidate variant alongside canonical Full PCC, with missing- and shifted-guidance sensitivity declared in advance.
+No-smoothing is not automatically promoted to the primary method. Full PCC remains the prespecified canonical method; No-smoothing remains a posthoc candidate variant for a separately pre-locked 115-person and external validation protocol. The SHIFT-3 metadata audit found 240/240 key matches and zero guidance-count, direction or seed mismatches; the apparent `retained_true_target_fraction=1.0` and `added_false_positive_volume=0.0` values were writer defaults only. The original repeat-level CSV is preserved, and the metadata-corrected derivative changes only those two descriptive fields.

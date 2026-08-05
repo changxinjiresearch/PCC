@@ -1,0 +1,75 @@
+experiment_id: PCC_INTERNAL_VALIDITY_PATCH_2026
+analysis_classification: posthoc_internal_validity_audit_and_prospectively_locked_followup
+protocol_date: '2026-08-05'
+authority:
+  frozen_run_id: PCC_LEAKAGE_FREE_RERUN_2026_V8
+  kaggle_kernel: jeechangxin/pcc-leakage-free-rerun-2026
+  kaggle_version: 8
+  repository_commit_at_lock: a11deb5c80203fbbcd1584ad76a3ef97e3712ced
+  canonical_config: configs/pcc_leakage_free_canonical.yaml
+  canonical_config_sha256: 29111a4d9cb16a2981eec5cbaa193346f9715630a6e81aaf9734805f789a14b6
+  case_manifest: validation_reference/frozen_refs/pcc_leakage_free_rerun_2026_v8/LOCKED_CASE_MANIFEST.csv
+  case_manifest_sha256: e5ad65359280e002d9bcc4c89211f48840d535b602821ad22db863b88e4656f8
+  fold_manifest: validation_reference/frozen_refs/pcc_leakage_free_rerun_2026_v8/LOCKED_FOLD_MANIFEST.csv
+  fold_manifest_sha256: 880bd3b2c87c571d5df10342357a8b67c7d6069a2b68a99df0f5dccb783154ec
+  saved_probability_root: /kaggle/input/notebooks/jeechangxin/pcc-leakage-free-rerun-2026/PCC/full_run_artifacts
+  internal_completion_root: outputs/pcc_internal_completion_2026
+frozen_canonical_pcc:
+  rounds: 10
+  eta: 0.30
+  sigma: 2.0
+  dilation_radius_voxels: 26
+  predictor_retraining_permitted: false
+  p0_regeneration_permitted: false
+evaluation:
+  oracle_assisted:
+    - target_volume_matched_topk_dice
+    - target_volume_matched_topk_iou
+  target_independent:
+    fixed_threshold: 0.5
+    metrics: [dice, iou, precision, recall, specificity, predicted_positive_volume, true_target_volume, volume_error, soft_dice, brier_score, average_precision, target_probability_mass, outside_target_probability_mass]
+  cross_fitted_threshold:
+    enabled_if_strictly_executable: true
+    threshold_grid: {start: 0.01, stop: 0.99, step: 0.01}
+    training_folds: other_four_out_of_fold_folds_only
+    objective: mean_case_dice
+    tie_break: smallest_threshold
+  empty_target_policy: retain_and_mark_not_applicable_for_average_precision
+no_smoothing_followup:
+  classification: posthoc_discovery_driven_prospectively_locked_robustness_followup
+  only_change: gaussian_smoothing_disabled
+  conditions: [CLEAN, PARTIAL_50, PARTIAL_25, FP_25, SHIFT_3, MIXED]
+  fp_seeds: [20260803, 20260804, 20260805, 20260806, 20260807]
+  shifts: [plus_x, minus_x, plus_y, minus_y, plus_z, minus_z]
+  mixed_repeats_per_case: 30
+  aggregate_repeats_within_case: true
+statistics:
+  unit: case
+  bootstrap_resamples: 10000
+  bootstrap_seed: 20260803
+  test_sidedness: two_sided
+  paired_effect_size: cohens_dz
+  multiple_comparison_method: holm
+  families:
+    - target_independent_method_comparisons
+    - no_smoothing_absolute_performance
+    - no_smoothing_difference_in_differences
+    - layer1_v1_secondary_endpoints
+    - layer1_v1_1_sensitivity_endpoints
+    - layer3a_absolute_pri_regions
+    - layer3a_relative_pri_regions
+    - layer3b_enrichment_regions
+    - layer3b_useful_correction_dominance
+  finite_values_required: true
+  stochastic_repeats_as_independent_samples: false
+completion:
+  require_authoritative_recovery_or_missing_evidence: true
+  require_target_independent_metrics: true
+  require_no_smoothing_followup: true
+  require_layer1_two_sided_reaudit: true
+  require_layer3_holm_reaudit: true
+  require_cohort_flow_audit: true
+  require_identity_cross_validation: true
+  require_tests_compileall_diff_check: true
+  lumiere_permitted: false
+  manuscript_word_modification_permitted: false

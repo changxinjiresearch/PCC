@@ -1,0 +1,4 @@
+command=/tmp/pcc_internal_test_env/bin/python -m pytest -q tests
+start=2026-08-06T02:46:17+09:30
+end=2026-08-06T02:46:59+09:30
+exit_code=0

@@ -1,0 +1,4 @@
+command=git diff --check
+start=2026-08-06T02:57:14+09:30
+end=2026-08-06T02:57:14+09:30
+exit_code=0
