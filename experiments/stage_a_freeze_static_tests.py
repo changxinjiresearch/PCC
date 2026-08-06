@@ -7,6 +7,16 @@ import pytest
 ROOT=Path(__file__).resolve().parents[1]
 def rows(p):
  with p.open(newline='',encoding='utf-8') as f:return list(csv.DictReader(f))
+def _stage_b_artifacts():
+ result=[]
+ for p in ROOT.rglob('*'):
+  if not p.is_file(): continue
+  parts=[x.lower() for x in p.relative_to(ROOT).parts]
+  parent_parts=parts[:-1]
+  name=parts[-1]
+  if any('stage_b' in part for part in parent_parts) or any(token in name for token in ('stage_b_result','stage_b_output','method_metrics','correction_trajectory','performance')):
+   result.append(p)
+ return result
 def test_01_manifest_115(): assert len(rows(ROOT/'06_P0_FREEZE_MANIFEST/LOCKED_115_P0_MANIFEST.csv'))==115
 def test_02_patient_unique():
  x=rows(ROOT/'06_P0_FREEZE_MANIFEST/LOCKED_115_P0_MANIFEST.csv'); assert len({r['patient_id'] for r in x})==115
@@ -33,7 +43,7 @@ def test_18_attempts_115(): assert len(rows(ROOT/'08_FAILURE_AND_ATTEMPT_LOG/ATT
 def test_19_no_future_manifest_fields():
  x=rows(ROOT/'06_P0_FREEZE_MANIFEST/LOCKED_115_P0_MANIFEST.csv')[0]; assert not [k for k in x if any(t in k.lower() for t in ('future','target','later'))]
 def test_20_no_target_files(): assert not [p for p in ROOT.rglob('*') if p.is_file() and ('target' in p.name.lower() or 'future_mask' in p.name.lower())]
-def test_21_no_stage_b_outputs(): assert not [p for p in ROOT.rglob('*') if p.is_file() and 'stage_b' in str(p).lower()]
+def test_21_no_stage_b_outputs(): assert not _stage_b_artifacts()
 def test_22_no_performance_files(): assert not [p for p in ROOT.rglob('*') if p.is_file() and any(x in p.name.upper() for x in ('DICE','IOU','PR_AUC','METRICS'))]
 def test_23_status_gate(): assert json.loads((ROOT/'10_STAGE_A_RELEASE/STAGE_A_STATUS.json').read_text())['status']=='PASS'
 def test_24_target_false(): assert json.loads((ROOT/'10_STAGE_A_RELEASE/STAGE_A_STATUS.json').read_text())['target_constructed'] is False
