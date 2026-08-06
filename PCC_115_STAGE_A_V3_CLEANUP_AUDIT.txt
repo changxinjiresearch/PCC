@@ -1,0 +1,37 @@
+PCC 115 Stage A v3 cleanup audit
+Date: 2026-08-06
+
+Authoritative recovery result:
+- Remote kernel: jeechangxin/pcc-115-holdout-stage-a-p0-freeze-2026
+- Remote status: COMPLETE
+- Remote/local output metadata: PASS; expected_patients=115; generated_p0=115
+- v3 verification: PASS; 115 P0, 115 completion markers, 115 unique cases
+- v3 SHA-256/shape/dtype/finite/range/readability checks: all PASS
+- v3 full ZIP: /home/changxinjiresearch/pcc115_stage_a_complete_download_v3.zip
+- v3 ZIP SHA-256: e71c900e4375db0d03bdb59019c0335c024d7f35f2999847ed43f9458f7cd6a0
+
+Deletion candidates, confirmed incomplete and recoverable from remote:
+
+1. /home/changxinjiresearch/pcc115_stage_a_complete_download
+   Observed size: approximately 2.4 GB
+   Observed contents: 72 P0 .npy files, 58 completion markers, 225 files
+   Download log: download.log; prior failure was network unreachable at
+   www.kaggleusercontent.com while downloading PatientID_0160
+   Deletion reason: interrupted, incomplete download; not a formal result
+   Recovery: yes, from the COMPLETE remote Kaggle kernel output
+
+2. /home/changxinjiresearch/pcc115_stage_a_complete_download_v2
+   Observed state: absent at audit time
+   Deletion action: none; no path existed
+   Deletion reason: none; no directory to remove
+   Recovery: yes, from the COMPLETE remote Kaggle kernel output
+
+Protected and retained:
+- /home/changxinjiresearch/pcc115_stage_a_complete_download_v3
+- /home/changxinjiresearch/pcc115_stage_a_complete_download_v3.zip
+- /home/changxinjiresearch/pcc115_stage_a_complete_download_v3.zip.sha256
+- Repository archive/, formal reports, manifests, checkpoints, and existing
+  unrelated worktree changes
+- Remote Kaggle kernel and dataset
+
+No P0 was regenerated. No kernel was rerun. Stage B and LUMIERE were not run.

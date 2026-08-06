@@ -1,0 +1,51 @@
+PCC 115 Stage A local cleanup audit
+Date: 2026-08-06
+Decision: NO DELETION PERFORMED
+
+Reason for stopping:
+The filesystem has only approximately 3.7 MB free. The explicitly permitted,
+confirmed incomplete Stage A downloads and regenerable pip HTTP caches total
+approximately 1.247 GB, below the required minimum of 3 GB. No other path was
+deleted because it was not unambiguously within the permitted cleanup scope.
+
+Confirmed candidate paths (not deleted):
+
+1. /tmp/pcc115_stage_a_final_NOUR9I
+   Size: 890,304,178 bytes (du -sb)
+   Reason: incomplete failed download; 25/115 local .npy P0 files, 0 completion markers.
+   Recoverable from: remote COMPLETE Kaggle kernel output.
+
+2. /tmp/pcc115_stage_a_v2_5G9k12
+   Size: 19,540 bytes (du -sb)
+   Reason: confirmed incomplete old download; 0 P0 files, 0 completion markers.
+   Recoverable from: remote COMPLETE Kaggle kernel output.
+
+3. /tmp/pcc115_stage_a_v1_0cwZN6
+   Size: 19,551 bytes (du -sb)
+   Reason: confirmed incomplete old download; 0 P0 files, 0 completion markers.
+   Recoverable from: remote COMPLETE Kaggle kernel output.
+
+4. /home/changxinjiresearch/.cache/pip/http
+   Size: 93,041,691 bytes (du -sb)
+   Reason: ordinary regenerable pip HTTP cache.
+   Recoverable from: package indexes/downloads.
+
+5. /home/changxinjiresearch/.cache/pip/http-v2
+   Size: 265,765,959 bytes (du -sb)
+   Reason: ordinary regenerable pip HTTP cache.
+   Recoverable from: package indexes/downloads.
+
+Protected and not considered for deletion:
+- PCC Git repository and repository artifacts.
+- archive/, reports, manifests, checkpoint-related files, and formal outputs.
+- Other /tmp environments and project-specific temporary artifacts not proven
+  to be stopped download remnants.
+- Remote Kaggle kernel and datasets.
+
+Remote verification at audit time:
+- Kernel: jeechangxin/pcc-115-holdout-stage-a-p0-freeze-2026
+- Status: COMPLETE
+- Local remote-output metadata: PASS, expected_patients=115, generated_p0=115
+- Stage B: false; target_constructed: false; performance_computed: false
+
+No download was started and no model/kernel was rerun.
