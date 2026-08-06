@@ -1,0 +1,1 @@
+Guard requirements: exact 113 case IDs, exact amended manifest path, exact 113 P0 mapping, reject both excluded IDs, reject original 115 manifest, reject replacement P0. No Stage B runner or metric computation is executed in this amendment task.

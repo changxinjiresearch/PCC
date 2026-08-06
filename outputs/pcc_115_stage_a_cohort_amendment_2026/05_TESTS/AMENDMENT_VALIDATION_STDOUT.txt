@@ -1,0 +1,15 @@
+{
+  "original_115": true,
+  "amended_113": true,
+  "excluded": [
+    "PatientID_0113",
+    "PatientID_0132"
+  ],
+  "p0_mapping": "PASS",
+  "immutable": "PASS",
+  "stage_b_outputs": false,
+  "target": false,
+  "performance": false,
+  "stage_b": false,
+  "lumiere": false
+}
