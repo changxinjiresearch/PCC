@@ -1,0 +1,17 @@
+{
+  "original_holdout_patients": 115,
+  "excluded_post_lock_patients": 2,
+  "confirmatory_patients": 113,
+  "excluded_patient_ids": [
+    "PatientID_0113",
+    "PatientID_0132"
+  ],
+  "exclusion_code": "DATA_IDENTITY_OR_LABEL_ASSIGNMENT_ANOMALY",
+  "performance_computed_before_amendment": false,
+  "target_constructed_before_amendment": false,
+  "stage_b_executed": false,
+  "lumiere_started": false,
+  "original_p0_modified": false,
+  "release_gate": "PASS",
+  "unresolved_blockers": 0
+}

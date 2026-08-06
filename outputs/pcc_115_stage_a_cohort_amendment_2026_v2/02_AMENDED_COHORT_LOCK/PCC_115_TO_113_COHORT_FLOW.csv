@@ -1,0 +1,4 @@
+stage,patient_count,patient_ids
+original_locked_holdout,115,original LOCKED_115_CASE_MANIFEST.csv
+post_lock_excluded,2,PatientID_0113;PatientID_0132
+amended_confirmatory,113,LOCKED_113_CONFIRMATORY_PATIENT_IDS.csv

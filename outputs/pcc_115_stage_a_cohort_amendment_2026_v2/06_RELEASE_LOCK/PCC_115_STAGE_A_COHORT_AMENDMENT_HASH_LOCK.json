@@ -1,0 +1,191 @@
+{
+  "task": "PCC_115_STAGE_A_COHORT_AMENDMENT_2026",
+  "entries": [
+    {
+      "relative_path": "00_AUTHORITY/AMENDMENT_AUTHORITY_FILES.csv",
+      "exists": true,
+      "file_size_bytes": 45771,
+      "sha256": "fc2633917ff0e7c08732df661fa4bc9e37e1a6ebea5ec0fa6ef2aaa7e45a72d6"
+    },
+    {
+      "relative_path": "00_AUTHORITY/AMENDMENT_AUTHORITY_REPORT.md",
+      "exists": true,
+      "file_size_bytes": 411,
+      "sha256": "f179cbe92a4284faccb500ba50ba4833f2f1e3f631d8fecbb61f8df01128ae47"
+    },
+    {
+      "relative_path": "01_IMMUTABILITY_AUDIT/ORIGINAL_STAGE_A_IMMUTABILITY_AUDIT.csv",
+      "exists": true,
+      "file_size_bytes": 52838,
+      "sha256": "e5055c6c30d15c619712327a186e853347ec64490c281a774d10a5c46025117f"
+    },
+    {
+      "relative_path": "01_IMMUTABILITY_AUDIT/ORIGINAL_STAGE_A_IMMUTABILITY_REPORT.md",
+      "exists": true,
+      "file_size_bytes": 159,
+      "sha256": "2ddc620c450626974acf52bc63ca769434ac5448effc6b300494c47872c19a10"
+    },
+    {
+      "relative_path": "02_AMENDED_COHORT_LOCK/LOCKED_113_CONFIRMATORY_CASE_MANIFEST.csv",
+      "exists": true,
+      "file_size_bytes": 82017,
+      "sha256": "39638bb0c8e491631c973d164e6927b2a65310e6cdf09b2d269ee508008d7b70"
+    },
+    {
+      "relative_path": "02_AMENDED_COHORT_LOCK/LOCKED_113_CONFIRMATORY_PATIENT_IDS.csv",
+      "exists": true,
+      "file_size_bytes": 1820,
+      "sha256": "67e3a92bf0bcf0fed6e41ecbeaf75151393e6f2a4e6618fb5ff39aaa994dd89f"
+    },
+    {
+      "relative_path": "02_AMENDED_COHORT_LOCK/EXCLUDED_POST_LOCK_CASES.csv",
+      "exists": true,
+      "file_size_bytes": 909,
+      "sha256": "fe984a2b637ddb2c780e2e6fdf38b8d064c6399a04541e406a828f139225725d"
+    },
+    {
+      "relative_path": "02_AMENDED_COHORT_LOCK/ORIGINAL_115_TO_AMENDED_113_AUDIT.csv",
+      "exists": true,
+      "file_size_bytes": 9338,
+      "sha256": "fb22c12af6647dfd14238480a0acc63928d0c2394a3a527241bde3afb1bedfcc"
+    },
+    {
+      "relative_path": "02_AMENDED_COHORT_LOCK/PCC_115_TO_113_COHORT_FLOW.csv",
+      "exists": true,
+      "file_size_bytes": 218,
+      "sha256": "f8a0375ae65853549b1449daaa16faccc9e629aa3f9ef3ac46510eefbccb6fef"
+    },
+    {
+      "relative_path": "02_AMENDED_COHORT_LOCK/PCC_115_STAGE_A_COHORT_AMENDMENT.md",
+      "exists": true,
+      "file_size_bytes": 1246,
+      "sha256": "2c1766323bc8c85a3d80e1b735597d353c3e3db8fa2c9612c42a77cf4a4bbdd9"
+    },
+    {
+      "relative_path": "02_AMENDED_COHORT_LOCK/PCC_115_STAGE_A_COHORT_AMENDMENT.yaml",
+      "exists": true,
+      "file_size_bytes": 355,
+      "sha256": "980f83e6e2996598983a4d8803526226111d76d05a103372a65e3c3d70514311"
+    },
+    {
+      "relative_path": "03_P0_MAPPING/LOCKED_113_P0_MANIFEST.csv",
+      "exists": true,
+      "file_size_bytes": 101970,
+      "sha256": "2d4a976fd84bf1da4e298a88f004a68732de333a078a5d1ad1978f8c51e19e59"
+    },
+    {
+      "relative_path": "03_P0_MAPPING/LOCKED_113_P0_SHA256.csv",
+      "exists": true,
+      "file_size_bytes": 19388,
+      "sha256": "14aa08dcf1e0e54857c4e59219577c6b10ae951e83d9f1abd019f8d804f5be3b"
+    },
+    {
+      "relative_path": "03_P0_MAPPING/LOCKED_113_P0_MAPPING_AUDIT.csv",
+      "exists": true,
+      "file_size_bytes": 27220,
+      "sha256": "5f2421f7e835387c3d90bc7abf0937303a185480089231f41b08e945d8d1bf6a"
+    },
+    {
+      "relative_path": "03_P0_MAPPING/EXCLUDED_P0_RETENTION_AUDIT.csv",
+      "exists": true,
+      "file_size_bytes": 470,
+      "sha256": "3a1b068e30782121d53b37000bec8140fb39700a46e0dc66df09df2510dedacf"
+    },
+    {
+      "relative_path": "04_STAGE_B_HANDOFF_LOCK/LOCKED_STAGE_B_CONFIRMATORY_INPUT_POLICY.md",
+      "exists": true,
+      "file_size_bytes": 509,
+      "sha256": "422557f824acf1a70a92c39cb6d3d5087946f13b25cdd665ff6d4f36d5965cce"
+    },
+    {
+      "relative_path": "04_STAGE_B_HANDOFF_LOCK/LOCKED_STAGE_B_CONFIRMATORY_INPUT_POLICY.yaml",
+      "exists": true,
+      "file_size_bytes": 355,
+      "sha256": "22d406413d01b21951667ec3fe69cda52953de2e6fc555c69392f28a9a4b4095"
+    },
+    {
+      "relative_path": "04_STAGE_B_HANDOFF_LOCK/STAGE_B_INPUT_GUARD_SPEC.md",
+      "exists": true,
+      "file_size_bytes": 246,
+      "sha256": "fddd08b387a4ffc0d09ad922c5dc8b8102a4d0429c80ad3ba8204b28d3561c8b"
+    },
+    {
+      "relative_path": "05_TESTS/TEST_EXECUTION_REPORT.md",
+      "exists": true,
+      "file_size_bytes": 491,
+      "sha256": "19e9433ff9ae8d85f22e56e0152c7737e040fe9783c69cdd07f6614c4b246318"
+    },
+    {
+      "relative_path": "05_TESTS/FULL_TEST_STDOUT.txt",
+      "exists": true,
+      "file_size_bytes": 99,
+      "sha256": "cc46a0a9cdd46d6a73ca5828016edd8b4afad5880dd8d1d1a105624f54b96aa8"
+    },
+    {
+      "relative_path": "05_TESTS/FULL_TEST_STDERR.txt",
+      "exists": true,
+      "file_size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "relative_path": "05_TESTS/TEST_EXIT_CODE.txt",
+      "exists": true,
+      "file_size_bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "relative_path": "05_TESTS/TEST_COMMAND.txt",
+      "exists": true,
+      "file_size_bytes": 170,
+      "sha256": "e6bb847a06724e4479ee7143010c1b3c02d713f864414941adbd3fd79ca634bd"
+    },
+    {
+      "relative_path": "06_RELEASE_LOCK/PCC_115_STAGE_A_COHORT_AMENDMENT_PROTOCOL.md",
+      "exists": true,
+      "file_size_bytes": 586,
+      "sha256": "2c4f281bf8aaa59b3a653c71c7fbbc5447d8b32e71202e5f59ae9f887a57ccb4"
+    },
+    {
+      "relative_path": "06_RELEASE_LOCK/PCC_115_STAGE_A_COHORT_AMENDMENT_PROTOCOL.yaml",
+      "exists": true,
+      "file_size_bytes": 320,
+      "sha256": "33ce35fa2f69baf67e0ada6885ccefcddab2abee4c2f663b5218ee32cb90f882"
+    },
+    {
+      "relative_path": "../../experiments/build_stage_a_cohort_amendment.py",
+      "exists": true,
+      "file_size_bytes": 14642,
+      "sha256": "f2e350cae98ae6784760fb51aee8c591433d78ea08d08f02dda25b01e142b63c"
+    },
+    {
+      "relative_path": "../../experiments/validate_stage_a_cohort_amendment.py",
+      "exists": true,
+      "file_size_bytes": 5019,
+      "sha256": "38d98c34d5163ecaf8100713bdcb3995af56e4a00a76fdff7299763ce7f09eb6"
+    },
+    {
+      "relative_path": "../../experiments/finalize_stage_a_cohort_amendment.py",
+      "exists": true,
+      "file_size_bytes": 7253,
+      "sha256": "ee289f39d0e81f14620c36942c8853761b24e3f9634519defb28ddb6f17d38c0"
+    },
+    {
+      "relative_path": "../../experiments/stage_a_freeze_static_tests.py",
+      "exists": true,
+      "file_size_bytes": 4909,
+      "sha256": "001ccafcde9bccb2fd6d980b63df17e861cf95bf36b563ba5c2df517ccf94c82"
+    },
+    {
+      "relative_path": "../pcc_115_stage_a_duplicate_p0_audit_2026/DUPLICATE_PATIENT_FUTURE_IDENTITY_AUDIT.csv",
+      "exists": true,
+      "file_size_bytes": 4057,
+      "sha256": "11bef1208d03bf297fab177aa9c9086a45ba75877cd175c1a2435023d9b4ded7"
+    },
+    {
+      "relative_path": "../pcc_115_stage_a_duplicate_p0_audit_2026/DUPLICATE_PATIENT_FUTURE_IDENTITY_REPORT.md",
+      "exists": true,
+      "file_size_bytes": 642,
+      "sha256": "f38d3872734f0dad2fa93071ee5f3c21df750ccf2e1107e34e1aa9abc98fcbdd"
+    }
+  ]
+}

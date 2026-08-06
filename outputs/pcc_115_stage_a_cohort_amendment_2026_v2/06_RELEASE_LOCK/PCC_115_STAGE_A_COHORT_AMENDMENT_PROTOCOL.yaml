@@ -1,0 +1,10 @@
+task: PCC_115_STAGE_A_COHORT_AMENDMENT_2026
+original_holdout_patients: 115
+excluded_post_lock_patients: 2
+confirmatory_patients: 113
+exclusion_code: DATA_IDENTITY_OR_LABEL_ASSIGNMENT_ANOMALY
+original_p0_modified: false
+target_constructed: false
+performance_computed: false
+stage_b_executed: false
+lumiere_started: false
