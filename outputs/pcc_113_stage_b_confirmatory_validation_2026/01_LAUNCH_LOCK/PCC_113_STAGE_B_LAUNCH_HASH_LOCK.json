@@ -4,6 +4,7 @@
   "authority_amendment_zip_sha256": "906eb95e5d97d1b6abadac9e0129b6f33dd384e64e139ad32f1e7d67b4c265f0",
   "p0_hash_mismatch": 0,
   "method_evaluation_statistics_hashes_exact": true,
+  "no_smoothing_locked_execution_hash": "d72550e520742f4fd2a3fe63f61d29804bdd17c303016b7e3a48452ae6cd62f9",
   "confirmatory_patients": 113,
   "unique_patient_ids": 113,
   "unique_case_ids": 113,

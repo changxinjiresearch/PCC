@@ -23,6 +23,7 @@ METHOD_FILES = [
     "src/models/naive_self_tightening.py",
     "src/models/eia.py",
     "src/models/pcc.py",
+    "src/analysis/internal_completion.py",
 ]
 EVALUATION_FILES = ["src/evaluation/metrics.py", "src/analysis/validity_patch.py"]
 STATISTICS_FILES = ["src/analysis/holdout_statistics.py"]
