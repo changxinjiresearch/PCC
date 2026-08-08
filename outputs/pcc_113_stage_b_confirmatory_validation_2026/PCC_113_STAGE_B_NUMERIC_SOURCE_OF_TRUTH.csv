@@ -1,0 +1,7 @@
+metric,status,value,notes
+confirmatory_patients,PASS,113,locked cohort denominator
+target_construction_success,BLOCKED,0,execution blocked before mask access
+case_method_rows,BLOCKED,0,904 not generated
+full_pcc_trajectory_rows,BLOCKED,0,1130 not generated
+performance_computed,BLOCKED,false,no scientific performance observed
+release_gate,BLOCKED,BLOCKED,manifest packaging blocker

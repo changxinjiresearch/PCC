@@ -1,0 +1,13 @@
+shard,attempt,kernel_version,status,root_cause,scientific_data_read
+0,1,1,ERROR,missing_src_package,false
+0,2,2,ERROR,missing_manifest_csvs,false
+0,3,not_submitted,KAGGLE_CPU_SESSION_LIMIT,platform_session_limit,false
+1,1,1,ERROR,missing_src_package,false
+1,2,2,ERROR,missing_manifest_csvs,false
+1,3,3,ERROR,missing_manifest_csvs,false
+2,1,1,ERROR,missing_src_package,false
+2,2,2,ERROR,missing_manifest_csvs,false
+2,3,3,ERROR,missing_manifest_csvs,false
+3,1,1,ERROR,missing_src_package,false
+3,2,2,ERROR,missing_internal_statistics_dependency,false
+3,3,3,ERROR,missing_manifest_csvs,false

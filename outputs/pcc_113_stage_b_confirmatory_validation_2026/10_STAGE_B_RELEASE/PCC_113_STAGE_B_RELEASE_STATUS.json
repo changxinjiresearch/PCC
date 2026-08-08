@@ -1,0 +1,13 @@
+{
+  "RELEASE_GATE": "BLOCKED",
+  "confirmatory_patients": 113,
+  "target_construction_success": 0,
+  "case_method_records": 0,
+  "full_pcc_trajectory_records": 0,
+  "failed_cases": 113,
+  "end_to_end_completion_rate": 0.0,
+  "unresolved_blockers": ["Kaggle script kernel omitted locked manifest CSV inputs; maximum three engineering attempts exhausted"],
+  "lumiere_started": false,
+  "p0_regenerated": false,
+  "performance_computed": false
+}

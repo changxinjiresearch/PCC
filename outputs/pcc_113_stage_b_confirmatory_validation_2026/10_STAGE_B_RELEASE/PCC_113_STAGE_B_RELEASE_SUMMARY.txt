@@ -1,0 +1,9 @@
+PCC 113 Stage B release summary
+RELEASE_GATE=BLOCKED
+pre_outcome_commit=51446ccc8256bdfa0b006c27ed42163fa3c07d8b
+pre_outcome_hash_supplement_commit=6e65d45
+confirmatory_patients=113
+target_constructed=0
+performance_computed=false
+lumiere_started=false
+blocker=Kaggle script upload omitted locked CSV manifests; maximum 3 attempts exhausted
