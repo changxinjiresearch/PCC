@@ -1,0 +1,17 @@
+{
+  "original_locked_holdout": 115,
+  "post_lock_identity_exclusions": 2,
+  "confirmatory_denominator": 113,
+  "excluded_ids": [
+    "PatientID_0113",
+    "PatientID_0132"
+  ],
+  "performance_seen_before_amendment": false,
+  "P0_regenerated": false,
+  "target_formula": "(future_mask > 0.5) AND NOT (current_mask > 0.5)",
+  "fixed_threshold": 0.5,
+  "full_pcc_rounds": 10,
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260803,
+  "lumieres_started": false
+}

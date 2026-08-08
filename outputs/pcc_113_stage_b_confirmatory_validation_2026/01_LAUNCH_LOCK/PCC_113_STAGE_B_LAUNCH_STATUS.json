@@ -1,0 +1,21 @@
+{
+  "launch_gate": "PASS",
+  "authority_protocol_sha256": "34ebddc1a512867f293b30d68c1dc6663a45092dcdcef9c317fd5ca9da239b34",
+  "authority_amendment_sha256": "906eb95e5d97d1b6abadac9e0129b6f33dd384e64e139ad32f1e7d67b4c265f0",
+  "confirmatory_patients": 113,
+  "unique_patient_ids": 113,
+  "unique_case_ids": 113,
+  "excluded_ids_absent": true,
+  "overlap_with_locked_40": 0,
+  "p0_hash_mismatch": 0,
+  "p0_regenerated": false,
+  "shard_counts": {
+    "0": 29,
+    "1": 27,
+    "2": 29,
+    "3": 28
+  },
+  "future_masks_read": false,
+  "performance_computed": false,
+  "lumieres_started": false
+}
