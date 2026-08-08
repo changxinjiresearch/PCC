@@ -1,0 +1,13 @@
+end_to_end_denominator: 115
+primary_analysis: complete_case_pairs_with_count_and_reasons_reported
+conservative_sensitivity:
+  failed_patient_paired_difference: 0
+  one_method_only_failure: paired_difference_0_and_failure_logged
+  both_methods_failure: paired_difference_0_and_both_failures_logged
+retry_limit_per_case_stage: 3
+retain_first_attempt_log: true
+technical_recovery_may_overwrite_first_attempt: false
+silent_failure_deletion: forbidden
+non_finite_output: failure
+all_locked_patients_retained: true
+failure_classes: [source_file_missing, geometry_mismatch, checkpoint_load_failure, P0_inference_failure, P0_persistence_hash_failure, target_construction_failure, correction_failure, metric_failure, non_finite_output, shard_merge_identity_failure]

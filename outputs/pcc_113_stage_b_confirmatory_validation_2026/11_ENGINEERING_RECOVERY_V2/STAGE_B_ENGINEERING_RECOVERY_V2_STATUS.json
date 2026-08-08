@@ -1,0 +1,17 @@
+{
+  "recovery_sequence": "STAGE_B_ENGINEERING_RECOVERY_V2",
+  "root_cause_audit": "PASS",
+  "input_bundle_created": true,
+  "input_bundle_sha256": "b4971f60a062211c70a7c74cacc0987e8089a2a4e78dcc85e86bcf5b97504a01",
+  "smoke_kernel": "jeechangxin/pcc-113-stage-b-input-smoke-v2-2026",
+  "smoke_kernel_version": 1,
+  "smoke_test_gate": "BLOCKED",
+  "smoke_failure": "Kaggle dataset ZIP was expanded into manifest/policy/authority paths; smoke script expected the ZIP filename and stopped before CSV access.",
+  "formal_stage_b_shards_submitted": false,
+  "future_masks_read": false,
+  "target_constructed": false,
+  "performance_computed": false,
+  "stage_b_methods_executed": false,
+  "lumiere_started": false,
+  "next_action_requires_new_human_authorization": true
+}

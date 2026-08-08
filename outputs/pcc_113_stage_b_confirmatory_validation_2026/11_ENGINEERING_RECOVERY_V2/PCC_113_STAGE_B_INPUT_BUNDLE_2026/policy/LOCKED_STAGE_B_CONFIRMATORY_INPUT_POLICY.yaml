@@ -1,0 +1,9 @@
+allowed_case_manifest: 02_AMENDED_COHORT_LOCK/LOCKED_113_CONFIRMATORY_CASE_MANIFEST.csv
+allowed_p0_manifest: 03_P0_MAPPING/LOCKED_113_P0_MANIFEST.csv
+allowed_p0_sha256: 03_P0_MAPPING/LOCKED_113_P0_SHA256.csv
+rejected_patient_ids:
+  - PatientID_0113
+  - PatientID_0132
+reject_original_115_manifest: true
+reject_regenerated_p0: true
+stage_b_executed: false

@@ -1,0 +1,15 @@
+recovery_sequence: STAGE_B_ENGINEERING_RECOVERY_V2_SMOKE_FIX_1
+dataset_slug: jeechangxin/pcc-113-stage-b-input-bundle-2026
+dataset_version: 2
+p0_source_slug: jeechangxin/pcc-115-holdout-stage-a-p0-freeze-2026
+resolved_paths:
+  bundle_manifest: /kaggle/input/datasets/jeechangxin/pcc-113-stage-b-input-bundle-2026/PCC_113_STAGE_B_INPUT_BUNDLE_MANIFEST.csv
+  confirmatory_case_manifest: /kaggle/input/datasets/jeechangxin/pcc-113-stage-b-input-bundle-2026/PCC_113_STAGE_B_INPUT_BUNDLE_2026/manifest/LOCKED_113_CONFIRMATORY_CASE_MANIFEST.csv
+  p0_manifest: /kaggle/input/datasets/jeechangxin/pcc-113-stage-b-input-bundle-2026/PCC_113_STAGE_B_INPUT_BUNDLE_2026/manifest/LOCKED_113_P0_MANIFEST.csv
+  p0_sha256: /kaggle/input/datasets/jeechangxin/pcc-113-stage-b-input-bundle-2026/PCC_113_STAGE_B_INPUT_BUNDLE_2026/manifest/LOCKED_113_P0_SHA256.csv
+  shard_manifest: /kaggle/input/datasets/jeechangxin/pcc-113-stage-b-input-bundle-2026/PCC_113_STAGE_B_INPUT_BUNDLE_2026/manifest/LOCKED_113_STAGE_B_CORRECTION_SHARD_MANIFEST.csv
+  stage_b_input_policy: /kaggle/input/datasets/jeechangxin/pcc-113-stage-b-input-bundle-2026/PCC_113_STAGE_B_INPUT_BUNDLE_2026/policy/LOCKED_STAGE_B_CONFIRMATORY_INPUT_POLICY.yaml
+  frozen_p0_root: /kaggle/input/notebooks/jeechangxin/pcc-115-holdout-stage-a-p0-freeze-2026/pcc_115_holdout_stage_a_p0_freeze_2026/stage_a
+  selected_p0: /kaggle/input/notebooks/jeechangxin/pcc-115-holdout-stage-a-p0-freeze-2026/pcc_115_holdout_stage_a_p0_freeze_2026/stage_a/shard_0/P0/PatientID_0064_T1_to_T2_t1c.npy
+runner_sha256: b5177f5f9af04ea93a20c6a3664940c39084c9d6c86d9082f4cf81bee44f1ae5
+smoke_test_gate: PASS
