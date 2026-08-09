@@ -1,0 +1,18 @@
+{
+  "v1_zip_sha256": "f9b2e29ea30cd2a4f90d586771b5c06535417927c9ef0aedece174f44e5ebeba",
+  "v1_zip_sha256_match": true,
+  "patients": 113,
+  "case_method_rows": 904,
+  "trajectory_rows": 1130,
+  "numeric_cells_changed": 0,
+  "secondary_bootstrap_resamples": 10000,
+  "secondary_bootstrap_seed": 20260803,
+  "method_count": 8,
+  "skips_audited": 43,
+  "stage_b_critical_unresolved_skips": 0,
+  "method_rerun": false,
+  "p0_regenerated": false,
+  "target_reconstructed_for_scientific_calculation": false,
+  "lumiere": false,
+  "commit": "82730934288f233e80b9367b778c86f943d18fa4"
+}

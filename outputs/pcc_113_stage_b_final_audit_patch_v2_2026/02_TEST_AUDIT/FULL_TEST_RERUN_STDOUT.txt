@@ -1,0 +1,59 @@
+......s.................................................ssssssssssssss [ 33%]
+ss.....ssssssssssssssssssssssssss................................. [ 65%]
+..................................................... [ 90%]
+....................                                                     [100%]
+=============================== warnings summary ===============================
+tests/test_naive_self_tightening.py::NaiveSelfTighteningRegressionTests::test_out_of_range_values
+  /home/changxinjiresearch/Research/Projects/PCC/tests/test_naive_self_tightening.py:21: RuntimeWarning: overflow encountered in cast
+    x.astype(np.float32),
+
+tests/test_naive_self_tightening.py::NaiveSelfTighteningRegressionTests::test_out_of_range_values
+  /home/changxinjiresearch/Research/Projects/PCC/src/models/naive_self_tightening.py:45: RuntimeWarning: overflow encountered in cast
+    x.astype(np.float32),
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_dataset_identity.py:210: Canonical locked cohort fixture is unavailable; see fixture README.
+SKIPPED [1] tests/test_fixed_baseline.py:151: PyTorch is not installed
+SKIPPED [1] tests/test_fixed_baseline.py:268: PyTorch is not installed
+SKIPPED [1] tests/test_fixed_baseline.py:239: PyTorch is not installed
+SKIPPED [1] tests/test_fixed_baseline.py:136: PyTorch is not installed
+SKIPPED [1] tests/test_fixed_baseline.py:101: PyTorch is not installed
+SKIPPED [1] tests/test_fixed_baseline.py:34: PyTorch is not installed
+SKIPPED [1] tests/test_fixed_baseline.py:293: PyTorch is not installed
+SKIPPED [1] tests/test_fixed_baseline.py:286: PyTorch is not installed
+SKIPPED [1] tests/test_fixed_baseline.py:41: PyTorch is not installed
+SKIPPED [1] tests/test_fixed_baseline.py:327: PyTorch is not installed
+SKIPPED [1] tests/test_fixed_baseline.py:155: PyTorch is not installed
+SKIPPED [1] tests/test_fixed_baseline.py:185: PyTorch is not installed
+SKIPPED [1] tests/test_fixed_baseline.py:312: PyTorch is not installed
+SKIPPED [1] tests/test_fixed_baseline.py:301: PyTorch is not installed
+SKIPPED [1] tests/test_fixed_baseline.py:221: PyTorch is not installed
+SKIPPED [1] tests/test_fixed_baseline.py:209: PyTorch is not installed
+SKIPPED [1] tests/test_formal_layer2r_baseline.py:47: PyTorch and pandas are required for formal baseline tests
+SKIPPED [1] tests/test_formal_layer2r_baseline.py:241: PyTorch and pandas are required for formal baseline tests
+SKIPPED [1] tests/test_formal_layer2r_baseline.py:188: PyTorch and pandas are required for formal baseline tests
+SKIPPED [1] tests/test_formal_layer2r_baseline.py:218: PyTorch and pandas are required for formal baseline tests
+SKIPPED [1] tests/test_formal_layer2r_baseline.py:64: PyTorch and pandas are required for formal baseline tests
+SKIPPED [1] tests/test_formal_layer2r_baseline.py:83: PyTorch and pandas are required for formal baseline tests
+SKIPPED [1] tests/test_formal_layer2r_baseline.py:133: PyTorch and pandas are required for formal baseline tests
+SKIPPED [1] tests/test_formal_layer2r_baseline.py:160: PyTorch and pandas are required for formal baseline tests
+SKIPPED [1] tests/test_formal_layer2r_baseline.py:254: PyTorch and pandas are required for formal baseline tests
+SKIPPED [1] tests/test_formal_layer2r_baseline.py:144: PyTorch and pandas are required for formal baseline tests
+SKIPPED [1] tests/test_formal_layer2r_baseline.py:110: PyTorch and pandas are required for formal baseline tests
+SKIPPED [1] tests/test_formal_layer2r_baseline.py:103: PyTorch and pandas are required for formal baseline tests
+SKIPPED [1] tests/test_formal_layer2r_baseline.py:268: PyTorch and pandas are required for formal baseline tests
+SKIPPED [1] tests/test_formal_layer2r_execution.py:192: Formal execution dependencies are unavailable
+SKIPPED [1] tests/test_formal_layer2r_execution.py:72: Formal execution dependencies are unavailable
+SKIPPED [1] tests/test_formal_layer2r_execution.py:233: Formal execution dependencies are unavailable
+SKIPPED [1] tests/test_formal_layer2r_execution.py:266: Formal execution dependencies are unavailable
+SKIPPED [1] tests/test_formal_layer2r_execution.py:202: Formal execution dependencies are unavailable
+SKIPPED [1] tests/test_formal_layer2r_execution.py:141: Formal execution dependencies are unavailable
+SKIPPED [1] tests/test_formal_layer2r_execution.py:105: Formal execution dependencies are unavailable
+SKIPPED [1] tests/test_formal_layer2r_execution.py:90: Formal execution dependencies are unavailable
+SKIPPED [1] tests/test_formal_layer2r_execution.py:125: Formal execution dependencies are unavailable
+SKIPPED [1] tests/test_formal_layer2r_execution.py:288: Formal execution dependencies are unavailable
+SKIPPED [1] tests/test_formal_layer2r_execution.py:350: Formal execution dependencies are unavailable
+SKIPPED [1] tests/test_formal_layer2r_execution.py:180: Formal execution dependencies are unavailable
+SKIPPED [1] tests/test_formal_layer2r_execution.py:157: Formal execution dependencies are unavailable
+166 passed, 43 skipped, 2 warnings, 27 subtests passed in 16.72s

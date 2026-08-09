@@ -1,0 +1,905 @@
+row_index,patient_id,case_id,method,non_provenance_changes,numeric_changes,status
+0,PatientID_0064,PatientID_0064_T1_to_T2_t1c,Fixed,,,PASS
+1,PatientID_0064,PatientID_0064_T1_to_T2_t1c,Naive,,,PASS
+2,PatientID_0064,PatientID_0064_T1_to_T2_t1c,EIA-linear,,,PASS
+3,PatientID_0064,PatientID_0064_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+4,PatientID_0064,PatientID_0064_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+5,PatientID_0064,PatientID_0064_T1_to_T2_t1c,EIA-morph,,,PASS
+6,PatientID_0064,PatientID_0064_T1_to_T2_t1c,Full PCC,,,PASS
+7,PatientID_0064,PatientID_0064_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+8,PatientID_0065,PatientID_0065_T1_to_T2_t1c,Fixed,,,PASS
+9,PatientID_0065,PatientID_0065_T1_to_T2_t1c,Naive,,,PASS
+10,PatientID_0065,PatientID_0065_T1_to_T2_t1c,EIA-linear,,,PASS
+11,PatientID_0065,PatientID_0065_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+12,PatientID_0065,PatientID_0065_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+13,PatientID_0065,PatientID_0065_T1_to_T2_t1c,EIA-morph,,,PASS
+14,PatientID_0065,PatientID_0065_T1_to_T2_t1c,Full PCC,,,PASS
+15,PatientID_0065,PatientID_0065_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+16,PatientID_0066,PatientID_0066_T1_to_T2_t1c,Fixed,,,PASS
+17,PatientID_0066,PatientID_0066_T1_to_T2_t1c,Naive,,,PASS
+18,PatientID_0066,PatientID_0066_T1_to_T2_t1c,EIA-linear,,,PASS
+19,PatientID_0066,PatientID_0066_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+20,PatientID_0066,PatientID_0066_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+21,PatientID_0066,PatientID_0066_T1_to_T2_t1c,EIA-morph,,,PASS
+22,PatientID_0066,PatientID_0066_T1_to_T2_t1c,Full PCC,,,PASS
+23,PatientID_0066,PatientID_0066_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+24,PatientID_0067,PatientID_0067_T1_to_T2_t1c,Fixed,,,PASS
+25,PatientID_0067,PatientID_0067_T1_to_T2_t1c,Naive,,,PASS
+26,PatientID_0067,PatientID_0067_T1_to_T2_t1c,EIA-linear,,,PASS
+27,PatientID_0067,PatientID_0067_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+28,PatientID_0067,PatientID_0067_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+29,PatientID_0067,PatientID_0067_T1_to_T2_t1c,EIA-morph,,,PASS
+30,PatientID_0067,PatientID_0067_T1_to_T2_t1c,Full PCC,,,PASS
+31,PatientID_0067,PatientID_0067_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+32,PatientID_0068,PatientID_0068_T1_to_T2_t1c,Fixed,,,PASS
+33,PatientID_0068,PatientID_0068_T1_to_T2_t1c,Naive,,,PASS
+34,PatientID_0068,PatientID_0068_T1_to_T2_t1c,EIA-linear,,,PASS
+35,PatientID_0068,PatientID_0068_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+36,PatientID_0068,PatientID_0068_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+37,PatientID_0068,PatientID_0068_T1_to_T2_t1c,EIA-morph,,,PASS
+38,PatientID_0068,PatientID_0068_T1_to_T2_t1c,Full PCC,,,PASS
+39,PatientID_0068,PatientID_0068_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+40,PatientID_0069,PatientID_0069_T2_to_T3_t1c,Fixed,,,PASS
+41,PatientID_0069,PatientID_0069_T2_to_T3_t1c,Naive,,,PASS
+42,PatientID_0069,PatientID_0069_T2_to_T3_t1c,EIA-linear,,,PASS
+43,PatientID_0069,PatientID_0069_T2_to_T3_t1c,EIA-blend-0.90,,,PASS
+44,PatientID_0069,PatientID_0069_T2_to_T3_t1c,EIA-blend-0.75,,,PASS
+45,PatientID_0069,PatientID_0069_T2_to_T3_t1c,EIA-morph,,,PASS
+46,PatientID_0069,PatientID_0069_T2_to_T3_t1c,Full PCC,,,PASS
+47,PatientID_0069,PatientID_0069_T2_to_T3_t1c,No-smoothing PCC,,,PASS
+48,PatientID_0070,PatientID_0070_T1_to_T2_t1c,Fixed,,,PASS
+49,PatientID_0070,PatientID_0070_T1_to_T2_t1c,Naive,,,PASS
+50,PatientID_0070,PatientID_0070_T1_to_T2_t1c,EIA-linear,,,PASS
+51,PatientID_0070,PatientID_0070_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+52,PatientID_0070,PatientID_0070_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+53,PatientID_0070,PatientID_0070_T1_to_T2_t1c,EIA-morph,,,PASS
+54,PatientID_0070,PatientID_0070_T1_to_T2_t1c,Full PCC,,,PASS
+55,PatientID_0070,PatientID_0070_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+56,PatientID_0072,PatientID_0072_T1_to_T2_t1c,Fixed,,,PASS
+57,PatientID_0072,PatientID_0072_T1_to_T2_t1c,Naive,,,PASS
+58,PatientID_0072,PatientID_0072_T1_to_T2_t1c,EIA-linear,,,PASS
+59,PatientID_0072,PatientID_0072_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+60,PatientID_0072,PatientID_0072_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+61,PatientID_0072,PatientID_0072_T1_to_T2_t1c,EIA-morph,,,PASS
+62,PatientID_0072,PatientID_0072_T1_to_T2_t1c,Full PCC,,,PASS
+63,PatientID_0072,PatientID_0072_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+64,PatientID_0073,PatientID_0073_T1_to_T2_t1c,Fixed,,,PASS
+65,PatientID_0073,PatientID_0073_T1_to_T2_t1c,Naive,,,PASS
+66,PatientID_0073,PatientID_0073_T1_to_T2_t1c,EIA-linear,,,PASS
+67,PatientID_0073,PatientID_0073_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+68,PatientID_0073,PatientID_0073_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+69,PatientID_0073,PatientID_0073_T1_to_T2_t1c,EIA-morph,,,PASS
+70,PatientID_0073,PatientID_0073_T1_to_T2_t1c,Full PCC,,,PASS
+71,PatientID_0073,PatientID_0073_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+72,PatientID_0074,PatientID_0074_T1_to_T2_t1c,Fixed,,,PASS
+73,PatientID_0074,PatientID_0074_T1_to_T2_t1c,Naive,,,PASS
+74,PatientID_0074,PatientID_0074_T1_to_T2_t1c,EIA-linear,,,PASS
+75,PatientID_0074,PatientID_0074_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+76,PatientID_0074,PatientID_0074_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+77,PatientID_0074,PatientID_0074_T1_to_T2_t1c,EIA-morph,,,PASS
+78,PatientID_0074,PatientID_0074_T1_to_T2_t1c,Full PCC,,,PASS
+79,PatientID_0074,PatientID_0074_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+80,PatientID_0076,PatientID_0076_T1_to_T2_t1c,Fixed,,,PASS
+81,PatientID_0076,PatientID_0076_T1_to_T2_t1c,Naive,,,PASS
+82,PatientID_0076,PatientID_0076_T1_to_T2_t1c,EIA-linear,,,PASS
+83,PatientID_0076,PatientID_0076_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+84,PatientID_0076,PatientID_0076_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+85,PatientID_0076,PatientID_0076_T1_to_T2_t1c,EIA-morph,,,PASS
+86,PatientID_0076,PatientID_0076_T1_to_T2_t1c,Full PCC,,,PASS
+87,PatientID_0076,PatientID_0076_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+88,PatientID_0078,PatientID_0078_T1_to_T2_t1c,Fixed,,,PASS
+89,PatientID_0078,PatientID_0078_T1_to_T2_t1c,Naive,,,PASS
+90,PatientID_0078,PatientID_0078_T1_to_T2_t1c,EIA-linear,,,PASS
+91,PatientID_0078,PatientID_0078_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+92,PatientID_0078,PatientID_0078_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+93,PatientID_0078,PatientID_0078_T1_to_T2_t1c,EIA-morph,,,PASS
+94,PatientID_0078,PatientID_0078_T1_to_T2_t1c,Full PCC,,,PASS
+95,PatientID_0078,PatientID_0078_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+96,PatientID_0079,PatientID_0079_T1_to_T2_t1c,Fixed,,,PASS
+97,PatientID_0079,PatientID_0079_T1_to_T2_t1c,Naive,,,PASS
+98,PatientID_0079,PatientID_0079_T1_to_T2_t1c,EIA-linear,,,PASS
+99,PatientID_0079,PatientID_0079_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+100,PatientID_0079,PatientID_0079_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+101,PatientID_0079,PatientID_0079_T1_to_T2_t1c,EIA-morph,,,PASS
+102,PatientID_0079,PatientID_0079_T1_to_T2_t1c,Full PCC,,,PASS
+103,PatientID_0079,PatientID_0079_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+104,PatientID_0080,PatientID_0080_T1_to_T2_t1c,Fixed,,,PASS
+105,PatientID_0080,PatientID_0080_T1_to_T2_t1c,Naive,,,PASS
+106,PatientID_0080,PatientID_0080_T1_to_T2_t1c,EIA-linear,,,PASS
+107,PatientID_0080,PatientID_0080_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+108,PatientID_0080,PatientID_0080_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+109,PatientID_0080,PatientID_0080_T1_to_T2_t1c,EIA-morph,,,PASS
+110,PatientID_0080,PatientID_0080_T1_to_T2_t1c,Full PCC,,,PASS
+111,PatientID_0080,PatientID_0080_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+112,PatientID_0081,PatientID_0081_T1_to_T2_t1c,Fixed,,,PASS
+113,PatientID_0081,PatientID_0081_T1_to_T2_t1c,Naive,,,PASS
+114,PatientID_0081,PatientID_0081_T1_to_T2_t1c,EIA-linear,,,PASS
+115,PatientID_0081,PatientID_0081_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+116,PatientID_0081,PatientID_0081_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+117,PatientID_0081,PatientID_0081_T1_to_T2_t1c,EIA-morph,,,PASS
+118,PatientID_0081,PatientID_0081_T1_to_T2_t1c,Full PCC,,,PASS
+119,PatientID_0081,PatientID_0081_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+120,PatientID_0082,PatientID_0082_T1_to_T2_t1c,Fixed,,,PASS
+121,PatientID_0082,PatientID_0082_T1_to_T2_t1c,Naive,,,PASS
+122,PatientID_0082,PatientID_0082_T1_to_T2_t1c,EIA-linear,,,PASS
+123,PatientID_0082,PatientID_0082_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+124,PatientID_0082,PatientID_0082_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+125,PatientID_0082,PatientID_0082_T1_to_T2_t1c,EIA-morph,,,PASS
+126,PatientID_0082,PatientID_0082_T1_to_T2_t1c,Full PCC,,,PASS
+127,PatientID_0082,PatientID_0082_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+128,PatientID_0083,PatientID_0083_T1_to_T2_t1c,Fixed,,,PASS
+129,PatientID_0083,PatientID_0083_T1_to_T2_t1c,Naive,,,PASS
+130,PatientID_0083,PatientID_0083_T1_to_T2_t1c,EIA-linear,,,PASS
+131,PatientID_0083,PatientID_0083_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+132,PatientID_0083,PatientID_0083_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+133,PatientID_0083,PatientID_0083_T1_to_T2_t1c,EIA-morph,,,PASS
+134,PatientID_0083,PatientID_0083_T1_to_T2_t1c,Full PCC,,,PASS
+135,PatientID_0083,PatientID_0083_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+136,PatientID_0084,PatientID_0084_T1_to_T2_t1c,Fixed,,,PASS
+137,PatientID_0084,PatientID_0084_T1_to_T2_t1c,Naive,,,PASS
+138,PatientID_0084,PatientID_0084_T1_to_T2_t1c,EIA-linear,,,PASS
+139,PatientID_0084,PatientID_0084_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+140,PatientID_0084,PatientID_0084_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+141,PatientID_0084,PatientID_0084_T1_to_T2_t1c,EIA-morph,,,PASS
+142,PatientID_0084,PatientID_0084_T1_to_T2_t1c,Full PCC,,,PASS
+143,PatientID_0084,PatientID_0084_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+144,PatientID_0085,PatientID_0085_T1_to_T2_t1c,Fixed,,,PASS
+145,PatientID_0085,PatientID_0085_T1_to_T2_t1c,Naive,,,PASS
+146,PatientID_0085,PatientID_0085_T1_to_T2_t1c,EIA-linear,,,PASS
+147,PatientID_0085,PatientID_0085_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+148,PatientID_0085,PatientID_0085_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+149,PatientID_0085,PatientID_0085_T1_to_T2_t1c,EIA-morph,,,PASS
+150,PatientID_0085,PatientID_0085_T1_to_T2_t1c,Full PCC,,,PASS
+151,PatientID_0085,PatientID_0085_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+152,PatientID_0087,PatientID_0087_T1_to_T2_t1c,Fixed,,,PASS
+153,PatientID_0087,PatientID_0087_T1_to_T2_t1c,Naive,,,PASS
+154,PatientID_0087,PatientID_0087_T1_to_T2_t1c,EIA-linear,,,PASS
+155,PatientID_0087,PatientID_0087_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+156,PatientID_0087,PatientID_0087_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+157,PatientID_0087,PatientID_0087_T1_to_T2_t1c,EIA-morph,,,PASS
+158,PatientID_0087,PatientID_0087_T1_to_T2_t1c,Full PCC,,,PASS
+159,PatientID_0087,PatientID_0087_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+160,PatientID_0088,PatientID_0088_T1_to_T2_t1c,Fixed,,,PASS
+161,PatientID_0088,PatientID_0088_T1_to_T2_t1c,Naive,,,PASS
+162,PatientID_0088,PatientID_0088_T1_to_T2_t1c,EIA-linear,,,PASS
+163,PatientID_0088,PatientID_0088_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+164,PatientID_0088,PatientID_0088_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+165,PatientID_0088,PatientID_0088_T1_to_T2_t1c,EIA-morph,,,PASS
+166,PatientID_0088,PatientID_0088_T1_to_T2_t1c,Full PCC,,,PASS
+167,PatientID_0088,PatientID_0088_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+168,PatientID_0089,PatientID_0089_T1_to_T2_t1c,Fixed,,,PASS
+169,PatientID_0089,PatientID_0089_T1_to_T2_t1c,Naive,,,PASS
+170,PatientID_0089,PatientID_0089_T1_to_T2_t1c,EIA-linear,,,PASS
+171,PatientID_0089,PatientID_0089_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+172,PatientID_0089,PatientID_0089_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+173,PatientID_0089,PatientID_0089_T1_to_T2_t1c,EIA-morph,,,PASS
+174,PatientID_0089,PatientID_0089_T1_to_T2_t1c,Full PCC,,,PASS
+175,PatientID_0089,PatientID_0089_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+176,PatientID_0090,PatientID_0090_T1_to_T2_t1c,Fixed,,,PASS
+177,PatientID_0090,PatientID_0090_T1_to_T2_t1c,Naive,,,PASS
+178,PatientID_0090,PatientID_0090_T1_to_T2_t1c,EIA-linear,,,PASS
+179,PatientID_0090,PatientID_0090_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+180,PatientID_0090,PatientID_0090_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+181,PatientID_0090,PatientID_0090_T1_to_T2_t1c,EIA-morph,,,PASS
+182,PatientID_0090,PatientID_0090_T1_to_T2_t1c,Full PCC,,,PASS
+183,PatientID_0090,PatientID_0090_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+184,PatientID_0091,PatientID_0091_T1_to_T2_t1c,Fixed,,,PASS
+185,PatientID_0091,PatientID_0091_T1_to_T2_t1c,Naive,,,PASS
+186,PatientID_0091,PatientID_0091_T1_to_T2_t1c,EIA-linear,,,PASS
+187,PatientID_0091,PatientID_0091_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+188,PatientID_0091,PatientID_0091_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+189,PatientID_0091,PatientID_0091_T1_to_T2_t1c,EIA-morph,,,PASS
+190,PatientID_0091,PatientID_0091_T1_to_T2_t1c,Full PCC,,,PASS
+191,PatientID_0091,PatientID_0091_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+192,PatientID_0092,PatientID_0092_T1_to_T2_t1c,Fixed,,,PASS
+193,PatientID_0092,PatientID_0092_T1_to_T2_t1c,Naive,,,PASS
+194,PatientID_0092,PatientID_0092_T1_to_T2_t1c,EIA-linear,,,PASS
+195,PatientID_0092,PatientID_0092_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+196,PatientID_0092,PatientID_0092_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+197,PatientID_0092,PatientID_0092_T1_to_T2_t1c,EIA-morph,,,PASS
+198,PatientID_0092,PatientID_0092_T1_to_T2_t1c,Full PCC,,,PASS
+199,PatientID_0092,PatientID_0092_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+200,PatientID_0093,PatientID_0093_T1_to_T2_t1c,Fixed,,,PASS
+201,PatientID_0093,PatientID_0093_T1_to_T2_t1c,Naive,,,PASS
+202,PatientID_0093,PatientID_0093_T1_to_T2_t1c,EIA-linear,,,PASS
+203,PatientID_0093,PatientID_0093_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+204,PatientID_0093,PatientID_0093_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+205,PatientID_0093,PatientID_0093_T1_to_T2_t1c,EIA-morph,,,PASS
+206,PatientID_0093,PatientID_0093_T1_to_T2_t1c,Full PCC,,,PASS
+207,PatientID_0093,PatientID_0093_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+208,PatientID_0094,PatientID_0094_T1_to_T2_t1c,Fixed,,,PASS
+209,PatientID_0094,PatientID_0094_T1_to_T2_t1c,Naive,,,PASS
+210,PatientID_0094,PatientID_0094_T1_to_T2_t1c,EIA-linear,,,PASS
+211,PatientID_0094,PatientID_0094_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+212,PatientID_0094,PatientID_0094_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+213,PatientID_0094,PatientID_0094_T1_to_T2_t1c,EIA-morph,,,PASS
+214,PatientID_0094,PatientID_0094_T1_to_T2_t1c,Full PCC,,,PASS
+215,PatientID_0094,PatientID_0094_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+216,PatientID_0095,PatientID_0095_T1_to_T2_t1c,Fixed,,,PASS
+217,PatientID_0095,PatientID_0095_T1_to_T2_t1c,Naive,,,PASS
+218,PatientID_0095,PatientID_0095_T1_to_T2_t1c,EIA-linear,,,PASS
+219,PatientID_0095,PatientID_0095_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+220,PatientID_0095,PatientID_0095_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+221,PatientID_0095,PatientID_0095_T1_to_T2_t1c,EIA-morph,,,PASS
+222,PatientID_0095,PatientID_0095_T1_to_T2_t1c,Full PCC,,,PASS
+223,PatientID_0095,PatientID_0095_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+224,PatientID_0097,PatientID_0097_T1_to_T2_t1c,Fixed,,,PASS
+225,PatientID_0097,PatientID_0097_T1_to_T2_t1c,Naive,,,PASS
+226,PatientID_0097,PatientID_0097_T1_to_T2_t1c,EIA-linear,,,PASS
+227,PatientID_0097,PatientID_0097_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+228,PatientID_0097,PatientID_0097_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+229,PatientID_0097,PatientID_0097_T1_to_T2_t1c,EIA-morph,,,PASS
+230,PatientID_0097,PatientID_0097_T1_to_T2_t1c,Full PCC,,,PASS
+231,PatientID_0097,PatientID_0097_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+232,PatientID_0099,PatientID_0099_T1_to_T2_t1c,Fixed,,,PASS
+233,PatientID_0099,PatientID_0099_T1_to_T2_t1c,Naive,,,PASS
+234,PatientID_0099,PatientID_0099_T1_to_T2_t1c,EIA-linear,,,PASS
+235,PatientID_0099,PatientID_0099_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+236,PatientID_0099,PatientID_0099_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+237,PatientID_0099,PatientID_0099_T1_to_T2_t1c,EIA-morph,,,PASS
+238,PatientID_0099,PatientID_0099_T1_to_T2_t1c,Full PCC,,,PASS
+239,PatientID_0099,PatientID_0099_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+240,PatientID_0103,PatientID_0103_T1_to_T2_t1c,Fixed,,,PASS
+241,PatientID_0103,PatientID_0103_T1_to_T2_t1c,Naive,,,PASS
+242,PatientID_0103,PatientID_0103_T1_to_T2_t1c,EIA-linear,,,PASS
+243,PatientID_0103,PatientID_0103_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+244,PatientID_0103,PatientID_0103_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+245,PatientID_0103,PatientID_0103_T1_to_T2_t1c,EIA-morph,,,PASS
+246,PatientID_0103,PatientID_0103_T1_to_T2_t1c,Full PCC,,,PASS
+247,PatientID_0103,PatientID_0103_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+248,PatientID_0105,PatientID_0105_T1_to_T2_t1c,Fixed,,,PASS
+249,PatientID_0105,PatientID_0105_T1_to_T2_t1c,Naive,,,PASS
+250,PatientID_0105,PatientID_0105_T1_to_T2_t1c,EIA-linear,,,PASS
+251,PatientID_0105,PatientID_0105_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+252,PatientID_0105,PatientID_0105_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+253,PatientID_0105,PatientID_0105_T1_to_T2_t1c,EIA-morph,,,PASS
+254,PatientID_0105,PatientID_0105_T1_to_T2_t1c,Full PCC,,,PASS
+255,PatientID_0105,PatientID_0105_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+256,PatientID_0109,PatientID_0109_T1_to_T2_t1c,Fixed,,,PASS
+257,PatientID_0109,PatientID_0109_T1_to_T2_t1c,Naive,,,PASS
+258,PatientID_0109,PatientID_0109_T1_to_T2_t1c,EIA-linear,,,PASS
+259,PatientID_0109,PatientID_0109_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+260,PatientID_0109,PatientID_0109_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+261,PatientID_0109,PatientID_0109_T1_to_T2_t1c,EIA-morph,,,PASS
+262,PatientID_0109,PatientID_0109_T1_to_T2_t1c,Full PCC,,,PASS
+263,PatientID_0109,PatientID_0109_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+264,PatientID_0110,PatientID_0110_T1_to_T2_t1c,Fixed,,,PASS
+265,PatientID_0110,PatientID_0110_T1_to_T2_t1c,Naive,,,PASS
+266,PatientID_0110,PatientID_0110_T1_to_T2_t1c,EIA-linear,,,PASS
+267,PatientID_0110,PatientID_0110_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+268,PatientID_0110,PatientID_0110_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+269,PatientID_0110,PatientID_0110_T1_to_T2_t1c,EIA-morph,,,PASS
+270,PatientID_0110,PatientID_0110_T1_to_T2_t1c,Full PCC,,,PASS
+271,PatientID_0110,PatientID_0110_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+272,PatientID_0114,PatientID_0114_T1_to_T2_t1c,Fixed,,,PASS
+273,PatientID_0114,PatientID_0114_T1_to_T2_t1c,Naive,,,PASS
+274,PatientID_0114,PatientID_0114_T1_to_T2_t1c,EIA-linear,,,PASS
+275,PatientID_0114,PatientID_0114_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+276,PatientID_0114,PatientID_0114_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+277,PatientID_0114,PatientID_0114_T1_to_T2_t1c,EIA-morph,,,PASS
+278,PatientID_0114,PatientID_0114_T1_to_T2_t1c,Full PCC,,,PASS
+279,PatientID_0114,PatientID_0114_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+280,PatientID_0116,PatientID_0116_T1_to_T2_t1c,Fixed,,,PASS
+281,PatientID_0116,PatientID_0116_T1_to_T2_t1c,Naive,,,PASS
+282,PatientID_0116,PatientID_0116_T1_to_T2_t1c,EIA-linear,,,PASS
+283,PatientID_0116,PatientID_0116_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+284,PatientID_0116,PatientID_0116_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+285,PatientID_0116,PatientID_0116_T1_to_T2_t1c,EIA-morph,,,PASS
+286,PatientID_0116,PatientID_0116_T1_to_T2_t1c,Full PCC,,,PASS
+287,PatientID_0116,PatientID_0116_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+288,PatientID_0117,PatientID_0117_T1_to_T2_t1c,Fixed,,,PASS
+289,PatientID_0117,PatientID_0117_T1_to_T2_t1c,Naive,,,PASS
+290,PatientID_0117,PatientID_0117_T1_to_T2_t1c,EIA-linear,,,PASS
+291,PatientID_0117,PatientID_0117_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+292,PatientID_0117,PatientID_0117_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+293,PatientID_0117,PatientID_0117_T1_to_T2_t1c,EIA-morph,,,PASS
+294,PatientID_0117,PatientID_0117_T1_to_T2_t1c,Full PCC,,,PASS
+295,PatientID_0117,PatientID_0117_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+296,PatientID_0118,PatientID_0118_T1_to_T2_t1c,Fixed,,,PASS
+297,PatientID_0118,PatientID_0118_T1_to_T2_t1c,Naive,,,PASS
+298,PatientID_0118,PatientID_0118_T1_to_T2_t1c,EIA-linear,,,PASS
+299,PatientID_0118,PatientID_0118_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+300,PatientID_0118,PatientID_0118_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+301,PatientID_0118,PatientID_0118_T1_to_T2_t1c,EIA-morph,,,PASS
+302,PatientID_0118,PatientID_0118_T1_to_T2_t1c,Full PCC,,,PASS
+303,PatientID_0118,PatientID_0118_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+304,PatientID_0121,PatientID_0121_T1_to_T2_t1c,Fixed,,,PASS
+305,PatientID_0121,PatientID_0121_T1_to_T2_t1c,Naive,,,PASS
+306,PatientID_0121,PatientID_0121_T1_to_T2_t1c,EIA-linear,,,PASS
+307,PatientID_0121,PatientID_0121_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+308,PatientID_0121,PatientID_0121_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+309,PatientID_0121,PatientID_0121_T1_to_T2_t1c,EIA-morph,,,PASS
+310,PatientID_0121,PatientID_0121_T1_to_T2_t1c,Full PCC,,,PASS
+311,PatientID_0121,PatientID_0121_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+312,PatientID_0123,PatientID_0123_T1_to_T2_t1c,Fixed,,,PASS
+313,PatientID_0123,PatientID_0123_T1_to_T2_t1c,Naive,,,PASS
+314,PatientID_0123,PatientID_0123_T1_to_T2_t1c,EIA-linear,,,PASS
+315,PatientID_0123,PatientID_0123_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+316,PatientID_0123,PatientID_0123_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+317,PatientID_0123,PatientID_0123_T1_to_T2_t1c,EIA-morph,,,PASS
+318,PatientID_0123,PatientID_0123_T1_to_T2_t1c,Full PCC,,,PASS
+319,PatientID_0123,PatientID_0123_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+320,PatientID_0125,PatientID_0125_T1_to_T2_t1c,Fixed,,,PASS
+321,PatientID_0125,PatientID_0125_T1_to_T2_t1c,Naive,,,PASS
+322,PatientID_0125,PatientID_0125_T1_to_T2_t1c,EIA-linear,,,PASS
+323,PatientID_0125,PatientID_0125_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+324,PatientID_0125,PatientID_0125_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+325,PatientID_0125,PatientID_0125_T1_to_T2_t1c,EIA-morph,,,PASS
+326,PatientID_0125,PatientID_0125_T1_to_T2_t1c,Full PCC,,,PASS
+327,PatientID_0125,PatientID_0125_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+328,PatientID_0135,PatientID_0135_T1_to_T2_t1c,Fixed,,,PASS
+329,PatientID_0135,PatientID_0135_T1_to_T2_t1c,Naive,,,PASS
+330,PatientID_0135,PatientID_0135_T1_to_T2_t1c,EIA-linear,,,PASS
+331,PatientID_0135,PatientID_0135_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+332,PatientID_0135,PatientID_0135_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+333,PatientID_0135,PatientID_0135_T1_to_T2_t1c,EIA-morph,,,PASS
+334,PatientID_0135,PatientID_0135_T1_to_T2_t1c,Full PCC,,,PASS
+335,PatientID_0135,PatientID_0135_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+336,PatientID_0136,PatientID_0136_T1_to_T2_t1c,Fixed,,,PASS
+337,PatientID_0136,PatientID_0136_T1_to_T2_t1c,Naive,,,PASS
+338,PatientID_0136,PatientID_0136_T1_to_T2_t1c,EIA-linear,,,PASS
+339,PatientID_0136,PatientID_0136_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+340,PatientID_0136,PatientID_0136_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+341,PatientID_0136,PatientID_0136_T1_to_T2_t1c,EIA-morph,,,PASS
+342,PatientID_0136,PatientID_0136_T1_to_T2_t1c,Full PCC,,,PASS
+343,PatientID_0136,PatientID_0136_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+344,PatientID_0138,PatientID_0138_T1_to_T2_t1c,Fixed,,,PASS
+345,PatientID_0138,PatientID_0138_T1_to_T2_t1c,Naive,,,PASS
+346,PatientID_0138,PatientID_0138_T1_to_T2_t1c,EIA-linear,,,PASS
+347,PatientID_0138,PatientID_0138_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+348,PatientID_0138,PatientID_0138_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+349,PatientID_0138,PatientID_0138_T1_to_T2_t1c,EIA-morph,,,PASS
+350,PatientID_0138,PatientID_0138_T1_to_T2_t1c,Full PCC,,,PASS
+351,PatientID_0138,PatientID_0138_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+352,PatientID_0140,PatientID_0140_T1_to_T2_t1c,Fixed,,,PASS
+353,PatientID_0140,PatientID_0140_T1_to_T2_t1c,Naive,,,PASS
+354,PatientID_0140,PatientID_0140_T1_to_T2_t1c,EIA-linear,,,PASS
+355,PatientID_0140,PatientID_0140_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+356,PatientID_0140,PatientID_0140_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+357,PatientID_0140,PatientID_0140_T1_to_T2_t1c,EIA-morph,,,PASS
+358,PatientID_0140,PatientID_0140_T1_to_T2_t1c,Full PCC,,,PASS
+359,PatientID_0140,PatientID_0140_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+360,PatientID_0142,PatientID_0142_T1_to_T2_t1c,Fixed,,,PASS
+361,PatientID_0142,PatientID_0142_T1_to_T2_t1c,Naive,,,PASS
+362,PatientID_0142,PatientID_0142_T1_to_T2_t1c,EIA-linear,,,PASS
+363,PatientID_0142,PatientID_0142_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+364,PatientID_0142,PatientID_0142_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+365,PatientID_0142,PatientID_0142_T1_to_T2_t1c,EIA-morph,,,PASS
+366,PatientID_0142,PatientID_0142_T1_to_T2_t1c,Full PCC,,,PASS
+367,PatientID_0142,PatientID_0142_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+368,PatientID_0145,PatientID_0145_T1_to_T2_t1c,Fixed,,,PASS
+369,PatientID_0145,PatientID_0145_T1_to_T2_t1c,Naive,,,PASS
+370,PatientID_0145,PatientID_0145_T1_to_T2_t1c,EIA-linear,,,PASS
+371,PatientID_0145,PatientID_0145_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+372,PatientID_0145,PatientID_0145_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+373,PatientID_0145,PatientID_0145_T1_to_T2_t1c,EIA-morph,,,PASS
+374,PatientID_0145,PatientID_0145_T1_to_T2_t1c,Full PCC,,,PASS
+375,PatientID_0145,PatientID_0145_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+376,PatientID_0147,PatientID_0147_T1_to_T2_t1c,Fixed,,,PASS
+377,PatientID_0147,PatientID_0147_T1_to_T2_t1c,Naive,,,PASS
+378,PatientID_0147,PatientID_0147_T1_to_T2_t1c,EIA-linear,,,PASS
+379,PatientID_0147,PatientID_0147_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+380,PatientID_0147,PatientID_0147_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+381,PatientID_0147,PatientID_0147_T1_to_T2_t1c,EIA-morph,,,PASS
+382,PatientID_0147,PatientID_0147_T1_to_T2_t1c,Full PCC,,,PASS
+383,PatientID_0147,PatientID_0147_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+384,PatientID_0148,PatientID_0148_T1_to_T2_t1c,Fixed,,,PASS
+385,PatientID_0148,PatientID_0148_T1_to_T2_t1c,Naive,,,PASS
+386,PatientID_0148,PatientID_0148_T1_to_T2_t1c,EIA-linear,,,PASS
+387,PatientID_0148,PatientID_0148_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+388,PatientID_0148,PatientID_0148_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+389,PatientID_0148,PatientID_0148_T1_to_T2_t1c,EIA-morph,,,PASS
+390,PatientID_0148,PatientID_0148_T1_to_T2_t1c,Full PCC,,,PASS
+391,PatientID_0148,PatientID_0148_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+392,PatientID_0149,PatientID_0149_T1_to_T2_t1c,Fixed,,,PASS
+393,PatientID_0149,PatientID_0149_T1_to_T2_t1c,Naive,,,PASS
+394,PatientID_0149,PatientID_0149_T1_to_T2_t1c,EIA-linear,,,PASS
+395,PatientID_0149,PatientID_0149_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+396,PatientID_0149,PatientID_0149_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+397,PatientID_0149,PatientID_0149_T1_to_T2_t1c,EIA-morph,,,PASS
+398,PatientID_0149,PatientID_0149_T1_to_T2_t1c,Full PCC,,,PASS
+399,PatientID_0149,PatientID_0149_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+400,PatientID_0150,PatientID_0150_T1_to_T2_t1c,Fixed,,,PASS
+401,PatientID_0150,PatientID_0150_T1_to_T2_t1c,Naive,,,PASS
+402,PatientID_0150,PatientID_0150_T1_to_T2_t1c,EIA-linear,,,PASS
+403,PatientID_0150,PatientID_0150_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+404,PatientID_0150,PatientID_0150_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+405,PatientID_0150,PatientID_0150_T1_to_T2_t1c,EIA-morph,,,PASS
+406,PatientID_0150,PatientID_0150_T1_to_T2_t1c,Full PCC,,,PASS
+407,PatientID_0150,PatientID_0150_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+408,PatientID_0151,PatientID_0151_T1_to_T2_t1c,Fixed,,,PASS
+409,PatientID_0151,PatientID_0151_T1_to_T2_t1c,Naive,,,PASS
+410,PatientID_0151,PatientID_0151_T1_to_T2_t1c,EIA-linear,,,PASS
+411,PatientID_0151,PatientID_0151_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+412,PatientID_0151,PatientID_0151_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+413,PatientID_0151,PatientID_0151_T1_to_T2_t1c,EIA-morph,,,PASS
+414,PatientID_0151,PatientID_0151_T1_to_T2_t1c,Full PCC,,,PASS
+415,PatientID_0151,PatientID_0151_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+416,PatientID_0152,PatientID_0152_T1_to_T2_t1c,Fixed,,,PASS
+417,PatientID_0152,PatientID_0152_T1_to_T2_t1c,Naive,,,PASS
+418,PatientID_0152,PatientID_0152_T1_to_T2_t1c,EIA-linear,,,PASS
+419,PatientID_0152,PatientID_0152_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+420,PatientID_0152,PatientID_0152_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+421,PatientID_0152,PatientID_0152_T1_to_T2_t1c,EIA-morph,,,PASS
+422,PatientID_0152,PatientID_0152_T1_to_T2_t1c,Full PCC,,,PASS
+423,PatientID_0152,PatientID_0152_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+424,PatientID_0156,PatientID_0156_T1_to_T2_t1c,Fixed,,,PASS
+425,PatientID_0156,PatientID_0156_T1_to_T2_t1c,Naive,,,PASS
+426,PatientID_0156,PatientID_0156_T1_to_T2_t1c,EIA-linear,,,PASS
+427,PatientID_0156,PatientID_0156_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+428,PatientID_0156,PatientID_0156_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+429,PatientID_0156,PatientID_0156_T1_to_T2_t1c,EIA-morph,,,PASS
+430,PatientID_0156,PatientID_0156_T1_to_T2_t1c,Full PCC,,,PASS
+431,PatientID_0156,PatientID_0156_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+432,PatientID_0157,PatientID_0157_T1_to_T2_t1c,Fixed,,,PASS
+433,PatientID_0157,PatientID_0157_T1_to_T2_t1c,Naive,,,PASS
+434,PatientID_0157,PatientID_0157_T1_to_T2_t1c,EIA-linear,,,PASS
+435,PatientID_0157,PatientID_0157_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+436,PatientID_0157,PatientID_0157_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+437,PatientID_0157,PatientID_0157_T1_to_T2_t1c,EIA-morph,,,PASS
+438,PatientID_0157,PatientID_0157_T1_to_T2_t1c,Full PCC,,,PASS
+439,PatientID_0157,PatientID_0157_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+440,PatientID_0159,PatientID_0159_T1_to_T2_t1c,Fixed,,,PASS
+441,PatientID_0159,PatientID_0159_T1_to_T2_t1c,Naive,,,PASS
+442,PatientID_0159,PatientID_0159_T1_to_T2_t1c,EIA-linear,,,PASS
+443,PatientID_0159,PatientID_0159_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+444,PatientID_0159,PatientID_0159_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+445,PatientID_0159,PatientID_0159_T1_to_T2_t1c,EIA-morph,,,PASS
+446,PatientID_0159,PatientID_0159_T1_to_T2_t1c,Full PCC,,,PASS
+447,PatientID_0159,PatientID_0159_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+448,PatientID_0160,PatientID_0160_T1_to_T2_t1c,Fixed,,,PASS
+449,PatientID_0160,PatientID_0160_T1_to_T2_t1c,Naive,,,PASS
+450,PatientID_0160,PatientID_0160_T1_to_T2_t1c,EIA-linear,,,PASS
+451,PatientID_0160,PatientID_0160_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+452,PatientID_0160,PatientID_0160_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+453,PatientID_0160,PatientID_0160_T1_to_T2_t1c,EIA-morph,,,PASS
+454,PatientID_0160,PatientID_0160_T1_to_T2_t1c,Full PCC,,,PASS
+455,PatientID_0160,PatientID_0160_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+456,PatientID_0162,PatientID_0162_T1_to_T2_t1c,Fixed,,,PASS
+457,PatientID_0162,PatientID_0162_T1_to_T2_t1c,Naive,,,PASS
+458,PatientID_0162,PatientID_0162_T1_to_T2_t1c,EIA-linear,,,PASS
+459,PatientID_0162,PatientID_0162_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+460,PatientID_0162,PatientID_0162_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+461,PatientID_0162,PatientID_0162_T1_to_T2_t1c,EIA-morph,,,PASS
+462,PatientID_0162,PatientID_0162_T1_to_T2_t1c,Full PCC,,,PASS
+463,PatientID_0162,PatientID_0162_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+464,PatientID_0164,PatientID_0164_T1_to_T2_t1c,Fixed,,,PASS
+465,PatientID_0164,PatientID_0164_T1_to_T2_t1c,Naive,,,PASS
+466,PatientID_0164,PatientID_0164_T1_to_T2_t1c,EIA-linear,,,PASS
+467,PatientID_0164,PatientID_0164_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+468,PatientID_0164,PatientID_0164_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+469,PatientID_0164,PatientID_0164_T1_to_T2_t1c,EIA-morph,,,PASS
+470,PatientID_0164,PatientID_0164_T1_to_T2_t1c,Full PCC,,,PASS
+471,PatientID_0164,PatientID_0164_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+472,PatientID_0169,PatientID_0169_T1_to_T2_t1c,Fixed,,,PASS
+473,PatientID_0169,PatientID_0169_T1_to_T2_t1c,Naive,,,PASS
+474,PatientID_0169,PatientID_0169_T1_to_T2_t1c,EIA-linear,,,PASS
+475,PatientID_0169,PatientID_0169_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+476,PatientID_0169,PatientID_0169_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+477,PatientID_0169,PatientID_0169_T1_to_T2_t1c,EIA-morph,,,PASS
+478,PatientID_0169,PatientID_0169_T1_to_T2_t1c,Full PCC,,,PASS
+479,PatientID_0169,PatientID_0169_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+480,PatientID_0170,PatientID_0170_T1_to_T2_t1c,Fixed,,,PASS
+481,PatientID_0170,PatientID_0170_T1_to_T2_t1c,Naive,,,PASS
+482,PatientID_0170,PatientID_0170_T1_to_T2_t1c,EIA-linear,,,PASS
+483,PatientID_0170,PatientID_0170_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+484,PatientID_0170,PatientID_0170_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+485,PatientID_0170,PatientID_0170_T1_to_T2_t1c,EIA-morph,,,PASS
+486,PatientID_0170,PatientID_0170_T1_to_T2_t1c,Full PCC,,,PASS
+487,PatientID_0170,PatientID_0170_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+488,PatientID_0171,PatientID_0171_T1_to_T2_t1c,Fixed,,,PASS
+489,PatientID_0171,PatientID_0171_T1_to_T2_t1c,Naive,,,PASS
+490,PatientID_0171,PatientID_0171_T1_to_T2_t1c,EIA-linear,,,PASS
+491,PatientID_0171,PatientID_0171_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+492,PatientID_0171,PatientID_0171_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+493,PatientID_0171,PatientID_0171_T1_to_T2_t1c,EIA-morph,,,PASS
+494,PatientID_0171,PatientID_0171_T1_to_T2_t1c,Full PCC,,,PASS
+495,PatientID_0171,PatientID_0171_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+496,PatientID_0173,PatientID_0173_T1_to_T2_t1c,Fixed,,,PASS
+497,PatientID_0173,PatientID_0173_T1_to_T2_t1c,Naive,,,PASS
+498,PatientID_0173,PatientID_0173_T1_to_T2_t1c,EIA-linear,,,PASS
+499,PatientID_0173,PatientID_0173_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+500,PatientID_0173,PatientID_0173_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+501,PatientID_0173,PatientID_0173_T1_to_T2_t1c,EIA-morph,,,PASS
+502,PatientID_0173,PatientID_0173_T1_to_T2_t1c,Full PCC,,,PASS
+503,PatientID_0173,PatientID_0173_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+504,PatientID_0186,PatientID_0186_T1_to_T2_t1c,Fixed,,,PASS
+505,PatientID_0186,PatientID_0186_T1_to_T2_t1c,Naive,,,PASS
+506,PatientID_0186,PatientID_0186_T1_to_T2_t1c,EIA-linear,,,PASS
+507,PatientID_0186,PatientID_0186_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+508,PatientID_0186,PatientID_0186_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+509,PatientID_0186,PatientID_0186_T1_to_T2_t1c,EIA-morph,,,PASS
+510,PatientID_0186,PatientID_0186_T1_to_T2_t1c,Full PCC,,,PASS
+511,PatientID_0186,PatientID_0186_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+512,PatientID_0187,PatientID_0187_T1_to_T2_t1c,Fixed,,,PASS
+513,PatientID_0187,PatientID_0187_T1_to_T2_t1c,Naive,,,PASS
+514,PatientID_0187,PatientID_0187_T1_to_T2_t1c,EIA-linear,,,PASS
+515,PatientID_0187,PatientID_0187_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+516,PatientID_0187,PatientID_0187_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+517,PatientID_0187,PatientID_0187_T1_to_T2_t1c,EIA-morph,,,PASS
+518,PatientID_0187,PatientID_0187_T1_to_T2_t1c,Full PCC,,,PASS
+519,PatientID_0187,PatientID_0187_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+520,PatientID_0188,PatientID_0188_T1_to_T2_t1c,Fixed,,,PASS
+521,PatientID_0188,PatientID_0188_T1_to_T2_t1c,Naive,,,PASS
+522,PatientID_0188,PatientID_0188_T1_to_T2_t1c,EIA-linear,,,PASS
+523,PatientID_0188,PatientID_0188_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+524,PatientID_0188,PatientID_0188_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+525,PatientID_0188,PatientID_0188_T1_to_T2_t1c,EIA-morph,,,PASS
+526,PatientID_0188,PatientID_0188_T1_to_T2_t1c,Full PCC,,,PASS
+527,PatientID_0188,PatientID_0188_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+528,PatientID_0189,PatientID_0189_T1_to_T2_t1c,Fixed,,,PASS
+529,PatientID_0189,PatientID_0189_T1_to_T2_t1c,Naive,,,PASS
+530,PatientID_0189,PatientID_0189_T1_to_T2_t1c,EIA-linear,,,PASS
+531,PatientID_0189,PatientID_0189_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+532,PatientID_0189,PatientID_0189_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+533,PatientID_0189,PatientID_0189_T1_to_T2_t1c,EIA-morph,,,PASS
+534,PatientID_0189,PatientID_0189_T1_to_T2_t1c,Full PCC,,,PASS
+535,PatientID_0189,PatientID_0189_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+536,PatientID_0191,PatientID_0191_T2_to_T3_t1c,Fixed,,,PASS
+537,PatientID_0191,PatientID_0191_T2_to_T3_t1c,Naive,,,PASS
+538,PatientID_0191,PatientID_0191_T2_to_T3_t1c,EIA-linear,,,PASS
+539,PatientID_0191,PatientID_0191_T2_to_T3_t1c,EIA-blend-0.90,,,PASS
+540,PatientID_0191,PatientID_0191_T2_to_T3_t1c,EIA-blend-0.75,,,PASS
+541,PatientID_0191,PatientID_0191_T2_to_T3_t1c,EIA-morph,,,PASS
+542,PatientID_0191,PatientID_0191_T2_to_T3_t1c,Full PCC,,,PASS
+543,PatientID_0191,PatientID_0191_T2_to_T3_t1c,No-smoothing PCC,,,PASS
+544,PatientID_0192,PatientID_0192_T1_to_T2_t1c,Fixed,,,PASS
+545,PatientID_0192,PatientID_0192_T1_to_T2_t1c,Naive,,,PASS
+546,PatientID_0192,PatientID_0192_T1_to_T2_t1c,EIA-linear,,,PASS
+547,PatientID_0192,PatientID_0192_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+548,PatientID_0192,PatientID_0192_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+549,PatientID_0192,PatientID_0192_T1_to_T2_t1c,EIA-morph,,,PASS
+550,PatientID_0192,PatientID_0192_T1_to_T2_t1c,Full PCC,,,PASS
+551,PatientID_0192,PatientID_0192_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+552,PatientID_0195,PatientID_0195_T1_to_T2_t1c,Fixed,,,PASS
+553,PatientID_0195,PatientID_0195_T1_to_T2_t1c,Naive,,,PASS
+554,PatientID_0195,PatientID_0195_T1_to_T2_t1c,EIA-linear,,,PASS
+555,PatientID_0195,PatientID_0195_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+556,PatientID_0195,PatientID_0195_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+557,PatientID_0195,PatientID_0195_T1_to_T2_t1c,EIA-morph,,,PASS
+558,PatientID_0195,PatientID_0195_T1_to_T2_t1c,Full PCC,,,PASS
+559,PatientID_0195,PatientID_0195_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+560,PatientID_0196,PatientID_0196_T1_to_T2_t1c,Fixed,,,PASS
+561,PatientID_0196,PatientID_0196_T1_to_T2_t1c,Naive,,,PASS
+562,PatientID_0196,PatientID_0196_T1_to_T2_t1c,EIA-linear,,,PASS
+563,PatientID_0196,PatientID_0196_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+564,PatientID_0196,PatientID_0196_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+565,PatientID_0196,PatientID_0196_T1_to_T2_t1c,EIA-morph,,,PASS
+566,PatientID_0196,PatientID_0196_T1_to_T2_t1c,Full PCC,,,PASS
+567,PatientID_0196,PatientID_0196_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+568,PatientID_0197,PatientID_0197_T1_to_T2_t1c,Fixed,,,PASS
+569,PatientID_0197,PatientID_0197_T1_to_T2_t1c,Naive,,,PASS
+570,PatientID_0197,PatientID_0197_T1_to_T2_t1c,EIA-linear,,,PASS
+571,PatientID_0197,PatientID_0197_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+572,PatientID_0197,PatientID_0197_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+573,PatientID_0197,PatientID_0197_T1_to_T2_t1c,EIA-morph,,,PASS
+574,PatientID_0197,PatientID_0197_T1_to_T2_t1c,Full PCC,,,PASS
+575,PatientID_0197,PatientID_0197_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+576,PatientID_0198,PatientID_0198_T1_to_T2_t1c,Fixed,,,PASS
+577,PatientID_0198,PatientID_0198_T1_to_T2_t1c,Naive,,,PASS
+578,PatientID_0198,PatientID_0198_T1_to_T2_t1c,EIA-linear,,,PASS
+579,PatientID_0198,PatientID_0198_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+580,PatientID_0198,PatientID_0198_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+581,PatientID_0198,PatientID_0198_T1_to_T2_t1c,EIA-morph,,,PASS
+582,PatientID_0198,PatientID_0198_T1_to_T2_t1c,Full PCC,,,PASS
+583,PatientID_0198,PatientID_0198_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+584,PatientID_0199,PatientID_0199_T1_to_T2_t1c,Fixed,,,PASS
+585,PatientID_0199,PatientID_0199_T1_to_T2_t1c,Naive,,,PASS
+586,PatientID_0199,PatientID_0199_T1_to_T2_t1c,EIA-linear,,,PASS
+587,PatientID_0199,PatientID_0199_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+588,PatientID_0199,PatientID_0199_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+589,PatientID_0199,PatientID_0199_T1_to_T2_t1c,EIA-morph,,,PASS
+590,PatientID_0199,PatientID_0199_T1_to_T2_t1c,Full PCC,,,PASS
+591,PatientID_0199,PatientID_0199_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+592,PatientID_0201,PatientID_0201_T1_to_T2_t1c,Fixed,,,PASS
+593,PatientID_0201,PatientID_0201_T1_to_T2_t1c,Naive,,,PASS
+594,PatientID_0201,PatientID_0201_T1_to_T2_t1c,EIA-linear,,,PASS
+595,PatientID_0201,PatientID_0201_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+596,PatientID_0201,PatientID_0201_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+597,PatientID_0201,PatientID_0201_T1_to_T2_t1c,EIA-morph,,,PASS
+598,PatientID_0201,PatientID_0201_T1_to_T2_t1c,Full PCC,,,PASS
+599,PatientID_0201,PatientID_0201_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+600,PatientID_0202,PatientID_0202_T1_to_T2_t1c,Fixed,,,PASS
+601,PatientID_0202,PatientID_0202_T1_to_T2_t1c,Naive,,,PASS
+602,PatientID_0202,PatientID_0202_T1_to_T2_t1c,EIA-linear,,,PASS
+603,PatientID_0202,PatientID_0202_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+604,PatientID_0202,PatientID_0202_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+605,PatientID_0202,PatientID_0202_T1_to_T2_t1c,EIA-morph,,,PASS
+606,PatientID_0202,PatientID_0202_T1_to_T2_t1c,Full PCC,,,PASS
+607,PatientID_0202,PatientID_0202_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+608,PatientID_0204,PatientID_0204_T1_to_T2_t1c,Fixed,,,PASS
+609,PatientID_0204,PatientID_0204_T1_to_T2_t1c,Naive,,,PASS
+610,PatientID_0204,PatientID_0204_T1_to_T2_t1c,EIA-linear,,,PASS
+611,PatientID_0204,PatientID_0204_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+612,PatientID_0204,PatientID_0204_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+613,PatientID_0204,PatientID_0204_T1_to_T2_t1c,EIA-morph,,,PASS
+614,PatientID_0204,PatientID_0204_T1_to_T2_t1c,Full PCC,,,PASS
+615,PatientID_0204,PatientID_0204_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+616,PatientID_0205,PatientID_0205_T1_to_T2_t1c,Fixed,,,PASS
+617,PatientID_0205,PatientID_0205_T1_to_T2_t1c,Naive,,,PASS
+618,PatientID_0205,PatientID_0205_T1_to_T2_t1c,EIA-linear,,,PASS
+619,PatientID_0205,PatientID_0205_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+620,PatientID_0205,PatientID_0205_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+621,PatientID_0205,PatientID_0205_T1_to_T2_t1c,EIA-morph,,,PASS
+622,PatientID_0205,PatientID_0205_T1_to_T2_t1c,Full PCC,,,PASS
+623,PatientID_0205,PatientID_0205_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+624,PatientID_0207,PatientID_0207_T1_to_T2_t1c,Fixed,,,PASS
+625,PatientID_0207,PatientID_0207_T1_to_T2_t1c,Naive,,,PASS
+626,PatientID_0207,PatientID_0207_T1_to_T2_t1c,EIA-linear,,,PASS
+627,PatientID_0207,PatientID_0207_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+628,PatientID_0207,PatientID_0207_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+629,PatientID_0207,PatientID_0207_T1_to_T2_t1c,EIA-morph,,,PASS
+630,PatientID_0207,PatientID_0207_T1_to_T2_t1c,Full PCC,,,PASS
+631,PatientID_0207,PatientID_0207_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+632,PatientID_0208,PatientID_0208_T1_to_T2_t1c,Fixed,,,PASS
+633,PatientID_0208,PatientID_0208_T1_to_T2_t1c,Naive,,,PASS
+634,PatientID_0208,PatientID_0208_T1_to_T2_t1c,EIA-linear,,,PASS
+635,PatientID_0208,PatientID_0208_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+636,PatientID_0208,PatientID_0208_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+637,PatientID_0208,PatientID_0208_T1_to_T2_t1c,EIA-morph,,,PASS
+638,PatientID_0208,PatientID_0208_T1_to_T2_t1c,Full PCC,,,PASS
+639,PatientID_0208,PatientID_0208_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+640,PatientID_0209,PatientID_0209_T1_to_T2_t1c,Fixed,,,PASS
+641,PatientID_0209,PatientID_0209_T1_to_T2_t1c,Naive,,,PASS
+642,PatientID_0209,PatientID_0209_T1_to_T2_t1c,EIA-linear,,,PASS
+643,PatientID_0209,PatientID_0209_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+644,PatientID_0209,PatientID_0209_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+645,PatientID_0209,PatientID_0209_T1_to_T2_t1c,EIA-morph,,,PASS
+646,PatientID_0209,PatientID_0209_T1_to_T2_t1c,Full PCC,,,PASS
+647,PatientID_0209,PatientID_0209_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+648,PatientID_0210,PatientID_0210_T1_to_T2_t1c,Fixed,,,PASS
+649,PatientID_0210,PatientID_0210_T1_to_T2_t1c,Naive,,,PASS
+650,PatientID_0210,PatientID_0210_T1_to_T2_t1c,EIA-linear,,,PASS
+651,PatientID_0210,PatientID_0210_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+652,PatientID_0210,PatientID_0210_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+653,PatientID_0210,PatientID_0210_T1_to_T2_t1c,EIA-morph,,,PASS
+654,PatientID_0210,PatientID_0210_T1_to_T2_t1c,Full PCC,,,PASS
+655,PatientID_0210,PatientID_0210_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+656,PatientID_0211,PatientID_0211_T1_to_T2_t1c,Fixed,,,PASS
+657,PatientID_0211,PatientID_0211_T1_to_T2_t1c,Naive,,,PASS
+658,PatientID_0211,PatientID_0211_T1_to_T2_t1c,EIA-linear,,,PASS
+659,PatientID_0211,PatientID_0211_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+660,PatientID_0211,PatientID_0211_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+661,PatientID_0211,PatientID_0211_T1_to_T2_t1c,EIA-morph,,,PASS
+662,PatientID_0211,PatientID_0211_T1_to_T2_t1c,Full PCC,,,PASS
+663,PatientID_0211,PatientID_0211_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+664,PatientID_0212,PatientID_0212_T1_to_T2_t1c,Fixed,,,PASS
+665,PatientID_0212,PatientID_0212_T1_to_T2_t1c,Naive,,,PASS
+666,PatientID_0212,PatientID_0212_T1_to_T2_t1c,EIA-linear,,,PASS
+667,PatientID_0212,PatientID_0212_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+668,PatientID_0212,PatientID_0212_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+669,PatientID_0212,PatientID_0212_T1_to_T2_t1c,EIA-morph,,,PASS
+670,PatientID_0212,PatientID_0212_T1_to_T2_t1c,Full PCC,,,PASS
+671,PatientID_0212,PatientID_0212_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+672,PatientID_0213,PatientID_0213_T1_to_T2_t1c,Fixed,,,PASS
+673,PatientID_0213,PatientID_0213_T1_to_T2_t1c,Naive,,,PASS
+674,PatientID_0213,PatientID_0213_T1_to_T2_t1c,EIA-linear,,,PASS
+675,PatientID_0213,PatientID_0213_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+676,PatientID_0213,PatientID_0213_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+677,PatientID_0213,PatientID_0213_T1_to_T2_t1c,EIA-morph,,,PASS
+678,PatientID_0213,PatientID_0213_T1_to_T2_t1c,Full PCC,,,PASS
+679,PatientID_0213,PatientID_0213_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+680,PatientID_0214,PatientID_0214_T1_to_T2_t1c,Fixed,,,PASS
+681,PatientID_0214,PatientID_0214_T1_to_T2_t1c,Naive,,,PASS
+682,PatientID_0214,PatientID_0214_T1_to_T2_t1c,EIA-linear,,,PASS
+683,PatientID_0214,PatientID_0214_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+684,PatientID_0214,PatientID_0214_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+685,PatientID_0214,PatientID_0214_T1_to_T2_t1c,EIA-morph,,,PASS
+686,PatientID_0214,PatientID_0214_T1_to_T2_t1c,Full PCC,,,PASS
+687,PatientID_0214,PatientID_0214_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+688,PatientID_0215,PatientID_0215_T1_to_T2_t1c,Fixed,,,PASS
+689,PatientID_0215,PatientID_0215_T1_to_T2_t1c,Naive,,,PASS
+690,PatientID_0215,PatientID_0215_T1_to_T2_t1c,EIA-linear,,,PASS
+691,PatientID_0215,PatientID_0215_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+692,PatientID_0215,PatientID_0215_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+693,PatientID_0215,PatientID_0215_T1_to_T2_t1c,EIA-morph,,,PASS
+694,PatientID_0215,PatientID_0215_T1_to_T2_t1c,Full PCC,,,PASS
+695,PatientID_0215,PatientID_0215_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+696,PatientID_0220,PatientID_0220_T1_to_T6_t1c,Fixed,,,PASS
+697,PatientID_0220,PatientID_0220_T1_to_T6_t1c,Naive,,,PASS
+698,PatientID_0220,PatientID_0220_T1_to_T6_t1c,EIA-linear,,,PASS
+699,PatientID_0220,PatientID_0220_T1_to_T6_t1c,EIA-blend-0.90,,,PASS
+700,PatientID_0220,PatientID_0220_T1_to_T6_t1c,EIA-blend-0.75,,,PASS
+701,PatientID_0220,PatientID_0220_T1_to_T6_t1c,EIA-morph,,,PASS
+702,PatientID_0220,PatientID_0220_T1_to_T6_t1c,Full PCC,,,PASS
+703,PatientID_0220,PatientID_0220_T1_to_T6_t1c,No-smoothing PCC,,,PASS
+704,PatientID_0235,PatientID_0235_T1_to_T3_t1c,Fixed,,,PASS
+705,PatientID_0235,PatientID_0235_T1_to_T3_t1c,Naive,,,PASS
+706,PatientID_0235,PatientID_0235_T1_to_T3_t1c,EIA-linear,,,PASS
+707,PatientID_0235,PatientID_0235_T1_to_T3_t1c,EIA-blend-0.90,,,PASS
+708,PatientID_0235,PatientID_0235_T1_to_T3_t1c,EIA-blend-0.75,,,PASS
+709,PatientID_0235,PatientID_0235_T1_to_T3_t1c,EIA-morph,,,PASS
+710,PatientID_0235,PatientID_0235_T1_to_T3_t1c,Full PCC,,,PASS
+711,PatientID_0235,PatientID_0235_T1_to_T3_t1c,No-smoothing PCC,,,PASS
+712,PatientID_0236,PatientID_0236_T1_to_T3_t1c,Fixed,,,PASS
+713,PatientID_0236,PatientID_0236_T1_to_T3_t1c,Naive,,,PASS
+714,PatientID_0236,PatientID_0236_T1_to_T3_t1c,EIA-linear,,,PASS
+715,PatientID_0236,PatientID_0236_T1_to_T3_t1c,EIA-blend-0.90,,,PASS
+716,PatientID_0236,PatientID_0236_T1_to_T3_t1c,EIA-blend-0.75,,,PASS
+717,PatientID_0236,PatientID_0236_T1_to_T3_t1c,EIA-morph,,,PASS
+718,PatientID_0236,PatientID_0236_T1_to_T3_t1c,Full PCC,,,PASS
+719,PatientID_0236,PatientID_0236_T1_to_T3_t1c,No-smoothing PCC,,,PASS
+720,PatientID_0237,PatientID_0237_T1_to_T3_t1c,Fixed,,,PASS
+721,PatientID_0237,PatientID_0237_T1_to_T3_t1c,Naive,,,PASS
+722,PatientID_0237,PatientID_0237_T1_to_T3_t1c,EIA-linear,,,PASS
+723,PatientID_0237,PatientID_0237_T1_to_T3_t1c,EIA-blend-0.90,,,PASS
+724,PatientID_0237,PatientID_0237_T1_to_T3_t1c,EIA-blend-0.75,,,PASS
+725,PatientID_0237,PatientID_0237_T1_to_T3_t1c,EIA-morph,,,PASS
+726,PatientID_0237,PatientID_0237_T1_to_T3_t1c,Full PCC,,,PASS
+727,PatientID_0237,PatientID_0237_T1_to_T3_t1c,No-smoothing PCC,,,PASS
+728,PatientID_0238,PatientID_0238_T1_to_T3_t1c,Fixed,,,PASS
+729,PatientID_0238,PatientID_0238_T1_to_T3_t1c,Naive,,,PASS
+730,PatientID_0238,PatientID_0238_T1_to_T3_t1c,EIA-linear,,,PASS
+731,PatientID_0238,PatientID_0238_T1_to_T3_t1c,EIA-blend-0.90,,,PASS
+732,PatientID_0238,PatientID_0238_T1_to_T3_t1c,EIA-blend-0.75,,,PASS
+733,PatientID_0238,PatientID_0238_T1_to_T3_t1c,EIA-morph,,,PASS
+734,PatientID_0238,PatientID_0238_T1_to_T3_t1c,Full PCC,,,PASS
+735,PatientID_0238,PatientID_0238_T1_to_T3_t1c,No-smoothing PCC,,,PASS
+736,PatientID_0239,PatientID_0239_T1_to_T3_t1c,Fixed,,,PASS
+737,PatientID_0239,PatientID_0239_T1_to_T3_t1c,Naive,,,PASS
+738,PatientID_0239,PatientID_0239_T1_to_T3_t1c,EIA-linear,,,PASS
+739,PatientID_0239,PatientID_0239_T1_to_T3_t1c,EIA-blend-0.90,,,PASS
+740,PatientID_0239,PatientID_0239_T1_to_T3_t1c,EIA-blend-0.75,,,PASS
+741,PatientID_0239,PatientID_0239_T1_to_T3_t1c,EIA-morph,,,PASS
+742,PatientID_0239,PatientID_0239_T1_to_T3_t1c,Full PCC,,,PASS
+743,PatientID_0239,PatientID_0239_T1_to_T3_t1c,No-smoothing PCC,,,PASS
+744,PatientID_0240,PatientID_0240_T1_to_T3_t1c,Fixed,,,PASS
+745,PatientID_0240,PatientID_0240_T1_to_T3_t1c,Naive,,,PASS
+746,PatientID_0240,PatientID_0240_T1_to_T3_t1c,EIA-linear,,,PASS
+747,PatientID_0240,PatientID_0240_T1_to_T3_t1c,EIA-blend-0.90,,,PASS
+748,PatientID_0240,PatientID_0240_T1_to_T3_t1c,EIA-blend-0.75,,,PASS
+749,PatientID_0240,PatientID_0240_T1_to_T3_t1c,EIA-morph,,,PASS
+750,PatientID_0240,PatientID_0240_T1_to_T3_t1c,Full PCC,,,PASS
+751,PatientID_0240,PatientID_0240_T1_to_T3_t1c,No-smoothing PCC,,,PASS
+752,PatientID_0242,PatientID_0242_T1_to_T3_t1c,Fixed,,,PASS
+753,PatientID_0242,PatientID_0242_T1_to_T3_t1c,Naive,,,PASS
+754,PatientID_0242,PatientID_0242_T1_to_T3_t1c,EIA-linear,,,PASS
+755,PatientID_0242,PatientID_0242_T1_to_T3_t1c,EIA-blend-0.90,,,PASS
+756,PatientID_0242,PatientID_0242_T1_to_T3_t1c,EIA-blend-0.75,,,PASS
+757,PatientID_0242,PatientID_0242_T1_to_T3_t1c,EIA-morph,,,PASS
+758,PatientID_0242,PatientID_0242_T1_to_T3_t1c,Full PCC,,,PASS
+759,PatientID_0242,PatientID_0242_T1_to_T3_t1c,No-smoothing PCC,,,PASS
+760,PatientID_0249,PatientID_0249_T1_to_T3_t1c,Fixed,,,PASS
+761,PatientID_0249,PatientID_0249_T1_to_T3_t1c,Naive,,,PASS
+762,PatientID_0249,PatientID_0249_T1_to_T3_t1c,EIA-linear,,,PASS
+763,PatientID_0249,PatientID_0249_T1_to_T3_t1c,EIA-blend-0.90,,,PASS
+764,PatientID_0249,PatientID_0249_T1_to_T3_t1c,EIA-blend-0.75,,,PASS
+765,PatientID_0249,PatientID_0249_T1_to_T3_t1c,EIA-morph,,,PASS
+766,PatientID_0249,PatientID_0249_T1_to_T3_t1c,Full PCC,,,PASS
+767,PatientID_0249,PatientID_0249_T1_to_T3_t1c,No-smoothing PCC,,,PASS
+768,PatientID_0250,PatientID_0250_T1_to_T2_t1c,Fixed,,,PASS
+769,PatientID_0250,PatientID_0250_T1_to_T2_t1c,Naive,,,PASS
+770,PatientID_0250,PatientID_0250_T1_to_T2_t1c,EIA-linear,,,PASS
+771,PatientID_0250,PatientID_0250_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+772,PatientID_0250,PatientID_0250_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+773,PatientID_0250,PatientID_0250_T1_to_T2_t1c,EIA-morph,,,PASS
+774,PatientID_0250,PatientID_0250_T1_to_T2_t1c,Full PCC,,,PASS
+775,PatientID_0250,PatientID_0250_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+776,PatientID_0251,PatientID_0251_T1_to_T2_t1c,Fixed,,,PASS
+777,PatientID_0251,PatientID_0251_T1_to_T2_t1c,Naive,,,PASS
+778,PatientID_0251,PatientID_0251_T1_to_T2_t1c,EIA-linear,,,PASS
+779,PatientID_0251,PatientID_0251_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+780,PatientID_0251,PatientID_0251_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+781,PatientID_0251,PatientID_0251_T1_to_T2_t1c,EIA-morph,,,PASS
+782,PatientID_0251,PatientID_0251_T1_to_T2_t1c,Full PCC,,,PASS
+783,PatientID_0251,PatientID_0251_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+784,PatientID_0252,PatientID_0252_T1_to_T2_t1c,Fixed,,,PASS
+785,PatientID_0252,PatientID_0252_T1_to_T2_t1c,Naive,,,PASS
+786,PatientID_0252,PatientID_0252_T1_to_T2_t1c,EIA-linear,,,PASS
+787,PatientID_0252,PatientID_0252_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+788,PatientID_0252,PatientID_0252_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+789,PatientID_0252,PatientID_0252_T1_to_T2_t1c,EIA-morph,,,PASS
+790,PatientID_0252,PatientID_0252_T1_to_T2_t1c,Full PCC,,,PASS
+791,PatientID_0252,PatientID_0252_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+792,PatientID_0254,PatientID_0254_T1_to_T2_t1c,Fixed,,,PASS
+793,PatientID_0254,PatientID_0254_T1_to_T2_t1c,Naive,,,PASS
+794,PatientID_0254,PatientID_0254_T1_to_T2_t1c,EIA-linear,,,PASS
+795,PatientID_0254,PatientID_0254_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+796,PatientID_0254,PatientID_0254_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+797,PatientID_0254,PatientID_0254_T1_to_T2_t1c,EIA-morph,,,PASS
+798,PatientID_0254,PatientID_0254_T1_to_T2_t1c,Full PCC,,,PASS
+799,PatientID_0254,PatientID_0254_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+800,PatientID_0255,PatientID_0255_T1_to_T2_t1c,Fixed,,,PASS
+801,PatientID_0255,PatientID_0255_T1_to_T2_t1c,Naive,,,PASS
+802,PatientID_0255,PatientID_0255_T1_to_T2_t1c,EIA-linear,,,PASS
+803,PatientID_0255,PatientID_0255_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+804,PatientID_0255,PatientID_0255_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+805,PatientID_0255,PatientID_0255_T1_to_T2_t1c,EIA-morph,,,PASS
+806,PatientID_0255,PatientID_0255_T1_to_T2_t1c,Full PCC,,,PASS
+807,PatientID_0255,PatientID_0255_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+808,PatientID_0256,PatientID_0256_T1_to_T2_t1c,Fixed,,,PASS
+809,PatientID_0256,PatientID_0256_T1_to_T2_t1c,Naive,,,PASS
+810,PatientID_0256,PatientID_0256_T1_to_T2_t1c,EIA-linear,,,PASS
+811,PatientID_0256,PatientID_0256_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+812,PatientID_0256,PatientID_0256_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+813,PatientID_0256,PatientID_0256_T1_to_T2_t1c,EIA-morph,,,PASS
+814,PatientID_0256,PatientID_0256_T1_to_T2_t1c,Full PCC,,,PASS
+815,PatientID_0256,PatientID_0256_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+816,PatientID_0259,PatientID_0259_T1_to_T2_t1c,Fixed,,,PASS
+817,PatientID_0259,PatientID_0259_T1_to_T2_t1c,Naive,,,PASS
+818,PatientID_0259,PatientID_0259_T1_to_T2_t1c,EIA-linear,,,PASS
+819,PatientID_0259,PatientID_0259_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+820,PatientID_0259,PatientID_0259_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+821,PatientID_0259,PatientID_0259_T1_to_T2_t1c,EIA-morph,,,PASS
+822,PatientID_0259,PatientID_0259_T1_to_T2_t1c,Full PCC,,,PASS
+823,PatientID_0259,PatientID_0259_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+824,PatientID_0260,PatientID_0260_T1_to_T2_t1c,Fixed,,,PASS
+825,PatientID_0260,PatientID_0260_T1_to_T2_t1c,Naive,,,PASS
+826,PatientID_0260,PatientID_0260_T1_to_T2_t1c,EIA-linear,,,PASS
+827,PatientID_0260,PatientID_0260_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+828,PatientID_0260,PatientID_0260_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+829,PatientID_0260,PatientID_0260_T1_to_T2_t1c,EIA-morph,,,PASS
+830,PatientID_0260,PatientID_0260_T1_to_T2_t1c,Full PCC,,,PASS
+831,PatientID_0260,PatientID_0260_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+832,PatientID_0264,PatientID_0264_T1_to_T2_t1c,Fixed,,,PASS
+833,PatientID_0264,PatientID_0264_T1_to_T2_t1c,Naive,,,PASS
+834,PatientID_0264,PatientID_0264_T1_to_T2_t1c,EIA-linear,,,PASS
+835,PatientID_0264,PatientID_0264_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+836,PatientID_0264,PatientID_0264_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+837,PatientID_0264,PatientID_0264_T1_to_T2_t1c,EIA-morph,,,PASS
+838,PatientID_0264,PatientID_0264_T1_to_T2_t1c,Full PCC,,,PASS
+839,PatientID_0264,PatientID_0264_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+840,PatientID_0265,PatientID_0265_T1_to_T2_t1c,Fixed,,,PASS
+841,PatientID_0265,PatientID_0265_T1_to_T2_t1c,Naive,,,PASS
+842,PatientID_0265,PatientID_0265_T1_to_T2_t1c,EIA-linear,,,PASS
+843,PatientID_0265,PatientID_0265_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+844,PatientID_0265,PatientID_0265_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+845,PatientID_0265,PatientID_0265_T1_to_T2_t1c,EIA-morph,,,PASS
+846,PatientID_0265,PatientID_0265_T1_to_T2_t1c,Full PCC,,,PASS
+847,PatientID_0265,PatientID_0265_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+848,PatientID_0267,PatientID_0267_T1_to_T2_t1c,Fixed,,,PASS
+849,PatientID_0267,PatientID_0267_T1_to_T2_t1c,Naive,,,PASS
+850,PatientID_0267,PatientID_0267_T1_to_T2_t1c,EIA-linear,,,PASS
+851,PatientID_0267,PatientID_0267_T1_to_T2_t1c,EIA-blend-0.90,,,PASS
+852,PatientID_0267,PatientID_0267_T1_to_T2_t1c,EIA-blend-0.75,,,PASS
+853,PatientID_0267,PatientID_0267_T1_to_T2_t1c,EIA-morph,,,PASS
+854,PatientID_0267,PatientID_0267_T1_to_T2_t1c,Full PCC,,,PASS
+855,PatientID_0267,PatientID_0267_T1_to_T2_t1c,No-smoothing PCC,,,PASS
+856,PatientID_0268,PatientID_0268_T1_to_T3_t1c,Fixed,,,PASS
+857,PatientID_0268,PatientID_0268_T1_to_T3_t1c,Naive,,,PASS
+858,PatientID_0268,PatientID_0268_T1_to_T3_t1c,EIA-linear,,,PASS
+859,PatientID_0268,PatientID_0268_T1_to_T3_t1c,EIA-blend-0.90,,,PASS
+860,PatientID_0268,PatientID_0268_T1_to_T3_t1c,EIA-blend-0.75,,,PASS
+861,PatientID_0268,PatientID_0268_T1_to_T3_t1c,EIA-morph,,,PASS
+862,PatientID_0268,PatientID_0268_T1_to_T3_t1c,Full PCC,,,PASS
+863,PatientID_0268,PatientID_0268_T1_to_T3_t1c,No-smoothing PCC,,,PASS
+864,PatientID_0270,PatientID_0270_T1_to_T3_t1c,Fixed,,,PASS
+865,PatientID_0270,PatientID_0270_T1_to_T3_t1c,Naive,,,PASS
+866,PatientID_0270,PatientID_0270_T1_to_T3_t1c,EIA-linear,,,PASS
+867,PatientID_0270,PatientID_0270_T1_to_T3_t1c,EIA-blend-0.90,,,PASS
+868,PatientID_0270,PatientID_0270_T1_to_T3_t1c,EIA-blend-0.75,,,PASS
+869,PatientID_0270,PatientID_0270_T1_to_T3_t1c,EIA-morph,,,PASS
+870,PatientID_0270,PatientID_0270_T1_to_T3_t1c,Full PCC,,,PASS
+871,PatientID_0270,PatientID_0270_T1_to_T3_t1c,No-smoothing PCC,,,PASS
+872,PatientID_0271,PatientID_0271_T1_to_T3_t1c,Fixed,,,PASS
+873,PatientID_0271,PatientID_0271_T1_to_T3_t1c,Naive,,,PASS
+874,PatientID_0271,PatientID_0271_T1_to_T3_t1c,EIA-linear,,,PASS
+875,PatientID_0271,PatientID_0271_T1_to_T3_t1c,EIA-blend-0.90,,,PASS
+876,PatientID_0271,PatientID_0271_T1_to_T3_t1c,EIA-blend-0.75,,,PASS
+877,PatientID_0271,PatientID_0271_T1_to_T3_t1c,EIA-morph,,,PASS
+878,PatientID_0271,PatientID_0271_T1_to_T3_t1c,Full PCC,,,PASS
+879,PatientID_0271,PatientID_0271_T1_to_T3_t1c,No-smoothing PCC,,,PASS
+880,PatientID_0272,PatientID_0272_T1_to_T3_t1c,Fixed,,,PASS
+881,PatientID_0272,PatientID_0272_T1_to_T3_t1c,Naive,,,PASS
+882,PatientID_0272,PatientID_0272_T1_to_T3_t1c,EIA-linear,,,PASS
+883,PatientID_0272,PatientID_0272_T1_to_T3_t1c,EIA-blend-0.90,,,PASS
+884,PatientID_0272,PatientID_0272_T1_to_T3_t1c,EIA-blend-0.75,,,PASS
+885,PatientID_0272,PatientID_0272_T1_to_T3_t1c,EIA-morph,,,PASS
+886,PatientID_0272,PatientID_0272_T1_to_T3_t1c,Full PCC,,,PASS
+887,PatientID_0272,PatientID_0272_T1_to_T3_t1c,No-smoothing PCC,,,PASS
+888,PatientID_0274,PatientID_0274_T1_to_T3_t1c,Fixed,,,PASS
+889,PatientID_0274,PatientID_0274_T1_to_T3_t1c,Naive,,,PASS
+890,PatientID_0274,PatientID_0274_T1_to_T3_t1c,EIA-linear,,,PASS
+891,PatientID_0274,PatientID_0274_T1_to_T3_t1c,EIA-blend-0.90,,,PASS
+892,PatientID_0274,PatientID_0274_T1_to_T3_t1c,EIA-blend-0.75,,,PASS
+893,PatientID_0274,PatientID_0274_T1_to_T3_t1c,EIA-morph,,,PASS
+894,PatientID_0274,PatientID_0274_T1_to_T3_t1c,Full PCC,,,PASS
+895,PatientID_0274,PatientID_0274_T1_to_T3_t1c,No-smoothing PCC,,,PASS
+896,PatientID_0275,PatientID_0275_T1_to_T3_t1c,Fixed,,,PASS
+897,PatientID_0275,PatientID_0275_T1_to_T3_t1c,Naive,,,PASS
+898,PatientID_0275,PatientID_0275_T1_to_T3_t1c,EIA-linear,,,PASS
+899,PatientID_0275,PatientID_0275_T1_to_T3_t1c,EIA-blend-0.90,,,PASS
+900,PatientID_0275,PatientID_0275_T1_to_T3_t1c,EIA-blend-0.75,,,PASS
+901,PatientID_0275,PatientID_0275_T1_to_T3_t1c,EIA-morph,,,PASS
+902,PatientID_0275,PatientID_0275_T1_to_T3_t1c,Full PCC,,,PASS
+903,PatientID_0275,PatientID_0275_T1_to_T3_t1c,No-smoothing PCC,,,PASS
