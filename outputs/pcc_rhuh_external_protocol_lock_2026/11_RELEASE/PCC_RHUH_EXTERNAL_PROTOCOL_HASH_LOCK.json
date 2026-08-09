@@ -91,7 +91,12 @@
       "path": "11_RELEASE/PCC_RHUH_EXTERNAL_PROTOCOL_STATUS.json",
       "sha256": "7cc993dd29f07ca302a4a25900a4ad12941b262a494afada51861420a2dbd391",
       "size_bytes": 732
+    },
+    {
+      "path": "11_RELEASE/RHUH_EXTERNAL_PRE_OUTCOME_PROTOCOL_COMMIT.txt",
+      "sha256": "94a5c6f147f70966a1d2786fbf7340931b5224b5785b3633f1f5719c3c9c6e38",
+      "size_bytes": 83
     }
   ],
-  "protocol_commit": "PENDING_SELF_REFERENTIAL_GIT_COMMIT"
+  "protocol_commit": "6c8bf164f8e445123143db08c34f0f66a1e21226"
 }
