@@ -1,0 +1,14 @@
+[{"stream_name":"stderr","time":1.411137684,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":1.411200743,"data":"  File \"/kaggle/src/script.py\", line 137, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":1.411292014,"data":"    raise SystemExit(main())\n"}
+,{"stream_name":"stderr","time":1.4113855530000001,"data":"                     ^^^^^^\n"}
+,{"stream_name":"stderr","time":1.411393323,"data":"  File \"/kaggle/src/script.py\", line 44, in main\n"}
+,{"stream_name":"stderr","time":1.411531073,"data":"    raise RuntimeError(f\"expected one input bundle, found {bundle_paths}\")\n"}
+,{"stream_name":"stderr","time":1.411538264,"data":"RuntimeError: expected one input bundle, found []\n"}
+,{"stream_name":"stderr","time":3.691658914,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3.691690674,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4.038397481,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4.038422091,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":5.591198335,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":6.850113458,"data":"[NbConvertApp] Writing 300690 bytes to __results__.html\n"}
+]

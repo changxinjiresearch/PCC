@@ -1,0 +1,10 @@
+primary_endpoint: patient_level_Dice_at_fixed_threshold_0.5
+fixed_threshold: 0.5
+fixed_prediction_rule: probability >= 0.5
+confirmatory_comparisons: [Full_PCC_vs_Fixed, No_smoothing_PCC_vs_Full_PCC]
+secondary_family: [IoU_0.5, precision_0.5, recall_0.5, soft_Dice, Brier, average_precision, predicted_positive_volume, target_to_predicted_volume_ratio, all_nonconfirmatory_method_comparisons]
+oracle_assisted_retrospective_localization_metrics: [target_volume_matched_top_k_Dice, target_volume_matched_top_k_IoU]
+top_k_ties: locked NumPy argpartition behavior; exact selected set is deterministic within the frozen runtime but tied-voxel identity has no semantic ordering
+empty_target_in_locked_cohort: protocol_failure
+non_finite_probability: metric_failure
+unit: patient

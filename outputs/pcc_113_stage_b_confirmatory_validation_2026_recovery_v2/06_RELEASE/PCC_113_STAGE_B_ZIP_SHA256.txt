@@ -1,0 +1,1 @@
+The authoritative ZIP SHA-256 is recorded in the external .zip.sha256 sidecar.

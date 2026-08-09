@@ -1,0 +1,47 @@
+{
+  "comparisons": [
+    {
+      "comparison": "Full PCC vs Fixed",
+      "endpoint": "Dice_0.5",
+      "holm_family": "exactly_two",
+      "holm_adjusted_p": 5.606417277984712e-20,
+      "n": 113,
+      "mean_difference": 0.20471099292311104,
+      "median_difference": 0.21172012491758974,
+      "wilcoxon_p_two_sided": 2.803208638992356e-20,
+      "wilcoxon_status": "AVAILABLE",
+      "rank_biserial": 1.0,
+      "cohens_dz": 2.7464126013186316,
+      "cohens_dz_status": "AVAILABLE",
+      "bootstrap_low": 0.19096274516534176,
+      "bootstrap_high": 0.21809736940125662,
+      "wins": 113,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "comparison": "No-smoothing PCC vs Full PCC",
+      "endpoint": "Dice_0.5",
+      "holm_family": "exactly_two",
+      "holm_adjusted_p": 5.606417277984712e-20,
+      "n": 113,
+      "mean_difference": 0.19280821894225278,
+      "median_difference": 0.1888692372008789,
+      "wilcoxon_p_two_sided": 2.803208638992356e-20,
+      "wilcoxon_status": "AVAILABLE",
+      "rank_biserial": 1.0,
+      "cohens_dz": 1.7969451138450405,
+      "cohens_dz_status": "AVAILABLE",
+      "bootstrap_low": 0.17365072852238414,
+      "bootstrap_high": 0.2130463259870739,
+      "wins": 113,
+      "ties": 0,
+      "losses": 0
+    }
+  ],
+  "denominator": 113,
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260803,
+  "wilcoxon": "two-sided; zero_method=wilcox",
+  "holm_family": "exactly two"
+}

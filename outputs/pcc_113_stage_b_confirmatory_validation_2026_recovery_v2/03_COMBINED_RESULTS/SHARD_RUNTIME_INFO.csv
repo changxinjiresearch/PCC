@@ -1,0 +1,5 @@
+shard,attempt,accelerator,pid,elapsed_seconds,methods,p0_regenerated,model_training,predictor_forward,future_t1c_read
+0,1,CPU,7,1254.0945756435394,"['Fixed', 'Naive', 'EIA-linear', 'EIA-blend-0.90', 'EIA-blend-0.75', 'EIA-morph', 'Full PCC', 'No-smoothing PCC']",False,False,False,False
+1,1,CPU,7,1877.83407664299,"['Fixed', 'Naive', 'EIA-linear', 'EIA-blend-0.90', 'EIA-blend-0.75', 'EIA-morph', 'Full PCC', 'No-smoothing PCC']",False,False,False,False
+2,1,CPU,7,1837.7997515201569,"['Fixed', 'Naive', 'EIA-linear', 'EIA-blend-0.90', 'EIA-blend-0.75', 'EIA-morph', 'Full PCC', 'No-smoothing PCC']",False,False,False,False
+3,1,CPU,7,1968.7348039150238,"['Fixed', 'Naive', 'EIA-linear', 'EIA-blend-0.90', 'EIA-blend-0.75', 'EIA-morph', 'Full PCC', 'No-smoothing PCC']",False,False,False,False

@@ -1,0 +1,21 @@
+{
+  "shard": 3,
+  "attempt": 1,
+  "accelerator": "CPU",
+  "pid": 7,
+  "elapsed_seconds": 1968.7348039150238,
+  "methods": [
+    "Fixed",
+    "Naive",
+    "EIA-linear",
+    "EIA-blend-0.90",
+    "EIA-blend-0.75",
+    "EIA-morph",
+    "Full PCC",
+    "No-smoothing PCC"
+  ],
+  "p0_regenerated": false,
+  "model_training": false,
+  "predictor_forward": false,
+  "future_t1c_read": false
+}

@@ -1,0 +1,16 @@
+{
+  "denominator": 113,
+  "primary_endpoint": "Dice@0.5",
+  "comparisons": [
+    "Full PCC vs Fixed",
+    "No-smoothing vs Full PCC"
+  ],
+  "wilcoxon": {
+    "alternative": "two-sided",
+    "zero_method": "wilcox"
+  },
+  "holm_family_size": 2,
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260803,
+  "target_volume_matched_topk": "secondary oracle-assisted descriptive only"
+}

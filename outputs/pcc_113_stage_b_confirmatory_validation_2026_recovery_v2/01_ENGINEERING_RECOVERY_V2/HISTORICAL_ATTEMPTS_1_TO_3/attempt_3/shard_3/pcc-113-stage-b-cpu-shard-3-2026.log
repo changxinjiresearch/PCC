@@ -1,0 +1,20 @@
+[{"stream_name":"stderr","time":11.64287358,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":11.642971086,"data":"  File \"/kaggle/src/script.py\", line 163, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":11.643104778,"data":"    if __name__ == \"__main__\": raise SystemExit(main())\n"}
+,{"stream_name":"stderr","time":11.64322938,"data":"                                                ^^^^^^\n"}
+,{"stream_name":"stderr","time":11.643238814,"data":"  File \"/kaggle/src/script.py\", line 119, in main\n"}
+,{"stream_name":"stderr","time":11.643578785,"data":"    started = time.time(); rows, cases, p0_manifest = load_manifest()\n"}
+,{"stream_name":"stderr","time":11.64363533,"data":"                                                      ^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":11.643661855,"data":"  File \"/kaggle/src/script.py\", line 89, in load_manifest\n"}
+,{"stream_name":"stderr","time":11.64395696,"data":"    shard_path = locate(\"LOCKED_113_STAGE_B_CORRECTION_SHARD_MANIFEST.csv\")\n"}
+,{"stream_name":"stderr","time":11.644112057,"data":"                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":11.644129032,"data":"  File \"/kaggle/src/script.py\", line 85, in locate\n"}
+,{"stream_name":"stderr","time":11.644335628,"data":"    raise FileNotFoundError(name)\n"}
+,{"stream_name":"stderr","time":11.644344482,"data":"FileNotFoundError: LOCKED_113_STAGE_B_CORRECTION_SHARD_MANIFEST.csv\n"}
+,{"stream_name":"stderr","time":14.677980211,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":14.678016906,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":15.044542026,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":15.044575734,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":16.578504711,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":18.286810191,"data":"[NbConvertApp] Writing 415250 bytes to __results__.html\n"}
+]

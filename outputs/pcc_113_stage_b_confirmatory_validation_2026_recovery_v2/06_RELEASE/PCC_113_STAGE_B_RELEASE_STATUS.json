@@ -1,0 +1,22 @@
+{
+  "release_gate": "PASS",
+  "confirmatory_patients": 113,
+  "case_method_rows": 904,
+  "full_pcc_trajectory_rows": 1130,
+  "failed_cases": 0,
+  "shards": {
+    "0": 29,
+    "1": 27,
+    "2": 29,
+    "3": 28
+  },
+  "future_masks_read_before_stage_b": false,
+  "target_constructed": true,
+  "performance_computed": true,
+  "stage_b_executed": true,
+  "lumiere_started": false,
+  "p0_regenerated": false,
+  "protocol_changed": false,
+  "cohort_changed": false,
+  "p0_changed": false
+}

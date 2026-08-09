@@ -1,0 +1,20 @@
+[{"stream_name":"stderr","time":8.336161,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":8.336222585,"data":"  File \"/kaggle/src/script.py\", line 163, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":8.336473306,"data":"    if __name__ == \"__main__\": raise SystemExit(main())\n"}
+,{"stream_name":"stderr","time":8.3365002,"data":"                                                ^^^^^^\n"}
+,{"stream_name":"stderr","time":8.336505485,"data":"  File \"/kaggle/src/script.py\", line 119, in main\n"}
+,{"stream_name":"stderr","time":8.336763318,"data":"    started = time.time(); rows, cases, p0_manifest = load_manifest()\n"}
+,{"stream_name":"stderr","time":8.33682693,"data":"                                                      ^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":8.336862042,"data":"  File \"/kaggle/src/script.py\", line 89, in load_manifest\n"}
+,{"stream_name":"stderr","time":8.337080432,"data":"    shard_path = locate(\"LOCKED_113_STAGE_B_CORRECTION_SHARD_MANIFEST.csv\")\n"}
+,{"stream_name":"stderr","time":8.33721768,"data":"                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":8.337279938,"data":"  File \"/kaggle/src/script.py\", line 85, in locate\n"}
+,{"stream_name":"stderr","time":8.337546695,"data":"    raise FileNotFoundError(name)\n"}
+,{"stream_name":"stderr","time":8.33756147,"data":"FileNotFoundError: LOCKED_113_STAGE_B_CORRECTION_SHARD_MANIFEST.csv\n"}
+,{"stream_name":"stderr","time":11.267880052,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":11.267930222,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":11.658110627,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":11.658139529,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":13.442413898,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":15.175190984,"data":"[NbConvertApp] Writing 415250 bytes to __results__.html\n"}
+]

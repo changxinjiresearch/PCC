@@ -1,0 +1,21 @@
+# Post-unpack validation
+
+- ZIP integrity: PASS
+- ZIP files: 111
+- package contents exact: PASS
+- controlled files: 109
+- controlled missing: 0
+- extra: 0
+- size mismatch: 0
+- hash mismatch: 0
+- duplicate path: 0
+- case-method rows: 904
+- Full PCC trajectory rows: 1,130
+- failed cases: 0
+- P0 array files in package: 0
+- unique patients: 113
+- unique cases: 113
+- excluded patients present: 0
+- all eight methods present: true
+- Stage B methods executed: true
+- LUMIERE started: false

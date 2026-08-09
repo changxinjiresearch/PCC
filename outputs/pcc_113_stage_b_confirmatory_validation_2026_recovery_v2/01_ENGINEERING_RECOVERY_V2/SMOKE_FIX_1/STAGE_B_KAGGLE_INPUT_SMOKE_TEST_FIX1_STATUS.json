@@ -1,0 +1,75 @@
+{
+  "smoke_test_fix": "STAGE_B_ENGINEERING_RECOVERY_V2_SMOKE_FIX_1",
+  "smoke_test_gate": "PASS",
+  "checks": {
+    "all_required_authority_files_found_exactly_once": true,
+    "all_authority_hashes_match": true,
+    "confirmatory_patients_113": true,
+    "unique_patients_113": true,
+    "unique_cases_113": true,
+    "excluded_ids_zero": true,
+    "p0_manifest_rows_113": true,
+    "p0_sha_rows_113": true,
+    "shard_counts_29_27_29_28": true,
+    "shard_union_113": true,
+    "shard_overlap_zero": true,
+    "selected_p0_exists": true,
+    "selected_p0_size_positive": true,
+    "selected_p0_hash_match": true
+  },
+  "errors": [],
+  "resolved_paths": {
+    "bundle_manifest": "/kaggle/input/datasets/jeechangxin/pcc-113-stage-b-input-bundle-2026/PCC_113_STAGE_B_INPUT_BUNDLE_MANIFEST.csv",
+    "LOCKED_113_CONFIRMATORY_CASE_MANIFEST.csv": "/kaggle/input/datasets/jeechangxin/pcc-113-stage-b-input-bundle-2026/PCC_113_STAGE_B_INPUT_BUNDLE_2026/manifest/LOCKED_113_CONFIRMATORY_CASE_MANIFEST.csv",
+    "LOCKED_113_P0_MANIFEST.csv": "/kaggle/input/datasets/jeechangxin/pcc-113-stage-b-input-bundle-2026/PCC_113_STAGE_B_INPUT_BUNDLE_2026/manifest/LOCKED_113_P0_MANIFEST.csv",
+    "LOCKED_113_P0_SHA256.csv": "/kaggle/input/datasets/jeechangxin/pcc-113-stage-b-input-bundle-2026/PCC_113_STAGE_B_INPUT_BUNDLE_2026/manifest/LOCKED_113_P0_SHA256.csv",
+    "LOCKED_113_STAGE_B_CORRECTION_SHARD_MANIFEST.csv": "/kaggle/input/datasets/jeechangxin/pcc-113-stage-b-input-bundle-2026/PCC_113_STAGE_B_INPUT_BUNDLE_2026/manifest/LOCKED_113_STAGE_B_CORRECTION_SHARD_MANIFEST.csv",
+    "LOCKED_STAGE_B_CONFIRMATORY_INPUT_POLICY.yaml": "/kaggle/input/datasets/jeechangxin/pcc-113-stage-b-input-bundle-2026/PCC_113_STAGE_B_INPUT_BUNDLE_2026/policy/LOCKED_STAGE_B_CONFIRMATORY_INPUT_POLICY.yaml",
+    "selected_p0": "/kaggle/input/notebooks/jeechangxin/pcc-115-holdout-stage-a-p0-freeze-2026/pcc_115_holdout_stage_a_p0_freeze_2026/stage_a/shard_0/P0/PatientID_0064_T1_to_T2_t1c.npy"
+  },
+  "resolved_sha256": {
+    "LOCKED_113_CONFIRMATORY_CASE_MANIFEST.csv": "39638bb0c8e491631c973d164e6927b2a65310e6cdf09b2d269ee508008d7b70",
+    "LOCKED_113_P0_MANIFEST.csv": "2d4a976fd84bf1da4e298a88f004a68732de333a078a5d1ad1978f8c51e19e59",
+    "LOCKED_113_P0_SHA256.csv": "14aa08dcf1e0e54857c4e59219577c6b10ae951e83d9f1abd019f8d804f5be3b",
+    "LOCKED_113_STAGE_B_CORRECTION_SHARD_MANIFEST.csv": "c72b56c752196550eb898d60f4903966be800fe23a042a85e1d2ce2adf73b33f",
+    "LOCKED_STAGE_B_CONFIRMATORY_INPUT_POLICY.yaml": "22d406413d01b21951667ec3fe69cda52953de2e6fc555c69392f28a9a4b4095",
+    "selected_p0": "c9b1211ea167d9d81a64c8a3451e85211185a8b62deaa4d97e20d118b7543c2c"
+  },
+  "expected_sha256_from_local_bundle_manifest": {
+    "PCC_113_STAGE_B_LAUNCH_HASH_LOCK.json": "418e2c5941f424fab5b6ddbefff0cfd606a6d1ea9339bf56af06767c8c324ec6",
+    "PCC_113_STAGE_B_LAUNCH_LOCK.md": "5933f9f492cb383f08e7a358bae164560cb7abc6b36926241d342d44a00ea0a3",
+    "PCC_113_STAGE_B_LAUNCH_LOCK.yaml": "0ff6c21d5102ca3d93d8ab09505d5e567b3282edfb348ace8b9bc641f26df922",
+    "LOCKED_113_CONFIRMATORY_CASE_MANIFEST.csv": "39638bb0c8e491631c973d164e6927b2a65310e6cdf09b2d269ee508008d7b70",
+    "LOCKED_113_P0_MANIFEST.csv": "2d4a976fd84bf1da4e298a88f004a68732de333a078a5d1ad1978f8c51e19e59",
+    "LOCKED_113_P0_SHA256.csv": "14aa08dcf1e0e54857c4e59219577c6b10ae951e83d9f1abd019f8d804f5be3b",
+    "LOCKED_113_STAGE_B_CORRECTION_SHARD_MANIFEST.csv": "c72b56c752196550eb898d60f4903966be800fe23a042a85e1d2ce2adf73b33f",
+    "LOCKED_115_EVALUATION_POLICY.yaml": "40c5d6d58c8bb3a67f15700491ba40c3e4a9790153fe87d6bf033a762c3008cb",
+    "LOCKED_115_FAILURE_POLICY.yaml": "69e528b971d9cb61a1fea842ec6efc0fba3041fee90b3e37a765f0b0245ecad6",
+    "LOCKED_115_METHOD_CONFIG.yaml": "73181c7515df888c923aec94f7bfc3bf359eac84202ea518ec9a1e61dc67c301",
+    "LOCKED_115_METHOD_DEFINITIONS.md": "70a60fe01003d64d48dfce33c92ca371b288385c99f98a202b5a8bf80773e815",
+    "LOCKED_115_STATISTICAL_ANALYSIS_PLAN.yaml": "0a196148b30e220e980900ed471d4a7611745646458c1a15b65b956f6471f3ab",
+    "LOCKED_115_TARGET_POLICY.yaml": "edb87c958ff27281c15bd879852957e5882cb045231d4432a1dfae754cb2247b",
+    "LOCKED_115_THRESHOLD_POLICY.yaml": "e434c32cc860190edb7eef77f6609ee727b85092ea7ed5791f638e00cc70d151",
+    "LOCKED_STAGE_B_CONFIRMATORY_INPUT_POLICY.yaml": "22d406413d01b21951667ec3fe69cda52953de2e6fc555c69392f28a9a4b4095",
+    "PCC_115_CONFIRMATORY_ANALYSIS_PLAN.md": "30f13f1002218f9450b56d9327ca7574e6d2532ef852d42148b1545435045310"
+  },
+  "shard_counts": {
+    "0": 29,
+    "1": 27,
+    "2": 29,
+    "3": 28
+  },
+  "input_mounts": [
+    "/kaggle/input/datasets",
+    "/kaggle/input/notebooks"
+  ],
+  "future_mask_access_count": 0,
+  "current_mask_access_count": 0,
+  "p0_array_load_count": 0,
+  "target_constructed": false,
+  "performance_computed": false,
+  "stage_b_methods_executed": false,
+  "lumiere_started": false,
+  "dataset_slug": "jeechangxin/pcc-113-stage-b-input-bundle-2026",
+  "p0_source_slug": "jeechangxin/pcc-115-holdout-stage-a-p0-freeze-2026"
+}

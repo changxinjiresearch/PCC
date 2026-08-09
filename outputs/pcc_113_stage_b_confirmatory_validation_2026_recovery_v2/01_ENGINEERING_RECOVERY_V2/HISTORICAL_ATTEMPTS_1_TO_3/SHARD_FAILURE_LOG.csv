@@ -1,0 +1,2 @@
+patient_id,case_id,shard,attempt_id,failure_status
+ALL_113,ALL_113_CASES,0-3,stage_b_attempts_1_to_3,KAGGLE_SCRIPT_INPUT_PACKAGING_BLOCKED_BEFORE_CASE_ACCESS

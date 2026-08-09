@@ -1,0 +1,34 @@
+{
+  "recovery_sequence": "STAGE_B_ENGINEERING_RECOVERY_V2",
+  "audit_type": "PRE_OUTCOME_ENGINEERING_RECOVERY",
+  "previous_attempts": 3,
+  "previous_attempts_preserved": true,
+  "expected_runtime_roots": ["/kaggle/input", "/kaggle/working"],
+  "required_manifest_basenames": [
+    "LOCKED_113_STAGE_B_CORRECTION_SHARD_MANIFEST.csv",
+    "LOCKED_113_CONFIRMATORY_CASE_MANIFEST.csv",
+    "LOCKED_113_P0_SHA256.csv"
+  ],
+  "local_kernel_source_pattern": "kaggle/pcc_113_stage_b_cpu_shard_{0,1,2,3}/",
+  "old_dataset_sources": ["stacyvangepuram/mu-glioma-post"],
+  "old_kernel_sources": ["jeechangxin/pcc-115-holdout-stage-a-p0-freeze-2026"],
+  "dedicated_stage_b_input_dataset_attached": false,
+  "runtime_logs_show_script_path": "/kaggle/src/script.py",
+  "runtime_logs_show_manifest_resolution": false,
+  "classification": {
+    "git_source_omission": false,
+    "kernel_source_runtime_visibility_failure": true,
+    "dataset_source_omission": true,
+    "relative_path_error": true,
+    "working_directory_error_contributing": true,
+    "gitignore_exclusion": false,
+    "other_source_dependency_failures": true
+  },
+  "root_cause": "Stage B manifests were placed beside the local kernel script without a mounted input-bundle source, while the runner resolved only /kaggle/input and /kaggle/working.",
+  "scientific_data_read": false,
+  "future_mask_read": false,
+  "target_constructed": false,
+  "performance_computed": false,
+  "stage_b_methods_executed": false,
+  "lumiere_started": false
+}
