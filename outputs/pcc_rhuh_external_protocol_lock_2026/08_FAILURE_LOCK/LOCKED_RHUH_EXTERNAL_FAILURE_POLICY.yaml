@@ -1,0 +1,15 @@
+locked_denominator: 39
+all_patients_in_end_to_end_status: true
+failure_classes:
+- geometry
+- file access
+- frozen predictor compatibility
+- numeric failure
+- target construction failure
+- method failure
+silent_deletion: FORBIDDEN
+primary_analysis: complete paired cases with n and reasons reported
+end_to_end_completion_rate_denominator: 39
+empty_target: target construction failure; retain patient in end-to-end denominator
+non_finite: numeric failure; no silent filtering
+cohort_or_parameter_change_to_fix_failure: FORBIDDEN

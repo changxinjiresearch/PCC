@@ -1,0 +1,22 @@
+{
+  "PROTOCOL_LOCK_GATE": "PASS",
+  "RHUH_EXTERNAL_PRE_OUTCOME_PROTOCOL_COMMIT": "RECORDED_AFTER_SELF_REFERENTIAL_GIT_COMMIT",
+  "RHUH_training": false,
+  "calibration": false,
+  "confirmatory_patients": 39,
+  "excluded_patient": "RHUH-0008",
+  "excluded_pre_outcome": 1,
+  "exclusion_code": "PRE_OUTCOME_GEOMETRY_INCOMPATIBILITY",
+  "external_p0_generated": false,
+  "fine_tuning": false,
+  "future_voxel_outcome_accessed": false,
+  "lumiere_started": false,
+  "performance_computed": false,
+  "predictor_forward_executed": false,
+  "protocol_locked": true,
+  "recurrence_segmentation_voxel_arrays_read": false,
+  "source_patients": 40,
+  "stage_b_executed": false,
+  "target_constructed": false,
+  "test_time_adaptation": false
+}

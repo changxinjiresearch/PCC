@@ -1,0 +1,25 @@
+policy_id: RHUH_EXTERNAL_EFFECTIVE_PHYSICAL_GRID_IDENTITY_POLICY
+scope: all_locked_external_primary_pairs
+required_identity:
+- shape
+- selected_NIfTI_affine
+- voxel_spacing
+- orientation
+- voxel_center_world_ranges
+- world_space_bounds
+allowed:
+- header verification
+- lossless orientation representation checking
+forbidden:
+- registration
+- resampling
+- interpolation
+- case-specific affine repair
+- header rewriting to force alignment
+- outcome-driven geometry correction
+qform_sform_metadata_policy: record separately; selected effective physical grid must
+  remain identical
+locked_confirmatory_geometry_valid: 39/39
+excluded_pre_outcome:
+- RHUH-0008
+files_modified: false

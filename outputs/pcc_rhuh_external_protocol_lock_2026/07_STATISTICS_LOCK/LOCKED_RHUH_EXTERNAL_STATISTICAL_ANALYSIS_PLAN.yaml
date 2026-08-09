@@ -1,0 +1,33 @@
+unit: patient
+denominator: 39
+endpoint: Dice@0.5
+confirmatory_family_exactly:
+- Full PCC vs Fixed
+- No-smoothing PCC vs Full PCC
+test: paired two-sided Wilcoxon signed-rank
+wilcoxon_zero_method: wilcox
+holm_family_size: 2
+alpha: 0.05
+report:
+- n
+- mean paired difference
+- median paired difference
+- wins/ties/losses
+- raw p
+- Holm-adjusted p
+- Cohen dz
+- rank-biserial
+- patient-level paired bootstrap 95% CI
+cohen_dz: mean paired difference / sample SD of paired differences
+rank_biserial: (positive rank sum - negative rank sum)/(positive rank sum + negative
+  rank sum), zeros excluded
+bootstrap:
+  unit: patient pair
+  replicates: 10000
+  seed: 20260810
+  interval: percentile 95%
+  quantiles:
+  - 0.025
+  - 0.975
+result_driven_inferential_comparisons: FORBIDDEN
+seed_change_after_results: FORBIDDEN

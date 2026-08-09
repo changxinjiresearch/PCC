@@ -1,0 +1,17 @@
+primary_endpoint: patient-level Dice at fixed threshold 0.5
+prediction_rule: probability >= 0.5
+secondary:
+- IoU@0.5
+- precision@0.5
+- recall@0.5
+- soft Dice
+- Brier score
+- average precision / PR-AUC
+- predicted positive volume
+oracle_assisted:
+- target-volume-matched top-k Dice
+- target-volume-matched top-k IoU
+oracle_label: ORACLE_ASSISTED_RETROSPECTIVE_LOCALIZATION
+top_k_is_deployment_performance: false
+threshold_tuning_on_RHUH: FORBIDDEN
+secondary_inferential_tests: NOT_PRELOCKED_NOT_RUN

@@ -1,0 +1,29 @@
+status: LOCKED_NOT_EXECUTED
+cohort_manifest: LOCKED_RHUH_39_EXTERNAL_CONFIRMATORY_CASE_MANIFEST.csv
+denominator: 39
+allowed_inputs:
+- early-postoperative T1ce
+- early-postoperative locked current mask
+- five frozen checkpoints
+- locked current-only preprocessing
+future_information_allowed_before_P0_freeze:
+- file identity
+- existence
+- file SHA-256
+- header-level geometry metadata
+forbidden_before_P0_freeze:
+- recurrence segmentation voxel arrays
+- recurrence-derived target
+- recurrence-derived performance
+future_voxel_content_may_not_select_cases: true
+per_case_P0_requirements:
+- float32
+- finite
+- range [0,1]
+- case identity
+- file size
+- SHA-256
+- completion marker
+stage_a_completion_gate: 39/39 P0 generated, verified, and SHA-256 frozen
+stage_b_before_gate: FORBIDDEN
+external_P0_generated_during_lock: false

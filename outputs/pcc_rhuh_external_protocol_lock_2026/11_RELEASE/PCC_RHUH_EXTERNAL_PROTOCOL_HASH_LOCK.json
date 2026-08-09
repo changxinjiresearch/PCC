@@ -1,0 +1,97 @@
+{
+  "algorithm": "SHA-256",
+  "canonical_path_base": "outputs/pcc_rhuh_external_protocol_lock_2026",
+  "files": [
+    {
+      "path": "00_AUTHORITY/GENERATE_RHUH_EXTERNAL_PROTOCOL_LOCK.py",
+      "sha256": "2bf5331ee4f4d178707e5e2280bee1de190eb9681011cb749b89ea5f9a3908e9",
+      "size_bytes": 40481
+    },
+    {
+      "path": "01_COHORT_LOCK/EXCLUDED_RHUH_EXTERNAL_CASES.csv",
+      "sha256": "fdb5bf2df06fd624287ed31442ad986f953080be600da869d2a67bc77e6a6933",
+      "size_bytes": 541
+    },
+    {
+      "path": "01_COHORT_LOCK/LOCKED_RHUH_39_EXTERNAL_CONFIRMATORY_CASE_MANIFEST.csv",
+      "sha256": "12c019e9f7f2e4978a4c4a7fea603782fc6d152f0d1a1b710ecba073c77d40ae",
+      "size_bytes": 39049
+    },
+    {
+      "path": "01_COHORT_LOCK/LOCKED_RHUH_39_EXTERNAL_PATIENT_IDS.csv",
+      "sha256": "c9f7127097926b1046e23ba2eb00c1916109b9306582ed24ce2719de2c2dcc81",
+      "size_bytes": 441
+    },
+    {
+      "path": "02_GEOMETRY_LOCK/LOCKED_RHUH_39_GEOMETRY_MANIFEST.csv",
+      "sha256": "dd8d0e98e627505ec12592b5e8588bb8b03b9f86ed3361889028e41dce1514db",
+      "size_bytes": 11296
+    },
+    {
+      "path": "02_GEOMETRY_LOCK/LOCKED_RHUH_EXTERNAL_GEOMETRY_POLICY.yaml",
+      "sha256": "f5f0dae36d9bda18b9ad6ad2ad47397512ff11b7221f0b8ee3d6d6b7c5d469df",
+      "size_bytes": 677
+    },
+    {
+      "path": "03_MASK_LOCK/LOCKED_RHUH_EXTERNAL_MASK_MAPPING.yaml",
+      "sha256": "e1f323a0cf41c911cd570b58d25b997b5b3bfe86f8f823a47defd919ebd3a010",
+      "size_bytes": 566
+    },
+    {
+      "path": "04_PREDICTOR_LOCK/LOCKED_RHUH_FROZEN_PREDICTOR_MANIFEST.csv",
+      "sha256": "887ac57f43531ea8c8f7891dd7d1396b06333a17ee4e105d0fb1a0607a8d4689",
+      "size_bytes": 2144
+    },
+    {
+      "path": "04_PREDICTOR_LOCK/LOCKED_RHUH_FROZEN_PREDICTOR_POLICY.yaml",
+      "sha256": "ea498184c406f5c55b863ea5b149442df58097377146ab6b7e0ac74c0092b38f",
+      "size_bytes": 1598
+    },
+    {
+      "path": "05_STAGE_A_LOCK/LOCKED_RHUH_EXTERNAL_STAGE_A_P0_PROTOCOL.yaml",
+      "sha256": "d7764457d2e7d06ff6fa9a75858a22889f6d8bf6df77edaecda87ea91e2fe959",
+      "size_bytes": 823
+    },
+    {
+      "path": "06_STAGE_B_LOCK/LOCKED_RHUH_EXTERNAL_EVALUATION_POLICY.yaml",
+      "sha256": "61977f660e9684d4178ec5f90f1b93bac7fdf312b602bea3e9690f0522a72e4a",
+      "size_bytes": 498
+    },
+    {
+      "path": "06_STAGE_B_LOCK/LOCKED_RHUH_EXTERNAL_STAGE_B_PROTOCOL.yaml",
+      "sha256": "b1febf4641b847db6f71e0bb34dc8c6bb502ebbd1f99bcef97701f174f0971d6",
+      "size_bytes": 1159
+    },
+    {
+      "path": "07_STATISTICS_LOCK/LOCKED_RHUH_EXTERNAL_STATISTICAL_ANALYSIS_PLAN.yaml",
+      "sha256": "640028d96f16070a5a43df538c7fd8953635507cc933596cc760b3f559b06074",
+      "size_bytes": 805
+    },
+    {
+      "path": "08_FAILURE_LOCK/LOCKED_RHUH_EXTERNAL_FAILURE_POLICY.yaml",
+      "sha256": "db3c14fe368eedd4afe04aee49776a3bef4570a092d92f845de85a127a3de883",
+      "size_bytes": 527
+    },
+    {
+      "path": "10_TESTS/FULL_TEST_STDOUT.txt",
+      "sha256": "8b53f7feb4513a9e1520bc9e57b09ea8199f6c5f1d9701c1142277462a675837",
+      "size_bytes": 99
+    },
+    {
+      "path": "10_TESTS/TEST_EXIT_CODE.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size_bytes": 2
+    },
+    {
+      "path": "11_RELEASE/PCC_RHUH_EXTERNAL_PROTOCOL_LOCK_2026.yaml",
+      "sha256": "bf7ac21fba447701371bcd6dc1022d47c628683a067e111d0fe22bba16d0c40a",
+      "size_bytes": 943
+    },
+    {
+      "path": "11_RELEASE/PCC_RHUH_EXTERNAL_PROTOCOL_STATUS.json",
+      "sha256": "7cc993dd29f07ca302a4a25900a4ad12941b262a494afada51861420a2dbd391",
+      "size_bytes": 732
+    }
+  ],
+  "protocol_commit": "PENDING_SELF_REFERENTIAL_GIT_COMMIT"
+}

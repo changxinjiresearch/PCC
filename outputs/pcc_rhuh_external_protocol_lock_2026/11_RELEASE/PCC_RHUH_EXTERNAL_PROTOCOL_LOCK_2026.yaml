@@ -1,0 +1,29 @@
+task: PCC_RHUH_EXTERNAL_VALIDATION_2026
+phase: PHASE_1_FINAL_EXTERNAL_PROTOCOL_LOCK
+source_patients: 40
+excluded_pre_outcome: 1
+confirmatory_patients: 39
+excluded_patient: RHUH-0008
+exclusion_code: PRE_OUTCOME_GEOMETRY_INCOMPATIBILITY
+primary_pair: early postoperative -> recurrence diagnosis follow-up
+geometry_policy: RHUH_EXTERNAL_EFFECTIVE_PHYSICAL_GRID_IDENTITY_POLICY
+mask_mapping: RHUH segmentation > 0 (labels 1|2|3)
+predictor: frozen internal five-fold CrossCaseSmallUNet ensemble
+stage_a_future_blind: true
+stage_b_target: (future_mask > 0) AND NOT(current_mask > 0)
+methods:
+- Fixed
+- Naive
+- EIA-linear
+- EIA-blend-0.90
+- EIA-blend-0.75
+- Full PCC
+- No-smoothing PCC
+primary_endpoint: patient-level Dice at fixed threshold 0.5
+confirmatory_family:
+- Full PCC vs Fixed
+- No-smoothing PCC vs Full PCC
+bootstrap_replicates: 10000
+bootstrap_seed: 20260810
+failure_denominator: 39
+scientific_definitions_change_after_results: FORBIDDEN

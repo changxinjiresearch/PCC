@@ -1,0 +1,47 @@
+status: LOCKED_NOT_EXECUTED
+prerequisite: 39/39 external P0 SHA-256 frozen
+target: T = (future_mask > 0) AND NOT(current_mask > 0)
+target_dtype: bool
+geometry_prerequisite: locked effective physical voxel-grid identity
+methods:
+  Fixed:
+    operation: safe_clip_prob(P0)
+    dtype: float32
+  Naive:
+    operation: sigmoid(2.5 * safe_logit(Fixed))
+    gamma: 2.5
+    logit_epsilon: 1.0e-05
+    logit_clip:
+    - -30
+    - 30
+  EIA-linear:
+    alpha: 0.3
+    beta: 0.3
+    support_radius_voxels: 26
+    target_signal_gaussian_sigma_voxels: 2.0
+  EIA-blend-0.90:
+    baseline_weight: 0.9
+    target_signal_weight: 0.1
+  EIA-blend-0.75:
+    baseline_weight: 0.75
+    target_signal_weight: 0.25
+  Full PCC:
+    rounds: 10
+    eta: 0.3
+    dilation_radius_voxels: 26
+    gaussian_sigma_voxels: 2.0
+    formal_final: P10
+    state_propagation: true
+    dtype: float32
+  No-smoothing PCC:
+    rounds: 10
+    eta: 0.3
+    dilation_radius_voxels: 26
+    smoothing: false
+    sole_difference: S_r = D_r
+    formal_final: P10
+    dtype: float32
+method_count: 7
+full_internal_ablation: NOT_RUN
+RHUH_specific_parameter_tuning: FORBIDDEN
+stage_b_executed_during_lock: false
