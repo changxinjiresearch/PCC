@@ -1,0 +1,45 @@
+item,claim_2024_item,status,manuscript_location,action_required,notes
+1,AI methodology identified in title/abstract,YES,Title / Abstract,None,Audited against CLAIM 2024 official item
+2,"Abstract summarizes design, methods, population, partitions, results and conclusions",YES,Title / Abstract,None,Audited against CLAIM 2024 official item
+3,Scientific/clinical background and intended role,YES,Title / Abstract,None,Audited against CLAIM 2024 official item
+4,"Study aims, objectives and hypotheses",YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+5,Prospective or retrospective design,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+6,Study goal and intended use,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+7,Data sources and accessibility,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+8,Inclusion and exclusion criteria,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+9,Data preprocessing,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+10,Selection of data subsets,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+11,De-identification,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+12,Missing-data handling,YES,Methods; P0 pathway audit; Supplement,None,Audited against CLAIM 2024 official item
+13,Image acquisition protocol,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+14,Reference-standard definition,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+15,Rationale and limitations of reference standard,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+16,Source and qualifications for annotations,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+17,Test-set annotation process,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+18,Inter- and intrarater variability,NA,Methods / Supplement,Not applicable; rationale documented,Audited against CLAIM 2024 official item
+19,Assignment to data partitions,YES,Methods; P0 pathway audit; Supplement,None,Audited against CLAIM 2024 official item
+20,Disjoint partition level,YES,Methods; P0 pathway audit; Supplement,None,Audited against CLAIM 2024 official item
+21,Testing sample size and determination,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+22,Detailed model architecture,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+23,Software libraries/frameworks/packages,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+24,Model-parameter initialization,NO,Methods,Historical random-initialization distribution is not recoverable; frozen checkpoint provenance is reported,Audited against CLAIM 2024 official item
+25,Training approach and hyperparameters,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+26,Final-model selection,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+27,Ensembling technique,YES,Methods; P0 pathway audit; Supplement,None,Audited against CLAIM 2024 official item
+28,Performance metrics,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+29,Statistical significance and uncertainty,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+30,Robustness or sensitivity analyses,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+31,Explainability/interpretability methods,NA,Methods / Supplement,Not applicable; rationale documented,Audited against CLAIM 2024 official item
+32,Evaluation on internal data,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+33,Testing on external data,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+34,Clinical-trial registration,NA,Methods / Supplement,Not applicable; rationale documented,Audited against CLAIM 2024 official item
+35,Numbers included and excluded,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+36,Demographic and clinical characteristics,YES,Results; Table 1; Supplementary Table S2,None; linked official metadata and missingness reported without imputation,Audited against CLAIM 2024 official item
+37,Performance metrics with uncertainty,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+38,Diagnostic performance and precision,NA,Methods / Supplement,Not applicable; rationale documented,Audited against CLAIM 2024 official item
+39,Failure analysis,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+40,Study limitations,YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+41,"Implications, intended use and clinical role",YES,Methods / Supplementary Methods,None,Audited against CLAIM 2024 official item
+42,Protocol/additional technical details,NO,Protocol availability,Add final public protocol/repository URL,Audited against CLAIM 2024 official item
+43,"Availability of software, trained model and data",NO,Code Availability,Add final code/model repository URL,Audited against CLAIM 2024 official item
+44,Funding/support and funder role,NO,Funding,Author must provide funding/support,Audited against CLAIM 2024 official item

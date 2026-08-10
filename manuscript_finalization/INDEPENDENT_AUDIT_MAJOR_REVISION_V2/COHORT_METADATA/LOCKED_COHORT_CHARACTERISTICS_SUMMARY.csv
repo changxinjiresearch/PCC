@@ -1,0 +1,4 @@
+cohort,locked_n,metadata_matched_n,age_available_n,age_median,age_q1,age_q3,female_n,male_n,diagnosis_counts,grade_counts,interval_available_n,interval_missing_or_invalid_n,interval_median_days,interval_q1_days,interval_q3_days
+Development,40,40,40,57.5,53.0,65.0,17,23,GBM=40,4=40,39,1,78.0,64.0,108.0
+Independent internal,113,113,113,60.0,43.0,69.0,47,66,Astrocytoma=23; Diffuse glioma=9; GBM=74; Glioma w/ GBM features=1; Oligodendro-glioma=4; Pilocytic astrocytoma=2,1=2; 2=25; 3=2; 4=84,111,2,68.0,39.5,103.0
+RHUH external,39,39,39,64.0,55.0,69.5,12,27,glioblastoma=39,4=39,0,39,,,

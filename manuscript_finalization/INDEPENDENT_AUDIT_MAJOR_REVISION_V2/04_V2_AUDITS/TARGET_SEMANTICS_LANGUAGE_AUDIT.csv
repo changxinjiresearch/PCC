@@ -1,0 +1,9 @@
+term,occurrences,audit,unsupported_occurrences,status
+tumour mask,0,contextually reviewed,0,PASS
+future tumour mask,0,contextually reviewed,0,PASS
+tumour change,0,contextually reviewed,0,PASS
+tumour growth,0,contextually reviewed,0,PASS
+recurrence target,0,contextually reviewed,0,PASS
+progression target,0,contextually reviewed,0,PASS
+new tumour,0,contextually reviewed,0,PASS
+evolving tumour,0,contextually reviewed,0,PASS

@@ -1,0 +1,6 @@
+cairosvg
+openpyxl
+pillow==12.3.0
+python-docx
+reportlab
+pymupdf==1.28.2

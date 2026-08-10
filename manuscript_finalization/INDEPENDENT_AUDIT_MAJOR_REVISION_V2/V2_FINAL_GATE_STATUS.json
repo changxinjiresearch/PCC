@@ -1,0 +1,18 @@
+{
+  "v1_frozen_files_changed": 0,
+  "numeric_claims_audited": 126,
+  "numeric_mismatches": 0,
+  "table3_cells_audited": 42,
+  "table3_mismatches": 0,
+  "references_verified": 16,
+  "false_or_unverified_references": 0,
+  "citation_claim_failures": 0,
+  "supplement_cross_reference_failures": 0,
+  "blocking_layout_errors": 0,
+  "unresolved_fatal": 0,
+  "unresolved_major_fixable_with_existing_evidence": 0,
+  "failed_validation_checks": [],
+  "lumiere_started": false,
+  "scientific_experiment_rerun": false,
+  "v2_revision_gate": "PASS_FOR_INDEPENDENT_ROUND2_REVIEW"
+}
