@@ -1,0 +1,13 @@
+characteristic,cohort,source,expected,observed,status
+Source patients / pre-outcome excluded / analysed,Development,manuscript_finalization/INDEPENDENT_AUDIT_MAJOR_REVISION_V2/COHORT_METADATA/LOCKED_COHORT_CHARACTERISTICS_SUMMARY.csv,40 / 0 / 40,40 / 0 / 40,PASS
+Source patients / pre-outcome excluded / analysed,Independent internal,manuscript_finalization/INDEPENDENT_AUDIT_MAJOR_REVISION_V2/COHORT_METADATA/LOCKED_COHORT_CHARACTERISTICS_SUMMARY.csv,115 / 2 / 113,115 / 2 / 113,PASS
+Source patients / pre-outcome excluded / analysed,RHUH external,manuscript_finalization/INDEPENDENT_AUDIT_MAJOR_REVISION_V2/COHORT_METADATA/LOCKED_COHORT_CHARACTERISTICS_SUMMARY.csv,40 / 1 / 39,40 / 1 / 39,PASS
+"Age, years, median (IQR)",Development,manuscript_finalization/INDEPENDENT_AUDIT_MAJOR_REVISION_V2/COHORT_METADATA/LOCKED_COHORT_CHARACTERISTICS_SUMMARY.csv,57.5 (53.0–65.0),57.5 (53.0–65.0),PASS
+"Age, years, median (IQR)",Independent internal,manuscript_finalization/INDEPENDENT_AUDIT_MAJOR_REVISION_V2/COHORT_METADATA/LOCKED_COHORT_CHARACTERISTICS_SUMMARY.csv,60.0 (43.0–69.0),60.0 (43.0–69.0),PASS
+"Age, years, median (IQR)",RHUH external,manuscript_finalization/INDEPENDENT_AUDIT_MAJOR_REVISION_V2/COHORT_METADATA/LOCKED_COHORT_CHARACTERISTICS_SUMMARY.csv,64.0 (55.0–69.5),64.0 (55.0–69.5),PASS
+"Sex at birth, female / male",Development,manuscript_finalization/INDEPENDENT_AUDIT_MAJOR_REVISION_V2/COHORT_METADATA/LOCKED_COHORT_CHARACTERISTICS_SUMMARY.csv,17 / 23,17 / 23,PASS
+"Sex at birth, female / male",Independent internal,manuscript_finalization/INDEPENDENT_AUDIT_MAJOR_REVISION_V2/COHORT_METADATA/LOCKED_COHORT_CHARACTERISTICS_SUMMARY.csv,47 / 66,47 / 66,PASS
+"Sex at birth, female / male",RHUH external,manuscript_finalization/INDEPENDENT_AUDIT_MAJOR_REVISION_V2/COHORT_METADATA/LOCKED_COHORT_CHARACTERISTICS_SUMMARY.csv,12 / 27,12 / 27,PASS
+"Current-to-future interval, days, median (IQR)",Development,manuscript_finalization/INDEPENDENT_AUDIT_MAJOR_REVISION_V2/COHORT_METADATA/LOCKED_COHORT_CHARACTERISTICS_SUMMARY.csv,78.0 (64.0–108.0); available 39/40,78.0 (64.0–108.0); available 39/40,PASS
+"Current-to-future interval, days, median (IQR)",Independent internal,manuscript_finalization/INDEPENDENT_AUDIT_MAJOR_REVISION_V2/COHORT_METADATA/LOCKED_COHORT_CHARACTERISTICS_SUMMARY.csv,68.0 (39.5–103.0); valid 111/113,68.0 (39.5–103.0); valid 111/113,PASS
+"Current-to-future interval, days, median (IQR)",RHUH external,manuscript_finalization/INDEPENDENT_AUDIT_MAJOR_REVISION_V2/COHORT_METADATA/LOCKED_COHORT_CHARACTERISTICS_SUMMARY.csv,Not consistently available in linked file,Not consistently available in linked file,PASS

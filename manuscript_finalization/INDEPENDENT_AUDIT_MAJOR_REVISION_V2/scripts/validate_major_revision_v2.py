@@ -111,6 +111,9 @@ check("NUMERIC_CLAIM_AUDIT", numeric_fail == 0, f"claims={len(numeric)}; mismatc
 table3 = read_csv(AUDIT / "V2_TABLE3_NUMERIC_IDENTITY_AUDIT.csv")
 table3_fail = sum(row["status"] != "PASS" or abs(float(row["difference"])) > 0 for row in table3)
 check("TABLE3_NUMERIC_IDENTITY", len(table3) == 42 and table3_fail == 0, f"cells={len(table3)}; mismatches={table3_fail}")
+table1 = read_csv(AUDIT / "V2_TABLE1_METADATA_IDENTITY_AUDIT.csv")
+table1_fail = sum(row["status"] != "PASS" or row["expected"] != row["observed"] for row in table1)
+check("TABLE1_METADATA_IDENTITY", len(table1) == 12 and table1_fail == 0, f"cells={len(table1)}; mismatches={table1_fail}")
 
 int_cases = read_csv(ROOT / "outputs/pcc_113_stage_b_final_audit_patch_v2_2026/V1_SNAPSHOT/03_COMBINED_RESULTS/ALL_CASE_METHOD_METRICS.csv")
 int_traj = read_csv(ROOT / "outputs/pcc_113_stage_b_final_audit_patch_v2_2026/V1_SNAPSHOT/03_COMBINED_RESULTS/ALL_PCC_ROUND_TRAJECTORY.csv")
@@ -268,6 +271,8 @@ gate_status = {
     "numeric_mismatches": numeric_fail,
     "table3_cells_audited": len(table3),
     "table3_mismatches": table3_fail,
+    "table1_metadata_cells_audited": len(table1),
+    "table1_metadata_mismatches": table1_fail,
     "references_verified": len(refs) - ref_fail,
     "false_or_unverified_references": ref_fail,
     "citation_claim_failures": citation_fail,

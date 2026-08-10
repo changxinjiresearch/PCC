@@ -4,6 +4,8 @@
   "numeric_mismatches": 0,
   "table3_cells_audited": 42,
   "table3_mismatches": 0,
+  "table1_metadata_cells_audited": 12,
+  "table1_metadata_mismatches": 0,
   "references_verified": 16,
   "false_or_unverified_references": 0,
   "citation_claim_failures": 0,

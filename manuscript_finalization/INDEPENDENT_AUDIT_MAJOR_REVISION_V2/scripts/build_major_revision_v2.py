@@ -552,6 +552,28 @@ write_csv(metadata_dir / "LOCKED_COHORT_CHARACTERISTICS_SUMMARY.csv", cohort_sum
 # ---------------------------------------------------------------------------
 
 tables_dir = ensure("TABLES_V2")
+summary_by_cohort = {row["cohort"]: row for row in cohort_summaries}
+
+
+def age_display(cohort: str) -> str:
+    row = summary_by_cohort[cohort]
+    return f"{float(row['age_median']):.1f} ({float(row['age_q1']):.1f}–{float(row['age_q3']):.1f})"
+
+
+def sex_display(cohort: str) -> str:
+    row = summary_by_cohort[cohort]
+    return f"{row['female_n']} / {row['male_n']}"
+
+
+def interval_display(cohort: str, denominator: int, availability_word: str) -> str:
+    row = summary_by_cohort[cohort]
+    return (
+        f"{float(row['interval_median_days']):.1f} "
+        f"({float(row['interval_q1_days']):.1f}–{float(row['interval_q3_days']):.1f}); "
+        f"{availability_word} {row['interval_available_n']}/{denominator}"
+    )
+
+
 table1 = [
     {
         "Characteristic": "Source patients / pre-outcome excluded / analysed",
@@ -561,15 +583,15 @@ table1 = [
     },
     {
         "Characteristic": "Age, years, median (IQR)",
-        "Development": "57.5 (53.0–65.0)",
-        "Independent internal": "60.0 (43.0–69.0)",
-        "RHUH external": "64.0 (55.0–69.5)",
+        "Development": age_display("Development"),
+        "Independent internal": age_display("Independent internal"),
+        "RHUH external": age_display("RHUH external"),
     },
     {
         "Characteristic": "Sex at birth, female / male",
-        "Development": "17 / 23",
-        "Independent internal": "47 / 66",
-        "RHUH external": "12 / 27",
+        "Development": sex_display("Development"),
+        "Independent internal": sex_display("Independent internal"),
+        "RHUH external": sex_display("RHUH external"),
     },
     {
         "Characteristic": "Diagnosis",
@@ -585,8 +607,8 @@ table1 = [
     },
     {
         "Characteristic": "Current-to-future interval, days, median (IQR)",
-        "Development": "78.0 (64.0–108.0); available 39/40",
-        "Independent internal": "68.0 (38.5–102.5); valid 111/113",
+        "Development": interval_display("Development", 40, "available"),
+        "Independent internal": interval_display("Independent internal", 113, "valid"),
         "RHUH external": "Not consistently available in linked file",
     },
     {
@@ -1542,6 +1564,37 @@ for row in table3:
             expected = mean_by_method(values, row["method"], metric)
             table3_audit.append({"method": row["method"], "cohort": cohort, "metric": metric, "source": rel(source), "expected": expected, "observed": observed, "difference": observed - expected, "status": "PASS" if observed == expected else "FAIL"})
 write_csv(audit_dir / "V2_TABLE3_NUMERIC_IDENTITY_AUDIT.csv", table3_audit)
+
+table1_lookup = {(row["Characteristic"], cohort): row[cohort] for row in table1 for cohort in ("Development", "Independent internal", "RHUH external")}
+table1_expected = {
+    ("Source patients / pre-outcome excluded / analysed", "Development"): "40 / 0 / 40",
+    ("Source patients / pre-outcome excluded / analysed", "Independent internal"): "115 / 2 / 113",
+    ("Source patients / pre-outcome excluded / analysed", "RHUH external"): "40 / 1 / 39",
+    ("Age, years, median (IQR)", "Development"): age_display("Development"),
+    ("Age, years, median (IQR)", "Independent internal"): age_display("Independent internal"),
+    ("Age, years, median (IQR)", "RHUH external"): age_display("RHUH external"),
+    ("Sex at birth, female / male", "Development"): sex_display("Development"),
+    ("Sex at birth, female / male", "Independent internal"): sex_display("Independent internal"),
+    ("Sex at birth, female / male", "RHUH external"): sex_display("RHUH external"),
+    ("Current-to-future interval, days, median (IQR)", "Development"): interval_display("Development", 40, "available"),
+    ("Current-to-future interval, days, median (IQR)", "Independent internal"): interval_display("Independent internal", 113, "valid"),
+    ("Current-to-future interval, days, median (IQR)", "RHUH external"): "Not consistently available in linked file",
+}
+table1_audit = []
+for (characteristic, cohort), expected in table1_expected.items():
+    observed = table1_lookup[(characteristic, cohort)]
+    table1_audit.append(
+        {
+            "characteristic": characteristic,
+            "cohort": cohort,
+            "source": rel(metadata_dir / "LOCKED_COHORT_CHARACTERISTICS_SUMMARY.csv"),
+            "expected": expected,
+            "observed": observed,
+            "status": "PASS" if observed == expected else "FAIL",
+        }
+    )
+assert all(row["status"] == "PASS" for row in table1_audit)
+write_csv(audit_dir / "V2_TABLE1_METADATA_IDENTITY_AUDIT.csv", table1_audit)
 
 citation_claims = [
     ("C1", "Post-treatment imaging and longitudinal baselines require careful interpretation.", "1;14", "YES"),

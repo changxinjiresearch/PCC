@@ -4,5 +4,5 @@ Source patients / pre-outcome excluded / analysed,40 / 0 / 40,115 / 2 / 113,40 /
 "Sex at birth, female / male",17 / 23,47 / 66,12 / 27
 Diagnosis,GBM 40,GBM 74; astrocytoma 23; diffuse glioma 9; oligodendroglioma 4; pilocytic astrocytoma 2; glioma with GBM features 1,Glioblastoma 39
 WHO/dataset grade,Grade 4: 40,Grade 4: 84; grade 3: 2; grade 2: 25; grade 1: 2,Grade 4: 39
-"Current-to-future interval, days, median (IQR)",78.0 (64.0–108.0); available 39/40,68.0 (38.5–102.5); valid 111/113,Not consistently available in linked file
+"Current-to-future interval, days, median (IQR)",78.0 (64.0–108.0); available 39/40,68.0 (39.5–103.0); valid 111/113,Not consistently available in linked file
 External-specific descriptors,Not applicable,Not applicable,IDH wt 35 / mut 4; GTR 26 / NTR 13; previous treatment 2/39
