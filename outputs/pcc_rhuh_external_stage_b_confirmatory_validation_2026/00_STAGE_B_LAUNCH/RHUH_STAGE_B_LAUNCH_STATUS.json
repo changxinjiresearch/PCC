@@ -1,0 +1,20 @@
+{
+  "LIVE_P0_GATE": "PASS",
+  "confirmatory_patients": 39,
+  "unique_patients": 39,
+  "unique_cases": 39,
+  "RHUH_0008_absent": true,
+  "geometry_valid": 39,
+  "mask_mapping": "segmentation > 0",
+  "failure_denominator": 39,
+  "method_count": 7,
+  "threshold": 0.5,
+  "rounds": 10,
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260810,
+  "holm_family_size": 2,
+  "p0_regenerated": false,
+  "target_constructed": false,
+  "performance_computed": false,
+  "science_config_frozen": false
+}

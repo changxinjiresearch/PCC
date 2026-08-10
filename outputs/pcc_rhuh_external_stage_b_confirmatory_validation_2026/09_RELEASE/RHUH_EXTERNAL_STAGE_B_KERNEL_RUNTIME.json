@@ -1,0 +1,12 @@
+{
+  "accelerator": "CPU",
+  "attempt_id": "rhuh_external_stage_b_cpu_v1_attempt_1",
+  "pid": 7,
+  "elapsed_seconds": 2568.0687806606293,
+  "P0_source": "jeechangxin/pcc-rhuh-external-stage-a-p0-freeze-2026/versions/1",
+  "outcome_source": "jeechangxin/pcc-rhuh-stage-b-outcome-only-2026/versions/1",
+  "training": false,
+  "fine_tuning": false,
+  "P0_regenerated": false,
+  "LUMIERE": false
+}

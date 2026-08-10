@@ -1,0 +1,10 @@
+{
+  "kernel_slug": "jeechangxin/pcc-rhuh-external-stage-b-confirmatory-2026",
+  "kernel_version": 1,
+  "kernel_status": "COMPLETE",
+  "outcome_dataset": "jeechangxin/pcc-rhuh-stage-b-outcome-only-2026/versions/1",
+  "frozen_p0_source": "jeechangxin/pcc-rhuh-external-stage-a-p0-freeze-2026/versions/1",
+  "protocol_commit": "6c8bf164f8e445123143db08c34f0f66a1e21226",
+  "stage_a_commit": "f33eb65e32fabc9ba79be2ece4ee4da132ff6273",
+  "post_outcome_scientific_config_changes": 0
+}

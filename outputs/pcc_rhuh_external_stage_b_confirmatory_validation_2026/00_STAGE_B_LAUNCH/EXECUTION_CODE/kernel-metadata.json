@@ -1,0 +1,20 @@
+{
+  "id": "jeechangxin/pcc-rhuh-external-stage-b-confirmatory-2026",
+  "title": "PCC RHUH External Stage B Confirmatory 2026",
+  "code_file": "run.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "jeechangxin/pcc-rhuh-stage-b-outcome-only-2026"
+  ],
+  "kernel_sources": [
+    "jeechangxin/pcc-rhuh-external-stage-a-p0-freeze-2026"
+  ],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "None"
+}

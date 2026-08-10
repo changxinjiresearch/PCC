@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-08-10T07:48:45.451981+00:00",
+  "git_commit": "f33eb65e32fabc9ba79be2ece4ee4da132ff6273",
+  "protocol_commit": "6c8bf164f8e445123143db08c34f0f66a1e21226",
+  "cohort": 39,
+  "P0_live_verification": "PASS",
+  "protocol_locked": true,
+  "first_recurrence_patient_accessed": "RHUH-0001",
+  "methods_unchanged": true,
+  "statistics_unchanged": true,
+  "performance_previously_seen": false,
+  "SCIENCE_CONFIG_FROZEN": true,
+  "execution_wrapper_sha256": "0fd859bf93866888e7ff206b6dfe5ab6fb9b452b989f23707f550939c321468c"
+}

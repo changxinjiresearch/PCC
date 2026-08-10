@@ -1,0 +1,19 @@
+{
+  "cohort": 39,
+  "RHUH_0008_absent": true,
+  "live_P0_hashes_match": 39,
+  "P0_regenerated": false,
+  "target_success": 39,
+  "target_failures": 0,
+  "failed_patients": 0,
+  "case_method_rows": 273,
+  "trajectory_rows": 390,
+  "confirmatory_family_size": 2,
+  "bootstrap_seed": 20260810,
+  "post_outcome_scientific_config_changes": 0,
+  "model_training": false,
+  "fine_tuning": false,
+  "LUMIERE": false,
+  "RHUH_EXTERNAL_STAGE_B_RELEASE_GATE": "PASS",
+  "elapsed_seconds": 2568.0685408115387
+}
