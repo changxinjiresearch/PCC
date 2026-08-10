@@ -1,0 +1,93 @@
+{
+  "patient_id": "RHUH-0002",
+  "case_id": "RHUH-0002_EARLY_POSTOP_TO_RECURRENCE_T1CE",
+  "files_read": [
+    "/kaggle/input/datasets/jeechangxin/pcc-rhuh-stage-a-current-only-2026/RHUH-0002_1_t1ce.nii.gz.bin",
+    "/kaggle/input/datasets/jeechangxin/pcc-rhuh-stage-a-current-only-2026/RHUH-0002_1_segmentations.nii.gz.bin",
+    "/kaggle/input/notebooks/jeechangxin/pcc-leakage-free-rerun-2026/PCC/full_run_artifacts/folds/fold_1/best_training_loss.pt",
+    "/kaggle/input/notebooks/jeechangxin/pcc-leakage-free-rerun-2026/PCC/full_run_artifacts/folds/fold_2/best_training_loss.pt",
+    "/kaggle/input/notebooks/jeechangxin/pcc-leakage-free-rerun-2026/PCC/full_run_artifacts/folds/fold_3/best_training_loss.pt",
+    "/kaggle/input/notebooks/jeechangxin/pcc-leakage-free-rerun-2026/PCC/full_run_artifacts/folds/fold_4/best_training_loss.pt",
+    "/kaggle/input/notebooks/jeechangxin/pcc-leakage-free-rerun-2026/PCC/full_run_artifacts/folds/fold_5/best_training_loss.pt"
+  ],
+  "current_t1ce_files_accessed": 1,
+  "current_segmentation_files_accessed": 1,
+  "frozen_checkpoints_accessed": 5,
+  "recurrence_segmentation_voxel_files_accessed": 0,
+  "recurrence_t1ce_voxel_files_accessed": 0,
+  "target_files_accessed": 0,
+  "performance_files_accessed": 0,
+  "fold_summaries": [
+    {
+      "fold": "fold_1",
+      "checkpoint_sha256": "bb86bcdbde7e0e4a41f5700efd8c532f2a06d3a3d9bde183f0090238a277b18c",
+      "array_sha256": "d5fa0e5877449a6bd611bc8f406e43b6f0340cec205d1214aed3190354cdbcc8",
+      "shape": [
+        155,
+        240,
+        240
+      ],
+      "dtype": "float32",
+      "min": 1.5561987809498135e-10,
+      "max": 0.999218225479126,
+      "mean": 0.0023257965222001076
+    },
+    {
+      "fold": "fold_2",
+      "checkpoint_sha256": "fb75fc2dc1d6703e22ca7ef260a54a0563a184c5a295c0890279c51cb054e759",
+      "array_sha256": "c26bd0755d2cf8bba5f005114384d8b8c639b00e45f8f305c1a627166ed82599",
+      "shape": [
+        155,
+        240,
+        240
+      ],
+      "dtype": "float32",
+      "min": 6.469505937505048e-15,
+      "max": 0.999956488609314,
+      "mean": 0.008683660998940468
+    },
+    {
+      "fold": "fold_3",
+      "checkpoint_sha256": "3e2cb75c84fb861b82789d2bf87517ee494c3435e1b06d64c739437dce547107",
+      "array_sha256": "650e58e233d26e0409ad80803611c37203cebbf39811274266e1fc77c1294b95",
+      "shape": [
+        155,
+        240,
+        240
+      ],
+      "dtype": "float32",
+      "min": 2.9976297052231038e-12,
+      "max": 0.9993246793746948,
+      "mean": 0.01052496861666441
+    },
+    {
+      "fold": "fold_4",
+      "checkpoint_sha256": "28656b1d282fc66e054887166a990810b25d7e6a66d9c21e8f3951868f7291c3",
+      "array_sha256": "0aaad158061494c704d8bcd0df45d3b719ffe20e9ea022275c4101e51d976a45",
+      "shape": [
+        155,
+        240,
+        240
+      ],
+      "dtype": "float32",
+      "min": 2.160907737469575e-12,
+      "max": 0.9999544620513916,
+      "mean": 0.003267746651545167
+    },
+    {
+      "fold": "fold_5",
+      "checkpoint_sha256": "69250135d3eef595b9244426f511c165f10635e1a56241f8fa372959d874c1f3",
+      "array_sha256": "b28180a9a31f8108b6e3e3626c245274f840d4cca3d794fc686925d849ce4766",
+      "shape": [
+        155,
+        240,
+        240
+      ],
+      "dtype": "float32",
+      "min": 1.2254017245361126e-10,
+      "max": 0.9996812343597412,
+      "mean": 0.003999899607151747
+    }
+  ],
+  "p0_sha256": "42ad1ffaaec83f3ed2132a3a230df0d5cd6ae1d0e67aea86eb441ba1c1f7cbb8"
+}

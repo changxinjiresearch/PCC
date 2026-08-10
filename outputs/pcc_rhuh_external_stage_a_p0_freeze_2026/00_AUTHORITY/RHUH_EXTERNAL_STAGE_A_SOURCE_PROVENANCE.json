@@ -1,0 +1,20 @@
+{
+  "protocol_commit": "6c8bf164f8e445123143db08c34f0f66a1e21226",
+  "protocol_zip_sha256": "2ac4378b279854a5497185176e9cd776da8207aab04dd4617cb310080fbad059",
+  "current_only_dataset_slug": "jeechangxin/pcc-rhuh-stage-a-current-only-2026",
+  "current_only_dataset_version": 2,
+  "checkpoint_source_slug": "jeechangxin/pcc-leakage-free-rerun-2026",
+  "checkpoint_source_version": 8,
+  "external_p0_kernel_slug": "jeechangxin/pcc-rhuh-external-stage-a-p0-freeze-2026",
+  "external_p0_kernel_version": 1,
+  "external_p0_kernel_status": "COMPLETE",
+  "stable_p0_source": "jeechangxin/pcc-rhuh-external-stage-a-p0-freeze-2026/versions/1",
+  "runner_sha256": "921bd199b4423bfd01f5e4ed9eb78a795ac67b15f5bdeb6c31adceca885cf33c",
+  "builder_sha256": "b97c0009cb98e37e4aa462ededad30296c516d4602d6aa1cf39726b3d5b752ed",
+  "validator_sha256": "5318134c8e11fe60d817aaa20babf3a8d4af18fcdd047e481e132ff15a249132",
+  "future_segmentation_voxel_access": 0,
+  "recurrence_t1ce_voxel_access": 0,
+  "target_constructed": false,
+  "performance_computed": false,
+  "stage_b_executed": false
+}

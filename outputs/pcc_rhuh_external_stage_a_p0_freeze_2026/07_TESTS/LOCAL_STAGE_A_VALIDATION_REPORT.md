@@ -1,0 +1,38 @@
+# RHUH External Stage A local read-only validation
+
+- protocol_zip_sha_match: PASS
+- pre_outcome_commit_match: PASS
+- cohort_39: PASS
+- rhuh_0008_absent: PASS
+- current_t1ce_39: PASS
+- current_segmentation_39: PASS
+- current_source_hashes_match: PASS
+- checkpoint_count_5: PASS
+- checkpoint_hashes_match: PASS
+- p0_count_39: PASS
+- p0_unique_cases_39: PASS
+- p0_file_hashes_match: PASS
+- p0_sha_table_matches: PASS
+- p0_dtype_float32: PASS
+- p0_finite_39: PASS
+- p0_range_valid_39: PASS
+- p0_shape_valid_39: PASS
+- completion_markers_39: PASS
+- completion_marker_hashes_match: PASS
+- duplicate_p0_hash_groups_0: PASS
+- failure_rows_0: PASS
+- io_types_current_or_checkpoint_only: PASS
+- forbidden_io_paths_0: PASS
+- future_segmentation_voxel_access_0: PASS
+- recurrence_t1ce_voxel_access_0: PASS
+- training_false: PASS
+- backward_false: PASS
+- fine_tuning_false: PASS
+- calibration_false: PASS
+- tta_false: PASS
+- target_constructed_false: PASS
+- performance_computed_false: PASS
+- stage_b_executed_false: PASS
+- remote_gate_pass: PASS
+
+- `EXTERNAL_STAGE_A_P0_FREEZE_GATE=PASS`

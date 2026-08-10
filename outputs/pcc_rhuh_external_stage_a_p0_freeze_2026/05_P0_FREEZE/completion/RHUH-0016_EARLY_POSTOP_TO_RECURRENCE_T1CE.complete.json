@@ -1,0 +1,13 @@
+{
+  "patient_id": "RHUH-0016",
+  "case_id": "RHUH-0016_EARLY_POSTOP_TO_RECURRENCE_T1CE",
+  "status": "COMPLETE",
+  "attempt_id": "rhuh_external_stage_a_gpu_v1",
+  "p0_relative_path": "04_EXTERNAL_P0/external_stage_a/P0/RHUH-0016_EARLY_POSTOP_TO_RECURRENCE_T1CE.npy",
+  "p0_sha256": "554e6016e2a59e1055162ddc64e863c26859fa63db877b30fa04b5f69f75f08e",
+  "future_segmentation_voxel_access": 0,
+  "recurrence_t1ce_voxel_access": 0,
+  "target_constructed": false,
+  "performance_computed": false,
+  "stage_b_executed": false
+}

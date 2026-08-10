@@ -1,0 +1,39 @@
+[{"stream_name":"stdout","time":6.901667608,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 798.9/798.9 MB 256.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":9.574263303,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.7/23.7 MB 313.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":9.727335368,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 823.6/823.6 kB 384.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":9.884570152,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.1/14.1 MB 306.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":12.909789396,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 664.8/664.8 MB 252.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":16.707898664,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 410.6/410.6 MB 257.7 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":18.489557401,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.6/121.6 MB 304.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":19.152858472,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.5/56.5 MB 256.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":19.907641605,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.2/124.2 MB 269.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":21.304886907,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.0/196.0 MB 252.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":22.75227594,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 176.2/176.2 MB 256.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":23.379769777,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.1/99.1 kB 244.0 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":24.150673335,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 209.5/209.5 MB 320.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":126.723017913,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":126.723088577,"data":"torchaudio 2.10.0+cu128 requires torch==2.10.0, but you have torch 2.4.1+cu121 which is incompatible.\n"}
+,{"stream_name":"stderr","time":126.723095264,"data":"torchvision 0.25.0+cu128 requires torch==2.10.0, but you have torch 2.4.1+cu121 which is incompatible.\n"}
+,{"stream_name":"stdout","time":262.105077241,"data":"{\n"}
+,{"stream_name":"stdout","time":262.105120551,"data":"  \"confirmatory_patients\": 39,\n"}
+,{"stream_name":"stdout","time":262.105125134,"data":"  \"predictor_forward_patients\": 39,\n"}
+,{"stream_name":"stdout","time":262.105128291,"data":"  \"p0_generated\": 39,\n"}
+,{"stream_name":"stdout","time":262.105131597,"data":"  \"completion_markers\": 39,\n"}
+,{"stream_name":"stdout","time":262.10513458,"data":"  \"p0_hash_records\": 39,\n"}
+,{"stream_name":"stdout","time":262.105150536,"data":"  \"duplicate_p0_hash_groups\": 0,\n"}
+,{"stream_name":"stdout","time":262.105153141,"data":"  \"failed_patients\": 0,\n"}
+,{"stream_name":"stdout","time":262.105155421,"data":"  \"future_segmentation_voxel_access\": 0,\n"}
+,{"stream_name":"stdout","time":262.105157797,"data":"  \"recurrence_t1ce_voxel_access\": 0,\n"}
+,{"stream_name":"stdout","time":262.105160037,"data":"  \"target_constructed\": false,\n"}
+,{"stream_name":"stdout","time":262.105162307,"data":"  \"performance_computed\": false,\n"}
+,{"stream_name":"stdout","time":262.105164729,"data":"  \"stage_b_executed\": false,\n"}
+,{"stream_name":"stdout","time":262.105166959,"data":"  \"gate\": \"PASS\",\n"}
+,{"stream_name":"stdout","time":262.105169242,"data":"  \"hard_block\": null\n"}
+,{"stream_name":"stdout","time":262.105171472,"data":"}\n"}
+,{"stream_name":"stderr","time":264.805470599,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":264.805505839,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":265.068743107,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":265.068774549,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":265.821677167,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":267.192147546,"data":"[NbConvertApp] Writing 420119 bytes to __results__.html\n"}
+]

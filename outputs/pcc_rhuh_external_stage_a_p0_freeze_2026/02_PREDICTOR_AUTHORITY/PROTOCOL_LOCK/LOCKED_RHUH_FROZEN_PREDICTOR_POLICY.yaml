@@ -1,0 +1,46 @@
+status: LOCKED_PRE_EXTERNAL_FORWARD
+architecture: 2D slice-wise CrossCaseSmallUNet
+architecture_parameters:
+  input_channels: 2
+  output_channels: 1
+  base_channels: 16
+input_order:
+- current_T1ce_normalized
+- locked_binary_current_mask
+normalization: current-volume positive voxels p1/p99, clipped to [0,1]
+preprocessing_implementation:
+  path: src/preprocessing/current_only_preprocessing.py
+  sha256: bf48893deabbb400e6f412b9a53267e55ecb538a4f57daa682ed1350bc2b5624
+architecture_implementation:
+  path: src/models/crosscase_future_predictor.py
+  sha256: abce63dc26f6642438540ca80c8f80b992a0a39a39b88a17966dd65806915d08
+forward_implementation:
+  path: experiments/run_115_stage_a_p0.py
+  sha256: 15ca3edd60fb984d0b3bc35bdeaaaf70edf32c246fe006b44fd2d3f0f451a98c
+predictor_config:
+  path: outputs/pcc_115_holdout_stage_a_p0_freeze_2026/00_STAGE_A_AUTHORITY/PROTOCOL_LOCK/LOCKED_115_PREDICTOR_CONFIG.yaml
+  sha256: e69bc6ca7554b90e68c2010d6156e2dc014920a493eb82a2202561d3a3bbfd03
+scientific_git_commit: 66269681e4417dccabc68ecaa792d76e19aa5856
+checkpoint_count: 5
+checkpoint_hashes_match: true
+ensemble: equal arithmetic mean
+ensemble_weights:
+- 0.2
+- 0.2
+- 0.2
+- 0.2
+- 0.2
+preprocessing_storage_dtype: float16
+formal_forward_tensor_dtype: float32
+prediction_dtype: float32
+forward_logic: slice-wise batches; logits -> sigmoid; five predictions -> float32
+  arithmetic mean
+forbidden:
+- RHUH training
+- fine-tuning
+- calibration
+- checkpoint selection
+- test-time adaptation
+- RHUH-specific normalization tuning
+- RHUH-specific threshold selection
+predictor_forward_executed_in_protocol_lock: false

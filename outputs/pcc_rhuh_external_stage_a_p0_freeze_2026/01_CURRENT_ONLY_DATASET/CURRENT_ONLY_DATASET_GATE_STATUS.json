@@ -1,0 +1,13 @@
+{
+  "patients": 39,
+  "current_t1ce_files": 39,
+  "current_segmentation_files": 39,
+  "source_hash_mismatch": 0,
+  "excluded_patient_present": false,
+  "preoperative_files": 0,
+  "recurrence_t1ce_files": 0,
+  "recurrence_segmentation_files": 0,
+  "target_files": 0,
+  "performance_files": 0,
+  "gate": "PASS"
+}

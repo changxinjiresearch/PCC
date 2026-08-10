@@ -1,0 +1,20 @@
+{
+  "dataset_slug": "jeechangxin/pcc-rhuh-stage-a-current-only-2026",
+  "version_1": {
+    "status": "SUPERSEDED_ENGINEERING_TRANSPORT_FAILURE",
+    "cause": "Kaggle automatically expanded .nii.gz files, so mounted bytes did not preserve locked source hashes",
+    "predictor_forward_executed": false,
+    "p0_generated": false,
+    "retained": true
+  },
+  "version_2": {
+    "status": "PASS",
+    "transport": "byte-identical NIfTI .nii.gz bytes stored with opaque .bin suffix",
+    "remote_file_count": 82,
+    "scientific_file_count": 78,
+    "remote_fixed_sample": "RHUH-0001_1_t1ce.nii.gz.bin",
+    "remote_fixed_sample_sha256": "3b7f6f7d19ee12317cc4131d4f32773f7c5ceefd35d98a4de7f21901abc5fbe8",
+    "source_hash_mismatch": 0
+  },
+  "authoritative_version": 2
+}

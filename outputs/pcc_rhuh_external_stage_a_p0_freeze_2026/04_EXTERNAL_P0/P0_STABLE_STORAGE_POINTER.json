@@ -1,0 +1,13 @@
+{
+  "p0_arrays_in_metadata_zip": false,
+  "p0_arrays_in_git": false,
+  "stable_storage_type": "Kaggle kernel output",
+  "kernel_slug": "jeechangxin/pcc-rhuh-external-stage-a-p0-freeze-2026",
+  "kernel_version": 1,
+  "kernel_status": "COMPLETE",
+  "p0_root": "pcc_rhuh_external_stage_a_p0_freeze_2026/04_EXTERNAL_P0/external_stage_a/P0",
+  "p0_count": 39,
+  "p0_manifest": "05_P0_FREEZE/LOCKED_RHUH_39_EXTERNAL_P0_MANIFEST.csv",
+  "p0_sha256_table": "05_P0_FREEZE/LOCKED_RHUH_39_EXTERNAL_P0_SHA256.csv",
+  "immutable_after_freeze": true
+}

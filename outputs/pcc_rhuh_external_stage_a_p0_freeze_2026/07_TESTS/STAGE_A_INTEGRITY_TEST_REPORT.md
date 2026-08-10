@@ -1,0 +1,35 @@
+# External Stage A integrity tests
+
+- protocol_zip_sha_match: PASS
+- pre_outcome_commit_match: PASS
+- cohort_39: PASS
+- rhuh_0008_absent: PASS
+- current_t1ce_39: PASS
+- current_segmentation_39: PASS
+- current_source_hashes_match: PASS
+- checkpoint_count_5: PASS
+- checkpoint_hashes_match: PASS
+- preprocessing_hash_match: PASS
+- architecture_hash_match: PASS
+- forward_hash_match: PASS
+- training_executed_false: PASS
+- backward_executed_false: PASS
+- fine_tuning_false: PASS
+- calibration_false: PASS
+- tta_false: PASS
+- p0_count_39: PASS
+- p0_unique_cases_39: PASS
+- p0_dtype_float32: PASS
+- p0_finite_39: PASS
+- p0_range_valid_39: PASS
+- p0_shape_valid_39: PASS
+- completion_markers_39: PASS
+- sha_records_39: PASS
+- duplicate_hash_groups_0: PASS
+- future_segmentation_voxel_access_0: PASS
+- recurrence_t1ce_voxel_access_0: PASS
+- target_constructed_false: PASS
+- performance_computed_false: PASS
+- stage_b_executed_false: PASS
+
+- Gate: `PASS`

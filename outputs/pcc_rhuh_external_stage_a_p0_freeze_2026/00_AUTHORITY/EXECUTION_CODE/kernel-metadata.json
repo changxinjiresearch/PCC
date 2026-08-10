@@ -1,0 +1,17 @@
+{
+  "id": "jeechangxin/pcc-rhuh-external-stage-a-p0-freeze-2026",
+  "title": "PCC RHUH External Stage A P0 Freeze 2026",
+  "code_file": "run.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "jeechangxin/pcc-rhuh-stage-a-current-only-2026"
+  ],
+  "kernel_sources": [
+    "jeechangxin/pcc-leakage-free-rerun-2026"
+  ]
+}

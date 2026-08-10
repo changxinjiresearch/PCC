@@ -1,0 +1,16 @@
+{
+  "confirmatory_patients": 39,
+  "predictor_forward_patients": 39,
+  "p0_generated": 39,
+  "completion_markers": 39,
+  "p0_hash_records": 39,
+  "duplicate_p0_hash_groups": 0,
+  "failed_patients": 0,
+  "future_segmentation_voxel_access": 0,
+  "recurrence_t1ce_voxel_access": 0,
+  "target_constructed": false,
+  "performance_computed": false,
+  "stage_b_executed": false,
+  "gate": "PASS",
+  "hard_block": null
+}
