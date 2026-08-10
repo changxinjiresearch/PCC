@@ -1,0 +1,8 @@
+Method,Target-derived information access,Iterative,Direct target blending,Internal Dice@0.5,RHUH Dice@0.5,Interpretation
+Fixed,No,No,No,0.239,0.190,Frozen future-blind P0
+Naive,No,No,No,0.239,0.190,Target-free logit sharpening
+EIA-linear,Yes,No,No,0.296,0.246,One-step target-access correction
+EIA-blend-0.90,Yes,No,Yes,0.259,0.206,Direct 10% target-signal blend
+EIA-blend-0.75,Yes,No,Yes,0.317,0.248,Direct 25% target-signal blend
+Full PCC,Yes,Yes,No,0.444,0.365,Canonical target-conditioned PCC
+No-smoothing PCC,Yes,Yes,No,0.637,0.451,Prelocked candidate; no discrepancy smoothing

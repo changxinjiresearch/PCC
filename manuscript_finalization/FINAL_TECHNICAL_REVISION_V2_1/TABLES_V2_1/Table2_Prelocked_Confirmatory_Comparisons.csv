@@ -1,0 +1,5 @@
+Cohort,Comparison,n,Mean difference,Median difference,Wins / ties / losses,95% bootstrap CI,Two-sided Wilcoxon P,Holm P,Cohen dz,Rank-biserial
+Independent internal,Full PCC vs Fixed,113,0.205,0.212,113 / 0 / 0,0.191 to 0.218,2.803e-20,5.606e-20,2.746,1.000
+Independent internal,No-smoothing PCC vs Full PCC,113,0.193,0.189,113 / 0 / 0,0.174 to 0.213,2.803e-20,5.606e-20,1.797,1.000
+RHUH external,Full PCC vs Fixed,39,0.176,0.185,39 / 0 / 0,0.151 to 0.199,3.638e-12,7.276e-12,2.236,1.000
+RHUH external,No-smoothing PCC vs Full PCC,39,0.086,0.088,38 / 0 / 1,0.072 to 0.101,7.276e-12,7.276e-12,1.807,0.997

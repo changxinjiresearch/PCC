@@ -1,0 +1,9 @@
+Characteristic,Development 40,Independent internal 113,RHUH external 39
+Source patients / pre-outcome excluded / analysed,40 / 0 / 40,115 / 2 / 113,40 / 1 / 39
+"Age, years, median (IQR)",57.5 (53.0–65.0); n=40,60.0 (43.0–69.0); n=113,64.0 (55.0–69.5); n=39
+"Sex, female / male",17 / 23,47 / 66,12 / 27
+"Current-to-future interval, days, median (IQR)",78.0 (64.0–108.0); n=39,68.0 (39.5–103.0); n=111,Not consistently available in linked source metadata
+Diagnosis / grade,GBM / grade 4: 40,GBM 74; astrocytoma 23; diffuse glioma 9; oligodendroglioma 4; pilocytic astrocytoma 2; glioma with GBM features 1,Glioblastoma / grade 4: 39
+IDH status,Not consistently available,Not consistently available,wt 35; mut 4
+Extent of resection,Not consistently available,Not consistently available,GTR 26; NTR 13
+Previous treatment,Not consistently available,Not consistently available,no 37; surgery + QT/RT 2

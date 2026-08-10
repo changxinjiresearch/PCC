@@ -1,0 +1,14 @@
+requirement,official requirement,V2.1 status,authority,accessed
+Article format,Article,PASS,Scientific Reports official Submission Guidelines / Editorial Policies / Nature Portfolio AI policy,2026-08-11
+Title,<=20 words,PASS,Scientific Reports official Submission Guidelines / Editorial Policies / Nature Portfolio AI policy,2026-08-11
+Abstract,unstructured; <=200 words; no references,PASS,Scientific Reports official Submission Guidelines / Editorial Policies / Nature Portfolio AI policy,2026-08-11
+Main text,"recommended <=4,500 words excluding Abstract, Methods, References and legends",PASS,Scientific Reports official Submission Guidelines / Editorial Policies / Nature Portfolio AI policy,2026-08-11
+Display items,maximum 8,PASS: 5 figures + 3 tables,Scientific Reports official Submission Guidelines / Editorial Policies / Nature Portfolio AI policy,2026-08-11
+Tables,editable and maximum one page,PASS,Scientific Reports official Submission Guidelines / Editorial Policies / Nature Portfolio AI policy,2026-08-11
+Equations,numbered and editable Word format,PASS: OMML equation (1),Scientific Reports official Submission Guidelines / Editorial Policies / Nature Portfolio AI policy,2026-08-11
+Supplement,single separate clear file; Supplementary Table/Figure numbering,PASS,Scientific Reports official Submission Guidelines / Editorial Policies / Nature Portfolio AI policy,2026-08-11
+Data availability,mandatory,PASS_WITH_AUTHOR_REPOSITORY_ACTION,Scientific Reports official Submission Guidelines / Editorial Policies / Nature Portfolio AI policy,2026-08-11
+Code availability,central custom code statement,PASS_WITH_AUTHOR_REPOSITORY_ACTION,Scientific Reports official Submission Guidelines / Editorial Policies / Nature Portfolio AI policy,2026-08-11
+Cover letter,"contact, rationale, suggested/excluded reviewers and prior discussion",PASS_WITH_PLACEHOLDERS,Scientific Reports official Submission Guidelines / Editorial Policies / Nature Portfolio AI policy,2026-08-11
+LLM use,LLM not author; use documented in Methods,PASS_WITH_AUTHOR_FINAL_VERIFICATION,Scientific Reports official Submission Guidelines / Editorial Policies / Nature Portfolio AI policy,2026-08-11
+Statistics,"test, n, comparison, tails, alpha, actual P and multiplicity",PASS,Scientific Reports official Submission Guidelines / Editorial Policies / Nature Portfolio AI policy,2026-08-11

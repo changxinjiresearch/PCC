@@ -1,0 +1,8 @@
+section,claim,references,support,overstatement,action
+Introduction,Post-treatment baselines and longitudinal criteria,"1,14",SUPPORTED,NO,NONE
+Introduction/Methods,MU and RHUH dataset properties and label provenance,"2,3",SUPPORTED,NO,NONE
+Methods,U-Net-derived architecture context,4,SUPPORTED,NO,NONE
+Introduction/Discussion,External validation and domain shift,"5,6",SUPPORTED,NO,NONE
+Methods,Segmentation metrics,"10,11,15",SUPPORTED,NO,NONE
+Methods,Holm adjustment and bootstrap,"12,13",SUPPORTED,NO,NONE
+Introduction/Discussion,Cepeda future-blind recurrence-localization task,16,SUPPORTED,NO,NONE

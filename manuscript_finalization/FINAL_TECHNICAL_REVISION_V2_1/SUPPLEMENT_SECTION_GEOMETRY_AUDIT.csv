@@ -1,0 +1,12 @@
+section,orientation,page_width_inches,page_height_inches,expected,status
+1,portrait,8.50,11.00,height>width,PASS
+2,landscape,11.00,8.50,width>height,PASS
+3,landscape,11.00,8.50,width>height,PASS
+4,landscape,11.00,8.50,width>height,PASS
+5,landscape,11.00,8.50,width>height,PASS
+6,landscape,11.00,8.50,width>height,PASS
+7,landscape,11.00,8.50,width>height,PASS
+8,landscape,11.00,8.50,width>height,PASS
+9,landscape,11.00,8.50,width>height,PASS
+10,landscape,11.00,8.50,width>height,PASS
+11,landscape,11.00,8.50,width>height,PASS

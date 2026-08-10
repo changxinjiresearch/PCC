@@ -1,0 +1,11 @@
+item,title,actual_objects,source_authority,status
+Supplementary Table S1,Cohort metadata availability and analysis flow,1,manuscript_finalization/FINAL_TECHNICAL_REVISION_V2_1/TABLES_V2_1/Supplementary_Table_S1.csv,PASS
+Supplementary Table S2,Independent internal secondary metric summaries,1,manuscript_finalization/FINAL_TECHNICAL_REVISION_V2_1/TABLES_V2_1/Supplementary_Table_S2.csv,PASS
+Supplementary Table S3,RHUH secondary metric summaries,1,manuscript_finalization/FINAL_TECHNICAL_REVISION_V2_1/TABLES_V2_1/Supplementary_Table_S3.csv,PASS
+Supplementary Table S4,Development fixed-threshold and probability metric summaries,1,manuscript_finalization/FINAL_TECHNICAL_REVISION_V2_1/TABLES_V2_1/Supplementary_Table_S4.csv,PASS
+Supplementary Table S5,Development mechanism ablations under oracle-assisted target-volume-matched top-k Dice,1,manuscript_finalization/FINAL_TECHNICAL_REVISION_V2_1/TABLES_V2_1/Supplementary_Table_S5.csv,PASS
+Supplementary Table S6,Imperfect-guidance robustness,1,manuscript_finalization/FINAL_TECHNICAL_REVISION_V2_1/TABLES_V2_1/Supplementary_Table_S6.csv,PASS
+Supplementary Table S7,No-smoothing robustness across guidance conditions,1,manuscript_finalization/FINAL_TECHNICAL_REVISION_V2_1/TABLES_V2_1/Supplementary_Table_S7.csv,PASS
+Supplementary Table S8,Internal oracle-assisted target-volume-matched controls,1,manuscript_finalization/FINAL_TECHNICAL_REVISION_V2_1/TABLES_V2_1/Supplementary_Table_S8.csv,PASS
+Supplementary Table S9,RHUH oracle-assisted target-volume-matched controls,1,manuscript_finalization/FINAL_TECHNICAL_REVISION_V2_1/TABLES_V2_1/Supplementary_Table_S9.csv,PASS
+Supplementary Table S10,Failure and denominator accounting,1,manuscript_finalization/FINAL_TECHNICAL_REVISION_V2_1/TABLES_V2_1/Supplementary_Table_S10.csv,PASS
