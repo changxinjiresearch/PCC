@@ -1,0 +1,7 @@
+claim_id,claim,references,support
+INTRO_1,Post-treatment MRI interpretation is complicated by treatment effects and changing reference baselines.,1;14,YES
+INTRO_2,External radiology AI performance often attenuates across datasets.,5;6,YES
+DATA_MU,MU-Glioma-Post contains longitudinal postoperative MRI and labelled segmentations.,2,YES
+DATA_RHUH,"RHUH contains 40 patients at preoperative, early-postoperative and recurrence timepoints.",3,YES
+REPORTING,CLAIM 2024 promotes transparent reporting of medical imaging AI.,7,YES
+METRICS,Multiple complementary segmentation metrics avoid reliance on one overlap measure.,10;15,YES

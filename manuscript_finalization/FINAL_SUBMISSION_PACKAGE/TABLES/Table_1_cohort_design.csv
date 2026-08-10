@@ -1,0 +1,4 @@
+evidence_level,source_patients,pre_outcome_exclusions,analysed,role
+Development,40,0,40,"Method development, ablation, robustness"
+Independent internal,115,2,113,Prelocked confirmation
+RHUH external,40,1,39,Cross-dataset technical testing

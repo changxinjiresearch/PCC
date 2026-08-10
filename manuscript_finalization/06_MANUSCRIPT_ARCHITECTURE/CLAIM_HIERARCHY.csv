@@ -1,0 +1,7 @@
+claim_id,level,claim,status
+C1,PRIMARY,Future-blind Fixed/P0 performance is separately reported in internal and RHUH cohorts,SUPPORTED
+C2,PRIMARY,Canonical Full PCC improves Dice@0.5 over Fixed in both confirmatory cohorts,SUPPORTED
+C3,SECONDARY,"No-smoothing, discovered after development analysis, improves over Full PCC when subsequently prelocked",SUPPORTED
+C4,SUPPORTING,Shuffled and imperfect guidance show spatial-guidance dependence and robustness limits,SUPPORTED
+C5,EXPLORATORY,Layer analyses indicate spatial reliance/localization,QUALIFIED
+C6,PROHIBITED,PCC prospectively predicts recurrence or proves biology,NOT_SUPPORTED

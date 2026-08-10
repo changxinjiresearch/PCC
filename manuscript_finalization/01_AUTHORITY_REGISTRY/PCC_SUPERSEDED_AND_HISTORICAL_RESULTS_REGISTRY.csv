@@ -1,0 +1,9 @@
+path,classification,reason,used_in_main_manuscript
+PCC_113_STAGE_B_CONFIRMATORY_VALIDATION_2026.zip,HISTORICAL_SUPERSEDED,V1 science preserved but V2 fixes metadata/provenance,false
+PCC_115_STAGE_A_COHORT_AMENDMENT_2026.zip,HISTORICAL_SUPERSEDED,V2 archive supersedes metadata,false
+outputs/pcc_leakage_free_rerun_2026_v8/17_lumiere_external,INVALID_FOR_MAIN_MANUSCRIPT,historical LUMIERE; not the RHUH external validation,false
+validation_artifacts/,HISTORICAL_SUPERSEDED,prior draft/report artifacts,false
+outputs/final_report/,HISTORICAL_SUPERSEDED,older narrative predating final confirmatory/external releases,false
+historical case-specific future-target-trained P0 variants,INVALID_FOR_MAIN_MANUSCRIPT,future leakage / non-current scientific route,false
+historical PCC Dice values near 0.7,INVALID_FOR_MAIN_MANUSCRIPT,superseded metric/method route; not current fixed-0.5 evidence,false
+Stage B engineering recovery attempts,ENGINEERING_ONLY,"path-plumbing evidence, no scientific results",false

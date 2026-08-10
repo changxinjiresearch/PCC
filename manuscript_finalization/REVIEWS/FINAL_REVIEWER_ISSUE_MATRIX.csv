@@ -1,0 +1,6 @@
+issue_id,reviewer,severity,issue,disposition,unresolved_fatal,unresolved_major_fixable
+FINAL_1,EDITOR,MINOR,Submission metadata incomplete,AUTHOR_ACTION,0,0
+FINAL_2,METHODS,MINOR,Prospective utility remains untested,TRANSPARENT_LIMITATION,0,0
+FINAL_3,STATISTICS,MINOR,External interval width reflects n=39,TRANSPARENT_LIMITATION,0,0
+FINAL_4,MEDICAL_IMAGING_AI,MINOR,No human-reader comparison,EXPERIMENT_REQUIRED_LIMITATION,0,0
+FINAL_5,NEURO_ONCOLOGY,MINOR,Mask ontology is not clinically equivalent,TRANSPARENT_LIMITATION,0,0

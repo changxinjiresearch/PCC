@@ -1,0 +1,15 @@
+issue_id,issue,severity,reviewer,evidence,fixable_without_new_experiment,required_action,manuscript_location,status
+R1_EDITOR_1,Title/abstract may still be read as prediction,MAJOR,EDITOR,manuscript V1,true,State target conditioning in title/abstract and first Discussion paragraph,multiple,RESOLVED_IN_V2
+R1_EDITOR_2,Availability URLs absent,MAJOR,EDITOR,manuscript V1,true,Use explicit placeholders and submission actions,multiple,RESOLVED_IN_V2
+R1_EDITOR_3,Display count and narrative density,MODERATE,EDITOR,manuscript V1,true,Keep five figures/two tables; move spatial detail to supplement,multiple,RESOLVED_IN_V2
+R1_METHODS_1,Future target makes PCC oracle-conditioned,MAJOR,METHODS,manuscript V1,true,Separate Stage A and B in every section; Fixed is only future-blind estimate,multiple,RESOLVED_IN_V2
+R1_METHODS_2,No-smoothing chronology risks hindsight bias,MAJOR,METHODS,manuscript V1,true,State post-hoc development discovery and subsequent prelocking,multiple,RESOLVED_IN_V2
+R1_METHODS_3,Locked internal manifests lack patient-level pathology fields,MAJOR,METHODS,manuscript V1,true,Use glioma for combined/internal claims and reserve glioblastoma for documented RHUH evidence,multiple,RESOLVED_IN_V2
+R1_METHODS_4,Cohort exclusions need timing,MODERATE,METHODS,manuscript V1,true,Report both pre-outcome exclusions and retained audit evidence,multiple,RESOLVED_IN_V2
+R1_STATISTICS_1,Avoid uncorrected development claims,MAJOR,STATISTICS,manuscript V1,true,Limit formal confirmation to two prelocked Wilcoxon/Holm families,multiple,RESOLVED_IN_V2
+R1_STATISTICS_2,External n=39 uncertainty,MODERATE,STATISTICS,manuscript V1,true,Report paired bootstrap CI and effect sizes,multiple,RESOLVED_IN_V2
+R1_STATISTICS_3,Secondary multiplicity,MODERATE,STATISTICS,manuscript V1,true,No new secondary P values,multiple,RESOLVED_IN_V2
+R1_CLINICAL_1,Clinical forecasting wording is misleading,MAJOR,CLINICAL,manuscript V1,true,Use retrospective target-conditioned technical validation,multiple,RESOLVED_IN_V2
+R1_CLINICAL_2,Mask ontology differs,MODERATE,CLINICAL,manuscript V1,true,State closest available mapping and limitation,multiple,RESOLVED_IN_V2
+R1_REPRODUCIBILITY_1,Code/data URLs absent,MAJOR,REPRODUCIBILITY,manuscript V1,true,Provide release plan and explicit author action,multiple,RESOLVED_IN_V2
+R1_REPRODUCIBILITY_2,Authority selection must be auditable,MODERATE,REPRODUCIBILITY,manuscript V1,true,Provide SHA registry and historical exclusion ledger,multiple,RESOLVED_IN_V2

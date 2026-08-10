@@ -1,0 +1,15 @@
+requirement,criterion,status,evidence
+Article type,Article,PASS,Title page
+Title,<=20 words,PASS,Final title is 13 words
+Abstract,Unstructured; <=200 words; no references,PASS,Measured in final release report
+Keywords,<=6,PASS,6
+Main text,Recommended <=4500 words excluding Methods/References/legends,PASS,Measured in release report
+Display items,<=8,PASS,5 figures + 2 tables
+Legends,<=350 words each,PASS,All concise
+Data Availability,Mandatory,AUTHOR_ACTION,Draft complete; repository DOI/URL required
+Code Availability,Central custom code accessible,AUTHOR_ACTION,Draft complete; public/reviewer URL required
+Ethics,Accurate source-based statement,AUTHOR_ACTION,Dataset ethics sourced; secondary-use determination requires author confirmation
+AI disclosure,LLM use disclosed; no AI authorship,AUTHOR_ACTION,Draft complete; author approval required
+Statistics,Full test specification,PASS,Methods and Table 2
+Supplement,Separate combined file,PASS,DOCX and PDF
+Figure integrity,Publication-quality and non-deceptive,PASS,Vector and 300-dpi exports; no qualitative MRI panel used

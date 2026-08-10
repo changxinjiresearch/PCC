@@ -1,0 +1,58 @@
+check,status,detail
+internal case-method rows,PASS,904
+internal unique patients,PASS,113
+internal trajectory rows,PASS,1130
+RHUH case-method rows,PASS,273
+RHUH unique patients,PASS,39
+RHUH-0008 absent,PASS,
+RHUH trajectory rows,PASS,390
+confirmatory families,PASS,2 internal + 2 external
+internal Fixed rendered mean,PASS,0.239
+internal Full PCC rendered mean,PASS,0.444
+internal No-smoothing PCC rendered mean,PASS,0.637
+RHUH Fixed rendered mean,PASS,0.190
+RHUH Full PCC rendered mean,PASS,0.365
+RHUH No-smoothing PCC rendered mean,PASS,0.451
+internal exact raw p rendered,PASS,Full PCC vs Fixed
+internal Holm p rendered,PASS,Full PCC vs Fixed
+internal exact raw p rendered,PASS,No-smoothing PCC vs Full PCC
+internal Holm p rendered,PASS,No-smoothing PCC vs Full PCC
+RHUH exact raw p rendered,PASS,Full PCC vs Fixed
+RHUH Holm p rendered,PASS,Full PCC vs Fixed
+RHUH exact raw p rendered,PASS,No-smoothing PCC vs Full PCC
+RHUH Holm p rendered,PASS,No-smoothing PCC vs Full PCC
+numeric audit nonempty,PASS,85
+numeric mismatches zero,PASS,0
+citation claim failures zero,PASS,6
+references verified,PASS,15
+reference DOI uniqueness,PASS,0
+reference identifiers present,PASS,
+known corrected metric reference,PASS,
+RHUH peer-reviewed DOI,PASS,
+authority registry hash drift zero,PASS,
+required final files,PASS,
+01_PCC_SCIENTIFIC_REPORTS_SUBMISSION_READY.docx nonempty,PASS,1104288
+02_PCC_SCIENTIFIC_REPORTS_SUBMISSION_READY.pdf nonempty,PASS,1263868
+03_PCC_SCIENTIFIC_REPORTS_SUPPLEMENTARY_INFORMATION.docx nonempty,PASS,48864
+04_PCC_SCIENTIFIC_REPORTS_SUPPLEMENTARY_INFORMATION.pdf nonempty,PASS,31541
+05_PCC_SCIENTIFIC_REPORTS_COVER_LETTER.docx nonempty,PASS,38072
+01_PCC_SCIENTIFIC_REPORTS_SUBMISSION_READY.docx opens,PASS,
+03_PCC_SCIENTIFIC_REPORTS_SUPPLEMENTARY_INFORMATION.docx opens,PASS,
+05_PCC_SCIENTIFIC_REPORTS_COVER_LETTER.docx opens,PASS,
+02_PCC_SCIENTIFIC_REPORTS_SUBMISSION_READY.pdf PDF header/trailer,PASS,
+04_PCC_SCIENTIFIC_REPORTS_SUPPLEMENTARY_INFORMATION.pdf PDF header/trailer,PASS,
+figure counts,PASS,"5 SVG, 5 PNG"
+Figure_1_study_design.png dimensions,PASS,"(2400, 1520)"
+Figure_2_internal_confirmatory.png dimensions,PASS,"(2400, 1520)"
+Figure_3_full_pcc_trajectories.png dimensions,PASS,"(2400, 1520)"
+Figure_4_rhuh_external.png dimensions,PASS,"(2400, 1520)"
+Figure_5_development_controls.png dimensions,PASS,"(2400, 1520)"
+ZIP integrity,PASS,None
+ZIP duplicate paths,PASS,0
+ZIP/tree paths equal,PASS,"missing=0, extra=0"
+ZIP/tree bytes equal,PASS,
+controlled package mismatches,PASS,
+self-reference policy,PASS,
+no LUMIERE result claim,PASS,
+target-conditioning limitation explicit,PASS,
+no unsupported PASS gate,PASS,

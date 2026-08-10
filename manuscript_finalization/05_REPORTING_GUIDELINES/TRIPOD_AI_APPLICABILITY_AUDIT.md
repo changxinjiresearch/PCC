@@ -1,0 +1,3 @@
+# TRIPOD+AI applicability audit
+
+TRIPOD+AI is **partially applicable**. It applies to the future-blind P0 predictor evaluation and its independent RHUH transfer, including participant flow, predictor inputs, model identity, validation setting and performance reporting. It does not fully govern PCC Stage B because Stage B is explicitly target-conditioned retrospective refinement rather than a diagnosis/prognosis model intended to estimate an unknown future outcome at deployment. The manuscript does not claim full TRIPOD+AI compliance; applicable items are reported and non-applicable items are explained.

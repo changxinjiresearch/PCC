@@ -1,0 +1,1 @@
+Custom code for preprocessing, the frozen predictor, PCC/EIA methods, deterministic summaries, statistical validation and figure generation will be archived from the submission commit at [CODE_REPOSITORY_URL_REQUIRED], with an immutable release tag and environment/configuration manifests. Reviewer access will be supplied if the repository cannot be public at first submission.

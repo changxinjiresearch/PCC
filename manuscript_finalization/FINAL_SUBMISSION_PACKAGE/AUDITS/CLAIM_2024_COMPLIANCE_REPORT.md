@@ -1,0 +1,3 @@
+# CLAIM 2024 compliance report
+
+All 44 CLAIM 2024 items were assessed by official item description. Study design, data partitions, reference standard, preprocessing, model identity, external testing, patient-level statistics, failure accounting and interpretation boundaries are reported. Open items are explicit: historical random-initialization detail is unrecoverable; patient-level demographics are absent from the locked analysis manifests; and protocol/code URLs plus funding require author action. No demographic inference was fabricated. Critical reporting gaps recoverable from current evidence: **0**.
