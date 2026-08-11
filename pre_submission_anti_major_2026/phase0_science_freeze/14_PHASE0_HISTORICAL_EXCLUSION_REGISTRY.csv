@@ -1,0 +1,8 @@
+artifact/family,reason_excluded,allowed_use,forbidden_use
+historical case-specific target-trained P0,not future-blind or not current authority,provenance chronology,current confirmatory evidence or parameter choice
+superseded high-Dice results,old evaluation semantics or superseded table,history only,current performance claim
+historical leaky variants,violates current leakage-free policy,method-development chronology,current evidence
+old manuscript versions superseded by V2.1.1,version evolution,provenance only,current authority
+old LUMIERE scientific outputs,historical exposure,exposure audit only,current independent confirmation
+engineering failed attempts,not scientific outcomes,engineering provenance,current performance or exclusion rationale
+deprecated fold manifests,superseded execution identity,provenance only,current cohort/checkpoint selection

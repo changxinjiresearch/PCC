@@ -1,0 +1,3 @@
+# Negative-result retention policy
+
+All future pre-defined Anti-Major analyses retain positive, null, attenuated, contradictory, and technical-failure outcomes. No result-dependent exclusion, cohort abandonment, condition deletion, method rename, threshold/metric promotion, or Supplement omission is allowed. Technical exclusion is allowed only under rules locked before performance: identity, geometry, missing required modality, unreadable/corrupt file, or other pre-outcome data-integrity failure. New analyses on already observed Internal 113/RHUH 39 outcomes are Class C post-primary prespecified robustness, never original confirmatory.

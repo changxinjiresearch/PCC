@@ -1,0 +1,10 @@
+evidence_class,class_name,evidence_family,future_use_rule
+CLASS A,FROZEN_PRIMARY_CONFIRMATORY,Internal 113 H1 Full PCC vs Fixed Dice@0.5,Permanent frozen confirmatory; no family expansion.
+CLASS A,FROZEN_PRIMARY_CONFIRMATORY,Internal 113 H2 No-smoothing vs Full PCC Dice@0.5,Permanent frozen confirmatory; no re-adjustment.
+CLASS A,FROZEN_PRIMARY_CONFIRMATORY,RHUH 39 H3 Full PCC vs Fixed Dice@0.5,Permanent frozen external confirmatory.
+CLASS A,FROZEN_PRIMARY_CONFIRMATORY,RHUH 39 H4 No-smoothing vs Full PCC Dice@0.5,Permanent frozen external confirmatory.
+CLASS B,FROZEN_SUPPORTING_OR_DESCRIPTIVE,"Development 40, secondary metrics, oracle/top-k, trajectories, EIA, ablations, qualitative results",Supporting/descriptive only.
+CLASS C,POST_PRIMARY_PRESPECIFIED_ROBUSTNESS,New Internal 113/RHUH 39 current-mask/component/shuffled-target analyses,Post-primary robustness; not original confirmatory.
+CLASS D,NEW_PRELOCKED_EXTERNAL_REPLICATION,New genuinely acceptable external dataset after exposure audit,Protocol skeleton only; feasibility first.
+CLASS E,OPTIONAL_TRANSLATIONAL_EXTENSION,Sparse/weak/non-oracle guidance Phase 6,Not authorized.
+CLASS X,HISTORICAL_OR_INVALID_DO_NOT_USE,"Old target-trained P0, superseded high-Dice tables, old leaky variants, old LUMIERE outputs, superseded manuscripts",Provenance only; forbidden for current claims.

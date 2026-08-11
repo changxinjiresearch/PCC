@@ -1,0 +1,12 @@
+{
+  "validator": "PASS",
+  "failures": [],
+  "main_pages": 17,
+  "supplement_pages": 11,
+  "main_footer_page_fields": {
+    "word/footer1.xml": 1
+  },
+  "supplement_footer_page_fields": {
+    "word/footer1.xml": 1
+  }
+}

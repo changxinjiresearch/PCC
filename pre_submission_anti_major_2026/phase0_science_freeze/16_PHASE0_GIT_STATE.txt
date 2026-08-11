@@ -1,0 +1,8 @@
+baseline_head=df340b7921a066acbfeffdd8589bb1ad2ec2e718
+science_freeze_tag=pcc-v2.1.1-science-freeze-20260811
+working_branch=pre-submission-anti-major-2026
+phase0_worktree=/home/changxinjiresearch/PCC_pre_submission_anti_major_2026
+preserved_original_worktree=/home/changxinjiresearch/Research/Projects/PCC
+preservation_snapshot=/home/changxinjiresearch/pre_phase0_snapshots/pcc_repo_snapshot_20260811
+original_main_was_dirty=true
+clean_worktree_status=PASS
