@@ -1,0 +1,63 @@
+phase: PCC_PRE_SUBMISSION_ANTI_MAJOR_PHASE1
+selection_timestamp_utc: 2026-08-11T05:30:59Z
+science_freeze_tag: pcc-v2.1.1-science-freeze-20260811
+source_frozen_metric_files:
+  internal_case_metrics:
+    path: outputs/pcc_113_stage_b_confirmatory_validation_2026_recovery_v2/03_COMBINED_RESULTS/ALL_CASE_METHOD_METRICS.csv
+    sha256: f8b46f26fbca2804b61edd6bdd62ed758630795673350f0eec638516aa8449cf
+  internal_confirmatory_statistics:
+    path: outputs/pcc_113_stage_b_confirmatory_validation_2026_recovery_v2/04_STATISTICS/CONFIRMATORY_STATISTICS.csv
+    sha256: 91d8bef63f32f6250218d9bd34b22f23f6b5ddcdfb8c63c7121f729b6a268539
+  rhuh_case_metrics:
+    path: outputs/pcc_rhuh_external_stage_b_confirmatory_validation_2026/02_CASE_RESULTS/RHUH_STAGE_B_CASE_METHOD_METRICS.csv
+    sha256: 54b4ce95ec26e4336ba753911cf4f37bceb31e1a925b994e83b8ac457494ad9d
+  rhuh_confirmatory_statistics:
+    path: outputs/pcc_rhuh_external_stage_b_confirmatory_validation_2026/06_CONFIRMATORY_STATISTICS/RHUH_STAGE_B_CONFIRMATORY_STATISTICS.csv
+    sha256: b54a995111063e2f1871e1b607d142649a8494f979c76d95285b5b295f8d6322
+  case_c_trajectory_authority:
+    path: outputs/pcc_113_stage_b_final_audit_patch_v2_2026/04_PACKAGE_AUDIT/FULL_PCC_TRAJECTORY_INTEGRITY_V2.md
+    sha256: 251332043e28df69b55c00e238e0d09866bcf14f8f6519efc82d406a792b9821
+case_A:
+  cohort: Internal 113
+  rule: argmin absolute distance between patient Full_PCC_minus_Fixed Dice_0.5 and frozen cohort median improvement
+  selected_patient_id: PatientID_0204
+  selected_case_id: PatientID_0204_T1_to_T2_t1c
+  frozen_median_improvement: 0.21172012491758974
+  selected_improvement: 0.21172012491758974
+  absolute_distance: 0
+  exact_distance_tie_count: 1
+  tie_break_applied: false
+case_B:
+  cohort: RHUH 39
+  rule: argmin absolute distance between patient Full_PCC_minus_Fixed Dice_0.5 and frozen cohort median improvement
+  selected_patient_id: RHUH-0031
+  selected_case_id: RHUH-0031_EARLY_POSTOP_TO_RECURRENCE_T1CE
+  frozen_median_improvement: 0.18531650722169121
+  selected_improvement: 0.18531650722169121
+  absolute_distance: 0
+  exact_distance_tie_count: 1
+  tie_break_applied: false
+case_C:
+  cohort: Internal 113
+  rule: use the uniquely frozen P9-to-P10 degradation case; only if unavailable use the unique RHUH No-smoothing loss case
+  selected_patient_id: PatientID_0242
+  selected_case_id: PatientID_0242_T1_to_T3_t1c
+  authority_status: UNIQUE_EXACT_IDENTITY_RECOVERED
+tie_breaking_rules:
+  case_selection: case_id ASCII_lexicographic_ascending
+  axial_slice: smallest_slice_index
+slice_selection_rule: argmax axial future-added-target foreground voxel count; ties choose smallest slice index
+display_columns:
+  - Current T1c
+  - Current mask
+  - Frozen P0
+  - Future-added target
+  - Full PCC P10
+  - No-smoothing P10
+normalization_rule: per-volume deterministic p1/p99 window over finite nonzero current-T1c voxels; clip to [0,1]; identical rule for every case
+probability_scale: fixed_0_to_1_for_all_probability_maps
+crop_rule: fixed full 240x240 axial field; no patient-specific crop
+output_resolution: 2400x1200_pixels_target_if_rendered
+post_lock_case_change_allowed: false
+post_lock_slice_change_allowed: false
+scientific_inference_from_figure: prohibited
