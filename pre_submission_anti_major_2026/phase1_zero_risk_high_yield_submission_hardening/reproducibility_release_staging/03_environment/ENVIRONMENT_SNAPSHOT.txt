@@ -1,0 +1,4 @@
+captured_for_phase1_staging=true
+python=3.11.2 (main, May 12 2026, 05:17:27) [GCC 12.2.0]
+platform=Linux-6.6.119-09283-g9c138e0af8c3-aarch64-with-glibc2.36
+note=Current audit host snapshot only; not claimed as the exact historical Kaggle runtime.

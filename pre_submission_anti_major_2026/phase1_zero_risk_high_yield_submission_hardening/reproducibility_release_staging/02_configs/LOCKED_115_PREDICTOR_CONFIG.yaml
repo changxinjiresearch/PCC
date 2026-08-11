@@ -1,0 +1,11 @@
+architecture: SmallUNet
+input_channels: 2
+input_order: [current_t1c_normalized, current_mask]
+base_channels: 16
+folds: 5
+normalization: current_T1c_positive_voxels_p1_p99
+current_mask_threshold: 0.5
+prediction_dtype: float32
+ensemble: equal_arithmetic_mean
+weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+model_forward_in_this_stage: false

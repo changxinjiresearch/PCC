@@ -1,0 +1,2 @@
+artifact_role,authoritative_source_path,sha256,classification,release_status,notes
+selected-case source data,PHASE1_QUALITATIVE_PANEL_PROVENANCE.csv,91374d8ac4a610bbeec09d5f355beb68a7f04b99d2dcad91470a0028329abf51,NOT_FOR_RELEASE,NOT_FOR_PUBLIC_RELEASE,No MRI/P0/method map copied. Required frozen P10 maps missing.

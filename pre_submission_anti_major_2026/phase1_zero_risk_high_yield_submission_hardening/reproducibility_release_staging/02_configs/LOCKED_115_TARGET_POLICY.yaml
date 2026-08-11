@@ -1,0 +1,10 @@
+definition: (future_mask > 0.5) AND NOT (current_mask > 0.5)
+mask_threshold: 0.5
+comparison: strict_greater_than
+output_dtype: bool
+shape_mismatch: FAIL_TARGET_CONSTRUCTION
+affine_or_orientation_mismatch: FAIL_GEOMETRY
+empty_target: FAIL_TARGET_CONSTRUCTION_AND_RETAIN_IN_DENOMINATOR
+registration: forbidden
+resampling: forbidden
+construction_stage: stage_b_only

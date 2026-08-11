@@ -1,0 +1,3 @@
+artifact_role,authoritative_source_path,sha256,classification,release_status,notes
+five-fold patient-disjoint manifest,validation_reference/frozen_refs/pcc_leakage_free_rerun_2026_v8/LOCKED_FOLD_MANIFEST.csv,880bd3b2c87c571d5df10342357a8b67c7d6069a2b68a99df0f5dccb783154ec,CURRENT_AUTHORITY,REQUIRES_PRIVACY_REVIEW,"Referenced, not copied; contains pseudonymous patient/case identifiers."
+40-case manifest,validation_reference/frozen_refs/pcc_leakage_free_rerun_2026_v8/LOCKED_CASE_MANIFEST.csv,e5ad65359280e002d9bcc4c89211f48840d535b602821ad22db863b88e4656f8,CURRENT_AUTHORITY,REQUIRES_PRIVACY_REVIEW,"Referenced, not copied."
